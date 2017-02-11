@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/normal_bg"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/grand_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_car_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <ImageView
+                        android:id="@+id/car_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:layout_marginLeft="@dimen/margin_16"/>
+
+                    <TextView
+                        android:id="@+id/car_name"
+                        style="@style/BlackText16"
+                        android:layout_alignTop="@+id/car_logo"
+                        android:layout_toRightOf="@+id/car_logo"
+                        android:layout_marginLeft="8dp"
+                        tools:text="奔驰E260 2015款 啊反对反对大哥" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/GrayText14"
+                        android:layout_alignLeft="@id/car_name"
+                        android:layout_below="@id/car_name"
+                        android:layout_marginTop="5dp"
+                        android:text="行驶里程  " />
+
+                    <TextView
+                        android:id="@+id/car_mile"
+                        style="@style/OrangeText14"
+                        android:layout_alignTop="@+id/text1"
+                        android:layout_toRightOf="@+id/text1"
+                        tools:text="3000" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/GrayText14"
+                        android:layout_alignTop="@+id/text1"
+                        android:layout_toRightOf="@+id/car_mile"
+                        android:text="  公里" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_dividing_line" />
+
+                <TextView
+                    android:id="@+id/maintenance_title"
+                    style="@style/RedText16"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:text="推荐保养方案" />
+
+                <!--<com.hxqc.widget.ListViewNoSlide-->
+                <!--android:id="@+id/list_view"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:divider="@null"-->
+                <!--android:layout_marginRight="@dimen/margin_16"-->
+                <!--android:layout_marginLeft="@dimen/margin_16"/>-->
+                <LinearLayout
+                    android:id="@+id/ll_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+
+
+                <RelativeLayout
+                    android:id="@+id/add_maintain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    android:layout_marginRight="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:background="@drawable/bg_maintain"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="80dp"
+                        android:src="@drawable/ic_plus" />
+
+                    <TextView
+                        style="@style/OrangeText16"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="110dp"
+                        android:text=" 其他保养与维修项目" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="right"
+                    android:padding="@dimen/margin_16"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            style="@style/GrayText14"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="配件总额:" />
+
+                        <TextView
+                            android:id="@+id/accessory"
+                            style="@style/RedText14"
+                            android:layout_gravity="right"
+                            tools:text="￥ 361.00"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/tv2"
+                            style="@style/GrayText14"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="工时总额:" />
+
+                        <TextView
+                            android:id="@+id/labor_hour"
+                            style="@style/RedText14"
+                            tools:text="￥ 36.00"
+                            android:layout_gravity="right"/>
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/text3"
+                            style="@style/GrayText14"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="应付总额:" />
+
+                        <TextView
+                            android:id="@+id/payable"
+                            style="@style/RedText14"
+                            android:layout_gravity="right"
+                            tools:text="￥ 336.00" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line1"
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="#D5D5D5"/>
+                    <LinearLayout
+                        android:id="@+id/rl_package_discount"
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/text4"
+                            style="@style/GrayText14"
+                            android:layout_weight="1"
+                            android:layout_width="0dp"
+                            android:text="套餐折扣:" />
+
+                        <TextView
+                            android:id="@+id/package_discount"
+                            style="@style/RedText14"
+                            android:layout_gravity="right"
+                            tools:text="￥ -36.00" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/line2"
+                        android:layout_width="150dp"
+                        android:layout_height="1dp"
+                        android:background="#D5D5D5"
+                        android:layout_marginBottom="5dp" />
+
+                    <LinearLayout
+                        android:layout_width="150dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+
+                        <TextView
+                            android:id="@+id/text6"
+                            style="@style/GrayText14"
+                            android:layout_width="0dp"
+                            android:layout_weight="1"
+                            android:text="实付金额:" />
+
+                        <TextView
+                            android:id="@+id/pay"
+                            style="@style/RedText14"
+                            tools:text="￥ 1036.00" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/calculate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="60dp"
+                    android:visibility="gone">
+                    <ImageView
+                        android:id="@+id/loading"
+                        style="@style/Icon32"
+                        android:src="@drawable/ic_load"
+                        android:layout_marginLeft="100dp"/>
+                    <TextView
+                        style="@style/RedText16"
+                        android:text="正在为你计算金额"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/loading"
+                        android:layout_marginLeft="@dimen/margin_16"/>
+
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:id="@+id/refresh"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="60dp"
+                    android:paddingBottom="60dp"
+                    android:visibility="gone">
+                    <TextView
+                        android:id="@+id/fail_notice"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:drawablePadding="26dp"
+                        android:textColor="#979797"
+                        android:textSize="16sp"
+                        android:text="网络连接失败"/>
+
+                    <Button
+                        android:id="@+id/fail_to_see"
+                        android:layout_below="@+id/fail_notice"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="16dp"
+                        style="@style/btn_border"
+                        android:text="刷新"
+                        />
+                </RelativeLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/layout_dividing_line" />
+
+        <include layout="@layout/layout_smart_maintain_bottom" />
+    </LinearLayout>
+
+
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>

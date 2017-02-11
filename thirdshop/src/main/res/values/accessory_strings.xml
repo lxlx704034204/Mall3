@@ -1,0 +1,14 @@
+<resources>
+    <string name="accessory_title_activity_shopping_cart">购物车</string>
+    <string name="accessory_title_activity_shop_list">配送门店</string>
+    <string name="accessory_title_activity_order_detail">订单详情</string>
+    <string name="accessory_title_activity_sale">用品销售</string>
+    <string name="accessory_title_activity_product_detail">商品详情</string>
+    <string name="accessory_title_activity_confirm_order">确认订单</string>
+    <string name="accessory_title_activity_package_list">优惠套餐</string>
+    <string name="accessory_title_activity_pay_completed">支付完成</string>
+    <string name="accessory_title_activity_refund">申请退款</string>
+    <string name="accessory_title_activity_pay_subscription">预付订金</string>
+    <string name="accessory_title_activity_pay">选择支付方式</string>
+    <string name="accessory_price">网上4S店报价</string>
+</resources>

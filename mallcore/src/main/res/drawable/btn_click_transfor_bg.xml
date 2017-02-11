@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:drawable="@color/gray_alpha" Android:state_pressed="true"/>
+    <item Android:drawable="@color/gray_alpha" Android:state_selected="true"/>
+ <!-- focused -->
+    <item Android:drawable="@android:color/transparent"/>
+ <!-- default -->
+
+</selector>

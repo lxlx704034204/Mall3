@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/item_detail_bottom_bar_enable"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/normal_padding_big_10"
+    android:paddingLeft="@dimen/normal_padding_big_16"
+    android:paddingRight="@dimen/normal_padding_big_16"
+    android:paddingTop="@dimen/normal_padding_big_10">
+
+    <TextView
+        android:id="@+id/month"
+        style="@style/BlackText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/month" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/total_cost"
+        style="@style/BlackText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/this_month_cost" />
+</LinearLayout>

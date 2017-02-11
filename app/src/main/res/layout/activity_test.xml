@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <include
+        layout="@layout/view_toolbar_layout"/>
+
+    <com.hxqc.newenergy.view.Menu_view
+        android:id="@+id/mymenu"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></com.hxqc.newenergy.view.Menu_view>
+
+</LinearLayout>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/auto_info_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <com.hxqc.mall.auto.view.swipemenulistview.SwipeMenuListView
+            android:id="@+id/auto_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/bg_gray"
+            android:dividerHeight="11dp"
+            android:footerDividersEnabled="true"
+            android:listSelector="@android:color/transparent"
+            tools:listitem="@layout/item_auto_info_v3" />
+        <!--<ListView
+            android:id="@+id/auto_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:footerDividersEnabled="true"
+            android:listSelector="@android:color/transparent"
+            tools:listitem="@layout/item_auto_info_v3" />-->
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+    <com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/auto_info_result_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="暂无车辆" />
+
+    <include
+        android:id="@+id/auto_no_data"
+        layout="@layout/layout_auto_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

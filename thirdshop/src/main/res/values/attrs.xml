@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--汽车详情的tab view-->
+    <declare-styleable name="AutoDetailTab">
+        <attr name="tabIconDrawable" format="reference"/>
+        <attr name="tabLabel" format="string"/>
+        <attr name="tabTagDrawable" format="reference"/>
+    </declare-styleable>
+    <!--店铺首页小标题-->
+    <declare-styleable name="CommonTitleView">
+        <attr name="title_text" format="string|reference"/>
+        <attr name="hasMore" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="TipView">
+        <attr name="show" format="reference"/>
+    </declare-styleable>
+    <declare-styleable name="CallBar">
+        <attr name="call_title" format="string"/>
+        <attr name="call_number" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="CarDetailGroupView">
+        <attr name="group_title" format="string|reference"/>
+        <attr name="group_label" format="string|reference"/>
+    </declare-styleable>
+    <declare-styleable name="FourSMallMenu">
+        <attr name="menuIcon" format="reference"/>
+        <attr name="menuText" format="string"/>
+    </declare-styleable>
+    <declare-styleable name="FourSHomeItem">
+        <attr name="itemType4S" format="integer"/>
+    </declare-styleable>
+    <declare-styleable name="Label">
+        <attr name="labelBackColor" format="color"/>
+        <attr name="labelTextValue" format="string"/>
+    </declare-styleable>
+
+    <!--AutoTypePopupView-->
+    <declare-styleable name="AutoTypePopupView">
+        <attr name="auto_type_popup_view_text" format="string"/>
+        <attr name="auto_type_popup_view_textSize" format="dimension"/>
+        <attr name="auto_type_popup_view_textColor" format="color"/>
+        <attr name="auto_type_popup_view_drawableRight" format="color|reference"/>
+        <attr name="auto_type_popup_view_drawablePadding" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="DoubleSeekBar">
+        <attr name="hasScaleText" format="boolean"/>
+        <attr name="scaleTextSize" format="dimension"/>
+        <attr name="seekBarHeight" format="dimension"/>
+        <attr name="scaleTextMinHeight" format="dimension"/>
+        <attr name="marginBetweenTextAndSeekBarScaleLine" format="dimension"/>
+        <attr name="marginBetweenTextAndTopThumb" format="dimension"/>
+        <attr name="marginBetweenSeekBarScaleLineAndBottomThumb" format="dimension"/>
+        <attr name="seekBarScaleLineHeight" format="dimension"/>
+        <attr name="topThumbRes" format="reference"/>
+        <attr name="bottomThumbRes" format="reference"/>
+        <attr name="sectionNum" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MySeekBar">
+        <attr name="thumbRes" format="reference"/>
+        <attr name="seekBarHeight"/>
+        <attr name="marginBetweenTextAndSeekBar" format="dimension"/>
+        <attr name="scaleTextSize"/>
+    </declare-styleable>
+</resources>

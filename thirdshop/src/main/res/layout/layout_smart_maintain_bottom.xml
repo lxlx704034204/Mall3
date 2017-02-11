@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/normal_bg"
+    android:paddingLeft="@dimen/margin_16"
+    android:paddingRight="@dimen/margin_16">
+    <TextView
+        android:id="@+id/text_total_pay"
+        style="@style/RedText16"
+        android:layout_centerVertical="true"
+        android:text="实付："/>
+    <TextView
+        android:id="@+id/total_pay"
+        style="@style/RedText16"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/text_total_pay"
+        tools:text="￥390.00" />
+
+    <Button
+        android:id="@+id/to_maintain"
+        style="@style/btn_orange"
+        android:layout_width="103dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>

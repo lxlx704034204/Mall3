@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_p_shop_gray"
+                android:padding="16dp"
+>
+    <ImageView
+        android:id="@+id/p_shop_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/pic_normal_square"
+    />
+    <TextView
+        android:id="@+id/p_shop_title"
+        style="@style/BlackText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_toRightOf="@+id/p_shop_icon"
+        android:layout_toEndOf="@+id/p_shop_icon"
+        android:textStyle="bold"
+        tools:text="武汉星威汽车销售服务有限公司"/>
+    <TextView
+        android:id="@+id/p_shop_address"
+        style="@style/GrayText13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/p_shop_title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/p_shop_icon"
+        android:layout_toEndOf="@+id/p_shop_icon"
+        tools:text="地址：asjcnajcnacjalcnacnalncancalknclanc"/>
+</RelativeLayout>

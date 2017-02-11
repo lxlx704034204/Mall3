@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="#f6f6f6"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E9E7E8"
+        android:gravity="center"
+
+        android:padding="@dimen/dp_10">
+
+        <TextView
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:ems="2"
+            android:gravity="center"
+            android:lines="2"
+            android:text="上市时间" />
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/year"
+        style="@style/RedText16"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:button="@null"
+        android:drawablePadding="@dimen/normal_size_5"
+        android:drawableRight="@drawable/ic_arrow_down_selecter"
+        android:gravity="center"
+        android:minEms="5"
+        android:paddingLeft="@dimen/dp_10"
+        android:paddingRight="@dimen/dp_10"
+        tools:text="2016全年" />
+
+    <com.hxqc.autonews.widget.ScrollMonth
+        android:id="@+id/scroll_month"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+</LinearLayout>

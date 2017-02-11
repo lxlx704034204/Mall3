@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <com.hxqc.mall.auto.view.PlateNumberTextView
+        android:id="@+id/commen_license_city"
+        style="@style/auto_edit_text_2"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:drawableRight="@drawable/ic_cbb_arrow_down"
+        android:maxLength="1"
+        android:minLines="1"
+        android:textColorHint="@color/text_gray" />
+
+    <com.hxqc.mall.auto.view.PlateNumberTextView
+        android:id="@+id/commen_license_number"
+        style="@style/auto_edit_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:cursorVisible="true"
+        android:hint="请填写车牌号"
+        android:maxLength="6"
+        hxqc:met_helperText=""/>
+
+</LinearLayout>

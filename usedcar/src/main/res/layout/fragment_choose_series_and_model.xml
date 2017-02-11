@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fff"
+                android:orientation="vertical"
+                tools:ignore="UnusedResources">
+
+    <RelativeLayout
+        android:id="@+id/choose_head"
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_small_8"
+            android:src="@drawable/ic_back" />
+
+        <ImageView
+            android:id="@+id/brand_icon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_small_8"
+            android:layout_toRightOf="@id/back"
+            android:src="@drawable/pic_normal" />
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/BlackText16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_toRightOf="@id/brand_icon" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/UnderLine"
+        android:layout_below="@id/choose_head" />
+
+    <RelativeLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/line" />
+
+</RelativeLayout>

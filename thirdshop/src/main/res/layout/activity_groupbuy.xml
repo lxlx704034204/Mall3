@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout-->
+<!--android:layout_height="match_parent"-->
+<!--android:layout_width="match_parent"-->
+<!--android:orientation="vertical"-->
+<!--xmlns:tools="http://schemas.android.com/tools">-->
+
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/to_home"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_gravity="right"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_menu_home"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/change_city"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:drawableLeft="@drawable/t_icon_button_location"
+        android:drawablePadding="2dp"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textSize="16sp"
+        tools:text="武汉"/>
+</android.support.v7.widget.Toolbar>
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/ll_parent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<in.srain.cube.views.ptr.PtrFrameLayout-->
+    <!--android:id="@+id/refresh_frame"-->
+    <!--xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--cube_ptr:ptr_duration_to_close="300"-->
+    <!--cube_ptr:ptr_duration_to_close_header="2000"-->
+    <!--cube_ptr:ptr_keep_header_when_refresh="true"-->
+    <!--cube_ptr:ptr_pull_to_fresh="false"-->
+    <!--cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"-->
+    <!--cube_ptr:ptr_resistance="1.7">-->
+
+    <!--<com.hxqc.mall.core.views.ProgressWebView-->
+    <!--android:id="@+id/web_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+    <!--</in.srain.cube.views.ptr.PtrFrameLayout>-->
+
+    <!--<com.hxqc.mall.core.api.RequestFailView-->
+    <!--android:id="@+id/fail_view"-->
+    <!--xmlns:fail="http://schemas.android.com/apk/res-auto"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--fail:emptyDescription="获取数据失败"/>-->
+    <!--</FrameLayout>-->
+    <!--</LinearLayout>-->

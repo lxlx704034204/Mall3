@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hxqc.widget.ListViewNoSlide
+    android:id="@+id/raking_list"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:cacheColorHint="#00000000"
+    android:clickable="false"
+    android:divider="@color/white"
+    android:focusable="false"
+    android:listSelector="#00000000"
+    android:scrollbars="none"/>

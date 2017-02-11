@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<declare-styleable name="CircleImageView">-->
+    <!--<attr name="border_width" format="dimension" />-->
+    <!--<attr name="border_color" format="color" />-->
+    <!--</declare-styleable>-->
+    <declare-styleable name="AutofitTextView">
+        <!-- Minimum size of the text. -->
+        <attr name="minTextSize" format="dimension"/>
+        <!-- Amount of precision used to calculate the correct text size to fit within its
+        bounds. Lower precision is more precise and takes more time. -->
+        <attr name="precision" format="float"/>
+        <!-- Defines whether to automatically resize text to fit to the view's bounds. -->
+        <attr name="sizeToFit" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="VMaterialEditText">
+        <!-- The base color of the line and the texts. Default is black. -->
+        <attr name="met_baseColor" format="color"/>
+        <!-- The highlight color of the line, and the floating label if the highlightFloatingLabel is true. -->
+        <attr name="met_primaryColor" format="color"/>
+        <!-- How the floating label should be shown. Default is none -->
+        <attr name="met_floatingLabel">
+            <enum name="none" value="0"/>
+            <enum name="normal" value="1"/>
+            <enum name="highlight" value="2"/>
+        </attr>
+        <!-- The color for when something is wrong.(e.g. exceeding max characters) -->
+        <attr name="met_errorColor" format="color"/>
+        <!-- Whether to show the bottom ellipsis in singleLine mode -->
+        <attr name="met_singleLineEllipsis" format="boolean"/>
+        <!-- Reserved bottom text lines count, no matter if there is some helper/error text. -->
+        <attr name="met_minBottomTextLines" format="integer"/>
+        <!-- Helper text at the bottom -->
+        <attr name="met_helperText" format="string"/>
+        <!-- Helper text color -->
+        <attr name="met_helperTextColor" format="color"/>
+        <!-- Font of the paint used to draw accent texts -->
+        <attr name="met_accentTypeface" format="string"/>
+        <!-- Font used on view -->
+        <attr name="met_typeface" format="string"/>
+        <!-- Custom float label text -->
+        <attr name="met_floatingLabelText" format="string"/>
+        <!-- spacing between the main text and the floating label -->
+        <attr name="met_floatingLabelPadding" format="dimension"/>
+        <!-- Hide underline -->
+        <attr name="met_hideUnderline" format="boolean"/>
+        <!-- Underline's color -->
+        <attr name="met_underlineColor" format="color"/>
+        <!-- Auto validate -->
+        <attr name="met_autoValidate" format="boolean"/>
+        <!-- Left icon -->
+        <attr name="met_iconLeft" format="reference"/>
+        <!-- Right icon -->
+        <attr name="met_iconRight" format="reference"/>
+        <!-- Padding between icon(s) and the main area. 8dp by default. -->
+        <attr name="met_iconPadding" format="dimension"/>
+        <!-- The floating label's text size. 12sp by default. -->
+        <attr name="met_floatingLabelTextSize" format="dimension"/>
+        <!-- The floating label's text color. -1 by default. -->
+        <attr name="met_floatingLabelTextColor" format="color"/>
+        <!-- The bottom texts' size. 12sp by default. -->
+        <attr name="met_bottomTextSize" format="dimension"/>
+        <!-- Always show the floating label, instead of animating it in/out. False by default. -->
+        <attr name="met_floatingLabelAlwaysShown" format="boolean"/>
+        <!-- Always show the helper text, no matter if the edit text is focused. False by default. -->
+        <attr name="met_helperTextAlwaysShown" format="boolean"/>
+        <!-- Whether use animation to show/hide the floating label. True by default. -->
+        <attr name="met_floatingLabelAnimating" format="boolean"/>
+        <!-- Text color -->
+        <attr name="met_textColor" format="color"/>
+        <!-- Hint Text Color -->
+        <attr name="met_textColorHint" format="color"/>
+        <!-- Auto validate on focus lost. False by default. -->
+        <attr name="met_validateOnFocusLost" format="boolean"/>
+        <!-- Whether check the characters count at the beginning it's shown. True by default. -->
+        <attr name="met_checkCharactersCountAtBeginning" format="boolean"/>
+
+    </declare-styleable>
+
+    <declare-styleable name="MaterialEditText">
+        <!-- The base color of the line and the texts. Default is black. -->
+        <attr name="baseColor" format="color"/>
+        <!-- The highlight color of the line, and the floating label if the highlightFloatingLabel is true. -->
+        <attr name="primaryColor" format="color"/>
+        <!-- How the floating label should be shown. Default is none -->
+        <attr name="floatingLabel">
+            <enum name="none" value="0"/>
+            <enum name="normal" value="1"/>
+            <enum name="highlight" value="2"/>
+        </attr>
+        <!-- The color for when something is wrong.(e.g. exceeding max characters) -->
+        <attr name="errorColor" format="color"/>
+        <!-- Min characters count limit. 0 means no limit. -->
+        <attr name="minCharacters" format="integer"/>
+        <!-- max Characters count limit. 0 means no limit. -->
+        <attr name="maxCharacters" format="integer"/>
+        <!-- Whether to show the bottom ellipsis in singleLine mode -->
+        <attr name="singleLineEllipsis" format="boolean"/>
+        <!-- Reserved bottom text lines count, no matter if there is some helper/error text. -->
+        <attr name="minBottomTextLines" format="integer"/>
+        <!-- Helper text at the bottom -->
+        <attr name="helperText" format="string"/>
+        <!-- Helper text color -->
+        <attr name="helperTextColor" format="color"/>
+        <!-- Font of the paint used to draw accent texts -->
+        <attr name="accentTypeface" format="string"/>
+        <!-- Font used on view -->
+        <attr name="typeface" format="string"/>
+        <!-- Custom float label text -->
+        <attr name="floatingLabelText" format="string"/>
+        <!-- spacing between the main text and the floating label -->
+        <attr name="floatingLabelSpacing" format="dimension"/>
+        <!-- Hide underline -->
+        <attr name="hideUnderline" format="boolean"/>
+        <!-- Auto validate -->
+        <attr name="autoValidate" format="boolean"/>
+        <!-- Left icon -->
+        <attr name="iconLeft" format="reference"/>
+        <!-- Right icon -->
+        <attr name="iconRight" format="reference"/>
+        <!-- Padding between icon(s) and the main area. 8dp by default. -->
+        <attr name="iconPadding" format="dimension"/>
+        <!-- The floating label's text size. 12sp by default. -->
+        <attr name="floatingLabelTextSize" format="dimension"/>
+        <!-- The bottom texts' size. 12sp by default. -->
+        <attr name="bottomTextSize" format="dimension"/>
+        <!-- Always show the floating label, instead of animating it in/out. -->
+        <attr name="floatingLabelAlwaysShown" format="boolean"/>
+        <!-- Always show the helper text, no matter if the edit text is focused. -->
+        <attr name="helperTextAlwaysShown" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 线条动画-->
+    <declare-styleable name="LineTranslateAnimView">
+        <attr name="lineCount" format="integer"/>
+        <attr name="animDurations" format="integer"/>
+    </declare-styleable>
+    <!-- 可以展开的text-->
+    <declare-styleable name="ExpandableTextView">
+        <attr name="maxCollapsedLines" format="integer"/>
+        <attr name="animDuration" format="integer"/>
+        <attr name="animAlphaStart" format="float"/>
+        <attr name="expandDrawable" format="reference"/>
+        <attr name="collapseDrawable" format="reference"/>
+    </declare-styleable>
+
+    <!--请求失败提示-->
+    <declare-styleable name="RequestFailView">
+        <attr name="emptyDescription" format="string"/>
+        <attr name="failDescription" format="string"/>
+        <attr name="emptyButtonText" format="string"/>
+        <attr name="failButtonText" format="string"/>
+        <attr name="failSrc" format="reference"/>
+        <attr name="emptySrc" format="reference"/>
+        <attr name="showButton" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="HeightVSWidthImage">
+        <attr name="rectRadius" format="float"/>
+        <attr name="heightVsWidth" format="float"/>
+    </declare-styleable>
+
+    <declare-styleable name="StickyListHeadersListView">
+        <attr name="stickyListHeadersListViewStyle" format="reference"/>
+
+        <!-- View attributes -->
+        <attr name="android:clipToPadding"/>
+        <attr name="android:scrollbars"/>
+        <attr name="android:overScrollMode"/>
+        <attr name="android:padding"/>
+        <attr name="android:paddingLeft"/>
+        <attr name="android:paddingTop"/>
+        <attr name="android:paddingRight"/>
+        <attr name="android:paddingBottom"/>
+
+        <!-- ListView attributes -->
+        <attr name="android:fadingEdgeLength"/>
+        <attr name="android:requiresFadingEdge"/>
+        <attr name="android:cacheColorHint"/>
+        <attr name="android:choiceMode"/>
+        <attr name="android:drawSelectorOnTop"/>
+        <attr name="android:fastScrollEnabled"/>
+        <attr name="android:fastScrollAlwaysVisible"/>
+        <attr name="android:listSelector"/>
+        <attr name="android:scrollingCache"/>
+        <attr name="android:scrollbarStyle"/>
+        <attr name="android:divider"/>
+        <attr name="android:dividerHeight"/>
+        <attr name="android:transcriptMode"/>
+        <attr name="android:stackFromBottom"/>
+
+        <!-- StickyListHeaders attributes -->
+        <attr name="hasStickyHeaders" format="boolean"/>
+        <attr name="isDrawingListUnderStickyHeader" format="boolean"/>
+    </declare-styleable>
+
+    <!-- 设置ExpandListview中展开查看更多控件中字和图标之间的距离 -->
+    <declare-styleable name="TextImageButton">
+        <attr name="marginLeft" format="dimension"/>
+    </declare-styleable>
+
+    <!--第三方功能按钮-->
+    <declare-styleable name="TSFunctionButton">
+        <attr name="innerTextSize" format="dimension"/>
+        <attr name="innerIcon" format="reference"/>
+        <attr name="backgroundTF" format="reference"/>
+        <attr name="innerButtonText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ColorSpinner">
+        <attr name="spinnerLabel" format="string"/>
+    </declare-styleable>
+
+    <!--筛选条件-->
+    <declare-styleable name="FilterFactorView">
+        <attr name="label" format="string"/>
+        <attr name="labelColor" format="color"/>
+        <attr name="answerColor" format="color"/>
+        <attr name="unAnswerColor" format="color"/>
+    </declare-styleable>
+
+    <!-- 自定义下拉menu -->
+    <declare-styleable name="DropDownMenu">
+        <attr name="underlineColor" format="color"/>
+        <attr name="underlineHeight" format="dimension"/>
+        <attr name="dividerColor" format="color"/>
+        <attr name="dividerPadding"/>
+        <attr name="textSelectedColor" format="color"/>
+        <attr name="textUnselectedColor" format="color"/>
+        <attr name="menuBackgroundColor" format="color"/>
+        <attr name="menuHeight" format="dimension"/>
+        <attr name="maskColor" format="color"/>
+        <attr name="menuTextSize" format="dimension"/>
+        <attr name="menuSelectedIcon" format="reference"/>
+        <attr name="menuUnselectedIcon" format="reference"/>
+        <attr name="drawableMarginLeft" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="VariousShowView">
+        <!-- 左侧imageview -->
+        <attr name="leftIcon" format="reference"/>
+        <!-- 左侧提示文字 -->
+        <attr name="labelText" format="string"/>
+        <attr name="labelTextBold" format="boolean"/>
+        <attr name="labelTextSize" format="dimension"/>
+        <attr name="labelTextColor" format="color"/>
+        <!-- 右侧提示文字 -->
+        <attr name="tipText" format="string"/>
+        <attr name="tipTextSize" format="dimension"/>
+        <attr name="tipTextColor" format="color"/>
+        <!-- 右侧展示图标 -->
+        <attr name="rightOperateIcon" format="reference"/>
+        <!-- 当作为展开功能控件使用时，子视图未展开时右侧显示的图标 --> <!-- 配合 android:tag="foldable" 使用 -->
+        <attr name="foldIconRes" format="reference"/>
+        <!-- 当作为展开功能控件使用时，子视图未展开时右侧显示的图标 --> <!-- 配合 android:tag="foldable" 使用 -->
+        <attr name="unfoldIconRes" format="reference"/>
+        <!-- 当作作为展开功能控件使用时，视图的展开状态 -->
+        <attr name="foldStatus">
+            <enum name="fold" value="1"/>
+            <!-- 收起 -->
+            <enum name="unfold" value="0"/>
+            <!-- 展开 -->
+        </attr>
+
+        <!--              operateType属性暂停使用，通过android:tag="foldable"来判断当前操作方式             -->
+        <!-- 标示当前控件是做跳转还是隐藏和显示用 -->
+        <!--<attr name="operateType">-->
+        <!-- 点击可跳转 -->
+        <!--<enum name="intent" value="0"/>-->
+        <!-- 点击可展开或收起视图 --> <!-- 配合 android:tag="foldable" 使用 -->
+        <!--<enum name="fold" value="1"/>-->
+        <!--</attr>-->
+    </declare-styleable>
+
+    <declare-styleable name="TipView">
+        <attr name="show" format="reference"/>
+    </declare-styleable>
+
+    <!--CommenTwoTextView-->
+    <declare-styleable name="CommenTwoTextView">
+        <attr name="auto_info_first_text" format="string"/>
+        <attr name="auto_info_first_textColor" format="color"/>
+        <attr name="auto_info_first_textSize" format="dimension"/>
+        <attr name="auto_info_first_ems" format="integer"/>
+        <attr name="auto_info_first_background" format="color|reference"/>
+        <attr name="auto_info_first_drawleft" format="color|reference"/>
+        <attr name="auto_info_two_text" format="string"/>
+        <attr name="auto_info_two_text_singleline" format="boolean"/>
+        <attr name="auto_info_two_textColor" format="color"/>
+        <attr name="auto_info_two_textSize" format="dimension"/>
+        <attr name="auto_info_two_marginLeft" format="dimension"/>
+        <attr name="auto_info_two_marginTop" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="BaseMapView">
+        <attr name="keyText" format="string"/>
+        <attr name="valueText" format="string"/>
+        <attr name="valueGravity" format="enum">
+            <enum name="LEFT" value="0"/>
+            <enum name="RIGHT" value="1"/>
+        </attr>
+        <attr name="itemType" format="enum">
+            <enum name="INPUT" value="0"/>
+            <enum name="CLICKABLE" value="1"/>
+            <enum name="SHOW" value="2"/>
+            <enum name="VALUE_ICON" value="3"/>
+        </attr>
+        <attr name="inputHint" format="string"/>
+        <attr name="valueIcon" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CommonEditInfoItemView">
+        <attr name="commen_info_item_title_text" format="string"/>
+        <attr name="commen_info_item_title_textColor" format="color"/>
+        <attr name="commen_info_item_title_drawableLeft" format="color|reference"/>
+        <attr name="commen_info_item_title_ems" format="integer"/>
+
+        <attr name="commen_info_item_content_hint" format="string"/>
+        <attr name="commen_info_item_content_hintColor" format="color"/>
+        <attr name="commen_info_item_content_drawableRight" format="color|reference"/>
+        <attr name="commen_info_item_content_focusable" format="boolean"/>
+        <attr name="commen_info_item_content_focusableInTouchMode" format="boolean"/>
+        <attr name="commen_info_item_content_maxLength" format="integer"/>
+        <attr name="commen_info_item_content_inputType" format="integer">
+            <enum name="text" value="0"/>
+            <enum name="phone" value="1"/>
+            <enum name="number" value="2"/>
+        </attr>
+
+        <attr name="commen_info_item_content_validator" format="integer">
+            <enum name="validator_name" value="0"/>
+            <enum name="validator_phone" value="1"/>
+            <enum name="validator_auto_type" value="2"/>
+            <enum name="validator_service_type" value="3"/>
+            <enum name="validator_appointment_time" value="4"/>
+            <enum name="validator_engine_num" value="5"/>
+            <enum name="validator_chassis_num" value="6"/>
+        </attr>
+        <attr name="commen_info_item_content_digits" format="string"/>
+    </declare-styleable>
+
+    <!--通用信息条目-->
+    <declare-styleable name="BottomTxtImageButton">
+        <attr name="image_src" format="reference"/>
+        <attr name="bottom_text" format="string"/>
+        <attr name="bottom_text_size" format="dimension"/>
+        <attr name="bottom_text_color" format="color"/>
+    </declare-styleable>
+    <declare-styleable name="ProgressWheel">
+        <attr name="matProg_progressIndeterminate" format="boolean"/>
+        <attr name="matProg_barColor" format="color"/>
+        <attr name="matProg_rimColor" format="color"/>
+        <attr name="matProg_rimWidth" format="dimension"/>
+        <attr name="matProg_spinSpeed" format="float"/>
+        <attr name="matProg_barSpinCycleTime" format="integer"/>
+        <attr name="matProg_circleRadius" format="dimension"/>
+        <attr name="matProg_fillRadius" format="boolean"/>
+        <attr name="matProg_barWidth" format="dimension"/>
+        <attr name="matProg_linearProgress" format="boolean"/>
+    </declare-styleable>
+
+    <!--comment 星星 attrs-->
+    <declare-styleable name="RatingBarView">
+        <attr name="starImageSize" format="dimension"/>
+        <attr name="starCount" format="integer"/>
+        <attr name="starEmpty" format="reference"/>
+        <attr name="starFill" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="SlidingUpLayout">
+        <attr name="SUVPanelHeight" format="dimension"/>
+        <attr name="SUVShadowHeight" format="dimension"/>
+        <attr name="SUVParallaxOffset" format="dimension"/>
+        <attr name="SUVFadeColor" format="color"/>
+        <attr name="SUVFlingVelocity" format="integer"/>
+        <attr name="SUVDragView" format="reference"/>
+        <attr name="SUVSearchViewContainer" format="reference"/>
+        <attr name="SUVScrollableView" format="reference"/>
+        <attr name="SUVOverlay" format="boolean"/>
+        <attr name="SUVClipPanel" format="boolean"/>
+        <attr name="SUVAnchorPoint" format="float"/>
+        <attr name="SUVBottomAnchorPoint" format="dimension"/>
+        <attr name="SUVViewPager" format="reference"/>
+        <attr name="SUVToolView" format="reference"/>
+        <attr name="SUVInitialState" format="enum">
+            <enum name="expanded" value="0"/>
+            <enum name="collapsed" value="1"/>
+            <enum name="anchored" value="2"/>
+            <enum name="hidden" value="3"/>
+        </attr>
+        <attr name="SUVScrollInterpolator" format="reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="PullToRefresh">
+
+        <!-- A drawable to use as the background of the Refreshable View -->
+        <attr name="ptrRefreshableViewBackground" format="reference|color"/>
+
+        <!-- A drawable to use as the background of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderBackground" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextColor" format="reference|color"/>
+
+        <!-- Text Color of the Header and Footer Loading Views Sub Header -->
+        <attr name="ptrHeaderSubTextColor" format="reference|color"/>
+
+        <!-- Mode of Pull-to-Refresh that should be used -->
+        <attr name="ptrMode">
+            <flag name="disabled" value="0x0"/>
+            <flag name="pullFromStart" value="0x1"/>
+            <flag name="pullFromEnd" value="0x2"/>
+            <flag name="both" value="0x3"/>
+            <flag name="manualOnly" value="0x4"/>
+
+            <!-- These last two are depreacted -->
+            <flag name="pullDownFromTop" value="0x1"/>
+            <flag name="pullUpFromBottom" value="0x2"/>
+        </attr>
+
+        <!-- Whether the Indicator overlay(s) should be used -->
+        <attr name="ptrShowIndicator" format="reference|boolean"/>
+
+        <!-- Drawable to use as Loading Indicator. Changes both Header and Footer. -->
+        <attr name="ptrDrawable" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Header View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableStart" format="reference"/>
+
+        <!-- Drawable to use as Loading Indicator in the Footer View. Overrides value set in ptrDrawable. -->
+        <attr name="ptrDrawableEnd" format="reference"/>
+
+        <!-- Whether Android's built-in Over Scroll should be utilised for Pull-to-Refresh. -->
+        <attr name="ptrOverScroll" format="reference|boolean"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views -->
+        <attr name="ptrHeaderTextAppearance" format="reference"/>
+
+        <!-- Base text color, typeface, size, and style for Header and Footer Loading Views Sub Header -->
+        <attr name="ptrSubHeaderTextAppearance" format="reference"/>
+
+        <!-- Style of Animation should be used displayed when pulling. -->
+        <attr name="ptrAnimationStyle">
+            <flag name="rotate" value="0x0"/>
+            <flag name="flip" value="0x1"/>
+        </attr>
+
+        <!-- Whether the user can scroll while the View is Refreshing -->
+        <attr name="ptrScrollingWhileRefreshingEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether PullToRefreshListView has it's extras enabled. This allows the user to be
+        	able to scroll while refreshing, and behaves better. It acheives this by adding
+        	Header and/or Footer Views to the ListView.
+        -->
+        <attr name="ptrListViewExtrasEnabled" format="reference|boolean"/>
+
+        <!--
+        	Whether the Drawable should be continually rotated as you pull. This only
+        	takes effect when using the 'Rotate' Animation Style.
+        -->
+        <attr name="ptrRotateDrawableWhilePulling" format="reference|boolean"/>
+
+        <!-- BELOW HERE ARE DEPRECEATED. DO NOT USE. -->
+        <attr name="ptrAdapterViewBackground" format="reference|color"/>
+        <attr name="ptrDrawableTop" format="reference"/>
+        <attr name="ptrDrawableBottom" format="reference"/>
+    </declare-styleable>
+
+    <!--CommonRelativeTextView-->
+    <declare-styleable name="CommonRelativeTextView">
+        <attr name="layout_first_text" format="string"/>
+        <attr name="layout_first_textColor" format="color"/>
+        <attr name="layout_first_textSize" format="dimension"/>
+        <attr name="layout_first_ems" format="integer"/>
+        <attr name="layout_first_background" format="color|reference"/>
+        <attr name="layout_first_drawleft" format="color|reference"/>
+        <attr name="layout_two_text" format="string"/>
+        <attr name="layout_two_text_singleline" format="boolean"/>
+        <attr name="layout_two_textColor" format="color"/>
+        <attr name="layout_two_textSize" format="dimension"/>
+        <attr name="layout_two_marginLeft" format="dimension"/>
+        <attr name="layout_two_marginTop" format="dimension"/>
+        <attr name="layout_two_alignParentRight" format="boolean"/>
+    </declare-styleable>
+
+    <!--CallBar-->
+    <declare-styleable name="CallBar">
+        <attr name="call_title" format="string"/>
+        <attr name="call_number" format="string"/>
+    </declare-styleable>
+
+    <!--PlateNumber-->
+    <declare-styleable name="Keyboard">
+        <attr name="xml" format="reference"/>
+    </declare-styleable>
+
+    <!--PlateNumberLayout-->
+    <declare-styleable name="PlateNumberLayout">
+        <attr name="layout_textSize" format="dimension"/>
+    </declare-styleable>
+
+    <!--NewPlateNumberLayout-->
+    <declare-styleable name="NewPlateNumberLayout">
+        <attr name="layout_new_plate_number_textsize" format="dimension"/>
+    </declare-styleable>
+
+    <!--TextRelativeLayout-->
+    <declare-styleable name="TextRelativeLayout">
+        <attr name="trl_left_text" format="string"/>
+        <attr name="trl_left_textColor" format="color"/>
+        <attr name="trl_left_textSize" format="dimension"/>
+        <attr name="trl_left_ems" format="integer"/>
+        <attr name="trl_left_background" format="color|reference"/>
+        <attr name="trl_left_drawleft" format="color|reference"/>
+        <attr name="trl_right_text" format="string"/>
+        <attr name="trl_right_text_singleline" format="boolean"/>
+        <attr name="trl_right_textColor" format="color"/>
+        <attr name="trl_right_textSize" format="dimension"/>
+        <attr name="trl_right_marginLeft" format="dimension"/>
+        <attr name="trl_right_marginTop" format="dimension"/>
+        <attr name="trl_right_alignParentRight" format="boolean"/>
+    </declare-styleable>
+</resources>

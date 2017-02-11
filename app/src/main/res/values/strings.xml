@@ -1,0 +1,446 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_add">添加</string>
+    <string name="app_edit">编辑</string>
+    <string name="app_delete">删除</string>
+    <string name="app_default">默认</string>
+
+    <!-- 主页 tabbar -->
+    <array name="main_tabbar_array">
+        <item>首页</item>
+        <item>汽车资讯</item>
+        <item>我的订单</item>
+        <item>会员中心</item>
+    </array>
+    <!--主页模块键值-->
+    <!--模块	键值-->
+    <!--新车销售	MOD_AUTOS-->
+    <!--新车特卖	MOD_SECKILL-->
+    <!--二手车	MOD_USERD_CAR-->
+    <!--保险	MOD_INSURANCE-->
+    <!--金融	MOD_FINANCE-->
+    <!--用品	MOD_ACCESSORY-->
+
+
+    <!--<string name="title_activity_me_settings">设置</string>-->
+
+    <!--<string name="title_activity_me_delivery_address">收货地址</string>-->
+    <!--<string name="title_activity_me_advice">意见反馈</string>-->
+    <!--<string name="title_activity_me_helpCenter">帮助中心</string>-->
+    <!--<string name="title_activity_me_about_hxqc">关于恒信汽车</string>-->
+    <!--<string name="title_activity_QA">常见问题</string>-->
+    <!--<string name="title_activity_me_about_us">关于我们</string>-->
+    <!--<string name="title_activity_me_message">消息管理</string>-->
+    <!--<string name="title_activity_me_edit_address">编辑地址</string>-->
+    <!--<string name="title_activity_me_order_detail">订单详情</string>-->
+    <!--<string name="title_activity_auto">整车</string>-->
+    <!--<string name="title_activity_filter">找车</string>-->
+    <!--<string name="title_activity_search">搜索</string>-->
+    <!--<string name="title_activity_common_detail">商品详情</string>-->
+    <!--<string name="title_activity_promotion_detail">活动车辆详情</string>-->
+    <!--<string name="title_activity_parameter">产品参数</string>-->
+    <!--<string name="title_activity_search_history">搜索历史</string>-->
+    <!--<string name="title_activity_atlas">图集</string>-->
+    <!--<string name="title_activity_event_detail">活动</string>-->
+    <!--<string name="title_activity_autolist">车辆列表</string>-->
+    <!--<string name="title_activity_promotion_queue_wait">排队中</string>-->
+    <!--<string name="title_activity_me_user_order">我的订单</string>-->
+    <!--<string name="title_activity_me_special_offer_order">自营订单</string>-->
+    <!--<string name="title_activity_me_personal_info">个人信息</string>-->
+    <!--<string name="third_shop_order">网上4S店订单</string>-->
+    <!--<string name="title_activity_me_express">订单追踪</string>-->
+    <!--<string name="title_activity_me_wish_list">我的关注</string>-->
+    <!--<string name="title_activity_me_user_comment">我的评论</string>-->
+    <!--<string name="title_activity_me_history">最近浏览</string>-->
+    <!--<string name="title_activity_me_refund">申请退款</string>-->
+    <!--<string name="title_activity_special_offer">电商自营</string>-->
+    <!--<string name="title_activity_insurance">保险</string>-->
+    <!--<string name="title_activity_financial">金融</string>-->
+
+    <!--<string name="title_activity_brand">电商自营</string>-->
+    <!--<string name="title_activity_main">主页</string>-->
+
+    <!--<string name="title_activity_me_add_address">新增地址</string>-->
+    <!--<string name="title_activity_me_advantage">恒信汽车官网</string>-->
+
+    <!--<string name="title_activity_application_refund">申请退款</string>-->
+    <!--<string name="title_activity_navigation">自提点导航</string>-->
+    <!--<string name="title_activity_loan_information">贷款信息</string>-->
+
+    <string name="service">客服</string>
+    <!-- activity的跳转信息 -->
+
+    <!-- 个人中心 -->
+
+    <string name="me_login">登 录</string>
+
+    <string name="me_real_name_hint">真实姓名</string>
+    <string name="me_birthday">出生日期</string>
+    <string name="me_male">男</string>
+    <string name="me_female">女</string>
+    <string name="me_secret">保密</string>
+    <string name="me_save">保 存</string>
+
+
+    <string name="me_version_check">版本更新</string>
+    <string name="me_cache_clear">清空缓存</string>
+    <string name="me_exit">退出登录</string>
+    <string name="me_has_new_version">有新版本</string>
+    <string name="me_is_new_version">已是最新版本</string>
+
+
+    <string name="me_local_upload">本地上传</string>
+    <string name="me_take_picture_upload">拍照上传</string>
+
+    <!--<string name="me_real_name_error">2–20个字符，可由中英文，字母组成</string>-->
+
+    <string name="me_version">Version</string>
+    <string name="me_upload_photo">上传图片</string>
+    <string name="me_weibo">官方微博</string>
+    <string name="me_advice_hint">请输入反馈意见</string>
+    <string name="me_advice_flow">流量问题</string>
+    <string name="me_advice_interface">界面建议</string>
+    <string name="me_advice_function">功能建议</string>
+    <string name="me_advice_operate">操作建议</string>
+    <string name="me_advice_new_need">新需求</string>
+    <string name="me_advice_other">其他问题</string>
+    <string name="me_advice_submit">提交</string>
+    <string name="me_advice_no_label">请选择意见类型</string>
+    <string name="me_advice_success">感谢您的反馈意见！</string>
+    <string name="me_advice_submitting">您的意见正在提交</string>
+
+    <string name="me_phone">电话：</string>
+    <string name="me_consignee_hint">收货人姓名</string>
+    <string name="me_mobile_hint">手机号码</string>
+    <string name="me_area">所在区域</string>
+    <string name="me_detail_address_hint">详细地址</string>
+    <string name="me_delete_address">您确定要删除吗？</string>
+    <string name="me_uncomment">待评论</string>
+    <string name="me_commented">已评论</string>
+    <string name="me_see_comment">查看评论</string>
+    <string name="me_emit_comment">发表评论</string>
+    <string name="me_submitting">正在提交,请稍等</string>
+    <string name="me_consignee_null">请输入收货人姓名</string>
+    <string name="me_area_hint">请填写所在区域</string>
+    <string name="me_detail_address_null">请输入2~30个字，不能输入非法字符</string>
+    <string name="me_detail_address_error">请输入2~30个字，可由中英文，数字和下划线组成</string>
+    <string name="me_deleting">正在删除，请稍等</string>
+    <string name="me_order_id">订单号：</string>
+    <string name="me_express_type">配送方式</string>
+    <string name="me_service_fee">上牌服务费</string>
+
+    <string name="pre_purchase_tax">购置税</string>
+    <string name="pre_car_tax">车船税</string>
+    <string name="traffic_insurance">交强险</string>
+
+    <string name="me_has_pay">已支付：</string>
+    <string name="me_to_pay">去付款</string>
+    <string name="me_online_all_pay">在线全款</string>
+    <string name="me_go_home_pay">上门收款</string>
+
+
+    <string name="me_cancel_order_confirm">订单取消后将无法恢复，您确定取消吗？</string>
+    <string name="me_cancel_reason">取消理由：</string>
+    <string name="me_off">关闭</string>
+    <string name="me_max_addresses_hint">最多保存8个地址</string>
+    <string name="me_cancel_reason_hint">请选择取消订单的理由</string>
+    <string name="me_info">完善信息</string>
+
+
+    <!--首页-->
+    <!-- 搜索 -->
+    <string name="search_hint">搜索</string>
+    <string name="clear_search_history">清空历史</string>
+    <string name="classify">分类</string>
+
+
+    <string name="buy_verify_pay_type_label">付款方式：</string>
+    <string name="buy_verify_insurance">办理保险</string>
+    <string name="buy_verify_insurance_label">办理保险：</string>
+    <string name="pay_type_installment">预付订金</string>
+    <string name="pay_type_off_line">分期付款</string>
+    <string name="license_service_label">恒信套餐：</string>
+
+    <string name="active_event">活动</string>
+    <!--特卖-->
+    <string name="special_offer_price">自营</string>
+    <string name="special_offer_cut">直降</string>
+    <string name="special_offer_deposit">订金</string>
+    <string name="special_offer_stock">库存</string>
+    <string name="promotion_queue_wait_time_string">您已经排队 %1$s 秒</string>
+    <!--车辆详情购买情况-->
+    <string name="buy_it_prepare">即将开始</string>
+    <string name="buy_it_now">立即购买</string>
+    <string name="buy_it_now_promotion">立即抢购</string>
+    <string name="temporarily_out_of_stock">到货通知</string>
+    <string name="promotion_sell_out">已抢光</string>
+    <!--到货通知-->
+    <string name="dialog_arrival_message">一旦商品到货，您将收到邮件、短信推送通知</string>
+    <string name="dialog_arrival_cellphone">手机号码</string>
+    <string name="dialog_arrival_email">邮箱地址</string>
+
+    <!--降价通知-->
+    <string name="dialog_price_cut_message">一旦商品在30日内降价，您将收到邮件、短信推送通知</string>
+    <string name="dialog_price_cut_price_1">价格低于</string>
+    <string name="dialog_price_cut_price_2">万元时通知我</string>
+    <string name="dialog_price_cut_cellphone">手机号码</string>
+    <string name="dialog_price_cut_email">邮箱地址</string>
+
+
+    <!--取消订单-->
+    <string name="label_tv_cancel">取消原因</string>
+    <string name="hint_memo_cancel">请输入取消原因</string>
+    <string name="notice_cancel_text">温馨提示：订单取消后将无法恢复，请输入取消原因后点击提交</string>
+    <string name="btn_cancel_commit">提交</string>
+
+    <!--搜索页面取消按钮-->
+    <string name="text_cancel_search">取消</string>
+
+    <string name="autodetail_is_promotion">该商品正在参加特卖活动</string>
+    <string name="auto_common_to_promotion">速速抢购</string>
+    <string name="title_activity_package_choose">选择用品</string>
+
+
+    <!--贷款资料view-->
+    <string name="loan_head_tips_notify">
+        温馨提示：请选择适合您的分期产品及银行机构，
+        在商城支付订金并完善信息后再上传您的个人资料。
+        完成订单后，您的专属客户经理会与您联系后续事宜。
+    </string>
+
+    <string name="title_activity_loan_bank_choose">金融机构</string>
+
+    <string name="clear_choose">清空选择</string>
+    <string name="current_price">优惠价：%1$s</string>
+    <string name="original_price">原价：%1$s</string>
+    <string name="goods_price">单价：</string>
+    <string name="goods_total_cost">小计：</string>
+    <string name="auto_package_number">确定</string>
+
+
+    <!--comment String-->
+    <string name="title_activity_insurance_counter">保险试算</string>
+    <string name="title_activity_CommentActivity">商品评价</string>
+    <string name="title_activity_send_comment">发表评论</string>
+    <string name="title_activity_send_append">追加评论</string>
+    <string name="title_activity_image_info">图片详情</string>
+    <string name="title_activity_my_comment_detail">评论详情</string>
+
+    <string name="fragment_description_image_info">评论和图集的图片预览</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="home_order_tips_view_text">您尚未登录，请登录账号后查看您的订单</string>
+    <string name="newsitem_service">恒信客服</string>
+    <string name="newsitem_promotion">活动消息</string>
+    <string name="title_activity_message_list">订单消息</string>
+    <string name="title_activity_my_message">我的消息</string>
+    <!--<string name="title_activity_amap_auto_sale">路线规划</string>-->
+
+
+    <!--充值-->
+    <string name="recharge_number">充值账号</string>
+    <string name="charge_number">充值金额</string>
+    <string name="charge_record">历史充值记录：</string>
+    <string name="empty_charge_phone">充值号码为空！</string>
+    <string name="empty_charge_number">请输入充值的金额！</string>
+    <string name="my_wallet_useful_balance">    可用现金余额：</string>
+    <string name="my_wallet_use_balance">花余额</string>
+    <string name="to_see_detail">查看明细</string>
+    <string name="my_wallet_useful_integral">可用积分：</string>
+    <string name="integral_rule">积分规则</string>
+    <string name="wallet_use_integral">花积分</string>
+    <string name="wallet_useful_coupon">可用优惠券：</string>
+    <string name="wallet_cent">分</string>
+    <string name="wallet_pice">张</string>
+    <string name="to_see_coupon_detail">查看优惠券</string>
+    <string name="month">月</string>
+    <string name="this_month_cost">本月消费</string>
+    <string name="get">获得</string>
+    <string name="score">积分</string>
+    <string name="usable_score">可用积分</string>
+    <string name="usable_balance">可用现金余额</string>
+    <string name="bill_total_get">累计得到：</string>
+    <string name="bill_total_cost">累计消费：</string>
+    <string name="my_coupon">我的优惠券</string>
+    <string name="login_or_register">登录/注册</string>
+    <string name="shopping_cart">购物车</string>
+    <string name="repair_appointment">修车预约</string>
+    <string name="emergency_rescue">紧急救援</string>
+    <string name="car_info">车辆信息</string>
+    <string name="menber_rule">会员规则</string>
+    <string name="brand_activity">品牌活动</string>
+    <string name="my_comment">我的评价</string>
+    <string name="my_service">在线客服</string>
+    <string name="choose_payment">选择支付方式</string>
+    <string name="total">合计：</string>
+    <string name="coupon_detail">优惠券详情</string>
+    <string name="coupon_description">优惠说明</string>
+    <string name="end_date">有效日期</string>
+    <string name="use_shop">使用门店</string>
+    <string name="user_tip">使用须知</string>
+
+    <!--实名认证-->
+    <string name="title_activity_real_name_authentication">设置支付密码</string>
+    <string name="text_real_name_label">姓名:</string>
+    <string name="text_real_name_hint">请输入真实姓名</string>
+    <string name="text_real_id_label">身份证:</string>
+    <string name="text_real_id_hint">请输入身份证号码</string>
+    <string name="text_real_code_label">验证码:</string>
+    <string name="text_real_code_hint">请输入验证码</string>
+    <string name="text_real_pwd_label">支付密码:</string>
+    <string name="text_real_pwd_notify">设置支付密码(由6位数字组成)</string>
+    <string name="text_real_pwd_confirm_label">确认密码:</string>
+    <string name="text_real_pwd_confirm_notify">确认密码与支付密码不一致</string>
+    <string name="text_real_bottom_notify">提示：为保障账户安全请输入真实的身份信息</string>
+
+
+    <string name="title_activity_quality_guarantee_ativity">查询整车质保</string>
+    <string name="title_activity_me_change_pay_password">修改支付密码</string>
+    <string name="title_activity_me_forget_pay_password">忘记支付密码</string>
+
+    <!--支付密码-->
+    <string name="pay_pwd_name">真实姓名:</string>
+    <string name="pay_pwd_name_hint">请输入真实姓名</string>
+    <string name="pay_pwd_id">身份证:</string>
+    <string name="pay_pwd_id_hint">请输入身份证号码</string>
+    <string name="pay_pwd_code">验证码:</string>
+    <string name="pay_pwd_code_hint">请输入验证码</string>
+    <string name="pay_pwd_next_step_btn">下一步</string>
+    <string name="pay_pwd_new_pwd">支付密码:</string>
+    <string name="pay_pwd_new_confirm_pwd">确认密码:</string>
+    <string name="pay_pwd_reset_pwd_finish">完成</string>
+    <string name="pay_pwd_origin_pwd">原支付密码:</string>
+    <string name="title_activity_order_refund">申请退款</string>
+    <string name="title_activity_order_cancel">取消订单</string>
+    <string name="empty_balance">抱歉，您暂无消费记录</string>
+    <string name="empty_score">抱歉，您暂无积分明细</string>
+
+    <!--违章及代办-->
+    <string name="title_activity_illegal_query">违章查询</string>
+    <string name="title_activity_illegal_confiscate">违章查缴</string>
+    <string name="title_activity_illegal_query_result">违章查询结果</string>
+    <string name="title_activity_illegal_detail">违章详情</string>
+    <string name="title_activity_illegal_process">违章处理</string>
+    <string name="title_activity_illegal_process_success">提交成功</string>
+    <string name="title_activity_my_illegal_order">我的订单</string>
+    <string name="title_activity_order_detail">订单详情</string>
+    <string name="title_activity_illegal_picture">违章照片</string>
+    <string name="title_activity_payment_methods">支付方式</string>
+    <string name="title_activity_payment_success">支付成功</string>
+    <string name="title_activity_cancel_order">取消订单</string>
+    <string name="activity_vehicle_inspection">车辆年审</string>
+    <string name="activity_drivers_license_change">驾驶证换证</string>
+    <string name="title_activity_seckill_order_detail">订单详情</string>
+    <string name="title_activity_carwash_order_detail">订单详情</string>
+    <string name="title_activity_accessory_order_detail">订单详情</string>
+    <string name="title_activity_invoice_info">发票信息</string>
+    <string name="title_activity_maintain4_sshop_order_details">订单详情</string>
+    <!--<string name="illegal_explain">用户使用恒信汽车一站式服务平台“违章查缴”入口查询、代缴费业务，在用户无时间、无精力、无分等无法亲自处理违章的情况下，在线即可一键处理。违章代缴代办由合作的第三方提供线下服务，业务缴款按每条收取一定的服务费。相关咨询请致电客服：400-1868-555</string>-->
+    <string name="illegal_explain">用户可通过“违章查缴”入口在线查询、缴纳违章罚款，在无时间、无精力等情况下，在线即可一键处理。违章代缴代办由合作的第三方提供下服务，业务缴款按每条收取一定的服务费。</string>
+    <!--<string name="illegal_explain">
+        1.违章数据由武汉交管局提供，数据精准、权威，可查看车辆违章照片和违章历史记录，您只需在线填写基本信息并完成行驶证的上传，一键即可处理违章；
+        2.该业务暂不支持客户自助式处理违章；
+        3.业务订单支付成功后，不能退办该业务，我们将尽快为您办理完成；
+        4.违章查缴处理由合作的第三方提供线下服务，业务缴款时按每条收取一定的服务费。
+
+
+        如有其它问题或建议，请致电客服
+        客服电话：400-1868-555
+    </string>-->
+
+    <string name="sample_photo">查看范例</string>
+    <string name="comsumer_detail">消费记录</string>
+    <string name="my_used_auto">我的二手车</string>
+    <string name="input_your_advice">请输入您的宝贵意见</string>
+    <string name="input_your_phone_number">留下您的手机号码，方便我们联系您</string>
+    <string name="choose_feedback_type">选择您需要投诉的类型</string>
+    <string name="title_activity_auto_info_detail">资讯详情</string>
+    <string name="title_activity_send_comment_hy">发表评价</string>
+    <string name="title_activity_public_comment">口碑评价</string>
+    <string name="title_activity_user_comment_hy">用户评价</string>
+    <string name="title_activity_all_comment">全部评价</string>
+    <string name="title_activity_comment_detail">评论详情</string>
+    <string name="title_activity_my_comment">我的评价</string>
+    <string name="title_activity_reset_user_info">会员资料修改</string>
+    <string name="title_activity_bill_detail">消费详情</string>
+    <string name="title_activity_my_bill_list">我的账单</string>
+    <string name="title_activity_recharge_pay">充值方式</string>
+    <string name="evaluation">发表评价...</string>
+    <string name="title_activity_qr_pay_confirm">确认付款信息</string>
+    <string name="title_activity_qr_pay_charge">选择支付方式</string>
+    <string name="title_activity_qr_pay_finish">支付成功</string>
+    <!-- 洗车店区域
+        // 江岸区 武昌区 江汉区 硚口区 汉阳区 青山区 洪山区 东西湖区 汉南区 蔡甸区 江夏区 黄陂区 新洲区 经济开发区
+-->
+    <string-array name="carWashCondition">
+        <item>全部城区</item>
+        <item>江岸区</item>
+        <item>武昌区</item>
+        <item>江汉区</item>
+        <item>硚口区</item>
+        <item>汉阳区</item>
+        <item>青山区</item>
+        <item>洪山区</item>
+        <item>东西湖区</item>
+        <item>汉南区</item>
+        <item>蔡甸区</item>
+        <item>江夏区</item>
+        <item>黄陂区</item>
+        <item>新洲区</item>
+        <item>经济开发区</item>
+    </string-array>
+
+    <string name="scan_qr_code">扫描二维码，关注恒信车管家微信公众号</string>
+    <string name="menber_right">会员手册</string>
+    <string name="test_rn_ip">测试ip</string>
+    <string name="title_activity_evModelSubsidy">车型及补贴资料</string>
+    <string name="title_activity_evAuto">新能源电动车</string>
+    <string name="title_activity_evSandsubSidieDetail">补贴详情</string>
+    <string name="title_activity_ev_recommend">爆款推荐</string>
+    <string name="title_activity_ev_newsInfo">最新资讯</string>
+    <string name="title_activity_around_service">周边服务</string>
+    <string name="title_activity_IllegalQueryAndAgency">违章查缴及代办</string>
+    <string name="title_activity_traffic">今日限行</string>
+    <string name="title_activity_washCarShop">洗车店</string>
+    <string name="total_charge">累计充值金额：</string>
+    <string name="total_cost">累计消费金额：</string>
+    <string name="account_balance">账\t 户\t 金\t 额：</string>
+    <string name="total_charge_score">累计得到积分：</string>
+    <string name="total_cost_score">累计消费积分：</string>
+    <string name="info_complaint_watch_out"><Data><![CDATA[<p>我们收到您的投诉会在2小时内与您联系<br/>如有疑问请拨打：<font color="#e02c36">400-1868-555</font></p> ]]> </Data></string>
+    <string name="title_activity_recharge">充值</string>
+    <string name="title_activity_my_wallet">我的钱包</string>
+    <string name="title_activity_complaint">客户投诉</string>
+    <string name="evaluation_title">评论</string>
+    <string name="please_input_evaluation">请输入评价内容</string>
+    <string name="title_activity_recharge_success">充值成功</string>
+    <string name="title_activity_wash_car">洗车</string>
+    <string name="title_activity_wash_car_comment_list">洗车列表</string>
+    <string name="title_activity_wash_car_pay_finish">支付完成</string>
+    <string name="auto_info_comment_send_succed">发布评论成功</string>
+    <string name="info_comment_empty">评论内容不能为空</string>
+    <string name="info_comment_length">评论内容为10-200字</string>
+    <string name="qr_home_pay_order_id">工单号</string>
+    <string name="qr_home_pay_shop_name">店铺名称</string>
+    <string name="qr_home_pay_should">应付总额</string>
+    <string name="qr_home_pay_amount_input">输入消费总额</string>
+    <string name="qr_home_pay_confirm">确定买单</string>
+    <string name="title_activity_auto_calendar">新车日历</string>
+    <string name="title_activity_refund_info">退款申请</string>
+
+    <string name="waring_choose_feedback_option">请选择投诉类型</string>
+    <string name="query_score">积分查询</string>
+
+
+    <string name="edit_text_digits">qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM0123456789</string>
+
+    <string name="alipay_refund_info">由于支付宝付款后超过三个月不能退款，因此退款需要到店验证后由店铺线下退款，给您带来的不便敬请谅解，如有疑问请致电：</string>
+
+    <!--六年内免检（免检费用为100时）付款时提示语如下-->
+    <string name="vehicles_in_date">支付成功后您收到一条提醒短信，用于填写顺丰快递单使用，稍后我司工作人员会致电和您预约上门取件相关事宜！</string>
+    <!--六年外年审付款（年审费用为350时）是提示语如下-->
+    <string name="vehicles_out_date">支付成功后，我司工作人员会致电和您预约办理业务的时间、地点，请您注意接听来电。如有疑问，请致电13476195625！</string>
+
+</resources>

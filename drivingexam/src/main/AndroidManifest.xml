@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hxqc.mall.drivingexam">
+
+    <application android:allowBackup="false">
+
+
+        <!--驾考首页-->
+        <activity
+            android:name=".ui.homepage.ExamHomePageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--模拟考试-->
+        <activity
+            android:name=".ui.doexam.ExamActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--选择科目-->
+        <activity
+            android:name=".ui.ChooseKemuActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--学车帮你过-->
+        <activity
+            android:name=".ui.helpyoupass.HelpYouPassActivity_old"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--学车帮你过-->
+        <activity
+            android:name=".ui.helpyoupass.HelpYouPassActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+
+        <!--图文详情-->
+        <activity
+            android:name=".ui.helpyoupass.picturedescribedetail.PictureDescribeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--视频管理-->
+        <activity
+            android:name=".ui.helpyoupass.picturedescribedetail.MediaManageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+
+        <!--视频全屏-->
+        <activity
+            android:name=".ui.helpyoupass.picturedescribedetail.VideoviewFullscreenActivity"
+            android:screenOrientation="landscape"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--灯光语音-->
+        <activity
+            android:name=".ui.helpyoupass.lightandvoice.LightMainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+
+        <!--学车技巧-->
+        <activity
+            android:name=".ui.helpyoupass.drivingskill.DrivingExperienceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--得分-->
+        <activity
+            android:name=".ui.ScoreActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+
+        <activity
+            android:name=".ui.StartExamActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <activity
+            android:name=".ui.WrongSubjectSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!--历史成绩-->
+        <activity
+            android:name=".ui.recordhistory.RecordHistoryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+
+    </application>
+
+</manifest>

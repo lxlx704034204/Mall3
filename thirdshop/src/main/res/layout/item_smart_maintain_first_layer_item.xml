@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/maintenance_title"
+        style="@style/RedText16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="基础保养方案推荐" />
+
+    <TextView
+        android:id="@+id/maintain_second_title"
+        style="@style/GrayText12"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="5dp"
+        android:text="根据您选择的保养方案，平台自动为您推荐保养产品"/>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="@dimen/margin_16"
+        android:layout_marginBottom="5dp"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/normal_deep_bg"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp">
+
+                <TextView
+                    android:id="@+id/number"
+                    style="@style/BlackText14"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    tools:text="1."/>
+
+                <TextView
+                    android:id="@+id/name"
+                    style="@style/BlackText14"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/number"
+                    tools:text="更换机油、机滤发阿萨德安大厦的啊实打实"
+                    android:maxLength="14"/>
+
+                <RelativeLayout
+                    android:id="@+id/question"
+                    android:layout_width="30dp"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/name">
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/ic_help"/>
+                </RelativeLayout>
+
+
+                <TextView
+                    android:id="@+id/delete"
+                    style="@style/OrangeText14"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="@dimen/margin_16"
+                    android:paddingRight="@dimen/margin_16"
+                    android:paddingTop="12dp"
+                    android:text="删除"
+                    />
+
+                <TextView
+                    android:id="@+id/change"
+                    style="@style/OrangeText14"
+                    android:layout_toLeftOf="@id/delete"
+                    android:paddingBottom="12dp"
+                    android:paddingLeft="@dimen/margin_16"
+                    android:paddingRight="@dimen/margin_16"
+                    android:paddingTop="12dp"
+                    android:text="更换"/>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

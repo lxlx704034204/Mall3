@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        android:id="@+id/item_introduce_tab"
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_image"
+        tab:tabLabel="图文介绍"
+        tab:tabTagDrawable="@drawable/ic_cbb_arrow_up">
+
+    <RelativeLayout android:id="@+id/content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/item_introduce_tab"
+        android:orientation="vertical"
+        android:tag="content">
+
+
+
+        <WebView
+            android:id="@+id/item_introduce_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:scaleType="fitStart"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shadow"/>
+
+        <ImageView
+            android:id="@+id/iv_item_detail_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/loading_round"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+</com.hxqc.mall.views.auto.AutoDetailTabView>
+
+</RelativeLayout>

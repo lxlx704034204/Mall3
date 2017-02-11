@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="@color/white"
+              tools:context="com.hxqc.pay.activity.PickupPlaceActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="@color/white"
+        >
+
+        <com.amap.api.maps2d.MapView
+            android:id="@+id/pickup_map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+        <ImageButton
+            android:id="@+id/ib_re_loc"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="10dip"
+            android:layout_marginBottom="12dp"
+            android:background="@null"
+            android:src="@drawable/ic_mapfragemtn_location"
+            />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3">
+
+        <ListView
+            android:id="@+id/lv_nearby_position"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:cacheColorHint="@color/white"/>
+
+        <com.hxqc.mall.core.api.RequestFailView
+            android:id="@+id/pkpp_fail_notice_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            app:emptyDescription="未获取到信息"
+            />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

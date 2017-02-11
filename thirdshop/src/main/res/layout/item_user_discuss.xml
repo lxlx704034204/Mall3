@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_img"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_coupon_empty" />
+
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_grade_gv"
+        android:layout_alignTop="@+id/user_img"
+        android:layout_marginTop="2dp"
+        android:layout_toRightOf="@+id/user_img"
+        android:text="昵称"
+        android:textColor="#555"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/grade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_below="@+id/user_name"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/user_img"
+        android:text="评分："
+        android:textColor="#999"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/grade_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/grade"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/grade"
+        android:text="5.0分"
+        android:textColor="@color/text_color_orange"
+        android:textSize="12sp" />
+
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/grade"
+        android:layout_below="@+id/user_name"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="18dp"
+        android:text="2014-11-11"
+        android:textColor="#999"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/user_name"
+        android:layout_below="@+id/grade"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@+id/user_img"
+        android:lineSpacingExtra="1.5dp"
+        android:textColor="#666"
+        android:textSize="13sp" />
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="100dp"
+        android:layout_height="0dp"
+        android:layout_centerHorizontal="true" />
+
+
+    <com.hxqc.widget.GridViewNoSlide
+        android:id="@+id/user_grade_gv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/divide"
+        android:layout_alignRight="@+id/divide"
+        android:layout_below="@+id/content"
+        android:layout_marginBottom="10dp"
+        android:clipToPadding="false"
+        android:drawSelectorOnTop="true"
+        android:horizontalSpacing="5dp"
+        android:listSelector="#00000000"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="5dp" />
+
+
+</RelativeLayout>

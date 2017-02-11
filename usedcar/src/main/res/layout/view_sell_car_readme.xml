@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                tools:ignore="UnusedResources">
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/BlackText14"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:text="车主自述" />
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="12dp"
+        android:layout_height="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/normal_margin_big_16"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_editic" />
+
+
+    <EditText
+        android:id="@+id/input"
+        style="@style/BlackText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/text"
+        android:layout_marginLeft="116dp"
+        android:layout_marginRight="10dp"
+        android:layout_toLeftOf="@+id/icon"
+        android:background="@null"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:gravity="top"
+        android:hint="请填写车况，维修保养记录等信息"
+        android:inputType="none"
+        android:maxLength="500"
+        android:maxLines="20"
+        android:minLines="5"
+        android:textColorHint="@color/straight_matter_and_secondary_text" />
+
+</RelativeLayout>

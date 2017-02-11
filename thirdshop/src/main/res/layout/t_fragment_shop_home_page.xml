@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxqc.mall.thirdshop.views.CustomScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none">
+
+    <android.support.v7.widget.LinearLayoutCompat xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shop_home_page_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        app:divider="@drawable/t_bg_item_shadow"
+        app:showDividers="middle">
+
+        <com.hxqc.mall.thirdshop.views.PromotionsView
+            android:id="@+id/promotions_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.hxqc.mall.thirdshop.views.MainAutoView
+            android:id="@+id/main_auto_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.hxqc.mall.thirdshop.views.MainSaleGridView
+            android:id="@+id/main_sale_grid_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <com.hxqc.mall.thirdshop.views.GoldenSellersView
+            android:id="@+id/golden_sellers_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.hxqc.mall.thirdshop.maintenance.views.AdvisoryListView
+            android:id="@+id/advisory_answer_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <com.hxqc.mall.thirdshop.views.ShopAddressView
+            android:id="@+id/shop_address_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.v7.widget.LinearLayoutCompat>
+</com.hxqc.mall.thirdshop.views.CustomScrollView>
+

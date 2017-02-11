@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_shop_success" />
+
+        <TextView
+            style="@style/BlackText18"
+            android:layout_marginTop="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提交成功 等待工作人员确认" />
+
+        <Button
+            android:id="@+id/illegal_processing_commit"
+            style="@style/btn_orange"
+            android:layout_width="180dp"
+            android:layout_marginTop="16dp"
+            android:text="完成" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:background="@color/express_background"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            style="@style/GrayText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="提示:" />
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="5dp"
+            android:text="1、在平台下单后,请勿自行再次缴纳,否则由此造成重复缴纳的损失将由您自己承担;" />
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="5dp"
+            android:text="2、下单后工作人员将需要5-10分钟确认您的订单,确认成功即可在线支付,请耐心等待;" />
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:lineSpacingExtra="5dp"
+            android:text="3、所有订单在线确认时间为工作日9:00-18:00,非工作时段、国家法定节假日订单确认将在工作时间内及时完成。" />
+    </LinearLayout>
+
+
+</RelativeLayout>

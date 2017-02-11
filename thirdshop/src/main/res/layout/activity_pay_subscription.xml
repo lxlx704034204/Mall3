@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/tag_background"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/GreenText18"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_marginTop="@dimen/normal_margin_big_16"
+                android:text="订单提交成功，请您尽快支付订金" />
+
+            <TextView
+                style="@style/GrayText12"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_marginTop="@dimen/normal_margin_big_16"
+                android:drawableLeft="@drawable/icon_number"
+                android:drawablePadding="@dimen/normal_margin_small_8"
+                android:text="预付订金，如线下不能成功交易，线下立退订金" />
+
+            <View
+                style="@style/UnderLine"
+                android:layout_marginTop="@dimen/normal_margin_big_16" />
+
+            <com.hxqc.widget.ListViewNoSlide
+                android:id="@+id/order_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/divider"
+                android:dividerHeight="1px" />
+
+            <View style="@style/UnderLine" />
+
+            <com.hxqc.mall.payment.view.PaymentTypeChoice
+                android:id="@+id/payment_type_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

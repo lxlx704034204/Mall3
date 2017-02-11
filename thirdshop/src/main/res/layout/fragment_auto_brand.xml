@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hxqc.mall.core.api.RequestFailView xmlns:auto="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/auto_brand_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+    <com.hxqc.widget.PinnedHeaderExpandableListView
+        android:id="@+id/auto_brand_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        android:scrollbarAlwaysDrawHorizontalTrack="false" />
+
+    <com.hxqc.mall.core.views.SideBar
+        android:id="@+id/SideBar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp" />
+
+
+</RelativeLayout>

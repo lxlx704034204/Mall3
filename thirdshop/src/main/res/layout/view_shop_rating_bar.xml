@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="16dp"
+    android:gravity="center">
+
+    <TextView
+        style="@style/GrayText14"
+        android:layout_gravity="center_vertical"
+        android:gravity="center_vertical"
+        android:text="评价: " />
+
+    <RatingBar
+        android:id="@+id/rating_star"
+        android:layout_width="wrap_content"
+        android:layout_height="16dp"
+        android:clickable="false"
+        android:focusable="false"
+        android:isIndicator="true"
+        android:progressDrawable="@drawable/shop_rating_bar"
+        android:rating="4.5"
+        android:stepSize="0.5" />
+
+    <TextView
+        android:id="@+id/rating_score"
+        style="@style/OrangeText12"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="6dp"
+        android:gravity="center_vertical"
+        tools:text="4.65" />
+</LinearLayout>

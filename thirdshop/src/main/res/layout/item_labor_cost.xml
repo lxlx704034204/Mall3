@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="280dp"
+    android:layout_height="48dp">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/OrangeText12"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        tools:text="空调管路清洗" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="match_parent"
+        android:background="@color/tag_background" />
+
+    <TextView
+        android:id="@+id/cost"
+        style="@style/RedText14"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:paddingLeft="40dp"
+        tools:text="¥ 275.00" />
+</LinearLayout>

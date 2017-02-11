@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_box"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_12"
+        android:paddingLeft="@dimen/margin_12"
+        android:paddingTop="@dimen/margin_12">
+
+        <EditText
+            android:id="@+id/phone_number_et"
+            style="@style/BlackText16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="请输入充值账号"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:lines="1"
+            android:textColorHint="@color/Gray_yjf" />
+
+        <LinearLayout
+            android:layout_width="30dp"
+            android:id="@+id/arrow_container"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical|right"
+            android:paddingRight="@dimen/margin_12">
+
+            <ImageView
+                android:id="@+id/arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_cbb_arrow" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_container"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/bg_white_box"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_12"
+        android:visibility="invisible">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/charge_record" />
+
+        <ListView
+            android:id="@+id/charge_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:divider="@null" />
+    </LinearLayout>
+</LinearLayout>

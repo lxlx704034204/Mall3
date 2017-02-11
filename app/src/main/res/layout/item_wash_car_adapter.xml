@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/layout_dividing_line"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_16">
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/BlackText16"
+            tools:text="方法方法"
+            android:layout_centerVertical="true"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/button_pay"-->
+            <!--style="@style/btn_border"-->
+            <!--android:layout_width="80dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:text="支付"-->
+            <!--android:layout_alignParentRight="true"/>-->
+
+        <TextView
+            android:id="@+id/money"
+            style="@style/RedText16"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_16"
+            tools:text="方法方法"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/state_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="15.5dp"
+        android:paddingTop="18dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/state_complete_title"
+            style="@style/OrangeText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="添加车型信息后平台才能为您提供更优质的服务" />
+
+        <Button
+            android:id="@+id/state_complete_btn"
+            style="@style/btn_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/state_complete_title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:text="去添加"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/state_is_complete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:paddingBottom="15.5dp"
+        android:paddingLeft="22dp"
+        android:paddingRight="16dp"
+        android:paddingTop="18dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/state_auto_img"
+            android:layout_width="@dimen/app_item_auto_image_height_55"
+            android:layout_height="@dimen/app_item_auto_image_height_55"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_normal" />
+
+        <TextView
+            android:id="@+id/state_auto_content"
+            style="@style/BlackText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="19.5dp"
+            android:layout_toRightOf="@id/state_auto_img"
+            android:drawablePadding="41dp"
+            android:drawableRight="@drawable/ic_list_arrow"
+            android:text="奔驰E260 2015款 200 L 运动型 200 L运动型  " />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

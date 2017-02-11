@@ -1,0 +1,125 @@
+<resources>
+
+
+    <style name="AppRecycler" parent="AppThemeBase">
+        <item name="android:listDivider">@drawable/bg_package_line</item>
+        <item name="android:dividerHeight">50dp</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="StartAppTheme" parent="AppThemeBase.ToolBar">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!--c车辆详情的label-->
+    <style name="auto_detail_label" parent="RedText16">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TabText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/cursor_orange</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+    </style>
+
+    <style name="item_auto_data_price">
+        <item name="android:layout_width">80dp</item>
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 汽车详情选择按钮-->
+    <style name="check_orange">
+        <item name="android:background">@drawable/bg_pay_checkbox</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/textcolor_auto_verify_pay_check</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:button">@null</item>
+    </style>
+
+    <!-- 汽车详情选择按钮-->
+    <style name="check_orange_one">
+        <item name="android:background">@drawable/bg_pay_checkbox</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@drawable/textcolor_auto_verify_pay_check</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/item_padding_16</item>
+        <item name="android:paddingRight">@dimen/item_padding_16</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:button">@null</item>
+    </style>
+    <!--action bar 输入框-->
+    <style name="toolbar_edit_text">
+        <item name="android:layout_width">192dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/input_search</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:hint">@string/search_hint</item>
+        <item name="android:imeOptions">actionSearch</item>
+        <item name="android:inputType">text</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <!--意见反馈的checkbox-->
+    <style name="AdviceCheckBox">
+        <item name="android:layout_width">@dimen/advice_checkbox_width_106</item>
+        <item name="android:layout_height">@dimen/advice_checkbox_height_40</item>
+        <item name="android:background">@drawable/radio_btn_advice</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/radio_btn_advice_text</item>
+        <item name="android:textSize">@dimen/title_text_size_16</item>
+    </style>
+
+    <!--套餐详情-->
+    <style name="item_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!--comment style-->
+
+    <style name="roomRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/room_rating_bar</item>
+        <item name="android:disabledAlpha">1</item>
+        <item name="android:minHeight">18dip</item>
+        <item name="android:maxHeight">18dip</item>
+    </style>
+
+    <style name="list_itemRatingBar" parent="@android:style/Widget.RatingBar">
+        <item name="android:progressDrawable">@drawable/list_item_rating_bar</item>
+        <item name="android:disabledAlpha">1</item>
+        <item name="android:minHeight">16dip</item>
+        <item name="android:maxHeight">16dip</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/text_color_orange</item>
+        <item name="tabSelectedTextColor">@color/text_color_orange</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabBackground">@color/order_tip_gray</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:padding">0dp</item>
+    </style>
+    <!--  这个是加入的代码 -->
+
+    <style name="MenuPopupWindow" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in_anim</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out_anim</item>
+    </style>
+    <style name="WriteEvaluationPopWindow" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/bottom_in_anim_1</item>
+        <item name="android:windowExitAnimation">@anim/bottom_out_anim_2</item>
+    </style>
+
+</resources>

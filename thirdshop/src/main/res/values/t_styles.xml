@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--第三方店铺style-->
+    <dimen name="golden_seller_list_item_height">98dp</dimen>
+    <dimen name="golden_seller_list_item_width">200dp</dimen>
+    <dimen name="golden_seller_list_item_padding_6">6dp</dimen>
+    <dimen name="golden_seller_list_item_padding_10">10dp</dimen>
+    <dimen name="golden_seller_list_item_icon_height">78dp</dimen>
+    <dimen name="main_series_column_width">5dp</dimen>
+    <dimen name="main_series_item_text_width">90dp</dimen>
+    <dimen name="main_series_item_text_height">30dp</dimen>
+    <dimen name="main_series_item_text_padding">6dp</dimen>
+    <dimen name="main_series_item_text_margin">8dp</dimen>
+    <dimen name="promotion_item_padding_10">10dp</dimen>
+    <dimen name="promotion_item_padding_6">6dp</dimen>
+    <dimen name="promotion_item_margin_10">10dp</dimen>
+    <dimen name="promotion_pic_height">60dp</dimen>
+    <dimen name="promotion_pic_width">100dp</dimen>
+
+    <dimen name="normal_padding_16">16dp</dimen>
+    <dimen name="normal_size_5">5dp</dimen>
+
+    <dimen name="golden_list_height">113dp</dimen>
+    <dimen name="btn_width_60">60dp</dimen>
+    <dimen name="btn_height_30">30dp</dimen>
+    <dimen name="btn_height_35">35dp</dimen>
+
+
+    <!--促销 咨询 分割线-->
+    <style name="SalesRecycler" parent="AppThemeBase">
+        <item name="android:listDivider">@drawable/line</item>
+        <item name="android:dividerHeight">1dp</item>
+        <item name="android:showDividers">middle</item>
+    </style>
+
+    <style name="searchSpinnerStyle" parent="android:Widget.Holo.DropDownItem.Spinner">
+
+
+    </style>
+</resources>

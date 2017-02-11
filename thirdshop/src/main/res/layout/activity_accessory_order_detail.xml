@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/toolbar_background">
+
+        <TextView
+            android:id="@+id/menu"
+            style="@style/WhiteText14"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/normal_margin_big_16"
+            android:paddingRight="@dimen/normal_margin_small_8"
+            android:text="取消订单"
+            android:visibility="gone" />
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:paddingBottom="49dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/order_id"
+                style="@style/BlackText16"
+                android:layout_height="44dp"
+                android:layout_marginLeft="@dimen/normal_padding_big_16"
+                android:gravity="center_vertical"
+                android:textStyle="bold"
+                tools:text="订单号：568589620174584556" />
+
+            <View style="@style/UnderLine" />
+
+            <com.hxqc.mall.thirdshop.accessory.views.ShopInOrder
+                android:id="@+id/shop_in_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:toProductDetail="true" />
+
+            <LinearLayout
+                android:id="@+id/shop_address"
+                android:layout_width="match_parent"
+                android:layout_height="55dp">
+
+                <TextView
+                    android:id="@+id/shop_address_title"
+                    style="@style/BlackText14"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/normal_padding_big_16"
+                    android:layout_marginRight="@dimen/normal_margin_big_16"
+                    android:text="配送门店" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/order_shop_address_text"
+                    style="@style/OrangeText14"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    tools:text="武汉星凯凯迪拉克感觉染色和" />
+
+                <ImageView
+                    android:layout_width="@dimen/icon_size_16"
+                    android:layout_height="@dimen/nav_icon_height_23"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/normal_padding_big_16"
+                    android:src="@drawable/ic_home_add" />
+            </LinearLayout>
+
+            <View style="@style/UnderLine" />
+
+            <com.hxqc.mall.thirdshop.accessory.views.OrderDetailItem
+                android:id="@+id/order_contact_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="联系人信息" />
+
+            <com.hxqc.mall.thirdshop.accessory.views.OrderDetailItem
+                android:id="@+id/order_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="支付方式" />
+
+            <com.hxqc.mall.thirdshop.accessory.views.OrderDetailItem
+                android:id="@+id/order_transaction_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="交易单号" />
+
+            <com.hxqc.mall.thirdshop.accessory.views.OrderDetailItem
+                android:id="@+id/order_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="订单状态" />
+
+            <com.hxqc.mall.thirdshop.accessory.views.OrderDetailItem
+                android:id="@+id/order_refund_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="退款状态" />
+
+            <com.hxqc.mall.thirdshop.accessory.views.OrderDetailItem
+                android:id="@+id/order_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:leftText="下单时间" />
+        </LinearLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <View style="@style/UnderLine" />
+
+        <Button
+            android:id="@+id/order_to_pay"
+            style="@style/btn_orange"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_marginTop="2dp"
+            android:text="去付款" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/btn_orange"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_marginTop="2dp"
+            android:text="删除订单" />
+
+        <TextView
+            android:id="@+id/subscription"
+            style="@style/RedText14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_padding_big_16"
+            tools:text="订金：¥ 99.00" />
+    </RelativeLayout>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone" />
+</RelativeLayout>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/poplayout"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/wallet_bottom_menu_window_height"
+              android:background="@color/divider"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_maintence"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_padding_6"
+            android:layout_marginRight="@dimen/item_padding_6"
+            android:src="@drawable/icon_baoyang" />
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/normal_maintenance" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_arrow" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/item_4s_shop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginBottom="@dimen/dp_10"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/dp_10">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_padding_6"
+            android:layout_marginRight="@dimen/item_padding_6"
+            android:src="@drawable/icon_4s" />
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="4S店网上商城" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_list_arrow" />
+    </LinearLayout>
+</LinearLayout>

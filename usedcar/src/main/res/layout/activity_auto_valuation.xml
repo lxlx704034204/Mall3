@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary" />
+
+        <TextView
+            style="@style/OrangeText14"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="#FDF7E9"
+            android:gravity="center"
+            android:text="@string/valuation_hint" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/brand_model"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_marginTop="@dimen/normal_margin_big_16"
+            android:drawableRight="@drawable/ic_list_arrow"
+            android:focusable="false"
+            android:hint="@string/valuation_brand_model"
+            android:inputType="none"
+            android:maxLines="1" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/licensing_date"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:drawableRight="@drawable/ic_list_arrow"
+            android:focusable="false"
+            android:hint="@string/valuation_first_on_card"
+            android:inputType="none" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/range"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:hint="@string/valuation_range"
+            android:inputType="numberDecimal"
+            android:maxLength="5"
+            android:maxLines="1" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/city"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:drawableRight="@drawable/ic_list_arrow"
+            android:focusable="false"
+            android:hint="@string/valuation_city"
+            android:inputType="none" />
+
+        <Button
+            android:id="@+id/start"
+            style="@style/btn_vermilion"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_marginTop="@dimen/setting_bottom_button_margin_top_40"
+            android:text="开始估价" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/right"
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+
+</android.support.v4.widget.DrawerLayout>

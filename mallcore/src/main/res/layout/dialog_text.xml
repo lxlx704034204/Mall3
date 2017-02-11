@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:padding="@dimen/dialog_padding_24">
+    <TextView
+        android:id="@+id/title"
+        style="@style/BlackText16"
+        android:text="@string/app_hint"
+        android:textStyle="bold" />
+    <FrameLayout
+        android:id="@+id/content_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_marginTop="@dimen/margin_16">
+        <TextView
+            android:id="@+id/content_text"
+            style="@style/GrayText16"
+            android:lineSpacingExtra="@dimen/dialog_text_line_spacing_extra_10" />
+    </FrameLayout>
+</RelativeLayout>

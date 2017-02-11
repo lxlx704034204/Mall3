@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="133dp"
+              android:layout_height="wrap_content"
+              android:background="#00000000"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/iv_p_img"
+        android:layout_width="125dp"
+        android:layout_height="72dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_p_title"
+        style="@style/GrayText12"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end"
+        android:lines="2"
+        android:maxLines="2"
+        tools:text="长城润滑油 FD-2 汽车 防冻液 冷却液 4L -35℃ 旗舰店"/>
+
+    <TextView
+        android:id="@+id/tv_p_amount"
+        style="@style/RedText12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        tools:text="¥89元"/>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="54dp">
+
+    <ImageView
+        android:id="@+id/pay_icon"
+        android:layout_width="@dimen/icon_size_32"
+        android:layout_height="@dimen/icon_size_32"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:src="@drawable/pic_normal" />
+
+    <TextView
+        android:id="@+id/payment_type"
+        style="@style/BlackText14"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="@dimen/normal_margin_small_8"
+        tools:text="余额结算" />
+
+    <TextView
+        android:id="@+id/balance"
+        style="@style/GrayText14"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="32dp"
+        tools:text="余额：¥ 2000" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+    <ImageView
+        android:id="@+id/select_payment"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginRight="@dimen/normal_margin_big_16"
+        android:src="@drawable/radiobutton_normal"/>
+</LinearLayout>
+

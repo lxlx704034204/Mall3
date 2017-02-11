@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:paddingBottom="8dp"
+              android:paddingLeft="@dimen/item_padding_16"
+              android:paddingRight="@dimen/item_padding_16"
+              android:paddingStart="@dimen/item_padding_16"
+              android:paddingTop="8dp">
+
+    <TextView
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/license_service_label"
+        android:textStyle="bold"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <RelativeLayout android:id="@+id/simple_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/transaction_simpleness"
+                style="@style/check_orange"
+                android:layout_width="96dp"
+                android:checked="true"
+                android:text="裸车"/>
+
+            <TextView
+                style="@style/GrayText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/transaction_simpleness"
+                android:text="不包含代办上牌服务，需要自行上牌"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout android:id="@+id/license_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/transaction_license"
+                style="@style/check_orange"
+                android:layout_width="96dp"
+                android:text="裸车+包牌"/>
+
+            <TextView
+                style="@style/GrayText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/transaction_license"
+                android:text="办理上牌需向相关单位交纳购置税、车船税和交强险等必要费用，以实际收取为准。"
+                />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        xmlns:layout="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" android:layout_marginTop="8dp"
+        android:background="@drawable/bg_verify_grid"
+        android:orientation="vertical"
+        layout:divider="@drawable/line"
+        layout:showDividers="middle"
+        >
+
+        <com.hxqc.mall.core.views.CatalogTipView
+            android:id="@+id/simpleness"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+
+            android:textColor="@color/straight_matter_and_secondary_text"
+            android:textSize="16sp"/>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            xmlns:layout="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/license_view_group"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:visibility="gone"
+            layout:divider="@drawable/line"
+            layout:showDividers="middle"
+            >
+
+            <com.hxqc.mall.core.views.CatalogTipView
+                android:id="@+id/license_cost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/straight_matter_and_secondary_text"
+                android:textSize="16sp"/>
+
+            <com.hxqc.mall.core.views.CatalogTipView
+                android:id="@+id/purchase_tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/straight_matter_and_secondary_text"
+                android:textSize="16sp"/>
+
+            <com.hxqc.mall.core.views.CatalogTipView
+                android:id="@+id/vehicle_tax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/straight_matter_and_secondary_text"
+                android:textSize="16sp"/>
+
+            <com.hxqc.mall.core.views.CatalogTipView
+                android:id="@+id/force_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/straight_matter_and_secondary_text"
+                android:textSize="16sp"/>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

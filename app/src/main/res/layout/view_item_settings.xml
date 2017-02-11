@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_me_height_56"
+    android:paddingBottom="@dimen/click_padding_6"
+    android:paddingTop="@dimen/click_padding_6">
+
+
+    <ImageView
+        android:id="@+id/left_icon"
+        style="@style/Icon24"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:layout_marginRight="@dimen/item_me_left_icon_margin_right_32"
+        android:src="@drawable/ic_settings_versioncheck" />
+
+    <TextView
+        android:id="@+id/left_text"
+        style="@style/BlackText16"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/left_icon" />
+
+    <TextView
+        android:id="@+id/right_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/title_text_size_16" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="@dimen/setting_progress_bar_size_24"
+        android:layout_height="@dimen/setting_progress_bar_size_24"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:visibility="gone" />
+
+</RelativeLayout>

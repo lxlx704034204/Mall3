@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/BlackText14"
+            android:text="实际销售价"/>
+
+        <TextView
+            android:id="@+id/real_selling_price_text"
+            style="@style/RedText13"
+            android:layout_alignParentRight="true"
+            tools:text="36.80万"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_yjf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/BlackText14"
+            android:text="厂商指导价"/>
+
+        <TextView
+            android:id="@+id/factory_guide_price_text"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            tools:text="36.80万"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_yjf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/BlackText14"
+            android:text="补贴总额"/>
+
+        <TextView
+            android:id="@+id/total_subsidy_text"
+            style="@style/RedText13"
+            android:layout_alignParentRight="true"
+            tools:text="25.00万"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@drawable/ev_dash_divider"
+        android:layerType="software"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="国家补贴"/>
+
+        <TextView
+            android:id="@+id/country_subsidy_text"
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            tools:text="10.00万"/>
+
+        <TextView
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="地方补贴"/>
+
+        <TextView
+            android:id="@+id/local_subsidy_text"
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            tools:text="5.00万"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1.5dp"
+        android:background="@drawable/ev_dash_divider"
+        android:layerType="software"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="厂商补贴"/>
+
+        <TextView
+            android:id="@+id/factory_subsidy_text"
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            tools:text="10.00万"/>
+
+        <TextView
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:text="经销商补贴"/>
+
+        <TextView
+            android:id="@+id/seller_subsidy_text"
+            style="@style/GrayText13"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical|right"
+            tools:text="5.00万"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_yjf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/BlackText14"
+            android:text="纯电续航"/>
+
+        <TextView
+            android:id="@+id/battery_endurance_ability"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            tools:text="4000公里"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_yjf"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/BlackText14"
+            android:text="购置税"/>
+
+        <TextView
+            android:id="@+id/purchase_tax_tag"
+            style="@style/BlackText12"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/purchase_tax_bg"
+            android:gravity="center"
+            tools:text="半免"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/gray_yjf"/>
+
+    <RelativeLayout
+        android:id="@+id/more_information_view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            style="@style/OrangeText12"
+            android:layout_centerInParent="true"
+            android:text="更多重要信息 >"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+</LinearLayout>

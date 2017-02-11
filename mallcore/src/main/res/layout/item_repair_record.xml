@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--<RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/margin_16">
+
+        <include
+            layout="@layout/view_cut_off_rule_gray"
+            android:layout_width="3dp"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true" />
+
+
+        <ImageView
+            android:id="@+id/repair_record_timeline_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/selector_repair_record_timeline_bg" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_time" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_date"
+                style="@style/auto_text_gray_14"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                tools:text="2016-03-05" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/auto_text_black_14"
+                android:text="保养金额:" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_price"
+                style="@style/auto_text_red_14"
+                android:layout_marginLeft="15dp"
+                tools:text="￥9999.00" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/auto_text_black_14"
+                android:text="行驶里程:" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_mileage"
+                style="@style/auto_text_black_14"
+                android:layout_marginLeft="15dp"
+                tools:text="100公里" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/auto_text_black_14"
+                android:text="保养内容:" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_content"
+                style="@style/auto_text_black_14"
+                android:layout_marginLeft="15dp"
+                tools:text="更换机油、更换机油滤清器、刹车片、雨刷、节气门清洗、燃油系统养护" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="12dp">
+
+            <TextView
+                android:id="@+id/repair_record_4s"
+                style="@style/auto_text_gray_14"
+                android:layout_centerVertical="true"
+                tools:text="武汉华星汉迪奥迪" />
+
+            <TextView
+                android:id="@+id/repair_record_order"
+                style="@style/auto_text_blue_14"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="6dp"
+                android:text="查看工单" />
+
+        </RelativeLayout>
+
+    </LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="12.5dp"
+        android:background="@color/repair_record_cut_off_bg" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText13"
+                android:text="@string/item_title_repair_mileage"
+                android:textColor="@color/repair_record_item_text_bg" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_mileage"
+                style="@style/BlackText13"
+                android:layout_marginLeft="15dp"
+                tools:text="100km" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText13"
+                android:text="@string/item_title_service_type"
+                android:textColor="@color/repair_record_item_text_bg" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_content"
+                style="@style/BlackText13"
+                android:layout_marginLeft="15dp"
+                android:text="维修" />
+                <!--更换机油、更换机油滤清器、刹车片、雨刷、节气门清洗、燃油系统养护-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText13"
+                android:text="@string/item_title_service_time"
+                android:textColor="@color/repair_record_item_text_bg" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_date"
+                style="@style/BlackText13"
+                android:layout_marginLeft="15dp"
+                tools:text="2017-10-25" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText13"
+                android:text="@string/item_title_maintain_price"
+                android:textColor="@color/repair_record_item_text_bg" />
+
+            <TextView
+                android:id="@+id/repair_record_repair_price"
+                style="@style/BlackText13"
+                android:layout_marginLeft="15dp"
+                tools:text="1000元" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12.5dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText13"
+                android:text="@string/item_title_service_shop"
+                android:textColor="@color/repair_record_item_text_bg" />
+
+            <TextView
+                android:id="@+id/repair_record_4s"
+                style="@style/BlackText13"
+                android:layout_marginLeft="15dp"
+                tools:text="武汉华星汉迪奥迪" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/repair_record_to_4s"
+            style="@style/BlueText14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="进入4S店" />
+
+        <!--<include
+            layout="@layout/view_cut_off_rule_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <TextView
+            android:id="@+id/repair_record_order"
+            style="@style/BlueText14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="13dp"
+            android:text="查看工单" />-->
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

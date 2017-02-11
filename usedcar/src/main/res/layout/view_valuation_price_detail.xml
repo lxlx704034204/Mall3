@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/price_radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/price_radio_buy"
+                style="@style/UsedCarRadio"
+                android:checked="true"
+                android:text="车商收车价" />
+
+            <RadioButton
+                android:id="@+id/price_radio_sell"
+                style="@style/UsedCarRadio"
+                android:text="车商售车价" />
+        </RadioGroup>
+
+        <com.hxqc.mall.core.views.LineTranslateAnimView
+            android:id="@+id/line_anim"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            app:animDurations="200"
+            app:lineCount="2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_vertical_margin_16">
+
+            <com.hxqc.mall.usedcar.views.ValuationPriceItem
+                android:id="@+id/price_1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:valuationPriceItemTitle="车况良好" />
+
+            <com.hxqc.mall.usedcar.views.ValuationPriceItem
+                android:id="@+id/price_2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:valuationPriceItemTitle="正常损耗" />
+
+            <com.hxqc.mall.usedcar.views.ValuationPriceItem
+                android:id="@+id/price_3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:valuationPriceItemTitle="车况较差" />
+
+            <com.hxqc.mall.usedcar.views.ValuationPriceItem
+                android:id="@+id/price_4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:valuationPriceItemTitle="厂商指导价" />
+        </LinearLayout>
+    </LinearLayout>
+

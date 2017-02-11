@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#f8f4e9"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/favorable_price_detail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin_16"
+        android:paddingRight="@dimen/activity_horizontal_margin_16">
+
+        <TextView
+            android:id="@+id/favorable_price"
+            android:layout_width="@dimen/common_info_l1_width"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_color_red"
+            tools:text="￥20.20万"/>
+
+        <TextView
+            android:id="@+id/favorable_time_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:padding="6dp"
+            tools:text="还剩22天20时24分结束"
+            android:textColor="@color/text_color_orange"
+            android:textSize="14sp"/>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#EEE6D3"/>
+
+    <RelativeLayout
+        android:id="@+id/reference_price_detail"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin_16"
+        android:paddingRight="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/reference_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp"
+                android:text="厂商指导价："/>
+
+            <TextView
+                android:id="@+id/reference_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:textSize="14sp"
+                tools:text="22.92万"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:padding="6dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/reference_real_price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="参考总价："
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"/>
+
+            <TextView
+                android:id="@+id/reference_real_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="23.88万"
+                android:textSize="14sp"
+                android:textColor="@color/text_gray"/>
+
+            <ImageView
+                android:id="@+id/show_price_popupView"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:onClick="toShowPriceDetail"
+                android:clickable="true"
+                android:padding="8dp"
+                android:src="@drawable/ic_table"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

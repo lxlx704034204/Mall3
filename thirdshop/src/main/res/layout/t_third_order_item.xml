@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_big_16"
+        android:background="@color/tag_background"/>
+
+    <View style="@style/UnderLine" android:layout_height="1px"/>
+
+    <RelativeLayout
+        xmlns:autofit="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/window_color">
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/order_id"
+            style="@style/BlackText16"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_toLeftOf="@+id/order_status"
+            android:gravity="left|center_vertical"
+            android:maxLines="1"
+            autofit:minTextSize="8sp"
+            android:ellipsize="end"
+            tools:text="订单号：xxxxxx"/>
+
+        <TextView
+            android:id="@+id/order_status"
+            style="@style/OrangeText12"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            tools:text="已支付定金"/>
+    </RelativeLayout>
+
+    <View style="@style/UnderLine" android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/third_order_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp"
+        android:paddingRight="16dp">
+
+        <ImageView
+            android:id="@+id/third_order_item_image"
+            android:layout_width="84dp"
+            android:layout_height="50dp"
+            android:scaleType="fitXY"
+            tools:src="@drawable/pic_normal"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/third_order_item_favorable_name"
+                style="@style/BlackText14"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="奔驰GLK级限时优惠店内让利达10万"/>
+
+            <TextView
+                android:id="@+id/third_order_item_favorable_time"
+                style="@style/GrayText13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:layout_marginTop="8dp"
+                tools:text="活动时间 : 2015.11.30 — 2015.11.30"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/UnderLine" android:layout_height="1px"/>
+
+    <LinearLayout
+        android:id="@+id/order_status_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingRight="16dp"
+        android:visibility="gone"
+        android:gravity="right">
+
+        <Button
+            android:id="@+id/order_status_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/btn_orange"
+            android:textSize="13sp"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:text="去付款"/>
+    </LinearLayout>
+</LinearLayout>

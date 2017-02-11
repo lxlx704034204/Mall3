@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <LinearLayout
+                    android:id="@+id/ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/rl_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white"
+                        android:visibility="gone">
+
+                        <View style="@style/UnderLine" />
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:src="@mipmap/my_soldcar_personallabel" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/iv"
+                            android:text="个人发布"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <View style="@style/UnderLine" />
+
+                    <com.hxqc.widget.ListViewNoSlide
+                        android:id="@+id/person_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null" />
+
+
+                    <RelativeLayout
+                        android:id="@+id/rl_platform"
+                        android:layout_width="match_parent"
+                        android:layout_height="34dp"
+                        android:layout_marginTop="16dp"
+                        android:background="@color/white"
+                        android:visibility="gone">
+
+                        <View style="@style/UnderLine" />
+
+                        <ImageView
+                            android:id="@+id/iv2"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="16dp"
+                            android:src="@mipmap/my_soldcar_platformtag" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_toRightOf="@+id/iv2"
+                            android:text="平台发布"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <View style="@style/UnderLine" />
+
+                    <com.hxqc.widget.ListViewNoSlide
+                        android:id="@+id/platform_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:divider="@null" />
+                </LinearLayout>
+
+                <com.hxqc.mall.core.api.RequestFailView
+                    android:id="@+id/request_fail_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+</LinearLayout>

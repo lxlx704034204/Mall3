@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="6dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12.5dp">
+
+        <ImageView
+            android:id="@+id/item_installment_buying_img"
+            android:layout_width="86dp"
+            android:layout_height="54dp"
+            android:background="@drawable/shape_service_type_remark_bg"
+            android:src="@drawable/pic_normal" />
+
+
+        <TextView
+            android:id="@+id/item_installment_buying_auto_model"
+            style="@style/BlackText13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.5dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            android:text="奔驰GLA" />
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_auto_shop_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_model"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="5.5dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            android:gravity="center_vertical"
+            hxqc:trl_left_text="店铺参考价:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="34.25-35.45万"
+            hxqc:trl_right_textColor="@color/Red_yjf"
+            hxqc:trl_right_textSize="11sp" />
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_manufacturer_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_shop_price"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="6.5dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            android:gravity="center_vertical"
+            hxqc:trl_left_text="厂商指导价:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="34.25-35.45万"
+            hxqc:trl_right_textColor="@color/install_buying_content"
+            hxqc:trl_right_textSize="11sp" />
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_auto_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_manufacturer_price"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="6.5dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            android:gravity="center_vertical"
+            hxqc:trl_left_text="店铺名称:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="武汉恒信奥迪4S店"
+            hxqc:trl_right_textColor="@color/install_buying_content"
+            hxqc:trl_right_textSize="11sp" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+</LinearLayout>

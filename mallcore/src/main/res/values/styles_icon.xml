@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--36号图标-->
+    <style name="Icon36">
+        <item name="android:layout_width">@dimen/icon_size_36</item>
+        <item name="android:layout_height">@dimen/icon_size_36</item>
+    </style>
+    <!--32号图标-->
+    <style name="Icon32">
+        <item name="android:layout_width">@dimen/icon_size_32</item>
+        <item name="android:layout_height">@dimen/icon_size_32</item>
+    </style>
+    <!--20号图标-->
+    <style name="Icon20">
+        <item name="android:layout_width">@dimen/icon_size_20</item>
+        <item name="android:layout_height">@dimen/icon_size_20</item>
+    </style>
+    <!--24号图标-->
+    <style name="Icon24">
+        <item name="android:layout_width">@dimen/icon_size_24</item>
+        <item name="android:layout_height">@dimen/icon_size_24</item>
+    </style>
+</resources>

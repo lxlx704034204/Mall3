@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/shop_title"
+        style="@style/OrangeText16"
+        android:layout_height="37dp"
+        android:layout_marginLeft="@dimen/normal_padding_big_16"
+        android:gravity="center_vertical"
+        tools:text="武汉星凯" />
+
+    <View style="@style/UnderLine" />
+
+    <com.hxqc.mall.thirdshop.accessory4s.views.ShopInOrder4S
+        android:id="@+id/shop_in_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:toProductDetail4s="false" />
+
+    <LinearLayout
+        android:id="@+id/shop_address_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/tag_background">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:src="@drawable/ic_acc_home_add" />
+
+        <TextView
+            style="@style/BlackText16"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_padding_big_16"
+            android:text="店铺地址" />
+
+        <TextView
+            android:id="@+id/shop_address"
+            style="@style/BlackText14"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_padding_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="店铺地址和覅哦啊而无任何交若干和偶热感觉热挖掘二氨基偶退回给他人发送到" />
+    </LinearLayout>
+
+    <View style="@style/UnderLine" />
+
+    <LinearLayout
+        android:id="@+id/shop_phone_layout"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:background="@color/tag_background">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:src="@drawable/tel_orange" />
+
+        <TextView
+            style="@style/BlackText16"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_padding_big_16"
+            android:text="咨询电话" />
+
+        <TextView
+            android:id="@+id/shop_phone"
+            style="@style/OrangeText16"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/normal_padding_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:textStyle="bold"
+            tools:text="027-86885875" />
+    </LinearLayout>
+
+    <View style="@style/UnderLine" />
+
+    <TextView
+        android:id="@+id/product_num"
+        style="@style/BlackText14"
+        android:layout_gravity="end"
+        android:layout_marginRight="@dimen/normal_margin_big_16"
+        android:layout_marginTop="@dimen/normal_margin_big_16"
+        android:textStyle="bold"
+        tools:text="共1件商品" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_big_16">
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:text="订单总金额：" />
+
+        <TextView
+            android:id="@+id/amount_order"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:textStyle="bold"
+            tools:text="¥2359.00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_big_16">
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:text="套餐折扣：" />
+
+        <TextView
+            android:id="@+id/package_cut"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:textStyle="bold"
+            tools:text="- ¥2359.00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_big_16">
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="100dp"
+            android:text="应付总金额：" />
+
+        <TextView
+            android:id="@+id/amount_to_pay"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:textStyle="bold"
+            tools:text="¥2359.00" />
+    </RelativeLayout>
+
+    <View
+        style="@style/UnderLine"
+        android:layout_marginTop="@dimen/normal_margin_big_16" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/me_blank_height_15"
+        android:background="@color/tag_background" />
+
+    <View style="@style/UnderLine" />
+
+    <EditText
+        android:id="@+id/notes"
+        style="@style/BlackText14"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/normal_padding_big_16"
+        android:layout_marginTop="@dimen/dialog_padding_24"
+        android:background="@drawable/bg_confirm_order_edit_text"
+        android:hint="点击填写订单备注（选填 50字以内）"
+        android:inputType="text"
+        android:maxLength="50"
+        android:paddingBottom="8dp"
+        android:maxLines="1"
+        android:textColorHint="@color/text_color_subheading"
+        android:textCursorDrawable="@drawable/edittext_cursor" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View style="@style/UnderLine" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/me_blank_height_15"
+            android:background="@color/tag_background" />
+
+        <View style="@style/UnderLine" />
+    </LinearLayout>
+</LinearLayout>

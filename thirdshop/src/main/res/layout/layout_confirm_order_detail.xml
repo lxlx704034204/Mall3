@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_16">
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/OrangeText16"
+            android:text="本次订单详情："/>
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/BlackText14"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="5dp"
+            android:text="本次订单共 "/>
+        <TextView
+            android:id="@+id/item_num"
+            style="@style/OrangeText14"
+            android:layout_alignTop="@id/tv2"
+            android:layout_toRightOf="@id/tv2"
+            tools:text="2"/>
+
+        <TextView
+            android:id="@+id/tv3"
+            style="@style/BlackText14"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@id/item_num"
+            android:text=" 个项目 "/>
+
+        <TextView
+            android:id="@+id/goods_num"
+            style="@style/OrangeText14"
+            android:layout_alignTop="@id/tv3"
+            android:layout_toRightOf="@id/tv3"
+            tools:text="2"/>
+        <TextView
+            android:id="@+id/tv4"
+            style="@style/BlackText14"
+            android:layout_alignTop="@id/tv3"
+            android:layout_toRightOf="@id/goods_num"
+            android:text=" 个商品"/>
+
+        <ImageView
+            android:id="@+id/iv_arrow"
+            style="@style/Icon32"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/maintain_arrow_down"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+    <include layout="@layout/layout_dividing_line"/>
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F5F5F5"
+        android:orientation="vertical"
+        android:visibility="gone">
+    </LinearLayout>
+
+</LinearLayout>

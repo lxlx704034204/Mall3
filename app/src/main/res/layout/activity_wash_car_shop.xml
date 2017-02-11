@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto">
+
+
+    <com.hxqc.mall.core.views.MonitorScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/shop_photo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/margin_16">
+                <TextView
+                    android:id="@+id/shop_name"
+                    style="@style/BlackText16"
+                    tools:text="东辉车行"/>
+
+                <com.hxqc.mall.comment.view.MyRatingBarView
+                    android:id="@+id/rating_bar"
+                    android:clickable="false"
+                    hxqc:starImageSize="16dp"
+                    hxqc:starCount="5"
+                    hxqc:starEmpty="@drawable/ic_productcomment_list_score_normal"
+                    hxqc:starFill="@drawable/ic_productcomment_list_score_selected"
+                    android:layout_centerVertical="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/shop_name"/>
+
+                <TextView
+                    android:id="@+id/text_score"
+                    style="@style/OrangeText14"
+                    android:layout_toRightOf="@+id/rating_bar"
+                    android:layout_marginLeft="8dp"
+                    android:layout_alignTop="@+id/rating_bar"
+                    tools:text="fsdasd"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rating_bar">
+                    <ImageView
+                        android:id="@+id/iv1"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/wash_car_time"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/shop_hours"
+                        style="@style/GrayText14"
+                        android:layout_alignTop="@+id/iv1"
+                        android:layout_toRightOf="@+id/iv1"
+                        android:layout_marginLeft="8dp"
+                        android:layout_centerVertical="true"
+                        tools:text="东辉车行" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_1">
+                    <ImageView
+                        android:id="@+id/iv2"
+                        android:layout_width="13dp"
+                        android:layout_height="13dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/wash_car_location"
+                        android:layout_centerVertical="true"/>
+                    <TextView
+                        android:id="@+id/shop_address"
+                        style="@style/GrayText14"
+                        android:layout_alignTop="@+id/iv2"
+                        android:layout_toRightOf="@+id/iv2"
+                        android:layout_marginLeft="8dp"
+                        tools:text="东辉车行"
+                        android:layout_centerVertical="true"/>
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/shop_call"
+                    android:layout_width="34dp"
+                    android:layout_height="34dp"
+                    android:layout_alignParentRight="true"
+                    android:visibility="gone"
+                    android:src="@drawable/wash_car_phone"/>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_16"
+                android:background="#EBEBEB"/>
+            <TextView
+                style="@style/BlackText16"
+                android:text="普通洗车"
+                android:layout_margin="@dimen/margin_16"/>
+
+            <com.hxqc.widget.ListViewNoSlide
+                android:id="@+id/list_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:listSelector="@color/transparent"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_16"
+                android:background="#EBEBEB"/>
+
+            <LinearLayout
+                android:id="@+id/ll_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+                <include layout="@layout/layout_dividing_line"/>
+                <include layout="@layout/item_wash_car_comment"/>
+                <include layout="@layout/layout_dividing_line"/>
+                <RelativeLayout
+                    android:id="@+id/look_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/margin_16">
+
+                    <TextView
+                        style="@style/BlackText16"
+                        android:text="查看全部评论"
+                        android:layout_centerVertical="true"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_alignParentRight="true"
+                        android:src="@drawable/ic_list_arrow"/>
+
+                </RelativeLayout>
+                <include layout="@layout/layout_dividing_line"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_16"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </com.hxqc.mall.core.views.MonitorScrollView>
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary" />
+</RelativeLayout>

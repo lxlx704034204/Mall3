@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/showgoodslayout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+    >
+
+    <WebView
+        android:id="@+id/wv_goods"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="1dp"
+        android:adjustViewBounds="true"
+        android:background="#d4d4d4"
+        android:clickable="false"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:overScrollMode="never"
+        android:scrollbars="none"/>
+
+    <ImageView
+        android:id="@+id/iv_goods"
+        android:layout_width="96dp"
+        android:layout_height="55dp"
+        android:layout_margin="16dp"
+        android:clickable="false"
+        android:scaleType="centerCrop"
+        android:src="@drawable/visitor"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="16dp"
+        android:layout_toLeftOf="@+id/call_hx"
+        android:layout_toRightOf="@id/iv_goods"
+        android:clickable="false"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_goodsname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:ellipsize="end"
+            android:lines="2"
+            android:textColor="@color/xn_black"
+            android:textSize="14sp"
+            tools:text="2015年最新潮流时尚T恤偶像同款一二线城市包邮 速度抢购有超级大礼包等你来拿"
+            />
+
+        <TextView
+            android:id="@+id/tv_goodsprice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:clickable="false"
+            android:textColor="@color/xn_red"
+            android:textSize="18sp"
+            tools:text="￥274"
+            />
+    </LinearLayout>
+
+    <!--<com.hxqc.xiaoneng.CallHXService-->
+        <!--android:id="@+id/call_hx"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginRight="8dp"/>-->
+</RelativeLayout>

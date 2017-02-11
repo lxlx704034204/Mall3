@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333"
+    android:orientation="vertical">
+
+    <com.hxqc.autonews.widget.Gallery
+        android:id="@+id/gallery"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.hxqc.autonews.widget.EvaluationBar
+        android:id="@+id/evaluation_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:bg_color="#66000000"
+        app:text_color="@color/white" />
+</LinearLayout>

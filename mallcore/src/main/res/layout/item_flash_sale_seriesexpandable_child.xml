@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="100dp"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin_10">
+
+
+    <ImageView
+        android:id="@+id/item_auto_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/pic_normal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@+id/item_auto_logo"
+        android:layout_toRightOf="@+id/item_auto_logo"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_auto_name"
+            style="@style/BlackText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="奔驰" />
+
+        <TextView
+            android:id="@+id/item_auto_price"
+            style="@style/RedText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_6"
+            tools:text="18.00-27.00万" />
+    </LinearLayout>
+</RelativeLayout>

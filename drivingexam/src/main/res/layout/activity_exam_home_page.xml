@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.hxqc.mall.core.views.CustomToolBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/lay1"
+                android:layout_width="match_parent"
+                android:layout_height="194dp"
+                android:background="#fff">
+
+                <RelativeLayout
+                    android:id="@+id/exam"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/divide"
+                    android:background="@drawable/btn_click_transfor_bg">
+
+                    <ImageView
+                        android:id="@+id/img1"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/exam_icon_01" />
+
+                    <TextView
+                        style="@style/BlackText18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/divide1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:text="驾考模拟"
+
+                        />
+
+                    <View
+                        android:id="@+id/divide1"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="4dp" />
+
+                    <TextView
+                        style="@style/GrayText13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divide1"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_toRightOf="@+id/img1"
+                        android:text="科目一、科目四（计算机闭卷答题）" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_list_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/divide"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_centerInParent="true"
+                    android:background="#dedede" />
+
+                <RelativeLayout
+                    android:id="@+id/help"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/divide"
+                    android:background="@drawable/btn_click_transfor_bg">
+
+                    <ImageView
+                        android:id="@+id/img2"
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/exam_icon_02" />
+
+                    <TextView
+                        style="@style/BlackText18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@+id/divide2"
+                        android:layout_marginLeft="16dp"
+                        android:layout_toRightOf="@+id/img2"
+                        android:text="学车帮你过"
+
+                        />
+
+                    <View
+                        android:id="@+id/divide2"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_centerInParent="true"
+                        android:layout_margin="4dp" />
+
+                    <TextView
+                        style="@style/GrayText13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/divide2"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="35dp"
+                        android:layout_toRightOf="@+id/img2"
+                        android:text="科目二、科目三（实地考试，场地驾驶）" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:src="@drawable/ic_list_arrow" />
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#eee" />
+
+            <ImageView
+                android:id="@+id/skill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:src="@drawable/exam_banner" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:background="#eee" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/lay1"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="驾考主要流程 "
+                android:textColor="@color/font_red"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+
+            <com.hxqc.widget.GridViewNoSlide
+                android:id="@+id/gv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#eee"
+                android:clipToPadding="false"
+                android:drawSelectorOnTop="true"
+                android:horizontalSpacing="0.5dp"
+                android:listSelector="#00000000"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="0.5dp">
+
+            </com.hxqc.widget.GridViewNoSlide>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="#eee" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+
+            <RelativeLayout
+                android:id="@+id/practice_law"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_click_style">
+
+                <TextView
+                    android:id="@+id/tv2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="20dp"
+                    android:text="实习期"
+                    android:textColor="@color/font_red"
+                    android:textStyle="bold"
+                    android:textSize="17sp" />
+
+                <View
+                    android:visibility="gone"
+                    android:id="@+id/divide3"
+                    android:layout_width="4dp"
+                    android:layout_height="13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:layout_toRightOf="@+id/tv2"
+                    android:background="#82CBC4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="12dp"
+                    android:layout_toRightOf="@+id/divide3"
+                    android:text="驾驶的法律规定"
+                    android:textColor="#555"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:textColor="#555"
+                    android:textSize="16sp"
+                    android:text="全部" />
+
+                <ImageView
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/exam_arrow"/>
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#dedede" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:lineSpacingExtra="4dp"
+                android:paddingBottom="14dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="14dp"
+                android:text="@string/driving_law"
+                android:textColor="#666"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

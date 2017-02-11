@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <color name="background_tab_pressed" tools:ignore="UnusedResources">#6633B5E5</color>
+    <color name="swipe_menu" tools:ignore="UnusedResources">#D5D5D5</color>
+    <color name="searchTiptext_orange" tools:ignore="UnusedResources">#EC6C49</color>
+    <color name="searchconditionbg_orange">#FFF3E0</color>
+    <color name="searchconditionword_gray">#656965</color>
+</resources>

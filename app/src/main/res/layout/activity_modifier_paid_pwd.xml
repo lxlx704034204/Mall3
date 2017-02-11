@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="13dp"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+    >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/pay_pwd_origin_pwd"
+            android:textColor="@color/title_and_main_text"
+            android:textSize="14sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.hxqc.mall.core.views.materialedittext.pwd.MaterialPWDEditText
+                android:id="@+id/pay_pwd_origin"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="请输入支付密码"
+                android:inputType="numberPassword"
+                android:maxLength="6"
+                android:textSize="13sp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/real_code_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="44dp"
+            android:layout_marginRight="44dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/pay_pwd_code"
+            android:textColor="@color/title_and_main_text"
+            android:textSize="14sp"
+        />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/real_code"
+            style="@style/MaterialEditText"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_toEndOf="@+id/real_code_label"
+            android:layout_toRightOf="@+id/real_code_label"
+            android:hint="@string/pay_pwd_code_hint"
+            android:maxLength="6"
+            android:textSize="13sp"/>
+
+        <com.hxqc.mall.launch.view.CountdownButton
+            android:id="@+id/get_identifying_code"
+            style="@style/BlueText14"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dp"
+            android:padding="@dimen/click_padding_6"
+            android:text="@string/me_get_identifying_code"
+            android:textSize="13sp"
+        />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/pwd_next"
+        style="@style/btn_orange"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/pay_pwd_next_step_btn"/>
+
+    <com.hxqc.mall.core.views.VoiceCaptchaView
+        android:id="@+id/tv_vcv"
+        android:layout_marginTop="12dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#A8A8A8"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+    >
+
+        <include
+            layout="@layout/keyboard_view_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="horizontal"
+              android:background="@color/white"
+    >
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/me_avatar"
+        style="@style/avatar_civ"
+        app:border_color="#BBBBBB"
+        app:border_width="1dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/margin_16"
+        android:orientation="vertical"
+        >
+
+        <include
+            layout="@layout/c_item_frame_username"
+            />
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="9dp"
+            layout="@layout/c_item_comment_base"
+            />
+
+        <TextView
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_car_color"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"
+            android:text="颜色"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"
+            android:text="2015-02-02 14:32:50"
+            android:layout_marginBottom="8dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/divider"/>
+
+    </LinearLayout>
+
+</LinearLayout>

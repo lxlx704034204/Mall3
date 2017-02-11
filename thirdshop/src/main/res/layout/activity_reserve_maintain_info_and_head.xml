@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/reserve_maintain_header_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/reserve_maintain_header_call_bar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.hxqc.mall.thirdshop.views.ShopDetailsHeadView
+                android:id="@+id/reserve_maintain_header_info_shop_detail_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<com.hxqc.mall.auto.view.CommonAutoInfoHeaderViewV2
+                android:id="@+id/reserve_maintain_header_info_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </com.hxqc.mall.auto.view.CommonAutoInfoHeaderViewV2>-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="8dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/reserve_maintain_plate_number_title"
+                    style="@style/common_edit_title_trpa"
+                    android:layout_marginTop="8dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车  牌  号:" />
+
+                <!--<com.hxqc.mall.auto.view.PlateNumberEditText
+                    android:id="@+id/reserve_maintain_plate_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"/>-->
+
+                <com.hxqc.mall.auto.view.NewPlateNumberLayout
+                    android:id="@+id/reserve_maintain_plate_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/textView"
+                    style="@style/common_edit_title_trpa"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="车辆信息:" />
+
+                <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                    android:id="@+id/reserve_maintain_type"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="请选择车辆信息"
+                    huzj:met_helperText="  " />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reserve_maintain_maintain_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:background="#FFF2E1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_16"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="@dimen/margin_10"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/reserve_maintain_maintain"
+                        style="@style/OrangeText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="15dp"
+                        android:maxLines="1"
+                        tools:text="您上次保养的时间2016.02.18" />
+
+                    <TextView
+                        android:id="@+id/reserve_maintain_driving_distance"
+                        style="@style/OrangeText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        tools:text="累计行驶里程6000公里" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/reserve_maintain_date"
+                    style="@style/OrangeText12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:maxLines="1"
+                    tools:text="质保到2016年2月11日" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/divider" />
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_header_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                huzj:commen_info_item_content_hint="请输入联系人姓名"
+                huzj:commen_info_item_content_maxLength="30"
+                huzj:commen_info_item_content_validator="validator_name"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_ems="7"
+                huzj:commen_info_item_title_text="联  系  人:" />
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_header_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_hint="请输入手机号码"
+                huzj:commen_info_item_content_inputType="phone"
+                huzj:commen_info_item_content_maxLength="11"
+                huzj:commen_info_item_content_validator="validator_phone"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_ems="7"
+                huzj:commen_info_item_title_text="手机号码:" />
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_header_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_acc_home_add"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择服务门店"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_ems="7"
+                huzj:commen_info_item_title_text="服务门店:" />
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_header_select_service_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择服务类型"
+                huzj:commen_info_item_content_validator="validator_service_type"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_ems="7"
+                huzj:commen_info_item_title_text="服务类型:" />
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_header_select_reserve_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择"
+                huzj:commen_info_item_content_validator="validator_appointment_time"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_ems="7"
+                huzj:commen_info_item_title_text="预约时间:" />
+
+            <!--<com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_header_service_adviser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择"
+                huzj:commen_info_item_title_text="服务顾问:"
+                huzj:commen_info_item_title_ems="7"/>
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_header_service_mechanic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择"
+                huzj:commen_info_item_title_text="维修技师:"
+                huzj:commen_info_item_title_ems="7"/>-->
+
+            <!--<TextView
+                style="@style/RedText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/explanation" />-->
+
+            <Button
+                android:id="@+id/reserve_maintain_header_reserve_success"
+                style="@style/btn_orange"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="30dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="16dp"
+                android:text="提交" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.hxqc.mall.thirdshop.views.CallBar
+        android:id="@+id/reserve_maintain_header_call_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

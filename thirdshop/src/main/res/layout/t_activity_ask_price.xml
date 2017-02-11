@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout android:id="@+id/drawer_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tip_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFF2E1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="简单填写以下信息，轻松了解车型底价（您的私人信息将会得到严格保密）"
+            android:textColor="#656766"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="意向车型"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/customer_intent_car_type"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="6dp"
+                            android:drawableRight="@drawable/ic_list_arrow"
+                            android:inputType="none"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:maxLines="1"
+                            android:textSize="13sp"
+                            tools:text="黄冈恒信奥龙汽车销售服务有限公司黄冈恒信奥龙汽车销售服务有限公司"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/text_color_red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="您的城市"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/customer_city"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:drawableRight="@drawable/ic_list_arrow"
+                            android:inputType="none"
+                            android:focusable="false"
+                            android:maxLines="1"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/text_color_red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="您的姓名"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/customer_name"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:hint="请输入您的姓名"
+                            android:maxLength="15"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/text_color_red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="手机号码"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/customer_phone"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:hint="请输入您的手机号码"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="您的性别"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <RadioGroup
+                            android:id="@+id/radiogroup_sex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="6dp">
+
+                            <RadioButton
+                                android:id="@+id/man"
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:background="@color/window_color"
+                                android:button="@drawable/t_third_shop_choose_sex_radiobg"
+                                android:gravity="right|center_vertical"
+                                android:text="先生"
+                                android:textColor="#656565"
+                                android:textSize="13sp"/>
+
+                            <RadioButton
+                                android:id="@+id/woman"
+                                android:layout_width="55dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="25dp"
+                                android:background="@color/window_color"
+                                android:button="@drawable/t_third_shop_choose_sex_radiobg"
+                                android:gravity="right|center_vertical"
+                                android:text="女士"
+                                android:textColor="#656565"
+                                android:textSize="13sp"/>
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:padding="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="申请置换"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <CheckBox
+                            android:id="@+id/apply_replacement_checkBox"
+                            android:layout_width="140dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="6dp"
+                            android:background="@color/window_color"
+                            android:button="@drawable/checkbox"
+                            android:gravity="center"
+                            android:text="用旧车置换新车"
+                            android:textColor="#666666"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/submit"
+                        style="@style/btn_orange"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/margin_16"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:text="提交申请"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="94dp"
+                        android:paddingTop="4dp">
+
+                        <CheckBox
+                            android:id="@+id/clause_checkbox"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/window_color"
+                            android:button="@drawable/checkbox"
+                            android:gravity="right|center_vertical"
+                            android:text="我同意"
+                            android:textColor="#656565"
+                            android:checked="true"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:clickable="true"
+                            android:onClick="GotoClauseDetail"
+                            android:text="《个人信息保护声明》"
+                            android:textColor="@color/text_color_blue"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <com.hxqc.mall.thirdshop.views.CallBar
+            android:id="@+id/call_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:clickable="true"/>
+</android.support.v4.widget.DrawerLayout>

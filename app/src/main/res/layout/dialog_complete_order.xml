@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:paddingTop="45dp"
+    android:paddingBottom="25dp"
+    android:paddingLeft="18dp"
+    android:paddingRight="18dp"
+   >
+    <TextView
+        android:id="@+id/content"
+        style="@style/GrayText14"
+        android:lineSpacingExtra="@dimen/dialog_text_line_spacing_extra_10"
+        android:text="服务完成，立即评价？" />
+    <LinearLayout
+        android:id="@+id/dialog_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_padding_24"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/cancel"
+            style="@style/btn_white"
+            android:layout_width="100dp"
+            android:text="取消" />
+        <Button
+            android:id="@+id/sendcomment"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            style="@style/btn_orange"
+            android:text="去评价" />
+    </LinearLayout>
+
+</LinearLayout>

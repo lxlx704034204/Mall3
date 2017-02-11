@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fafafa"
+                android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fcf7ea"
+        android:padding="@dimen/margin_16"
+        android:text="@string/loan_head_tips_notify"
+        android:textColor="#ff7043"
+        android:textSize="@dimen/text_size_14"
+        />
+</LinearLayout>

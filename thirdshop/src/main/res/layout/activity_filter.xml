@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.simonvt.menudrawer.OverlayDrawer xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:mdContentBackground="@color/window_color"
+        app:mdDrawOverlay="false"
+        app:mdDropShadowColor="#55000000"
+        app:mdDropShadowEnabled="true"
+        app:mdDropShadowSize="5dp"
+        app:mdMenuSize="304dp"
+        app:mdPosition="right">
+
+        <FrameLayout
+            android:id="@id/mdMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical" />
+
+
+        <RelativeLayout
+            android:id="@id/mdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:id="@+id/collapse_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll|enterAlways"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/collapse_view"
+                android:background="@drawable/line" />
+
+            <Button
+                android:id="@+id/filter_response"
+                style="@style/btn_orange"
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:enabled="false"
+                android:onClick="toAutoList"
+                android:text="请选择筛选条件" />
+        </RelativeLayout>
+    </net.simonvt.menudrawer.OverlayDrawer>
+</LinearLayout>

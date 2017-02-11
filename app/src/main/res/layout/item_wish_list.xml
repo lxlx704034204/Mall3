@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wish_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingLeft="@dimen/normal_padding_big_16"
+        android:paddingRight="@dimen/normal_padding_big_16"
+        android:paddingTop="@dimen/padding_top_bottom_15">
+
+        <ImageView
+            android:id="@+id/auto_image"
+            android:layout_width="@dimen/app_item_auto_image_width_96"
+            android:layout_height="@dimen/app_item_auto_image_height_55"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/corner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/corner_news"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/auto_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/auto_image">
+
+            <TextView
+                android:id="@+id/auto_model"
+                style="@style/BlackText14"
+                android:ellipsize="end"
+                android:lines="2" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_model"
+                android:layout_marginTop="@dimen/order_description_price_margin_top_10">
+
+                <TextView
+                    android:id="@+id/auto_price"
+                    style="@style/PriceText"
+                    android:layout_centerVertical="true"
+                    android:ellipsize="end"
+                    android:textSize="@dimen/text_size_13" />
+
+                <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="@dimen/wishlist_star_size_27"
+                    android:layout_height="@dimen/wishlist_star_size_27"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:gravity="center_vertical"
+                    android:padding="@dimen/click_padding_6"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/ic_wishlist_focus"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View
+        style="@style/UnderLine"
+        android:layout_marginTop="@dimen/normal_margin_big_16" />
+</LinearLayout>

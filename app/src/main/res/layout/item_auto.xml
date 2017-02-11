@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/item_padding_bottom_15"
+    android:paddingEnd="@dimen/item_padding_right_16"
+    android:paddingLeft="@dimen/item_padding_16"
+    android:paddingRight="@dimen/item_padding_right_16"
+    android:paddingStart="@dimen/item_padding_16"
+    android:paddingTop="@dimen/item_padding_top_15">
+
+    <ImageView
+        android:id="@+id/auto_image"
+        android:layout_width="@dimen/app_item_auto_image_width_96"
+        android:layout_height="@dimen/app_item_auto_image_height_55" />
+
+    <TextView
+        android:id="@+id/auto_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin_left_16"
+        android:layout_toRightOf="@+id/auto_image"
+        android:lines="2"
+        android:maxLines="2"
+        android:textColor="@color/title_and_main_text"
+        android:textSize="14sp" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/auto_name"
+        android:layout_below="@+id/auto_name">
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/auto_price"
+                style="@style/item_auto_data_price"
+                android:textColor="@color/main_and_price" />
+
+            <TextView
+                android:id="@+id/auto_fall"
+                style="@style/item_auto_data_price"
+                android:layout_width="wrap_content"
+                android:drawableRight="@drawable/ic_arrow_depreciate"
+                android:text="直降" />
+        </TableRow>
+
+        <TableRow android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/auto_comment"
+                style="@style/item_auto_data_price"
+                android:text="评论" />
+
+            <TextView
+                android:id="@+id/auto_sales"
+                style="@style/item_auto_data_price"
+                android:text="销量" />
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>

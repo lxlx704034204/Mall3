@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--驾考-->
+    <color name="gray_alpha">#22bbbbbb</color>
+    <color name="green">#45C23F</color>
+    <color name="green_light">#98CD27</color>
+    <color name="blue">#53A3FC</color>
+    <color name="orange">#FAA203</color>
+    <color name="orange_deep">#FF7143</color>
+    <color name="orange_press">#db7200</color>
+
+</resources>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <com.hxqc.mall.photolibrary.view.HackyViewPager
+        android:id="@+id/hvp_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/advice_checkbox_height_40"
+        android:layout_alignParentBottom="true"
+        android:background="#64000001">
+
+        <TextView
+            android:id="@+id/tv_page_number"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/advice_checkbox_height_40"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+        <ImageButton
+            android:id="@+id/ib_save_image"
+            android:layout_width="@dimen/advice_checkbox_height_40"
+            android:layout_height="@dimen/advice_checkbox_height_40"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/ic_image_save"
+            android:scaleType="center"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

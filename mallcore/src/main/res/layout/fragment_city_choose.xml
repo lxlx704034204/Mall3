@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa"
+    android:orientation="vertical"
+    tools:context="com.hxqc.mall.core.fragment.CityChooseFragment">
+
+    <LinearLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/city_title"
+            android:textColor="#000"
+            android:textSize="16sp"/>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_province"-->
+        <!--android:layout_marginTop="26dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <com.hxqc.mall.core.views.SpinnerPopWindow
+            android:id="@+id/rl_province"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="26dp"
+            >
+
+            <TextView
+                android:id="@+id/tv_province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择省份"
+                android:textColor="@color/straight_matter_and_secondary_text"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_city_arrow"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_province"
+                android:layout_marginTop="6dp"
+                android:background="@color/divider"/>
+        </com.hxqc.mall.core.views.SpinnerPopWindow>
+        <!--</RelativeLayout>-->
+
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_city"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:layout_marginLeft="16dp"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content">-->
+        <com.hxqc.mall.core.views.SpinnerPopWindow
+            android:id="@+id/rl_city"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="26dp"
+            android:enabled="false"
+            >
+
+            <TextView
+                android:id="@+id/tv_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择城市"
+                android:textColor="@color/straight_matter_and_secondary_text"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_city_arrow"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_city"
+                android:layout_marginTop="6dp"
+                android:background="@color/divider"/>
+        </com.hxqc.mall.core.views.SpinnerPopWindow>
+        <!--</RelativeLayout>-->
+
+        <com.hxqc.mall.core.views.SpinnerPopWindow
+            android:id="@+id/rl_subdivide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="26dp"
+            android:enabled="false"
+            >
+
+            <TextView
+                android:id="@+id/tv_subdivide"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="选择区域"
+                android:textColor="@color/straight_matter_and_secondary_text"
+                android:textSize="16sp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_city_arrow"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/tv_subdivide"
+                android:layout_marginTop="6dp"
+                android:background="@color/divider"/>
+        </com.hxqc.mall.core.views.SpinnerPopWindow>
+        <!--</RelativeLayout>-->
+
+
+        <Button
+            style="@style/btn_orange"
+            android:id="@+id/btn_save"
+            android:layout_gravity="right"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="25dp"
+            android:text="保存"
+            />
+    </LinearLayout>
+</LinearLayout>

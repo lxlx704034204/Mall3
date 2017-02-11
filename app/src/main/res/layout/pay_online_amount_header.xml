@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:autofit="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:background="@color/main_and_price"
+              android:layout_height="67dp"
+              android:orientation="horizontal"
+    android:baselineAligned="false">
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_total_money"
+            android:textSize="@dimen/btn_font_size"
+            android:gravity="center"
+            android:textColor="#fff"/>
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/atv_total_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:text=""
+            autofit:minTextSize="8sp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_already_paid"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#fff"/>
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/atv_already_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:text=""
+            autofit:minTextSize="8sp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_still_need_to_pay"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textColor="#fff"/>
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/atv_wait_to_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:textColor="#fff"
+            android:text=""
+            autofit:minTextSize="8sp"
+            android:textSize="14sp"
+            />
+    </LinearLayout>
+
+</LinearLayout>

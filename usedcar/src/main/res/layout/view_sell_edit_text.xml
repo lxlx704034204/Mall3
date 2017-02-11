@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:id="@+id/star"
+        style="@style/RedText14"
+        android:layout_marginTop="12dp"
+        tools:text="*" />
+
+    <TextView
+        android:id="@+id/edit_name"
+        style="@style/BlackText14"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/star"
+        tools:text="肥嘟嘟订" />
+
+    <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+        android:id="@+id/input"
+        style="@style/BlackText14"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"
+        android:inputType="numberDecimal"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        app:met_helperText="" />
+
+    <TextView
+        android:id="@+id/edit_unit"
+        style="@style/GrayText14"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        tools:text="万公里" />
+</RelativeLayout>

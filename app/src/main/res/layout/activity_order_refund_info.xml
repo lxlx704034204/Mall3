@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="35dp"
+    tools:context="com.hxqc.mall.activity.order.OrderRefundInfoActivity">
+    <TextView
+        android:id="@+id/refund_info"
+        style="@style/BlackText16"
+        android:text="@string/alipay_refund_info"/>
+    <Button
+        style="@style/btn_orange"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/refund_info"
+        android:layout_marginTop="30dp"
+        android:onClick="butClick"
+        android:text="400-1868-555"
+        android:textSize="@dimen/text_size_16"
+        />
+</RelativeLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <!--<com.hxqc.mall.thirdshop.views.UpLoadRecyclerView-->
+    <!--android:id="@+id/list"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content" />-->
+
+    <!--<com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/refresh_fail_view"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:visibility="gone"-->
+    <!--fail:emptyDescription="获取数据失败" />-->
+</FrameLayout>

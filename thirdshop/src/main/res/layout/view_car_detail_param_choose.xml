@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="18dp">
+
+        <TextView
+            android:id="@+id/group_title"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="18dp"
+            tools:text="购车方式："
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/group_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:textColor="#979797"
+            tools:text="this is describe"/>
+    </LinearLayout>
+
+    <GridLayout
+        android:id="@+id/group_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:paddingLeft="30dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="5dp">
+
+        <!--<Button-->
+            <!--android:layout_width="96dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/car_detail_radiobutton_normal"-->
+            <!--android:text="分期+置换"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="96dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/car_detail_radiobutton_normal"-->
+            <!--android:text="分期+置换"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="96dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/car_detail_radiobutton_normal"-->
+            <!--android:text="分期"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="96dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/car_detail_radiobutton_normal"-->
+            <!--android:text="分期+置换"/>-->
+
+        <!--<Button-->
+            <!--android:layout_width="96dp"-->
+            <!--android:layout_height="32dp"-->
+            <!--android:layout_marginRight="35dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:background="@drawable/car_detail_radiobutton_normal"-->
+            <!--android:text="分期+置换"/>-->
+    </GridLayout>
+</LinearLayout>

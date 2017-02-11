@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="me_module">
+        <item>我的订单</item>
+        <item>我的钱包</item>
+        <item>购物车</item>
+        <item>修车预约</item>
+        <item>常规保养</item>
+        <item>紧急救援</item>
+        <item>车辆信息</item>
+        <item>会员规则</item>
+        <item>品牌活动</item>
+        <item>我的关注</item>
+        <item>我的评论</item>
+        <item>我的客服</item>
+    </string-array>
+
+    <string-array name="auto_variety">
+        <item>"小型汽车"</item>
+        <item>"大型汽车"</item>
+        <item>"使馆汽车"</item>
+        <item>"领馆汽车"</item>
+        <item>"境外汽车"</item>
+        <item>"外籍汽车"</item>
+        <item>"两、三轮摩托车"</item>
+    </string-array>
+
+    <string-array name="month">
+        <item>1月</item>
+        <item>2月</item>
+        <item>3月</item>
+        <item>4月</item>
+        <item>5月</item>
+        <item>6月</item>
+        <item>7月</item>
+        <item>8月</item>
+        <item>9月</item>
+        <item>10月</item>
+        <item>11月</item>
+        <item>12月</item>
+    </string-array>
+
+</resources>

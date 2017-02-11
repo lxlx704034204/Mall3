@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.simonvt.menudrawer.OverlayDrawer
+        android:id="@+id/drawer"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:mdContentBackground="@color/window_color"
+        app:mdDrawOverlay="false"
+        app:mdDropShadowColor="#55000000"
+        app:mdDropShadowEnabled="true"
+        app:mdDropShadowSize="5dp"
+        app:mdMenuSize="304dp"
+        app:mdPosition="right">
+        <!--304dp-->
+        <FrameLayout
+            android:id="@id/mdMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/auto_brand_series"
+                class="com.hxqc.mall.fragment.auto.AutoSeriesFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@id/mdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"/>
+
+    </net.simonvt.menudrawer.OverlayDrawer>
+
+</LinearLayout>
+

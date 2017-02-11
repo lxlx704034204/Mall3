@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--电商自营-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/myorder_ebs_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_big_16"
+        android:background="@color/tag_background" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/myorder_ebs_type"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/normal_order_type"
+            android:visibility="gone"/>
+        <TextView
+            android:id="@+id/myorder_ebs_orderdesc"
+            style="@style/BlackText16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toLeftOf="@+id/myorder_ebs_status"
+            android:layout_toRightOf="@+id/myorder_ebs_type"
+            android:drawableLeft="@drawable/ic_shop"
+            android:drawablePadding="8dp"
+            android:text="恒信自营"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:id="@+id/myorder_ebs_status"
+            style="@style/RedText12"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:text="待支付"
+            android:textSize="@dimen/text_size_12" />
+    </RelativeLayout>
+    <View style="@style/UnderLine" />
+
+    <com.hxqc.mall.views.order.OrderDescriptionForMyOrder
+        android:id="@+id/myorder_ebs_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_padding_big_16"/>
+
+    <View
+        android:id="@+id/myorder_ebs_line"
+        style="@style/UnderLine" />
+
+    <com.hxqc.mall.views.order.OrderBottom
+        android:id="@+id/myorder_ebs_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_radio_group_height_54" />
+
+    <View style="@style/UnderLine" />
+</LinearLayout>

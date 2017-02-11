@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <color name="window_color">#ffFAFAFA</color>
+    <!--主色、价格-->
+    <color name="main_and_price">#e02c36</color>
+    <color name="title_red">#e02c36</color>
+
+    <color name="font_red">#FE4648</color>
+    <color name="font_orange">#f97b5c</color>
+    <color name="font_blue">#4882ea</color>
+    <color name="font_green">#65bc60</color>
+
+    <!--主要按钮或控件点击状态-->
+    <color name="cursor_orange">#ff7043</color>
+
+    <color name="content_background">#fff2e1</color>
+
+    <color name="gray_alpha">#22bbbbbb</color>
+
+    <!--可点击-->
+    <color name="can_click">#000000</color>
+    <color name="text_blue">#2196f3</color>
+    <!--特定按钮-->
+    <color name="special_button">#17a05e</color>
+    <color name="toast_green">#17A05E</color>
+
+    <!--Tab Bar底色-->
+    <color name="tab_bar_background">#292929</color>
+    <color name="item_detail_bottom_bar_background">#292929</color>
+
+    <color name="icon">#7d7d7d</color>
+
+    <color name="divider">#d5d5d5</color>
+
+    <color name="divider2">#ececec</color>
+
+    <color name="bottom_divider">#515151</color>
+
+    <!--标签底色-->
+    <color name="tag_background">#f0f0f0</color>
+    <color name="item_detail_color_group">#F0F0F0</color>
+
+    <!--界面底色-->
+    <color name="white">#ffffff</color>
+
+    <!--标题等主要文字-->
+    <color name="title_and_main_text">#de000000</color>
+
+    <!--正文或次要文字-->
+    <color name="straight_matter_and_secondary_text">#8a000000</color>
+    <!--纯白-->
+
+    <!--订单追踪竖线-->
+    <color name="express_line">#D5DDE0</color>
+    <!--订单追踪背景-->
+    <color name="express_background">#f3f3f3</color>
+
+    <color name="half_black">#80000000</color>
+
+    <color name="toast_yellow">#FF6D00</color>
+
+    <color name="toast_orange">#FF3D00</color>
+    <color name="gray_yjf">#D9D9D9</color>
+    //---------------------------user color--------------------------------
+
+    <color name="check_true_text">#fff</color>
+    <color name="check_false_text">#6E6E6E</color>
+
+    <!--对话框背景-->
+    <color name="float_transparent">#00000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="md__transparent">#00000000</color>
+
+    <color name="black">#000000</color>
+    <color name="transparent_yjf">#00000000</color>
+
+    <color name="item_detail_bottom_bar_enable">#dcdcdc</color>
+
+    <color name="umeng_socialize_divider">#E6E6E6</color>
+
+    <color name="order_tip_gray">#EDEDED</color>
+
+    <color name="order_tip_text_gray">#8F8F8F</color>
+
+    <color name="map_font_blue">#4882ea</color>
+    <!--                    -->
+    <!-- The default background of the menu. -->
+
+    <color name="label_black">#3f3f3f</color>
+
+    <color name="text_gray">#979797</color>
+
+    <color name="title_disable_red">#9e2220</color>
+
+    <color name="line_text_color">#6bc78b</color>
+    <color name="line_color">#6bc78b</color>
+
+    <color name="title_bg">#008B45</color>
+    <color name="setting_item_bg">#dedfe0</color>
+    <color name="back">#efeff4</color>
+    <color name="head_text_color">#008B45</color>
+
+    <color name="btn_normal_color">#d7dcde</color>
+    <color name="btn_pressed_color">#008B00</color>
+    <color name="item_text_color">#2b2b2b</color>
+    <color name="item_line_color">#c8c7cc</color>
+
+    <color name="md__defaultBackground">#FF555555</color>
+    <color name="primary">#beb381</color>
+    <color name="primary_dark">#6bb8b4</color>
+    <color name="accent">#62BE5B</color>
+
+
+    <!-- common -->
+    <color name="white_bg">#f5f5f5</color>
+    <color name="share_bk">#f7f6f1</color>
+    <color name="share_bk_line">#cfccbd</color>
+    <color name="weclcome_bk">#4b3727</color>
+
+    <color name="light_gray">#99a4b7</color>
+    <color name="deep_gray">#394257</color>
+    <color name="border_gray">#d9dfe5</color>
+    <color name="bg_gray">#e1e1e1</color>
+    <color name="btn_gray">#d1d1d1</color>
+    <color name="glass_gall">#c2ebef</color>
+    <color name="light_blue">#87d0f2</color>
+
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="third_tip_gray">#999999</color>
+    <color name="divider_line_bg">#EBEBEB</color>
+
+    <!--auto info-->
+    <color name="auto_info_default_bg">#ff7143</color>
+    <color name="auto_info_modify_bg">#ed4751</color>
+    <color name="auto_info_delete_bg">#e02c37</color>
+    <color name="auto_info_cut_off_rule">#d5d5d5</color>
+    <color name="auto_info_repair_record">#fdf7eb</color>
+    <color name="auto_info_price">#e22d36</color>
+    <color name="repair_record_def_bg">#fafafa</color>
+
+
+    <!--订单状态-->
+    <color name="order_status_red">#e02c36</color><!--待确认、待付款、订单关闭、订单待受理-->  <!--待退款、退款关闭-->
+    <color name="order_status_green">#17a05e</color><!--已付款、订单已受理、订单完成、预约成功：-->  <!--退款完成-->
+    <color name="order_status_orange">#ff7043</color><!--订单取消--><!--退款中-->
+
+    <!--优惠卷背景-->
+    <color name="bg_violet">#d5a4e7</color>
+
+    <!--车辆信息-->
+    <color name="auto_detail_bg">#f2eade</color>
+    <color name="repair_record_cut_off_bg">#f4ece2</color>
+    <color name="repair_record_item_text_bg">#de666666</color>
+    <!--键盘背景-->
+    <color name="keyboard_bg">#cbd1d8</color>
+    <color name="no_press_key_bg">#b5bec7</color>
+    <color name="no_press_key_bg_v2">#9fa7b4</color>
+</resources>

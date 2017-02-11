@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context="com.hxqc.pay.fragment.FinishDepositFragment">
+
+    <TextView
+        android:id="@+id/tv_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_complete"
+        android:text="支付订金成功"
+        android:textColor="#000"
+        android:textSize="28sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="72dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_h2"
+        android:layout_below="@id/tv_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您已成功支付订金"
+            android:textSize="16sp"
+            android:textColor="#000"
+            />
+
+        <TextView
+            android:id="@+id/tv_money_"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/font_red"
+            android:textSize="16sp"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_to_finish_info"
+        android:layout_below="@id/ll_h2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="32dp"
+        style="@style/btn_orange"
+        android:text="完善信息"
+        />
+
+    <TextView
+        android:id="@+id/tv_show_order"
+        android:layout_below="@id/ll_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="查看订单"
+        android:textSize="14sp"
+        android:layout_marginTop="120dp"
+        android:textColor="@color/font_blue"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

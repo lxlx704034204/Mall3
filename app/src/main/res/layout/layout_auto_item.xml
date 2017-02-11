@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    >
+
+    <LinearLayout
+        android:id="@+id/auto_item_container"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/bg_auto_item_view_checked"
+        android:orientation="vertical"
+        android:padding="4dp">
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/auto_item_img0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/auto_item_img1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:visibility="invisible"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="120dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="2dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/auto_item_img2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="2dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/auto_item_img3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="2dp"
+                android:layout_weight="1"
+                android:scaleType="fitXY"
+                android:visibility="invisible"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/auto_item_choose_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/auto_item_container"
+        android:layout_alignTop="@+id/auto_item_container"
+        android:layout_marginRight="-8dp"
+        android:layout_marginTop="-8dp"
+        android:src="@drawable/ic_choose_selected"
+        android:visibility="visible"/>
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+                  android:layout_width="128dp" android:layout_marginTop="2dp"
+                  android:layout_height="wrap_content"
+                  android:layout_below="@+id/auto_item_container"
+                  android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/item_auto_package_name"
+            style="@style/GrayText12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:maxLines="2"
+            tools:text="测试套餐"
+            />
+
+        <TextView
+            android:id="@+id/item_auto_package_price"
+            style="@style/RedText10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            tools:text="¥8888"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

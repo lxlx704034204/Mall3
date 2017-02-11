@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_appointment"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/box_1">
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:drawableLeft="@drawable/ic_success1"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:text="提交成功"
+            android:textColor="#179F5D"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/box_2"
+      >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="40dp"
+                android:paddingRight="10dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    >
+
+                    <TextView
+                        style="@style/GrayText16"
+                        android:text="联系人姓名：" />
+
+                    <TextView
+                        android:id="@+id/name"
+                        style="@style/BlackText16"
+                        android:layout_marginLeft="110dp"
+                        tools:text="给对方的高规格防守东方红" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_16">
+
+                    <TextView
+                        style="@style/GrayText16"
+                        android:text="手机号码：" />
+
+                    <TextView
+                        android:id="@+id/phone"
+                        style="@style/BlackText16"
+                        android:layout_marginLeft="110dp"
+                        tools:text="给对方的高规格防守东方红" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_16">
+
+                    <TextView
+                        style="@style/GrayText16"
+                        android:text="服务门店：" />
+
+                    <TextView
+                        android:id="@+id/shop"
+                        style="@style/BlackText16"
+                        android:layout_marginLeft="110dp"
+                        android:maxLines="2"
+                        tools:text="给对方的高规格防守东方红" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_16">
+
+                    <TextView
+                        style="@style/GrayText16"
+                        android:text="支付方式：" />
+
+                    <TextView
+                        android:id="@+id/pay_way"
+                        style="@style/BlackText16"
+                        android:layout_marginLeft="110dp"
+                        android:maxLines="2"
+                        tools:text="给对方的高规格防守东方红" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_16">
+
+                    <TextView
+                        style="@style/GrayText16"
+                        android:text="金额：" />
+
+                    <TextView
+                        android:id="@+id/money"
+                        style="@style/BlackText16"
+                        android:layout_marginLeft="110dp"
+                        android:maxLines="2"
+                        tools:text="给对方的高规格防守东方红" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_maintain_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/margin_16">
+
+                    <TextView
+                        style="@style/GrayText16"
+                        android:text="保养时间：" />
+
+                    <TextView
+                        android:id="@+id/maintain_time"
+                        style="@style/BlackText16"
+                        android:layout_marginLeft="110dp"
+                        tools:text="给对方的高规格防守东方红" />
+                </RelativeLayout>
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_serve"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingTop="@dimen/margin_16">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/GrayText16"-->
+                        <!--android:text="服务顾问：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/serve"-->
+                        <!--style="@style/BlackText16"-->
+                        <!--android:layout_marginLeft="110dp"-->
+                        <!--tools:text="给对方的高规格防守东方红" />-->
+                <!--</RelativeLayout>-->
+
+                <!--<RelativeLayout-->
+                    <!--android:id="@+id/rl_mechanic"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:paddingTop="@dimen/margin_16">-->
+
+                    <!--<TextView-->
+                        <!--style="@style/GrayText16"-->
+                        <!--android:text="维修技师：" />-->
+
+                    <!--<TextView-->
+                        <!--android:id="@+id/mechanic"-->
+                        <!--style="@style/BlackText16"-->
+                        <!--android:layout_marginLeft="110dp"-->
+                        <!--tools:text="给对方的高规格防守东方红" />-->
+                <!--</RelativeLayout>-->
+            </LinearLayout>
+        </ScrollView>
+
+        <Button
+            android:id="@+id/reserve_success_finish_btn"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="16dp"
+            android:text="完成" />
+    </LinearLayout>
+
+</LinearLayout>

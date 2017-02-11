@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/wish_list_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/normal_padding_big_16"
+        android:paddingRight="@dimen/normal_padding_big_16"
+        android:paddingTop="@dimen/padding_top_bottom_15">
+
+        <com.hxqc.mall.core.views.Order.OrderDescription
+            android:id="@+id/order_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/comment_btn"
+            style="@style/btn_border"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/order_description"
+            android:layout_marginTop="12dp" />
+    </RelativeLayout>
+
+    <View
+        style="@style/UnderLine"
+        android:layout_marginTop="@dimen/normal_margin_big_16" />
+</LinearLayout>

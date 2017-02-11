@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ExpandableListView
+        android:id="@+id/location_expand_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"/>
+
+    <com.hxqc.mall.core.views.SideBar
+        android:id="@+id/sidebar_position"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="end|center_vertical"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"/>
+</FrameLayout>

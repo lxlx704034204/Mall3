@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="third_tip_gray">#999999</color>
+    <color name="filter_text_orange">#FF7143</color>
+    <color name="filter_text_black">#333333</color>
+    <color name="car_detail_button_gray">#787878</color>
+    <color name="orange_deep">#cd7043</color>
+    <color name="gray_alpha">#44bbbbbb</color>
+    <color name="gray">#F5F5F5</color>
+</resources>

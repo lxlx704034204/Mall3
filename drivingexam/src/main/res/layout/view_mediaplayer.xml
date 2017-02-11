@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/media_lay"
+    android:layout_width="match_parent"
+    android:layout_height="190dp">
+
+    <com.hxqc.mall.drivingexam.view.MyVideoView
+        android:id="@+id/vidio_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/thumb_img"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_media"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/control_lay"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:background="#aa222222">
+
+        <ImageView
+            android:id="@+id/start"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="7dp"
+            android:src="@drawable/start" />
+
+        <SeekBar
+            android:id="@+id/seekBar1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="-10dp"
+            android:layout_toLeftOf="@+id/now_time"
+            android:layout_toRightOf="@+id/start"
+            android:max="100"
+            android:maxHeight="2dp"
+            android:minHeight="2dp"
+            android:progress="1"
+            android:progressDrawable="@drawable/seekbar_img"
+            android:thumb="@drawable/thumb" />
+
+
+        <TextView
+            android:id="@+id/total_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="/00:00"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/now_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="1dp"
+            android:layout_toLeftOf="@+id/total_time"
+            android:text="00:00"
+            android:textColor="#fff"
+            android:textSize="13sp" />
+
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/fullscreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="8dp"
+        android:src="@drawable/zt_fangda" />
+
+    <ImageView
+        android:id="@+id/shadow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#88222222" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/control_lay">
+
+        <ImageView
+
+            android:id="@+id/download"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="46dp"
+            android:src="@drawable/xiazai" />
+
+
+        <ImageView
+            android:id="@+id/pause"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="46dp"
+            android:src="@drawable/xiazai"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/load_progress"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:indeterminate="true"
+            android:indeterminateDuration="700"
+            android:padding="72dp"
+            android:visibility="gone" />
+
+        <com.hxqc.mall.drivingexam.view.CircleProgressBar
+            android:id="@+id/myProgress"
+            android:layout_width="59dp"
+            android:layout_height="59dp"
+            android:layout_centerInParent="true" />
+
+
+        <TextView
+            android:id="@+id/progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="14dp"
+            android:text=""
+            android:textColor="#fff"
+            android:textSize="12sp"
+            android:visibility="gone"
+
+            />
+    </RelativeLayout>
+</RelativeLayout>

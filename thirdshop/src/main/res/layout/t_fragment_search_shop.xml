@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center"-->
+    <!--android:minHeight="48dp"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:visibility="gone"-->
+    <!--android:weightSum="2">-->
+
+    <!--<CheckedTextView-->
+    <!--android:id="@+id/tv_search_select_left"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:checked="true"-->
+    <!--android:gravity="center"-->
+    <!--android:text="综合"-->
+    <!--android:textColor="@color/t_rb_search_selector"-->
+    <!--android:textSize="16sp" />-->
+    <!--&lt;!&ndash;<RelativeLayout&ndash;&gt;-->
+    <!--&lt;!&ndash;android:id="@+id/ll_search_select_right"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_width="0dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_height="match_parent"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:layout_weight="1"&ndash;&gt;-->
+    <!--&lt;!&ndash;android:gravity="center">&ndash;&gt;-->
+    <!--<CheckedTextView-->
+    <!--android:id="@+id/tv_search_select_right"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="距离"-->
+    <!--android:textColor="@color/t_rb_search_selector"-->
+    <!--android:textSize="16sp" />-->
+    <!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<RelativeLayout-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_marginTop="1dp"-->
+    <!--android:background="@color/divider" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:weightSum="2">-->
+
+    <!--<View-->
+    <!--android:id="@+id/strip_search_select"-->
+    <!--android:layout_width="0dp"-->
+    <!--android:layout_height="2dp"-->
+    <!--android:layout_weight="1"-->
+    <!--android:background="@color/text_color_orange" />-->
+    <!--</LinearLayout>-->
+
+    <!--</RelativeLayout>-->
+
+    <!--<android.support.design.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"-->
+
+    <!--android:id="@+id/coordinator_layout"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content">-->
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:theme="@style/Theme.AppCompat.Light">
+
+        <android.support.design.widget.TabLayout
+
+            android:id="@+id/search_tab"
+            android:layout_width="match_parent"
+            android:layout_height="48dp" />
+        <!--app:layout_scrollFlags="scroll|enterAlways"-->
+    </android.support.design.widget.AppBarLayout>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/search_shop_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical" />
+
+        <!--app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+    <!--<com.hxqc.mall.core.api.RequestFailView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+    <!--android:id="@+id/request_fail_view"-->
+    <!--android:visibility="gone"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"/>-->
+    <!--</android.support.design.widget.CoordinatorLayout>-->
+
+</LinearLayout>

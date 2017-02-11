@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/btn_click_style"
+    android:orientation="vertical">
+
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:button="@drawable/checkbox"
+        android:clickable="false"
+        android:layout_alignBaseline="@+id/shop_title"
+        android:layout_marginLeft="18dp"
+     />
+
+    <TextView
+        android:id="@+id/shop_title"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="10dp"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:text="武汉星凯迪拉克"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:id="@+id/address_lay"
+        android:layout_width="wrap_content"
+        android:layout_alignLeft="@+id/shop_title"
+        android:layout_below="@+id/shop_title"
+        android:layout_height="wrap_content">
+    <TextView
+       android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="22dp"
+        android:layout_toLeftOf="@+id/img1"
+        android:text="武汉市汉阳区  "
+        android:textColor="#444"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/img1"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:padding="8dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/btn_click_style"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="18dp"
+        android:src="@drawable/ic_home_address" />
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/shop_title"
+        android:layout_below="@+id/address_lay"
+        android:layout_marginTop="12dp"
+        android:text="经销商参考价:"
+        android:textColor="#444"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/address_lay"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/tv1"
+        android:text="12万"
+        android:textColor="#444"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/price"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dedede" />
+
+</RelativeLayout>

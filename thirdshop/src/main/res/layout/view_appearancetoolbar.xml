@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/topbar"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/WhiteText20"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/toolbar_background"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:maxLines="1"
+        android:paddingLeft="58dp"
+        android:paddingRight="58dp" />
+
+
+    <ImageView
+        android:id="@+id/goback"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_click_style"
+        android:padding="16dp"
+        android:src="@drawable/ic_back" />
+
+
+    <ImageView
+        android:id="@+id/to_home"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/btn_click_style"
+        android:padding="16dp"
+        android:src="@drawable/t_ic_home" />
+
+
+    <ImageView
+        android:id="@+id/goback2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:background="@drawable/bg_newcar_back"
+        android:paddingLeft="8dp"
+        android:src="@drawable/ic_back" />
+
+
+    <ImageView
+        android:id="@+id/to_home2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_newcar_back"
+        android:padding="5dp"
+        android:src="@drawable/t_ic_home" />
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_s_detail_price_item_title"
+        style="@style/BlackText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:text="奔驰（进口）Gla 2015款220 4MATIC 时尚型"
+    />
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+    >
+        <!--成交价-->
+        <com.hxqc.mall.thirdshop.views.SalesDetailPricePieceView
+            android:id="@+id/sales_dppv_knockdown_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        />
+
+        <!--优惠-->
+        <com.hxqc.mall.thirdshop.views.SalesDetailPricePieceView
+            android:id="@+id/sales_dppv_preferential_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:orientation="horizontal"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+    >
+        <!--指导价-->
+        <com.hxqc.mall.thirdshop.views.SalesDetailPricePieceView
+            android:id="@+id/sales_dppv_indicative_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        />
+
+        <!--裸车价-->
+        <com.hxqc.mall.thirdshop.views.SalesDetailPricePieceView
+            android:id="@+id/sales_dppv_naked_price"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginTop="10dp"
+                  android:orientation="horizontal"
+                  android:paddingLeft="8dp"
+                  android:paddingRight="8dp"
+    >
+        <!--赠送礼包-->
+        <com.hxqc.mall.thirdshop.views.SalesDetailPricePieceView
+            android:id="@+id/sales_dppv_gift"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+        />
+
+    </LinearLayout>
+
+
+</LinearLayout>

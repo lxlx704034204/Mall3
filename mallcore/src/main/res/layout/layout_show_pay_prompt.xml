@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BlackText16"
+        android:text="提示"
+        android:layout_marginTop="24.5dp"/>
+
+    <TextView
+        android:id="@+id/pay_prompt_to_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/GrayText12"
+        android:lineSpacingMultiplier="1.5"
+        android:text="        支付成功后您将收到一条提醒短信，用于填写顺丰快递单使用，稍后我司工作人员会致电和您预约上门取件相关事宜！"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"/>
+
+    <TextView
+        android:id="@+id/pay_prompt_to_pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/BlueText14"
+        android:text="我知道了"
+        android:layout_marginTop="23.5dp"
+        android:layout_marginBottom="28dp"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/detail_tab_height"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              android:paddingLeft="@dimen/activity_horizontal_margin_16"
+    >
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:background="@drawable/ic_detail_color"
+        android:padding="@dimen/item_padding_16"/>
+
+    <TextView
+        style="@style/auto_detail_label"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginLeft="16dp"
+        android:gravity="center_vertical"
+        android:text="车辆颜色"/>
+
+    <include
+        layout="@layout/layout_color_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/item_padding_16"/>
+</LinearLayout>

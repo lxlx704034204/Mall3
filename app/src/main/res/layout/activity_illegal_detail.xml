@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/illegal_detail_dzjcxlh_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="电子警察序列号:" />
+
+        <TextView
+            android:id="@+id/illegal_detail_dzjcxlh"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="420148784564874654" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违法时间:" />
+
+        <TextView
+            android:id="@+id/illegal_detail_wfsj"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="420148784564874654" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违法地点:" />
+
+        <TextView
+            android:id="@+id/illegal_detail_wfdd"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="420148784564874654" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="违法行为:" />
+
+        <TextView
+            android:id="@+id/illegal_detail_wfxw"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="420148784564874654" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="执法大队:" />
+
+        <TextView
+            android:id="@+id/illegal_detail_zfdd"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            tools:text="420148784564874654" />
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/GrayText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="罚款:" />
+
+            <TextView
+                android:id="@+id/illegal_detail_fk"
+                style="@style/OrangeText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                tools:text="0" />
+        </LinearLayout>
+
+        <include
+            layout="@layout/view_cut_off_rule_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                style="@style/GrayText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="扣分:" />
+
+            <TextView
+                android:id="@+id/illegal_detail_kf"
+                style="@style/OrangeText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                tools:text="0" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:id="@+id/illegal_detail_look_pic"
+        style="@style/btn_orange"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="48dp"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/WhiteText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/pic"
+            android:drawablePadding="6dp"
+            android:gravity="center"
+            android:text="查看违章照片" />
+    </LinearLayout>
+
+    <!--<com.hxqc.mall.core.views.ThirdFunctionButton
+        android:id="@+id/illegal_detail_look_pic"
+        android:layout_width="150dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="48dp"
+        huzj:backgroundTF="@drawable/bg_btn_function_orange"
+        huzj:innerButtonText="查看违章照片"
+        huzj:innerIcon="@drawable/pic"
+        huzj:innerTextSize="12sp" />-->
+    <!--<Button
+        style="@style/btn_orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/pic"
+        android:text="查看图片" />-->
+
+</LinearLayout>

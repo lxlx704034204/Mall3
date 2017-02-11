@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/common_edit_title_trpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bg_star"
+                android:text="车辆信息:" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/add_auto_info_type"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请选择车辆信息"
+                android:maxLines="2"
+                android:textColorHint="@color/gray_yjf"
+                huzj:met_helperText="  " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                style="@style/GrayText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bg_star"
+                android:ems="7"
+                android:paddingBottom="3dp"
+                android:text="车牌号码:" />
+
+            <!--<com.hxqc.mall.auto.view.PlateNumberEditText
+                android:id="@+id/add_auto_info_plate_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />-->
+            <com.hxqc.mall.auto.view.NewPlateNumberLayout
+                android:id="@+id/add_auto_info_plate_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_auto_info_mileage_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/common_edit_title_trpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="累计行驶里程:" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                    android:id="@+id/add_auto_info_mileage"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_km"
+                    android:hint="请输入行驶里程"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray_yjf"
+                    huzj:met_helperText="  " />
+
+                <!--<TextView
+                      style="@style/GrayText16"
+                      android:layout_width="wrap_content"
+                      android:layout_height="wrap_content"
+                      android:layout_gravity="center_vertical|end"
+                      android:layout_marginRight="6dp"
+                      android:layout_marginBottom="10dp"
+                      android:text="km" />-->
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/add_auto_info_maintain_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:background="#FFF2E1"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_16"
+            android:paddingRight="@dimen/margin_16"
+            android:paddingTop="@dimen/margin_10"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/add_auto_info_maintain"
+                style="@style/OrangeText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                tools:text="您上次保养的时间2016.02.18   累计行驶里程6000公里" />
+
+            <TextView
+                android:id="@+id/add_auto_info_date"
+                style="@style/OrangeText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:singleLine="true"
+                tools:text="质保到2016年2月11日" />
+        </LinearLayout>
+
+        <TextView
+            style="@style/RedText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="22dp"
+            android:text="@string/explanation" />
+
+        <Button
+            android:id="@+id/add_auto_info_btn"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="35dp"
+            android:text="完成" />
+    </LinearLayout>
+
+</RelativeLayout>

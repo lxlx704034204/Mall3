@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/normal_margin_big_16"
+    android:paddingRight="@dimen/normal_margin_big_16"
+    android:paddingBottom="@dimen/promotion_item_padding_6">
+
+    <TextView
+        android:id="@+id/promotions_item_title"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1" />
+
+    <TextView
+        android:id="@+id/promotions_item_date"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:maxLines="1" />
+</LinearLayout>

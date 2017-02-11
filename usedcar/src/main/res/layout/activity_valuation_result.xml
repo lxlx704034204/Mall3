@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.hxqc.mall.core.views.MonitorScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/valuation_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="144dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/valuation_head" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/valuation_brand_logo_border"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="74dp"
+                    android:src="@mipmap/valuation_brand_logo_border" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/brand_logo"
+                    android:layout_width="72dp"
+                    android:layout_height="72dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="108dp"
+                    android:src="@drawable/pic_normal_square" />
+
+                <TextView
+                    android:id="@+id/car_name"
+                    style="@style/BlackText16"
+                    android:layout_below="@id/valuation_brand_logo_border"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    tools:text="一汽大众一汽大众一汽大众一汽大众一汽大众一汽大众" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/car_name"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginTop="@dimen/normal_margin_small_8">
+
+                    <TextView
+                        android:id="@+id/city_range_age"
+                        style="@style/GrayText12"
+                        android:lineSpacingExtra="4dp"
+                        tools:text="武汉\n20万公里/2014" />
+
+                    <TextView
+                        android:id="@+id/valuation_price"
+                        style="@style/RedText14"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="16dp"
+                        tools:text="25.63万" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/result"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/bg_valuation"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/card_margin_8"
+                    android:layout_marginRight="@dimen/card_margin_8"
+                    android:layout_marginTop="24dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_corner_radius_2"
+                    app:cardElevation="@dimen/normal_margin_small_8">
+
+                    <com.hxqc.mall.usedcar.views.ValuationPriceDetailView
+                        android:id="@+id/valuation_price_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/card_margin_8"
+                    android:layout_marginRight="@dimen/card_margin_8"
+                    android:layout_marginTop="@dimen/card_margin_16"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_corner_radius_2"
+                    app:cardElevation="@dimen/normal_margin_small_8">
+
+                    <com.hxqc.mall.usedcar.views.FuturePriceView
+                        android:id="@+id/future_price"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:chartUnit="单位：万元"
+                        app:futureTitle="未来5年价格趋势" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/card_margin_8"
+                    android:layout_marginRight="@dimen/card_margin_8"
+                    android:layout_marginTop="@dimen/card_margin_16"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="@dimen/card_corner_radius_2"
+                    app:cardElevation="@dimen/normal_margin_small_8">
+
+                    <com.hxqc.mall.usedcar.views.FuturePriceView
+                        android:id="@+id/future_salvage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:chartUnit="单位：%"
+                        app:futureTitle="未来5年残值率" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/normal_margin_small_8"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/buy_car"
+                        style="@style/WhiteText14"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/btn_buy_blue"
+                        android:gravity="center"
+                        android:text="买二手车" />
+
+                    <TextView
+                        android:id="@+id/sell_car"
+                        style="@style/WhiteText14"
+                        android:layout_width="0dp"
+                        android:layout_height="90dp"
+                        android:layout_weight="1"
+                        android:background="@mipmap/btn_buy_red"
+                        android:gravity="center"
+                        android:text="卖二手车" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.hxqc.mall.core.views.MonitorScrollView>
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary" />
+</RelativeLayout>
+

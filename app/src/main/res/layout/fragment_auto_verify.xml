@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white">
+
+    <ScrollView
+        android:id="@+id/verify_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/space">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            xmlns:layout="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            layout:divider="@drawable/line"
+            layout:showDividers="middle">
+            <!-- 虚线-->
+            <include layout="@layout/layout_auto_verify_head"/>
+
+            <com.hxqc.mall.views.auto.AutoVerifyPaymentView
+                android:id="@+id/payment_type_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.hxqc.mall.views.auto.AutoVerifyInsurance
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.hxqc.mall.views.autopackage.AutoPackageVerify
+                android:id="@+id/package_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <com.hxqc.mall.views.auto.AutoVerifyLicenseService
+                android:id="@+id/license_service"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/bottom_layout"
+        android:background="@drawable/down_to_up_shadow"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/item_padding_16"
+        android:paddingRight="@dimen/item_padding_16">
+
+
+        <!--<com.hxqc.mall.core.views.autotext.AutofitTextView-->
+        <!--android:id="@+id/auto_subscription"-->
+        <!--style="@style/RedText14"-->
+        <!--xmlns:autofit="http://schemas.android.com/apk/res-auto"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentLeft="true"-->
+        <!--android:layout_marginRight="16dp"-->
+        <!--android:layout_marginTop="4dp"-->
+        <!--android:layout_toLeftOf="@+id/to_pay_order"-->
+        <!--android:gravity="center_vertical|left|start"-->
+        <!--android:maxLines="1"-->
+        <!--android:textStyle="bold"-->
+        <!--autofit:minTextSize="8sp"-->
+        <!--tools:ignore="RtlHardcoded"-->
+        <!--tools:text="订金"/>-->
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/auto_cost"
+            style="@style/RedText14"
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/to_pay_order"
+            android:gravity="center_vertical|left|start"
+            android:maxLines="1"
+            android:textStyle="bold"
+            autofit:minTextSize="8sp"
+            tools:ignore="RtlHardcoded"
+            tools:text="总额"/>
+
+        <Button
+            android:id="@+id/to_pay_order"
+            style="@style/btn_orange"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="确认购买"/>
+    </RelativeLayout>
+</RelativeLayout>

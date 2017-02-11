@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_comment_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_no_data_comment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.hxqc.mall.core.api.RequestFailView xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/comment_fail_notice_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:emptyDescription="未获取到评论信息" />
+
+            <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/refresh_c_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube_ptr:ptr_duration_to_close="300"
+                cube_ptr:ptr_duration_to_close_header="2000"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.7">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rlv_comment_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </in.srain.cube.views.ptr.PtrFrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

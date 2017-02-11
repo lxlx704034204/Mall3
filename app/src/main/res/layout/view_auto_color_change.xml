@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:spinner="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/item_detail_color_group"
+              android:orientation="vertical"
+    >
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_color"
+        tab:tabLabel="车辆颜色"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_shadow"/>
+
+        <com.hxqc.mall.views.ColorSpinner
+            android:id="@+id/color_appearance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/icon"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            spinner:spinnerLabel="车身:"/>
+
+        <com.hxqc.mall.views.ColorSpinner
+            android:id="@+id/color_interior"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/color_appearance"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            spinner:spinnerLabel="内饰:"/>
+    </LinearLayout>
+
+
+</LinearLayout>

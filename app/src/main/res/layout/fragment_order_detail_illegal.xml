@@ -1,0 +1,438 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/illegal_order_info_parent"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_yjf"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/illegal_order_info_number"
+                    style="@style/GrayText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    tools:text="订单号:123456789123" />
+
+                <LinearLayout
+                    android:id="@+id/illegal_order_info_customer_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:src="@drawable/ic_customer_orange" />
+
+                    <TextView
+                        style="@style/OrangeText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="客服" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <com.hxqc.aroundservice.view.IllegalAutoInfoView
+                android:id="@+id/illegal_order_info_auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/illegal_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="违章处理列表:" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/illegal_order_info_record"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="共12条违章记录" />
+
+                    <TextView
+                        android:id="@+id/illegal_order_info_point"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        tools:text="扣12分" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/ic_list_arrow" />
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="联系人:" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/illegal_order_info_name"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="李夏天" />name
+
+                    <TextView
+                        android:id="@+id/illegal_order_info_phone"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        tools:text="18666666666" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/illegal_item_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="支付方式:" />
+
+                    <TextView
+                        android:id="@+id/illegal_payment"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="支付宝" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="订单状态:" />
+
+                <TextView
+                    android:id="@+id/illegal_order_info_state"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    tools:text="待付款" />
+
+            </LinearLayout>
+
+            <com.hxqc.aroundservice.view.ListItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                huzj:cut_off_rule_height="2"
+                huzj:cut_off_rule_visiable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="下单时间:" />
+
+                    <TextView
+                        android:id="@+id/illegal_order_create_time"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="下单时间" />
+                </LinearLayout>
+            </com.hxqc.aroundservice.view.ListItemView>
+
+            <com.hxqc.aroundservice.view.ListItemView
+                android:id="@+id/illegal_pay_time_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                huzj:cut_off_rule_height="2"
+                huzj:cut_off_rule_visiable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="支付时间:" />
+
+                    <TextView
+                        android:id="@+id/illegal_pay_time"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="支付时间" />
+                </LinearLayout>
+
+            </com.hxqc.aroundservice.view.ListItemView>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/illegal_item_refund_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="退款状态:" />
+
+                    <TextView
+                        android:id="@+id/illegal_refund_state"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="待退款" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<include
+                    android:id="@+id/illegal_original"
+                    layout="@layout/fragment_illegal_processing_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+                <com.hxqc.aroundservice.view.ChoosePictureLayout
+                    android:id="@+id/illegal_original"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp" />
+
+                <!--<include
+                    android:id="@+id/illegal_copy"
+                    layout="@layout/fragment_illegal_processing_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+                <com.hxqc.aroundservice.view.ChoosePictureLayout
+                    android:id="@+id/illegal_copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/query_result_v2_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <com.hxqc.mall.auto.view.CommonTwoTextView
+                    android:id="@+id/illegal_order_info_fine"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    huzj:auto_info_first_ems="4"
+                    huzj:auto_info_first_text="罚款金额:"
+                    huzj:auto_info_first_textColor="@color/text_color_title"
+                    huzj:auto_info_first_textSize="@dimen/text_size_14"
+                    huzj:auto_info_two_textColor="@color/text_color_title"
+                    huzj:auto_info_two_textSize="@dimen/text_size_14" />
+
+                <com.hxqc.mall.auto.view.CommonTwoTextView
+                    android:id="@+id/illegal_order_info_agents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    huzj:auto_info_first_ems="4"
+                    huzj:auto_info_first_text="代办费用:"
+                    huzj:auto_info_first_textColor="@color/text_color_title"
+                    huzj:auto_info_first_textSize="@dimen/text_size_14"
+                    huzj:auto_info_two_textColor="@color/text_color_title"
+                    huzj:auto_info_two_textSize="@dimen/text_size_14" />
+
+                <com.hxqc.mall.auto.view.CommonTwoTextView
+                    android:id="@+id/illegal_order_info_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    huzj:auto_info_first_ems="4"
+                    huzj:auto_info_first_text="总        计:"
+                    huzj:auto_info_first_textColor="@color/text_color_title"
+                    huzj:auto_info_first_textSize="@dimen/text_size_14"
+                    huzj:auto_info_two_textColor="@color/text_color_red"
+                    huzj:auto_info_two_textSize="@dimen/text_size_14" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.hxqc.aroundservice.view.QueryResultBarV2
+        android:id="@+id/illegal_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+
+    <com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/illegal_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="获取数据失败" />
+
+</RelativeLayout>

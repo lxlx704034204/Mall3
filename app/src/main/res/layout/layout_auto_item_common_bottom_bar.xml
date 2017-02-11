@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    android:id="@+id/bottom_bar"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:layout_alignParentBottom="true"
+    android:background="#292929"
+    android:divider="@drawable/bottom_line"
+    android:orientation="horizontal"
+    android:showDividers="middle|beginning">
+
+    <TextView
+        android:id="@+id/share_button"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:clickable="true"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/ic_service"
+        android:gravity="center_horizontal"
+        android:onClick="clickCallService"
+        android:padding="4dp"
+        android:text="客服"
+        android:textColor="#fff"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:background="#292929"
+        android:clickable="true"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/ic_share"
+        android:gravity="center_horizontal"
+        android:onClick="clickShare"
+        android:padding="4dp"
+        android:text="分享"
+        android:textColor="#fff"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/focus_view"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:button="@null"
+        android:clickable="true"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/ic_focus_normal"
+        android:gravity="center_horizontal"
+        android:onClick="clickOnFocus"
+        android:text="关注"
+        android:textColor="#fff"
+        android:textSize="12sp"/>
+
+    <com.hxqc.mall.views.BottomBarToBuy
+        android:id="@+id/tobuy_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"/>
+
+</android.support.v7.widget.LinearLayoutCompat>

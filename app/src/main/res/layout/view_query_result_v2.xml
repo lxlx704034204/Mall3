@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent"
+    android:orientation="vertical">
+
+    <!-- <LinearLayout
+         android:layout_width="0dp"
+         android:layout_height="wrap_content"
+         android:layout_weight="1"
+         android:layout_gravity="center"
+         android:orientation="vertical">
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+             <com.hxqc.mall.auto.view.CommonTwoTextView
+                 android:id="@+id/query_result_v2_point"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 huzj:auto_info_first_ems="3"
+                 huzj:auto_info_first_text="总扣分:"
+                 huzj:auto_info_first_textColor="@color/text_color_title"
+                 huzj:auto_info_first_textSize="@dimen/text_size_14"
+                 huzj:auto_info_two_text="12"
+                 huzj:auto_info_two_textColor="@color/text_color_red"
+                 huzj:auto_info_two_textSize="@dimen/text_size_14"></com.hxqc.mall.auto.view.CommonTwoTextView>
+
+             <com.hxqc.mall.auto.view.CommonTwoTextView
+                 android:id="@+id/query_result_v2_fine"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="15dp"
+                 huzj:auto_info_first_ems="3"
+                 huzj:auto_info_first_text="总罚款:"
+                 huzj:auto_info_first_textColor="@color/text_color_title"
+                 huzj:auto_info_first_textSize="@dimen/text_size_14"
+                 huzj:auto_info_two_text="￥600"
+                 huzj:auto_info_two_textColor="@color/text_color_red"
+                 huzj:auto_info_two_textSize="@dimen/text_size_14"></com.hxqc.mall.auto.view.CommonTwoTextView>
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="6dp">
+
+             <com.hxqc.mall.auto.view.CommonTwoTextView
+                 android:id="@+id/query_result_v2_service"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 huzj:auto_info_first_ems="3"
+                 huzj:auto_info_first_text="服务费:"
+                 huzj:auto_info_first_textColor="@color/text_color_title"
+                 huzj:auto_info_first_textSize="@dimen/text_size_14"
+                 huzj:auto_info_two_text="￥300"
+                 huzj:auto_info_two_textColor="@color/text_color_red"
+                 huzj:auto_info_two_textSize="@dimen/text_size_14"></com.hxqc.mall.auto.view.CommonTwoTextView>
+
+             <com.hxqc.mall.auto.view.CommonTwoTextView
+                 android:id="@+id/query_result_v2_total"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:orientation="horizontal"
+                 android:layout_alignParentRight="true"
+                 android:layout_marginRight="24dp"
+                 huzj:auto_info_first_ems="2"
+                 huzj:auto_info_first_text="总计:"
+                 huzj:auto_info_first_textColor="@color/text_color_title"
+                 huzj:auto_info_first_textSize="@dimen/text_size_14"
+                 huzj:auto_info_two_text="￥1100"
+                 huzj:auto_info_two_textColor="@color/text_color_red"
+                 huzj:auto_info_two_textSize="@dimen/text_size_14"></com.hxqc.mall.auto.view.CommonTwoTextView>
+         </RelativeLayout>
+
+     </LinearLayout>-->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/gray_yjf"
+        android:alpha="0.5"/>
+
+    <LinearLayout
+        android:id="@+id/query_result_v1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/BlackText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="合计" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="违章:" />
+
+                <TextView
+                    android:id="@+id/query_result_illegal"
+                    style="@style/RedText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    tools:text="5" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="罚款:" />
+
+                <TextView
+                    android:id="@+id/query_result_money"
+                    style="@style/RedText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    tools:text="600" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="扣分:" />
+
+                <TextView
+                    android:id="@+id/query_result_point"
+                    style="@style/RedText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    tools:text="12" />
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/query_result_v2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/query_result_v2_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.hxqc.mall.auto.view.CommonTwoTextView
+                android:id="@+id/query_result_v2_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                huzj:auto_info_first_ems="4"
+                huzj:auto_info_first_text="选择违章:"
+                huzj:auto_info_first_textColor="@color/text_color_title"
+                huzj:auto_info_first_textSize="@dimen/text_size_14"
+                huzj:auto_info_two_textColor="@color/text_color_title"
+                huzj:auto_info_two_textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.auto.view.CommonTwoTextView
+                android:id="@+id/query_result_v2_fine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                huzj:auto_info_first_ems="4"
+                huzj:auto_info_first_text="罚款金额:"
+                huzj:auto_info_first_textColor="@color/text_color_title"
+                huzj:auto_info_first_textSize="@dimen/text_size_14"
+                huzj:auto_info_two_textColor="@color/text_color_title"
+                huzj:auto_info_two_textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.auto.view.CommonTwoTextView
+                android:id="@+id/query_result_v2_service_charge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+                huzj:auto_info_first_ems="4"
+                huzj:auto_info_first_text="代办费用:"
+                huzj:auto_info_first_textColor="@color/text_color_title"
+                huzj:auto_info_first_textSize="@dimen/text_size_14"
+                huzj:auto_info_two_textColor="@color/text_color_title"
+                huzj:auto_info_two_textSize="@dimen/text_size_14" />
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="36dp">
+
+            <com.hxqc.mall.auto.view.CommonTwoTextView
+                android:id="@+id/query_result_v2_forecast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:orientation="horizontal"
+                huzj:auto_info_first_ems="2"
+                huzj:auto_info_first_text="预估:"
+                huzj:auto_info_first_textColor="@color/text_color_title"
+                huzj:auto_info_first_textSize="@dimen/text_size_14"
+                huzj:auto_info_two_textColor="@color/text_color_red"
+                huzj:auto_info_two_textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/query_result_v2_info_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawablePadding="5dp"
+                android:drawableRight="@drawable/ic_cbb_arrow_up"
+                android:padding="8dp"
+                android:text="明细"
+                android:textColor="@color/text_color_title" />
+
+            <Button
+                android:id="@+id/query_result_v2_processing"
+                style="@style/btn_orange"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="24dp"
+                android:text="去处理"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/query_result_illegal_info_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="16dp"
+        android:background="@color/white"
+        android:paddingRight="16dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center_vertical">
+
+            <com.hxqc.mall.auto.view.CommonTwoTextView
+                android:id="@+id/query_result_illegal_info_money"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal"
+                huzj:auto_info_first_ems="2"
+                huzj:auto_info_first_text="总计:"
+                huzj:auto_info_first_textColor="@color/text_color_title"
+                huzj:auto_info_first_textSize="@dimen/text_size_14"
+                huzj:auto_info_two_text="￥1100.00"
+                huzj:auto_info_two_textColor="@color/text_color_red"
+                huzj:auto_info_two_textSize="@dimen/text_size_14" />
+
+            <Button
+                android:id="@+id/query_result_illegal_info_btn"
+                style="@style/btn_orange"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:text="去付款"
+                android:visibility="gone" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

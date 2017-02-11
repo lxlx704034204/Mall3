@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tip_textview"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#FFF2E1"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="简单填写以下信息，方便与您联系（您的私人信息将会得到严格保密）"
+            android:textColor="#656766"
+            android:textSize="12sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_marginTop="10dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="车辆信息"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/car_name"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="6dp"
+                            android:inputType="none"
+                            android:enabled="false"
+                            android:focusable="false"
+                            android:maxLines="1"
+                            android:textSize="13sp"
+                            tools:text="卡罗拉 2014款 1.6L CTV GLX-i"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="店铺名称"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/shop_name"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="6dp"
+                            android:inputType="none"
+                            android:focusable="false"
+                            android:maxLines="1"
+                            android:textSize="13sp"
+                            tools:text="卡罗拉 2014款 1.6L CTV GLX-i"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/text_color_red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="您的姓名"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/customer_name"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:hint="请输入您的姓名"
+                            android:maxLength="15"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:gravity="bottom"
+                        android:orientation="horizontal"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="*"
+                            android:textColor="@color/text_color_red"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="16dp"
+                            android:text="手机号码"
+                            android:textColor="@color/title_and_main_text"
+                            android:textSize="14sp"/>
+
+                        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                            android:id="@+id/customer_phone"
+                            style="@style/MaterialEditText"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:hint="请输入您的手机号码"
+                            android:inputType="number"
+                            android:maxLength="15"
+                            android:textSize="13sp"/>
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/submit"
+                        style="@style/btn_orange"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="@dimen/margin_16"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:layout_marginTop="20dp"
+                        android:text="确定"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal"
+                        android:paddingLeft="94dp"
+                        android:paddingTop="4dp">
+
+                        <CheckBox
+                            android:id="@+id/clause_checkbox"
+                            android:layout_width="60dp"
+                            android:layout_height="wrap_content"
+                            android:background="@color/window_color"
+                            android:button="@drawable/checkbox"
+                            android:gravity="right|center_vertical"
+                            android:text="我同意"
+                            android:textColor="#656565"
+                            android:checked="true"
+                            android:textSize="12sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:clickable="true"
+                            android:onClick="GotoClauseDetail"
+                            android:text="《个人信息保护声明》"
+                            android:textColor="@color/text_color_blue"
+                            android:textSize="12sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.hxqc.mall.thirdshop.views.CallBar
+        android:id="@+id/call_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_16"
+        android:text="原因一:电瓶损坏"
+        android:textColor="@color/text_bg"
+        android:textSize="@dimen/text_size_16"
+        android:textStyle="bold" />
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_16" />
+
+    <RelativeLayout
+        style="@style/inspect_item">
+
+        <ImageView
+            android:id="@+id/inspect_solution_img"
+            style="@style/inspect_item_left_img"
+            android:src="@drawable/icon_money" />
+
+        <TextView
+            style="@style/inspect_item_title"
+            android:layout_toRightOf="@id/inspect_solution_img"
+            android:text="解决方案:" />
+
+
+        <TextView
+            android:id="@+id/inspect_solution_content"
+            style="@style/inspect_item_content"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="更换电瓶"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_14"/>
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_16" />
+
+    <RelativeLayout
+        style="@style/inspect_item">
+
+        <ImageView
+            android:id="@+id/inspect_estimated_cost_img"
+            style="@style/inspect_item_left_img"
+            android:src="@drawable/icon_money" />
+
+        <TextView
+            style="@style/inspect_item_title"
+            android:layout_toRightOf="@id/inspect_estimated_cost_img"
+            android:text="预计费用:" />
+
+
+        <TextView
+            android:id="@+id/inspect_estimated_cost_content"
+            style="@style/inspect_item_content"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="￥680.00元"
+            android:textColor="@color/Red_yjf" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="@dimen/margin_16" />
+
+    <RelativeLayout
+        style="@style/inspect_item">
+
+        <ImageView
+            android:id="@+id/inspect_time_cost_img"
+            style="@style/inspect_item_left_img"
+            android:src="@drawable/icon_money" />
+
+        <TextView
+            style="@style/inspect_item_title"
+            android:layout_toRightOf="@id/inspect_time_cost_img"
+            android:text="时间:" />
+
+
+        <TextView
+            android:id="@+id/inspect_time"
+            style="@style/inspect_item_content"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="30分钟" />
+
+    </RelativeLayout>
+
+</LinearLayout>

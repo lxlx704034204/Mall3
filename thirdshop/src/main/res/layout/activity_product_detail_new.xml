@@ -1,0 +1,202 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/detail_bottom">
+
+        <LinearLayout
+            android:id="@+id/detail_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- 商品大图 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/detail_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/pic_normal_square" />
+
+                <TextView
+                    android:id="@+id/detail_name"
+                    style="@style/WhiteText16"
+                    android:layout_width="match_parent"
+                    android:layout_alignParentBottom="true"
+                    android:alpha="0.75"
+                    android:background="#000"
+                    android:drawablePadding="10dp"
+                    android:drawableRight="@mipmap/ic_detail_photos"
+                    android:paddingBottom="10dp"
+                    android:paddingLeft="16dp"
+                    android:paddingRight="16dp"
+                    android:paddingTop="10dp" />
+            </RelativeLayout>
+
+            <!-- 价格 -->
+            <TextView
+                android:id="@+id/detail_price"
+                style="@style/RedText20"
+                android:layout_width="match_parent"
+                android:background="#f8f4e9"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:divider="@drawable/line"
+                app:showDividers="middle|beginning|end">
+
+                <com.hxqc.mall.thirdshop.accessory.views.ItemView
+                    android:id="@+id/detail_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="#F5F5F5"
+                    app:itemArrow="@drawable/ic_list_arrow"
+                    app:itemIcon="@drawable/ic_home_address"
+                    app:itemNameStr="店铺地址"
+                    app:itemValueColor="@color/text_color_title" />
+
+                <com.hxqc.mall.thirdshop.accessory.views.ItemView
+                    android:id="@+id/detail_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="#F5F5F5"
+                    app:itemArrow="@drawable/ic_list_arrow"
+                    app:itemIcon="@drawable/ic_product_color"
+                    app:itemNameStr="颜色尺寸"
+                    app:itemValueColor="@color/text_color_title" />
+
+                <com.hxqc.mall.thirdshop.accessory.views.ItemView
+                    android:id="@+id/detail_package"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="#F5F5F5"
+                    app:itemArrow="@drawable/ic_list_arrow"
+                    app:itemIcon="@drawable/ic_product_package"
+                    app:itemNameStr="优惠套餐" />
+
+                <com.hxqc.mall.thirdshop.accessory.views.ItemView
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:background="@color/white"
+                    app:itemIcon="@drawable/ic_product_introduce"
+                    app:itemNameStr="图文介绍" />
+            </android.support.v7.widget.LinearLayoutCompat>
+
+            <WebView
+                android:id="@+id/detail_introduce"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- 底部 -->
+    <LinearLayout
+        android:id="@id/detail_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="102dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <com.hxqc.mall.thirdshop.views.CallBar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/detail_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:call_title="@string/hot_line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/detail_shop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffE02C37"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_shopping_car" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="商家店铺"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#B0000B" />
+
+            <LinearLayout
+                android:id="@+id/detail_shopping_car"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/text_color_orange"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_shopping_car" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="购物车"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/text_size_16" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="#B0000B" />
+
+            <TextView
+                android:id="@+id/detail_add_car"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#ffE02C37"
+                android:gravity="center"
+                android:textSize="@dimen/text_size_16" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- 错误View -->
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/detail_fail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>
+
+

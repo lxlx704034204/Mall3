@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingRight="@dimen/margin_16"
+    android:paddingLeft="@dimen/margin_16"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp">
+
+    <ImageView
+        android:id="@+id/iv_select"
+        style="@style/Icon24" />
+
+    <TextView
+        android:id="@+id/goods_count"
+        style="@style/BlackText16"
+        tools:text="1."/>
+
+    <TextView
+        android:id="@+id/item_name"
+        style="@style/BlackText16"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_toRightOf="@+id/iv_select"
+        tools:text="方法大放送"/>
+
+    <TextView
+        android:id="@+id/work_price"
+        style="@style/RedText14"
+        android:layout_width="70dp"
+        android:layout_alignBottom="@+id/item_name"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tv2"
+        android:gravity="left"
+        tools:text="方法大放送"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/GrayText14"
+        android:layout_alignBottom="@+id/item_name"
+        android:layout_toLeftOf="@+id/work_price"
+        android:text="工时费: "/>
+
+    <RelativeLayout
+        android:id="@+id/one_goods_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_below="@+id/item_name"
+        android:layout_marginTop="6dp">
+
+        <TextView
+            android:id="@+id/one_goods_name"
+            style="@style/GrayText14"
+            android:layout_alignParentLeft="true"
+            android:layout_marginRight="8dp"
+            android:layout_toLeftOf="@+id/tv1"
+            tools:text="商品商品商品商品商品商品商品商品商品商品商品商品商品商品商品商品商品商品商品商品商品"/>
+
+        <TextView
+            android:id="@+id/goods_price"
+            style="@style/RedText14"
+            android:layout_width="70dp"
+            android:layout_alignParentRight="true"
+            android:gravity="left"
+            tools:text="方法大放送"/>
+
+        <TextView
+            android:layout_alignParentTop="true"
+            android:id="@+id/tv1"
+            style="@style/GrayText14"
+            android:layout_toLeftOf="@+id/goods_price"
+            android:text="材料费: "/>
+    </RelativeLayout>
+</RelativeLayout>

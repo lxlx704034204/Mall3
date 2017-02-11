@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_balance"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingEnd="7dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="7dp"
+    android:paddingStart="10dp"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+       >
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/WhiteText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="30dp"
+            android:text="@string/my_wallet_useful_balance"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/balance_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="#FFFFFF"
+            android:textSize="35sp" />
+
+        <TextView
+            style="@style/WhiteText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/balance_number"
+            android:layout_alignBottom="@+id/balance_number"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/balance_number"
+            android:layout_toRightOf="@+id/balance_number"
+            android:text="@string/choose_yuan"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/button_1"
+            style="@style/WhiteText14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/title_activity_recharge"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/button_2"
+            style="@style/WhiteText14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/my_wallet_use_balance"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/button_3"
+            style="@style/WhiteText14"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/to_see_detail"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+</LinearLayout>

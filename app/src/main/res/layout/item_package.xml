@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_big_16">
+
+        <TextView
+            android:id="@+id/package_title"
+            style="@style/BlackText14"
+            android:layout_centerVertical="true"
+            android:maxEms="11"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            tools:text="套餐名你到底能有多长，这么长够不够，还不够？这么长呢，有完没完"/>
+
+        <ImageView
+            android:id="@+id/status"
+            android:layout_width="40dp"
+            android:layout_height="17dp"
+            android:layout_alignTop="@+id/package_title"
+            android:layout_marginLeft="@dimen/normal_margin_small_8"
+            android:layout_toRightOf="@id/package_title"
+            tools:src="@drawable/tag_installed"/>
+
+        <TextView
+            android:id="@+id/package_price"
+            style="@style/BlackText14"
+            android:textColor="@color/text_color_red"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/package_title"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            tools:text="￥2000,582.00"/>
+    </RelativeLayout>
+
+    <com.hxqc.widget.ListViewNoSlide
+        android:layout_marginTop="@dimen/normal_margin_small_8"
+        android:id="@+id/accessory_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:listSelector="@color/transparent" />
+
+    <View
+        style="@style/UnderLine"
+        android:layout_marginTop="@dimen/normal_margin_big_16" />
+</LinearLayout>

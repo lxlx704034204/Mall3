@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/series_img"
+        android:layout_width="match_parent"
+        android:layout_height="220dp"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/BlackText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="5dp"
+        android:textStyle="bold" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <TextView
+            android:id="@+id/tv1"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="厂商指导价:" />
+
+        <TextView
+            android:id="@+id/guide_price"
+            style="@style/RedText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/tv1" />
+
+        <TextView
+            android:id="@+id/model_total"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/guide_price" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dedede" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f9f7f8"
+        >
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:paddingBottom="12dp"
+            android:paddingTop="12dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:text="车身颜色:" />
+
+        <com.hxqc.widget.GridViewNoSlide
+            android:id="@+id/color_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90dp"
+            android:listSelector="@color/transparent"
+            android:verticalSpacing="15dp" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedede" />
+
+    <com.hxqc.widget.ListViewNoSlide
+        android:id="@+id/parameter_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="#dedede"
+        android:dividerHeight="0.5dp"
+        android:listSelector="@android:color/transparent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedede" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="14dp"
+        android:background="#eaeaea" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedede" />
+    <LinearLayout
+        android:id="@+id/article_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@drawable/btn_click_style">
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="相关文章推荐"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dedede" />
+
+        <com.hxqc.widget.ListViewNoSlide
+            android:id="@+id/article_lv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="#dedede"
+            android:dividerHeight="0dp"
+            android:listSelector="@color/transparent"
+            android:paddingBottom="6dp"
+            android:paddingTop="6dp" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#dedede" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="14dp"
+            android:background="#eaeaea" />
+
+
+    </LinearLayout>
+</LinearLayout>

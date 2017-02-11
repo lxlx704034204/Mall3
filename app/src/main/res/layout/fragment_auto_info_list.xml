@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxqc.mall.core.views.pullrefreshhandler.FixRequestDisallowTouchEventPtrFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ptr_frame_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="50dp">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/auto_info_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+
+        <com.hxqc.mall.core.api.RequestFailView
+            android:id="@id/request_fail_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </FrameLayout>
+</com.hxqc.mall.core.views.pullrefreshhandler.FixRequestDisallowTouchEventPtrFrameLayout>

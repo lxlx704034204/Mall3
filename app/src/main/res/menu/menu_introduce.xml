@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_introduce"
+        android:orderInCategory="100"
+        android:title="服务说明"
+        app:showAsAction="ifRoom|withText" />
+</menu>

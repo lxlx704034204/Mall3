@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+>
+
+    <TextView
+        android:id="@+id/tv_s_detail_price_piece_label"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        tools:text="成交价："
+    />
+
+    <TextView
+        android:id="@+id/tv_s_detail_price_piece_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toEndOf="@+id/tv_s_detail_price_piece_label"
+        android:layout_toRightOf="@+id/tv_s_detail_price_piece_label"
+        android:textColor="@color/text_color_subheading"
+        android:textSize="12sp"
+        tools:text="￥37.8万"/>
+
+    <ImageView
+        android:id="@+id/iv_s_detail_price_piece_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:layout_toEndOf="@+id/tv_s_detail_price_piece_value"
+        android:layout_toRightOf="@+id/tv_s_detail_price_piece_value"
+        tools:background="@drawable/ic_table"
+        android:layout_centerVertical="true"
+    />
+
+
+</RelativeLayout>

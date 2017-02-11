@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_yjf"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        style="@style/GreenText18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="订单提交成功,请您尽快付款" />
+
+    <TextView
+        style="@style/GrayText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="付款后,若不能成功交易,将自动全额退款" />
+    <!--付款后,若不能成功交易,线下进行退款-->
+
+    <TextView
+        android:id="@+id/payment_head_order_id"
+        style="@style/BlackText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="订单号:123456789123" />
+
+
+</LinearLayout>

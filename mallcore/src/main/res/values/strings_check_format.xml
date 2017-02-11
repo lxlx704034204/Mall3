@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="me_email_error">请输入正确邮箱地址</string>
+    <string name="me_phone_number_hint">请输入手机号</string>
+    <string name="me_phone_number_format_error">手机号格式不正确</string>
+    <string name="dialog_arrival_email_error">邮箱格式错误</string>
+    <string name="me_password_hint">请输入密码</string>
+    <string name="me_password_start_end_space">密码首尾不能有空格</string>
+    <string name="me_password_length_error">请输入6–20位密码</string>
+    <string name="me_no_identifying_code">请输入验证码</string>
+    <string name="me_nickname_hint">请输入昵称</string>
+    <string name="me_name_hint">姓名不能为空</string>
+    <string name="me_nickname_error">2-12个字，可由中英文，数字和下划线组成</string>
+    <string name="me_name_error">姓名（购车人姓名或公司名称）：2-30个字，可由中英文，数字和下划线组成</string>
+    <string name="me_real_name_error">真实姓名：2-12个字,只能由中文组成</string>
+    <string name="me_name_error_for_acc">姓名或公司名称：2-30个字，可由中英文，数字和下划线组成</string>
+    <string name="me_name_error_for_invoice">公司名称：2-30个字，可由中英文，数字和下划线组成</string>
+</resources>

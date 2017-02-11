@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PWDEditText">
+        <attr name="basePWDColor" format="color" />
+        <attr name="primaryPWDColor" format="color" />
+        <attr name="errorPWDColor" format="color" />
+    </declare-styleable>
+</resources>

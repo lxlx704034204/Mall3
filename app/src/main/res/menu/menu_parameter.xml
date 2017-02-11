@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.hxqc.mall.activity.auto.ParameterActivity">
+    <item
+        android:id="@+id/action_classify"
+        android:orderInCategory="100"
+        android:textSize="16sp"
+        android:title="@string/classify"
+        app:showAsAction="never|ifRoom|withText" />
+</menu>

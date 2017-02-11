@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/express_type_text"
+        style="@style/BlackText14"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:text="@string/me_express_type" />
+
+
+    <ImageView
+        android:id="@+id/nav_icon"
+        android:layout_width="@dimen/nav_icon_width_16"
+        android:layout_height="@dimen/nav_icon_height_23"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/normal_margin_big_16"
+        android:src="@drawable/ic_pin" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_margin="@dimen/normal_margin_big_16"
+        android:layout_toLeftOf="@id/nav_icon"
+        android:layout_toRightOf="@+id/express_type_text"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_gravity="end"
+            android:text="@string/me_pickup_point" />
+
+        <TextView
+            android:id="@+id/pickup_point_address"
+            style="@style/BlackText12"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/normal_margin_small_8"/>
+    </LinearLayout>
+</RelativeLayout>

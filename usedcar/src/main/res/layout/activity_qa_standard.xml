@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+    android:layout_marginRight="@dimen/activity_vertical_margin_16"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/BlackText14"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:text="质保涵盖零部件及最高赔付标准"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@color/divider"
+        android:padding="1px">
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin_16"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="@dimen/activity_vertical_margin_16"
+            android:text="质保涵盖\n范围" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="1px" />
+
+        <TextView
+            android:id="@+id/price_1"
+            style="@style/BlackText14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin_16"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="@dimen/activity_vertical_margin_16"
+            tools:text="基础宝\n999/年" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="1px" />
+
+        <TextView
+            android:id="@+id/price_2"
+            style="@style/BlackText14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin_16"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="@dimen/activity_vertical_margin_16"
+            tools:text="畅行宝\n2080/年" />
+
+        <View
+            android:layout_width="1px"
+            android:layout_height="1px" />
+
+        <TextView
+            android:id="@+id/price_3"
+            style="@style/BlackText14"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center"
+            android:paddingBottom="@dimen/activity_vertical_margin_16"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:paddingTop="@dimen/activity_vertical_margin_16"
+            tools:text="省心宝\n3980/年" />
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/price_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:scrollbars="none" />
+</LinearLayout>

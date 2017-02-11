@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/home_page_accessory_item_height_64"
+    android:background="@color/window_color">
+
+    <ImageView
+        android:id="@+id/accessory_image"
+        android:layout_width="@dimen/home_page_accessory_image_size_64"
+        android:layout_height="@dimen/home_page_accessory_image_size_64"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/home_page_accessory_margin_6"
+        android:scaleType="fitXY" />
+
+    <TextView
+        android:id="@+id/accessory_name"
+        style="@style/BlackText14"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:layout_marginRight="@dimen/normal_margin_small_8"
+        android:layout_marginTop="@dimen/normal_margin_small_8"
+        android:layout_toLeftOf="@id/accessory_image" />
+
+    <TextView
+        android:id="@+id/accessory_description"
+        style="@style/GrayText14"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/accessory_name"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:layout_marginRight="@dimen/home_page_accessory_margin_6"
+        android:layout_marginTop="@dimen/home_page_accessory_margin_6"
+        android:layout_toLeftOf="@id/accessory_image"
+        android:textSize="@dimen/min_text_size_10" />
+
+</RelativeLayout>

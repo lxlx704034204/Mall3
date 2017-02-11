@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="314dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="8dp"
+                android:paddingLeft="@dimen/item_padding_16"
+                android:paddingRight="@dimen/item_padding_16"
+                android:paddingStart="@dimen/item_padding_16"
+                android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/pay_label"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_verify_pay_type_label"
+        android:textStyle="bold"/>
+
+
+    <CheckBox
+        android:id="@+id/payment_type_off_line"
+        style="@style/check_orange"
+        android:layout_width="96dp"
+        android:layout_below="@+id/pay_label"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="@string/pay_type_installment"/>
+
+    <TextView
+        android:id="@+id/off_line_des"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/payment_type_off_line"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/payment_type_off_line"
+        android:maxLines="2"
+        />
+
+    <Button
+        android:id="@+id/payment_type_installment"
+        style="@style/check_orange"
+        android:layout_width="96dp"
+        android:layout_alignLeft="@+id/payment_type_off_line"
+        android:layout_below="@+id/payment_type_off_line"
+        android:layout_marginTop="12dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_tag"
+        android:text="@string/pay_type_off_line"/>
+
+
+    <TextView
+        android:id="@+id/installment_des"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/payment_type_installment"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/payment_type_installment"
+        android:maxLines="2"/>
+</RelativeLayout>

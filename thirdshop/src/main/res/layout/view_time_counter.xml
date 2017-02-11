@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/time_day"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="#EC4853"
+        tools:text="距离结束12天"/>
+
+    <LinearLayout
+        android:id="@+id/time_desc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp"
+        android:gravity="center">
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/time_hour"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/time_counter_bg"
+            android:gravity="center"
+            tools:text="02"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:gravity="center"
+            android:textColor="#F04450"/>
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/time_min"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/time_counter_bg"
+            android:gravity="center"
+            tools:text="59"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text=":"
+            android:gravity="center"
+            android:textColor="#F04450"/>
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/time_second"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:background="@drawable/time_counter_bg"
+            android:gravity="center"
+            tools:text="32"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+    </LinearLayout>
+</LinearLayout>

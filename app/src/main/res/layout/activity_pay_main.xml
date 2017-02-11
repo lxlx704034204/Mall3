@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.v7.widget.Toolbar xmlns:app="http://schemas.android.com/apk/res-auto"
+                                       android:id="@+id/toolbar_pay"
+                                       android:layout_width="match_parent"
+                                       android:layout_height="wrap_content"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RadioGroup
+        android:id="@+id/rg_prepaid_process"
+        android:layout_below="@+id/toolbar_pay"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/main_and_price"
+        android:checkedButton="@+id/rb_sign_contract"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_sign_contract"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/round_num1_selector"
+            android:drawableStart="@drawable/round_num1_selector"
+            android:enabled="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/pay_main_sign_contract"
+            android:textColor="@color/title_disable_red"
+            android:textSize="@dimen/btn_font_size"/>
+
+        <RadioButton
+            android:id="@+id/rb_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/round_num2_selector"
+            android:drawableStart="@drawable/round_num2_selector"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="@string/pay_main_payment"
+            android:textColor="@color/title_disable_red"
+            android:textSize="@dimen/btn_font_size"/>
+
+        <RadioButton
+            android:id="@+id/rb_complete_information"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/round_num3_selector"
+            android:drawableStart="@drawable/round_num3_selector"
+            android:enabled="false"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/pay_main_complete_information"
+            android:textColor="@color/title_disable_red"
+            android:textSize="@dimen/btn_font_size"/>
+
+        <RadioButton
+            android:id="@+id/rb_complete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableLeft="@drawable/round_num4_selector"
+            android:drawableStart="@drawable/round_num4_selector"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:text="@string/pay_main_complete"
+            android:textColor="@color/title_disable_red"
+            android:textSize="@dimen/btn_font_size"/>
+
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rg_prepaid_process">
+
+
+            <FrameLayout
+                android:id="@+id/fragment_place"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        <!--<include layout="@layout/view_shadow_activity"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

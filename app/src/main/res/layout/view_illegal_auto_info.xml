@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="20dp">
+
+    <ImageView
+        android:id="@+id/illegal_auto_info_bg"
+        android:layout_width="@dimen/app_item_auto_image_width_96"
+        android:layout_height="@dimen/app_item_auto_image_height_55"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pic_normal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/illegal_auto_info_number"
+            style="@style/BlackText14"
+            tools:text="鄂A12345" />
+
+        <TextView
+            android:id="@+id/illegal_auto_info_service"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            tools:text="服务类系:违章处理" />
+
+        <TextView
+            android:id="@+id/illegal_auto_info_money"
+            style="@style/RedText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            tools:text="￥1100.00" />
+
+    </LinearLayout>
+
+</LinearLayout>

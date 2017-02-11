@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/shop_title"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:background="@color/white">
+
+        <CheckBox
+            android:id="@+id/select_shop"
+            style="@style/BlackText16"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:button="@drawable/shopping_cart_checkbox"
+            android:checked="false"
+            android:gravity="center_vertical"
+            android:paddingLeft="14dp"
+            android:textStyle="bold"
+            tools:text="武汉星凯凯迪拉克" />
+
+        <View
+            style="@style/UnderLine"
+            android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="@dimen/margin_16">
+
+        <CheckBox
+            android:id="@+id/select_package"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:button="@drawable/shopping_cart_checkbox"
+            android:checked="false"
+            android:gravity="center_vertical" />
+
+        <ImageView
+            android:id="@+id/package_tag"
+            android:layout_width="58dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/nav" />
+
+        <TextView
+            android:id="@+id/package_price"
+            style="@style/RedText14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_toRightOf="@id/package_tag"
+            android:gravity="center_vertical"
+            tools:text="￥129.00" />
+
+        <TextView
+            android:id="@+id/package_num"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:gravity="center_vertical"
+            tools:text="套餐数量：1" />
+
+        <ImageView
+            android:id="@+id/add_package"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:src="@drawable/btn_plus_sel" />
+
+        <TextView
+            android:id="@+id/edit_package_num"
+            android:layout_width="54dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/add_package"
+            android:background="#E7E7E7"
+            android:gravity="center"
+            android:maxLength="2"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/minus_package"
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_marginRight="2dp"
+            android:layout_toLeftOf="@id/edit_package_num"
+            android:src="@drawable/btn_minus_sel" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="@dimen/normal_margin_big_16">
+
+        <CheckBox
+            android:id="@+id/select_product"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:button="@drawable/shopping_cart_checkbox"
+            android:checked="false"
+            android:gravity="center_vertical" />
+
+        <RelativeLayout
+            android:id="@+id/product_info"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="@dimen/normal_margin_big_16">
+
+            <com.hxqc.widget.SquareImageView
+                android:id="@+id/photo"
+                style="@style/AccImage"
+                android:layout_width="76dp"
+                android:layout_height="76dp" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/BlackText14"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_toRightOf="@id/photo"
+                android:ellipsize="end"
+                android:lines="2" />
+
+            <TextView
+                android:id="@+id/product_num"
+                style="@style/BlackText14"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="32dp"
+                android:layout_marginTop="@dimen/normal_margin_small_8"
+                tools:text="商品数量：55" />
+
+            <TextView
+                android:id="@+id/product_price"
+                style="@style/RedText14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_toRightOf="@id/photo"
+                tools:text="¥123.00" />
+
+            <ImageView
+                android:id="@+id/minus_product"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_toRightOf="@id/photo"
+                android:src="@drawable/btn_minus_sel" />
+
+            <TextView
+                android:id="@+id/edit_product_num"
+                android:layout_width="54dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/minus_product"
+                android:background="#E7E7E7"
+                android:gravity="center"
+                android:maxLength="2"
+                android:maxLines="1" />
+
+            <ImageView
+                android:id="@+id/add_product"
+                android:layout_width="27dp"
+                android:layout_height="27dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="2dp"
+                android:layout_toRightOf="@id/edit_product_num"
+                android:src="@drawable/btn_plus_sel" />
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_blank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_16" />
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/UnderLine" />
+
+    <LinearLayout
+        android:id="@+id/shop_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="15dp"
+            android:background="@color/tag_background" />
+
+        <View style="@style/UnderLine" />
+    </LinearLayout>
+</LinearLayout>

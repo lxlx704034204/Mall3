@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/main_sale_brand_item_brand_name"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/normal_padding_16"
+        android:layout_marginRight="@dimen/promotion_item_padding_10"
+        android:layout_marginTop="@dimen/promotion_item_padding_10"
+        android:textStyle="bold" />
+
+    <com.hxqc.mall.thirdshop.views.FlowLayout
+        android:id="@+id/main_sale_brand_item_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/promotion_item_padding_10"
+        android:layout_marginRight="@dimen/promotion_item_padding_10"
+        android:layout_marginTop="@dimen/promotion_item_padding_10"
+        android:numColumns="3" />
+</LinearLayout>

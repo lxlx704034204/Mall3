@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color">
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/request_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:emptyDescription="未找到结果"
+        android:visibility="gone"/>
+
+    <com.hxqc.widget.PinnedHeaderExpandableListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:groupIndicator="@null"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"/>
+
+    <com.hxqc.mall.core.views.SideBar
+        android:id="@+id/SideBar"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="80dp"
+        android:layout_marginTop="80dp"
+        android:visibility="gone"/>
+</RelativeLayout>

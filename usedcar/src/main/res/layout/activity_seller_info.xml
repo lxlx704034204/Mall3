@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/tag_background">
+
+    <LinearLayout
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="79dp"
+            android:background="@color/white"
+            android:padding="@dimen/normal_margin_big_16">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/seller_image"
+                android:layout_width="47dp"
+                android:layout_height="47dp"
+                android:layout_centerVertical="true"
+                android:src="@mipmap/ic_individual" />
+
+            <TextView
+                android:id="@+id/seller_name"
+                style="@style/GrayText16"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_toRightOf="@id/seller_image" />
+
+            <TextView
+                android:id="@+id/car_count"
+                style="@style/RedText16"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true" />
+
+            <TextView
+                style="@style/GrayText16"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="@dimen/normal_margin_big_16"
+                android:layout_toLeftOf="@id/car_count"
+                android:text="@string/seller_info_all_cars" />
+        </RelativeLayout>
+
+        <View style="@style/UnderLine" />
+
+        <ListView
+            android:id="@+id/car_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:divider="@color/divider"
+            android:dividerHeight="1px"
+            android:listSelector="@color/transparent" />
+    </LinearLayout>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

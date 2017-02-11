@@ -1,0 +1,21 @@
+{
+  "name": "com.hxqc.mall",
+  "version": "1.4.0",
+  "description": "HXMall React Native Module",
+  "main": "index.js",
+  "scripts": {
+    "start": "./node_modules/react-native/packager/packager.sh"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/justlike/Mall.git"
+  },
+  "author": "wh",
+  "license": "ISC",
+  "dependencies": {
+    "react-native": "^0.32.0",
+    "react-native-grid-view": "^0.4.1",
+    "react-native-viewpager": "^0.2.1"
+  },
+  "devDependencies": {}
+}

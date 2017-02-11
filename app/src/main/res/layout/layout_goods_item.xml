@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/goods_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_goods_item"
+    android:padding="@dimen/goods_item_padding">
+
+
+    <ImageView
+        android:id="@+id/goods_pic"
+        android:layout_width="@dimen/goods_item_pic_width"
+        android:layout_height="@dimen/goods_item_height"
+        android:layout_margin="4dp"
+        android:scaleType="fitXY"
+        />
+    <CheckBox
+        android:id="@+id/goods_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dp"
+        android:background="@drawable/ic_package_choose"
+        android:button="@null"
+        android:checked="false"/>
+    <TextView
+        android:id="@+id/goods_title"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/goods_item_padding"
+        android:layout_marginStart="@dimen/goods_item_padding"
+        android:layout_toEndOf="@+id/goods_pic"
+        android:layout_toLeftOf="@+id/goods_cb"
+        android:layout_toStartOf="@+id/goods_cb"
+        android:layout_toRightOf="@+id/goods_pic"
+        android:lines="2"
+        android:textStyle="bold"/>
+
+
+
+    <TextView
+        android:id="@+id/price_txt"
+        style="@style/BlackText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/goods_title"
+        android:layout_alignStart="@+id/goods_title"
+        android:layout_below="@+id/goods_title"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="@dimen/goods_item_marginTop"
+        android:text="@string/goods_price"/>
+
+    <TextView
+        android:id="@+id/goods_price"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/goods_title"
+        android:layout_marginTop="@dimen/goods_item_marginTop"
+        android:layout_toEndOf="@+id/price_txt"
+        android:layout_toRightOf="@+id/price_txt"
+        android:maxLines="1"/>
+
+    <TextView
+        android:id="@+id/total_txt"
+        style="@style/BlackText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/price_txt"
+        android:layout_below="@+id/price_txt"
+        android:layout_marginTop="2dp"
+        android:text="@string/goods_total_cost"/>
+
+    <TextView
+        android:id="@+id/goods_total_cost"
+        style="@style/RedText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/total_txt"
+        android:layout_below="@+id/goods_price"
+        android:layout_toRightOf="@+id/total_txt"/>
+
+
+</RelativeLayout>

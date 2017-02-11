@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/fail_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/no_line" />
+
+    <TextView
+        android:id="@+id/fail_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fail_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:drawablePadding="26dp"
+        android:textColor="#979797"
+        android:textSize="16sp"
+        tools:text="网络连接失败" />
+    <!--您的网络不太给力,请稍后再试。-->
+
+    <Button
+        android:id="@+id/fail_to_see"
+        style="@style/btn_border"
+        android:layout_below="@+id/fail_notice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="重新加载"/>
+
+    <LinearLayout
+        android:id="@+id/fail_to_see_auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fail_notice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginRight="48dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/btn_auto_add"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_information_add" />
+
+        <TextView
+            style="@style/OrangeText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:text="添加车辆" />
+    </LinearLayout>
+
+</RelativeLayout>

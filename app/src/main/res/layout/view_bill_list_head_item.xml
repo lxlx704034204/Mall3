@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/integral_details_bg"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/normal_padding_big_16">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/total_charge_label"
+                    style="@style/WhiteText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:text="@string/total_charge" />
+
+                <TextView
+                    android:id="@+id/total_charge"
+                    style="@style/WhiteText20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/unit1"
+                    style="@style/WhiteText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:text="@string/yuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/total_cost_label"
+                    style="@style/WhiteText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:text="@string/total_cost" />
+
+                <TextView
+                    android:id="@+id/total_cost"
+                    style="@style/WhiteText20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/unit2"
+                    style="@style/WhiteText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:text="@string/yuan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/label_type"
+                    style="@style/WhiteText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="6"
+                    android:text="@string/account_balance" />
+
+                <TextView
+                    android:id="@+id/number"
+                    style="@style/WhiteText20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="0" />
+
+                <TextView
+                    android:id="@+id/unit3"
+                    style="@style/WhiteText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ems="1"
+                    android:text="@string/yuan" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--<TextView-->
+        <!--android:id="@+id/label_type"-->
+        <!--style="@style/WhiteText14"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/usable_score" />-->
+
+        <!--<RelativeLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:gravity="center"-->
+        <!--android:orientation="horizontal"-->
+        <!--android:padding="@dimen/normal_padding_big_16">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/number"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="0"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="40sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/unit"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignBaseline="@+id/number"-->
+        <!--android:layout_alignBottom="@+id/number"-->
+        <!--android:layout_marginLeft="@dimen/margin_6"-->
+        <!--android:layout_marginStart="@dimen/margin_6"-->
+        <!--android:layout_toEndOf="@+id/number"-->
+        <!--android:layout_toRightOf="@+id/number"-->
+        <!--android:text="@string/yuan"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="25sp" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/total_charge"-->
+        <!--style="@style/WhiteText14"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:text="" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/total_cost"-->
+        <!--style="@style/WhiteText14"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="right"-->
+        <!--android:text="" />-->
+        <!--</LinearLayout>-->
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/empty_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/icon_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_balance" />
+
+        <TextView
+            android:id="@+id/text_empty"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="@string/empty_balance" />
+    </LinearLayout>
+
+</LinearLayout>

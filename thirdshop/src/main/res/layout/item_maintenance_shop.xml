@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:paddingBottom="12dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:background="#EEEEEE"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/shop_image"
+                android:layout_width="@dimen/app_item_auto_image_width_96"
+                android:layout_height="@dimen/app_item_auto_image_height_55"
+                android:layout_gravity="center"
+                android:scaleType="centerCrop"
+                tools:src="@drawable/pic_normal" />
+
+            <ImageView
+                android:id="@+id/brands_image"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:src="@drawable/pic_normal_logo"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="6dp"
+                android:layout_weight="1">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:id="@+id/shop_name"
+                    style="@style/BlackText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    tools:text="武汉星威奔驰呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵呵" />
+
+                <TextView
+                    android:id="@+id/shop_distance"
+                    style="@style/WhiteText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/list_btn_bg"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:layout_marginRight="4dp"
+                    tools:text="1.288888888888888km" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/shop_content_1"
+                style="@style/RedText12"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:maxLines="1"
+                android:gravity="center_vertical"
+                tools:text="奔驰SLK级优惠高达8万 欢迎垂询" />
+
+            <TextView
+                android:id="@+id/shop_content_2"
+                style="@style/GrayText12"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                tools:text="奔驰CLS级全系热销 限时优惠达12万" />
+
+            <TextView
+                android:id="@+id/shop_content_3"
+                style="@style/GrayText12"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="2dp"
+                android:layout_marginTop="2dp"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                tools:text="奔驰A级热销中 优惠高达4.5万" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider" />
+</LinearLayout>

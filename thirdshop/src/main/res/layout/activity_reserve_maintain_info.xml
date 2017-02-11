@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/reserve_maintain_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="false"
+        android:focusableInTouchMode="false"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <com.hxqc.mall.auto.view.CommonAutoInfoHeaderViewV2
+                android:id="@+id/reserve_maintain_info_header"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </com.hxqc.mall.auto.view.CommonAutoInfoHeaderViewV2>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/divider" />
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_custom"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_hint="请填写车主姓名"
+                huzj:commen_info_item_content_maxLength="30"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_text="联  系  人:"
+                huzj:commen_info_item_title_ems="7"/>
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_phone_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_hint="请填写手机号码"
+                huzj:commen_info_item_content_inputType="phone"
+                huzj:commen_info_item_content_maxLength="11"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_text="手机号码:"
+                huzj:commen_info_item_title_ems="7"/>
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_shop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_acc_home_add"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_text="服务门店:"
+                huzj:commen_info_item_title_ems="7"/>
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_select_service_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择服务类型"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_text="服务类型:"
+                huzj:commen_info_item_title_ems="7"/>
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_select_reserve_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择"
+                huzj:commen_info_item_title_drawableLeft="@drawable/bg_transparent"
+                huzj:commen_info_item_title_text="预约时间:"
+                huzj:commen_info_item_title_ems="7"/>
+
+            <!--<com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_service_adviser"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择"
+                huzj:commen_info_item_title_text="服务顾问:"
+                huzj:commen_info_item_title_ems="7"/>
+
+            <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                android:id="@+id/reserve_maintain_service_mechanic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                huzj:commen_info_item_content_drawableRight="@drawable/ic_list_arrow"
+                huzj:commen_info_item_content_focusable="false"
+                huzj:commen_info_item_content_focusableInTouchMode="false"
+                huzj:commen_info_item_content_hint="请选择"
+                huzj:commen_info_item_title_text="维修技师:"
+                huzj:commen_info_item_title_ems="7"/>-->
+
+            <!--<TextView
+                style="@style/RedText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/explanation" />-->
+
+            <Button
+                android:id="@+id/reserve_maintain_reserve_success"
+                style="@style/btn_orange"
+                android:layout_width="match_parent"
+                android:text="提交" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- <android.inputmethodservice.KeyboardView
+         android:id="@+id/keyboard_view"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:background="@android:color/darker_gray"
+         android:keyBackground="@android:color/white"
+         android:keyTextColor="@android:color/black"
+         android:shadowColor="@android:color/white"
+         android:shadowRadius="0.0"
+         android:visibility="gone" />-->
+
+</RelativeLayout>

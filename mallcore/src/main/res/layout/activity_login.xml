@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="top"
+            android:scrollbars="none"
+            android:background="@color/white">-->
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+    <!--        <ImageView
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_login"
+            android:layout_above="@+id/input_phone_number"
+            android:layout_centerHorizontal="true"
+        />-->
+
+    <com.hxqc.mall.launch.view.InputPhoneNumber
+        android:id="@+id/input_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.hxqc.mall.launch.view.InputPassword
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_phone_number"
+        />
+    <TextView
+        android:id="@+id/forget_password"
+        style="@style/BlueText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login"
+        android:layout_below="@+id/input_password"
+        android:text="@string/me_forget_password" />
+    <Button
+        android:id="@+id/login"
+        style="@style/btn_orange"
+        android:layout_width="match_parent"
+        android:layout_margin="@dimen/margin_16"
+        android:layout_below="@+id/forget_password"
+        android:text="@string/me_login_launch" />
+    <TextView
+        android:id="@+id/register"
+        style="@style/OrangeText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/login"
+        android:layout_below="@+id/login"
+        android:text="@string/title_activity_me_user_register" />
+    <!--  <LinearLayout
+          android:id="@+id/lly_or"
+          android:layout_width="260dp"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="16dp"
+          android:gravity="center_vertical"
+          android:layout_above="@+id/code_login"
+          android:layout_alignLeft="@+id/code_login"
+          android:orientation="horizontal">
+          <View style="@style/UnderLine"
+              android:layout_weight="1"/>
+          <ImageView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_margin="5dp"
+              android:src="@drawable/or"/>
+          <View style="@style/UnderLine"
+              android:layout_weight="1"/>
+      </LinearLayout>-->
+    <TextView
+        android:id="@+id/code_login"
+        style="@style/OrangeText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/login"
+        android:layout_below="@+id/login"
+        android:text="@string/me_codelogin_launch" />
+
+</RelativeLayout>
+    <!--</ScrollView>-->

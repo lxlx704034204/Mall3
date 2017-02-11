@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="42dp"
+    android:background="@color/bg_key_gray"
+>
+
+    <ImageView android:id="@+id/number_back_view"
+               android:layout_width="match_parent"
+               android:layout_height="42dp"
+               android:layout_margin="10dp"
+               android:gravity="center"
+               android:src="@drawable/backspace_selector"/>
+
+</RelativeLayout>
+

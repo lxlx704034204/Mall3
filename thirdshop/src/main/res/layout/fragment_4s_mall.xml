@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<com.hxqc.mall.thirdshop.views.FourSMallLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/banner_image"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/sliderimage_pic_normal_slider" />
+
+        <com.daimajia.slider.library.SliderLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/slider"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="gone"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Default"
+            custom:pager_animation_span="1000" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/mall_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_16">
+
+            <com.hxqc.mall.thirdshop.views.FourSMallMenu
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:menuIcon="@drawable/brand_choose"
+                app:menuText="品牌选车" />
+
+            <com.hxqc.mall.thirdshop.views.FourSMallMenu
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:menuIcon="@drawable/hot_rank"
+                app:menuText="热销排行" />
+
+            <com.hxqc.mall.thirdshop.views.FourSMallMenu
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:menuIcon="@drawable/instalment"
+                app:menuText="分期购车" />
+
+            <com.hxqc.mall.thirdshop.views.FourSMallMenu
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:menuIcon="@drawable/specials"
+                app:menuText="限时特价" />
+
+            <com.hxqc.mall.thirdshop.views.FourSMallMenu
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:menuIcon="@drawable/new_car"
+                app:menuText="新车上市" />
+        </LinearLayout>
+
+        <View
+            style="@style/UnderLine"
+            android:layout_marginTop="@dimen/activity_horizontal_margin_16" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</com.hxqc.mall.thirdshop.views.FourSMallLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/normal_dialog_width_280"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:paddingTop="@dimen/dialog_padding_24">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/BlackText16"
+        android:layout_marginLeft="@dimen/dialog_padding_24"
+        android:text="@string/app_hint"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/content"
+        style="@style/BlackText16"
+        android:layout_below="@id/title"
+        android:lineSpacingExtra="@dimen/dialog_text_line_spacing_extra_10"
+        android:paddingLeft="@dimen/dialog_padding_24"
+        android:paddingRight="@dimen/dialog_padding_24"
+        android:paddingTop="@dimen/dialog_padding_24"
+        android:text="@string/me_cancel_order_confirm" />
+
+    <TextView
+        android:id="@+id/reason"
+        style="@style/GrayText14"
+        android:layout_below="@id/content"
+        android:layout_marginLeft="@dimen/dialog_padding_24"
+        android:layout_marginTop="14dp"
+        android:text="@string/me_cancel_reason" />
+
+    <ListView
+        android:id="@+id/reason_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/reason"
+        android:layout_marginLeft="@dimen/dialog_padding_24"
+        android:layout_marginTop="10dp"
+        android:listSelector="#00000000" />
+
+    <RelativeLayout
+        android:id="@+id/dialog_button"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dialog_button_height_36"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/reason_group"
+        android:layout_marginRight="@dimen/normal_margin_big_16"
+        android:layout_marginTop="@dimen/dialog_padding_24">
+
+        <TextView
+            android:id="@+id/ok"
+            style="@style/BlueText14"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding_big_16"
+            android:paddingRight="@dimen/normal_padding_big_16"
+            android:text="@string/app_ok" />
+
+        <TextView
+            android:id="@+id/off"
+            style="@style/BlackText14"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@id/ok"
+            android:gravity="center"
+            android:paddingLeft="@dimen/normal_padding_big_16"
+            android:paddingRight="@dimen/normal_padding_big_16"
+            android:text="@string/me_off" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_big_16"
+        android:layout_below="@id/dialog_button"
+        android:background="@null" />
+</RelativeLayout>

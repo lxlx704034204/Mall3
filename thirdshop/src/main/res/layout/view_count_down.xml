@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/label"
+        style="@style/BlackText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="剩余时间：" />
+
+    <LinearLayout
+        android:id="@+id/time_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="8"
+            android:gravity="center"
+            android:lines="1"
+            android:textColor="#333"
+            android:textSize="12sp"
+            tools:text="12天02时58分32秒" />
+
+        <LinearLayout
+            android:id="@+id/progress_layout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/custom_progress_bar_height"
+            android:layout_margin="@dimen/countdown_padding"
+            android:background="#d5d5d5"
+            android:orientation="horizontal"
+            android:weightSum="100">
+
+            <View
+                android:id="@+id/progress_view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/custom_progress_bar_height"
+                android:layout_weight="20"
+                android:background="#FBB329" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

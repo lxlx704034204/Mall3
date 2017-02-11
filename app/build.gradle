@@ -1,0 +1,244 @@
+import java.text.SimpleDateFormat
+
+apply plugin: 'com.android.application'
+apply plugin: 'AndResGuard'
+apply plugin: 'com.jakewharton.hugo'
+apply plugin: 'packer'
+apply plugin: 'com.antfortune.freeline'
+apply from: "tinkerbuild.gradle"
+android {
+    compileSdkVersion Integer.valueOf(project.compileSdkVersion)
+    buildToolsVersion project.buildToolsVersion
+    defaultConfig {
+        minSdkVersion Integer.valueOf(project.minSdkVersion)
+        targetSdkVersion Integer.valueOf(project.targetSdkVersion)
+        multiDexEnabled true
+        applicationId "hxqc.mall"
+        versionName project.VERSION_NAME
+        versionCode computeVersionCode()
+        multiDexKeepProguard file("keep_in_main_dex.txt")
+        resValue "string", "app_name", "恒信车管家"
+        manifestPlaceholders = [UMENG_APPKEY        : "561e3cd667e58e140a000c5d",
+                                UMENG_MESSAGE_SECRET: "6a425e0108c0b18ec67956a6d67878e2"]
+        buildConfigField "String", "DiDiAPPID", "\"didi49694F49616E392B676D75715451\""
+        buildConfigField "String", "DiDiSecret", "\"68c9ca942789448e279b7944547cf394\""
+        buildConfigField "String", "RNVersionName", "\"" + project.VERSION_NAME + "\""
+        buildConfigField "String", "UMENGAPPID", "\"561e3cd667e58e140a000c5d\""
+        manifestPlaceholders = [amap_apikey: "6e81e3f58e4531af5625e38a6631d9db"]
+
+        buildConfigField "String", "MESSAGE", "\"I am the base apk\""
+        buildConfigField "String", "CLIENTVERSION", "\"10001\""
+        buildConfigField "String", "PLATFORM", "\"all\""
+
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+//    dataBinding {
+//        enabled = true
+//    }
+    useLibrary 'org.apache.http.legacy'
+    signingConfigs {
+        debug {
+            keyAlias 'wuhanhxqc'
+            keyPassword 'wuhanhxqc1126'
+            storeFile file("mall.keystore")
+            storePassword 'hxqc1126'
+            v2SigningEnabled false
+        }
+        release {
+            keyAlias 'wuhanhxqc'
+            keyPassword 'wuhanhxqc1126'
+            storeFile file("mall.keystore")
+            storePassword 'hxqc1126'
+            v2SigningEnabled false
+        }
+    }
+    freeline {
+        hack true
+        productFlavor "pgyer"
+        autoDependency true
+    }
+
+    buildTypes {
+        debug {
+            resValue "string", "app_name", "恒信车管家开发"
+            buildConfigField "String", "AccountURL", "\"http://app-interface.t.hxqctest.com/\""
+            buildConfigField "String", "MaintainURL", "\"http://maintain-interface-goods.tadmin.hxqctest.com\""
+            buildConfigField "String", "AccessoryGoodsURL", "\"http://accessory-goods.tadmin.hxqctest.com\""
+            buildConfigField "String", "UsedCarURL", "\"http://app-interface.t.hxqctest.com\""
+            buildConfigField "String", "AppConfigURL", "\"http://10.0.15.205:8361\""
+            buildConfigField "String", "RNBsdiffURL", "\"http://10.0.15.205:8361\""
+            buildConfigField "String", "ShopSiteID", "\"{\\\"siteGroupName\\\":\\\"武汉\\\",\\\"siteGroupID\\\":\\\"1639328539308827\\\",\\\"siteAreaName\\\":\\\"武汉市\\\",\\\"initProvinceName\\\":\\\"湖北省\\\"}\""
+            buildConfigField "boolean", "showLog", "true"
+            buildConfigField "String", "ConfigAppKey", "\"4729e28f-ded5-4b71-8124-21d88af41817\""//后台app key
+            buildConfigField "String", "UsedCarAuctionHostURL", "\"http://usedcar.tm.hxqctest.com\""//二手车竞拍url
+            signingConfig signingConfigs.release
+            debuggable true
+        }
+        release_test {
+            buildConfigField "String", "AccountURL", "\"https://app-interface.t.hxqc.com\""
+            buildConfigField "String", "MaintainURL", "\"https://maintain-interface-goods.tadmin.hxqc.com\""
+            buildConfigField "String", "AccessoryGoodsURL", "\"https://accessory-goods.tadmin.hxqc.com\""
+            buildConfigField "String", "UsedCarURL", "\"https://usedcar-interface.t.hxqc.com\""
+            buildConfigField "String", "AppConfigURL", "\"https://appconf.t.hxqc.com\""
+            buildConfigField "String", "RNBsdiffURL", "\"https://appconf.t.hxqc.com\""
+            buildConfigField "String", "ShopSiteID", "\"{\\\"siteGroupName\\\":\\\"武汉\\\",\\\"siteGroupID\\\":\\\"1639328539308827\\\",\\\"siteAreaName\\\":\\\"武汉市\\\",\\\"initProvinceName\\\":\\\"湖北省\\\"}\""
+            buildConfigField "boolean", "showLog", "true"
+            buildConfigField "String", "ConfigAppKey", "\"f9faee90-3476-46f2-872d-86e3b2b45921\""//后台app key
+            buildConfigField "String", "UsedCarAuctionHostURL", "\"http://usedcar.tm.hxqc.com\""//二手车竞拍url
+            debuggable false
+            minifyEnabled true
+            shrinkResources true
+            pseudoLocalesEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        release {
+            buildConfigField "String", "AccountURL", "\"https://app-interface.hxqc.com\""
+            buildConfigField "String", "MaintainURL", "\"https://maintain-interface-goods.admin.hxqc.com\""
+            buildConfigField "String", "AccessoryGoodsURL", "\"https://accessory-goods.admin.hxqc.com\""
+            buildConfigField "String", "UsedCarURL", "\"https://interface-usedcar.admin.hxqc.com\""
+            buildConfigField "String", "AppConfigURL", "\"https://appconf.hxqc.com\""
+            buildConfigField "String", "RNBsdiffURL", "\"https://appconf.hxqc.com\""
+            buildConfigField "String", "ShopSiteID", "\"{\\\"siteGroupName\\\":\\\"武汉\\\",\\\"siteGroupID\\\":\\\"1639328539308827\\\",\\\"siteAreaName\\\":\\\"武汉市\\\",\\\"initProvinceName\\\":\\\"湖北省\\\"}\""
+            buildConfigField "boolean", "showLog", "true"
+            buildConfigField "String", "ConfigAppKey", "\"6d91569d-173b-48a9-82bd-4e51c9abbc6b\""//后台app key
+            buildConfigField "String", "UsedCarAuctionHostURL", "\"http://usedcar.m.hxqc.com\""//二手车竞拍url
+            minifyEnabled true
+            shrinkResources true
+            pseudoLocalesEnabled true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+    }
+
+
+    splits {
+        abi {
+            enable true
+            reset()
+            println(project.splits_includ)
+            include project.splits_includ //gradle.properties 中切换
+            universalApk Boolean.parseBoolean(project.splits_universalApk)
+            //generate an additional APK that contains all the ABIs
+        }
+    }
+
+    /*
+    ----------------------------------------------------------------------------------------------------------------------------------
+    */
+    productFlavors {
+        pgyer {
+            applicationIdSuffix ".beta"
+            buildConfigField "boolean", "showLog", "true"
+            buildConfigField "String", "VersionTime", "\"" + computeVersionName() + "\""
+            resValue "string", "app_name", "恒信车管家β"
+            manifestPlaceholders = [amap_apikey: "2f8c9d41d70937b4e690fe9d7fc4e49b"]
+        }
+        hxqc {
+            buildConfigField "String", "VersionTime", "\"" + project.VERSION_NAME + "\""
+        }
+    }
+    sourceSets {
+        main {
+            assets.srcDirs = ['assets']
+        }
+        pgyer {
+            manifest.srcFile 'src/main/AhxqcDev/AndroidManifest.xml'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+//    解决class过量，参考http://stackoverflow.com/questions/32721083/too-many-classes-in-main-dex-list-main-dex-capacity-exceeded
+
+    afterEvaluate {
+        project.tasks.each { task ->
+            if (task.name.startsWith('collect') && task.name.endsWith('MultiDexComponents')) {
+                println "main-dex-filter: found task $task.name"
+                task.filter { name, attrs ->
+                    def componentName = attrs.get('android:name')
+                    if ('activity'.equals(name)) {
+                        println "main-dex-filter: skipping, detected activity [$componentName]"
+                        return false
+                    } else {
+                        println "main-dex-filter: keeping, detected $name [$componentName]"
+                        return true
+                    }
+                }
+            }
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+    }
+    dexOptions {
+        dexInProcess = true
+        javaMaxHeapSize "4g"
+        preDexLibraries = false
+        jumboMode = true
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile project(':mallcore')
+    compile project(':thirdshop')
+    compile project(':usedcar')
+    compile project(':drivingexam')
+    //react native-----------------start------------------------
+    compile 'com.facebook.react:react-native:+'
+    // If your app supports Android versions before Ice Cream Sandwich (API level 14)
+    compile 'com.facebook.fresco:animated-base-support:0.11.0'
+    // For animated GIF support
+    compile 'com.facebook.fresco:animated-gif:0.11.0'
+    // For WebP support, including animated WebP
+    compile 'com.facebook.fresco:animated-webp:0.11.0'
+    compile 'com.facebook.fresco:webpsupport:0.11.0'
+    // For WebP support, without animations
+    //    compile 'com.facebook.fresco:webpsupport:0.11.0'
+    //react native-----------------end------------------------
+    compile(name: 'didi_sdk_for_common_v1.1.0_04_21', ext: 'aar')
+    compile("com.tencent.tinker:tinker-android-lib:${TINKER_VERSION}") { changing = true }
+    compile("com.tencent.tinker:tinker-android-anno:${TINKER_VERSION}") { changing = true }
+    annotationProcessor "com.github.Raizlabs.DBFlow:dbflow-processor:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow-core:${dbflow_version}"
+    compile "com.github.Raizlabs.DBFlow:dbflow:${dbflow_version}"
+    compile "net.zetetic:android-database-sqlcipher:${sqlcipher_version}@aar"
+    compile 'com.mcxiaoke.gradle:packer-helper:1.0.8'
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+def computeVersionName() {
+    def formatter = new SimpleDateFormat('yyyy-MM-dd HH:mm');
+    def date = new Date();
+    return project.VERSION_NAME + "-" + formatter.format(date) + "dev"
+}
+
+def computeVersionCode() {
+//    def formatter = new SimpleDateFormat('yyyyMMddHH');
+//    def date = new Date();
+//    return Integer.valueOf(formatter.format(date))
+    return 2017020324
+}
+//原始文件路径
+def getOld() {
+    return null
+}

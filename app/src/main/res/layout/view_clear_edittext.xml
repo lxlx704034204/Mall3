@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+        android:id="@+id/edit_text"
+        style="@style/FloatingEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxLines="1" />
+
+    <ImageView
+        android:id="@+id/clear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/normal_margin_big_16"
+        android:padding="@dimen/click_padding_6"
+        android:src="@drawable/form_input_delete"
+        android:visibility="invisible" />
+</RelativeLayout>

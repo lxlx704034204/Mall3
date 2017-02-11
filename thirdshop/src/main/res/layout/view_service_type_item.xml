@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_service_spray_rectangle"
+        android:orientation="vertical"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp">
+
+        <include
+            layout="@layout/view_cut_off_rule_orange"
+            android:layout_width="80dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="16dp" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="13dp">
+
+            <ImageView
+                android:id="@+id/service_type_group_img"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@drawable/selector_repair_img" />
+
+            <TextView
+                android:id="@+id/service_type_v3_tv"
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@id/service_type_group_img"
+                android:text="@string/service_type_repair"
+                android:textColor="@drawable/selector_service_type_text_bg" />
+
+            <CheckBox
+                android:id="@+id/serviec_type_group_cb"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_check"
+                android:button="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+        </RelativeLayout>
+
+        <com.hxqc.mall.thirdshop.maintenance.views.CustomGridView
+            android:id="@+id/service_type_child_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="3"
+            android:listSelector="@null"
+            android:layout_marginLeft="12dp"
+            android:layout_marginBottom="12dp"
+            android:focusable="false"
+            android:focusableInTouchMode="false">
+        </com.hxqc.mall.thirdshop.maintenance.views.CustomGridView>
+
+    </LinearLayout>-->
+    <RelativeLayout
+        android:id="@+id/service_type_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/shape_service_spray_rectangle"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/service_type_v3_tv_parent"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:padding="0dp">
+
+            <TextView
+                android:id="@+id/service_type_v3_tv"
+                style="@style/OrangeText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/service_type_repair" />
+
+            <CheckBox
+                android:id="@+id/serviec_type_group_cb"
+                android:layout_width="30dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_check"
+                android:button="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+            <!--<include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"/>-->
+        </RelativeLayout>
+
+
+        <!--<RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="13dp">
+
+        </RelativeLayout>-->
+
+        <com.hxqc.mall.thirdshop.maintenance.views.CustomGridView
+            android:id="@+id/service_type_child_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/service_type_v3_tv_parent"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:visibility="gone"></com.hxqc.mall.thirdshop.maintenance.views.CustomGridView>
+
+        <RelativeLayout
+            android:id="@+id/service_type_remark"
+            android:layout_width="match_parent"
+            android:layout_height="85.5dp"
+            android:layout_below="@id/service_type_v3_tv_parent"
+            android:background="@color/normal_bg"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="10.5dp"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/remark"
+                style="@style/BlackText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注:" />
+
+            <!--<EditText
+                android:id="@+id/service_type_remark_content"
+                style="@style/BlackText14"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/remark"
+                android:background="@drawable/shape_service_type_remark_bg"
+                android:gravity="top|left"
+                android:hint="请对您要维修的项目进行说明"
+                android:textColorHint="@color/remark_text_bg"
+                android:maxLength="200"
+                android:textCursorDrawable="@drawable/edittext_cursor"/>-->
+
+            <LinearLayout
+                android:id="@+id/service_type_remark_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@id/remark"
+                android:background="@drawable/shape_service_type_remark_bg">
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/service_type_remark_content"
+                    style="@style/BlackText14"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_gravity="top|left"
+                    android:layout_marginRight="5dp"
+                    android:background="@null"
+                    android:gravity="top|left"
+                    android:hint="请对您要维修的项目进行说明"
+                    android:paddingBottom="5dp"
+                    android:textColorHint="#989898"
+                    android:textCursorDrawable="@drawable/edittext_cursor"
+                    hxqc:baseColor="@color/transparent"
+                    hxqc:floatingLabelSpacing="0dp"
+                    hxqc:maxCharacters="200"
+                    hxqc:primaryColor="@color/transparent" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

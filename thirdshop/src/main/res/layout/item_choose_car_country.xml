@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/car_country_tv"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@drawable/select_car_choose_country_bg"
+        android:gravity="center"
+        tools:text="测试"
+        android:textSize="13sp"
+        android:textColor="@color/select_car_choose_country_text_color"/>
+</LinearLayout>

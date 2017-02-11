@@ -1,0 +1,37 @@
+<resources>
+
+    <!--&lt;!&ndash; Base application theme. &ndash;&gt;-->
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+    <!--用品商品方形边框图片-->
+    <style name="AccImage">
+        <item name="android:src">@drawable/pic_normal_square</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:padding">1dp</item>
+        <item name="android:background">@color/acc_btn_disable</item>
+    </style>
+    <!--按钮-->
+    <style name="AccBtn">
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+    <!--红色按钮-->
+    <style name="AccRedBtn" parent="AccBtn">
+        <item name="android:background">@drawable/acc_btn_red</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- 通用RadioButton 需要添加textColor -->
+    <style name="AccRadioButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/white</item>
+    </style>
+</resources>

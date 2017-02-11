@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:minHeight="36dp"
+    android:orientation="horizontal"
+    android:paddingBottom="12dp"
+    android:paddingLeft="@dimen/item_padding_16"
+    android:paddingRight="@dimen/item_padding_16"
+    android:paddingTop="12dp">
+
+    <TextView
+        android:id="@+id/parameter_child_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="top|left"
+        android:text="车款"
+        android:textColor="@color/straight_matter_and_secondary_text"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/parameter_child_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="阿的发生的发生的阿斯顿发生法师法师大的风发生"
+        android:textColor="@color/title_and_main_text"
+        android:textSize="14sp" />
+</LinearLayout>

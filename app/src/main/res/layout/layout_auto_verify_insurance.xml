@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp"
+    android:paddingLeft="@dimen/item_padding_16"
+    android:paddingRight="@dimen/item_padding_16"
+    android:paddingStart="@dimen/item_padding_16"
+    android:paddingTop="8dp">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/buy_verify_insurance_label"
+        android:textStyle="bold"/>
+
+    <TextView
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/insurance_checkbox"
+        android:text="自定义本车保险方案试算保费"/>
+
+
+    <CheckBox
+        android:id="@+id/insurance_checkbox"
+        style="@style/check_orange"
+        android:layout_width="96dp"
+        android:layout_below="@+id/title"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/buy_verify_insurance"/>
+
+    <TextView android:layout_alignTop="@+id/insurance_checkbox"
+        android:id="@+id/insurance_calculator"
+        style="@style/BlueText14"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/insurance_checkbox"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:text="保险试算"/>
+</RelativeLayout>

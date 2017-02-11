@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="maintenance_time">您上次保养的时间</string>
+    <string name="mileage">累计行驶里程</string>
+    <string name="kilometre">公里</string>
+    <string name="warranty">质保到</string>
+    <string name="license_original">行驶证正本正面照:</string>
+    <string name="license_copy">行驶证副本正面照:</string>
+    <string name="licence_original">驾驶证正本正面照:</string>
+    <string name="licence_copy">驾驶证副本正面照:</string>
+    <string name="identity_front">身份证正面照:</string>
+    <string name="identity_back">身份证反面照:</string>
+    <string name="explain_add_auto">根据您选择的车型和累计行驶里程，系统自动为您推荐基础保养方案，您也可以根据车辆的实际情况自行选择其他保养项目。</string>
+    <string name="register_date">首次上牌时间:</string>
+
+    <string name="explanation">注：打“*”的内容为必填项目</string>
+    <string name="explan_maintenance">注：查看保养方案需要完善如上信息</string>
+    <string name="explan_illegal">注：查违章需要完善如上信息</string>
+
+    <string-array name="is_wuhan">
+        <item>保养记录</item>
+        <item>查询违章</item>
+        <item>车辆年审</item>
+        <item>驾驶证换证</item>
+    </string-array>
+
+    <string name="maintenance_record">保养记录</string>
+    <string name="query_illegal">违章查缴</string>
+    <string name="annual_vehicle">车辆年审</string>
+    <string name="driver_license">驾驶证换证</string>
+    <string name="maintain_record">我要保养</string>
+    <string name="reserve_maintain">修车预约</string>
+
+    <string-array name="no_wuhan">
+        <item>保养记录</item>
+        <item>查询违章</item>
+    </string-array>
+
+    <string name="text_test">测试文字</string>
+
+    <!--<string name="explan_auto_info">完善车型信息后平台才能为你推荐\n更精确的保养方案</string>-->
+    <string name="explan_auto_info">您有未完善的车型信息，完善后平台\n才能为您推荐更精确的保养方案</string>
+
+    <string name="explan_detail">如果您的爱车相关信息有误需要修改，请到店咨询店员或致电</string>
+    <string name="explan_phone_number"><u>400-1868-555</u></string>
+
+    <string name="title_insurance_time">保险到期时间:</string>
+    <string name="title_verification_time">年审到期时间:</string>
+    <string name="title_warranty_time">保修到期时间:</string>
+    <string name="title_maintain_time">建议下次保养时间:</string>
+    <string name="title_maintain_distance">建议下次保养公里数:</string>
+
+    <string name="hot_line">咨询电话</string>
+    <string name="call_phone">拨打电话：</string>
+    <string name="cancel">取消</string>
+    <string name="to_call">拨打</string>
+
+    <string name="no_auto_data">您可以自行添加或者到线下4S店进行保养维修后，\n您的车辆会自动添加到车辆信息</string>
+
+    <string name="item_title_plate_number">车牌号:&#160;</string>
+    <string name="item_title_auto_type">车&#160;&#160;&#160;&#160;型:&#160;</string>
+    <string name="item_title_repair_mileage">累计里程:</string>
+    <string name="item_title_service_type">服务类型:</string>
+    <string name="item_title_service_time">服务时间:</string>
+    <string name="item_title_maintain_price">保养金额:</string>
+    <string name="item_title_service_shop">服务门店:</string>
+
+</resources>

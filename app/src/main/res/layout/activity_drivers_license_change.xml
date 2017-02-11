@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/change_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f6f7"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp"
+                android:text="驾驶证换证条件:"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_12"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f6f7"
+                android:lineSpacingExtra="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="5dp"
+                android:text="1. 无未处理的个人违章\n2. 驾驶证到期前90日内或超期且不超过一年"
+                android:textColor="@color/text_color_subheading"
+                android:textSize="@dimen/text_size_12"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/title_red"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收件人:        "
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/change_name"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="请输入姓名"
+                    android:maxLength="12"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/title_red"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="收件人电话:"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/change_phone"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="请输入手机号码"
+                    android:inputType="phone"
+                    android:maxLength="11" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/title_red"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细地址:    "
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/change_address"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:drawableRight="@drawable/ic_arrow_right1"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:hint="请选择省市区"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="16dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/title_red"
+                    android:textSize="@dimen/text_size_16"
+                    android:visibility="invisible" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="详细地址:    "
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="@dimen/text_size_16"
+                    android:visibility="invisible" />
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/change_address_detail"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:hint="请输入详细地址"
+                    android:maxLength="30"
+                    android:maxLines="1" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/title_red"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传驾驶证正本、驾驶证副本照片"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/change_drivers_license_original"
+                class="com.hxqc.aroundservice.fragment.QueryProcessingPhotoFragmentV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/change_drivers_license_copy"
+                class="com.hxqc.aroundservice.fragment.QueryProcessingPhotoFragmentV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/title_red"
+                    android:textSize="@dimen/text_size_16"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="上传身份证正反面照片"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="@dimen/text_size_16"/>
+            </LinearLayout>
+
+            <fragment
+                android:id="@+id/change_id_card_front"
+                class="com.hxqc.aroundservice.fragment.QueryProcessingPhotoFragmentV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <fragment
+                android:id="@+id/change_id_card_back"
+                class="com.hxqc.aroundservice.fragment.QueryProcessingPhotoFragmentV2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="6dp"
+                android:text="注：“*”为必填项"
+                android:textColor="@color/main_and_price"
+                android:textSize="@dimen/text_size_12"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/divider" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f5f6f7"
+                android:paddingBottom="5dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:text="驾驶证换证服务流程:"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_13"/>
+
+            <include layout="@layout/layout_inspection_and_change" />
+
+            <Button
+                android:id="@+id/change_submit"
+                style="@style/btn_orange"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="60dp"
+                android:layout_marginLeft="14dp"
+                android:layout_marginRight="14dp"
+                android:layout_marginTop="30dp"
+                android:text="提交" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/change_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right" />
+</android.support.v4.widget.DrawerLayout>
+
+

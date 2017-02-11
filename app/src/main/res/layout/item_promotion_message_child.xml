@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/message_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/normal_padding_big_16"
+        android:paddingLeft="@dimen/normal_padding_big_16"
+        android:paddingRight="@dimen/normal_padding_big_16"
+        android:paddingTop="@dimen/message_padding_top_20">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/GrayText16" />
+
+        <com.hxqc.mall.core.views.ExpandableTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:orientation="vertical"
+            expandableTextView:animAlphaStart="1"
+            expandableTextView:maxCollapsedLines="2">
+
+            <TextView
+                android:id="@id/expandable_text"
+                style="@style/GrayText14"
+                android:layout_marginTop="@dimen/message_content_margin_top_12" />
+
+            <com.hxqc.mall.core.views.TextImageButton
+                android:id="@id/expand_collapse"
+                android:layout_width="80dp"
+                android:layout_height="35dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/normal_margin_small_8" />
+        </com.hxqc.mall.core.views.ExpandableTextView>
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line"
+        style="@style/UnderLine"
+        android:layout_below="@id/message_body" />
+</RelativeLayout>

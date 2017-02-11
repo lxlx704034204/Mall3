@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/BlackText16"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:layout_marginRight="@dimen/normal_margin_big_16" />
+</RelativeLayout>

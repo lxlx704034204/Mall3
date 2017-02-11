@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_marginTop="4dp"
+        android:layout_height="25dp">
+
+        <ImageView
+            android:id="@+id/main_view_tabbar_icon"
+            android:layout_width="21dp"
+            android:layout_height="21dp"
+            android:scaleType="fitXY"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_tabbar_promotion" />
+
+        <TextView
+            android:id="@+id/unread_mark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_panorama_fish_eye_black_24dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_7"
+            android:visibility="gone"
+            android:layout_marginLeft="12dp"
+            tools:text="1" />
+    </RelativeLayout>
+    <!--@drawable/textcolor_main_bar_item-->
+    <TextView
+        android:id="@+id/main_view_tabbar_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@drawable/textcolor_main_bar_item"
+        android:textSize="12sp" />
+</LinearLayout>

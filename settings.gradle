@@ -1,0 +1,14 @@
+include ':app',
+        ':common',
+        ':mallcore',
+        ':socialshare',
+        ':thirdshop',
+        ':usedcar',
+        ':drivingexam',
+        ':DevApp',
+        ':commonwidget',
+        ':paymethodlibrary',
+        ':xiaonengChatUI'
+
+//':PushSDK',':menudrawer',':sildrlibrary', ':sliderimagelibrary', ':thirdshop_maintenance', ':thirdshop_accessory',
+// ":pay", ':xiaonengChatUI',':didi',':photolibrary',

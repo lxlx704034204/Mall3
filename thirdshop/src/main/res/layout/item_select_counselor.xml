@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <!--  <ImageView
+          android:id="@+id/select_counselor_check"
+          android:layout_width="40dp"
+          android:layout_height="40dp"
+          android:layout_gravity="center"
+          android:focusable="false"
+          android:focusableInTouchMode="false"
+          android:padding="5dp"
+          android:src="@drawable/selector_counselor_bg" />-->
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/select_counselor_parent"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginLeft="@dimen/margin_12"
+        android:layout_marginRight="@dimen/margin_12"
+        android:layout_marginTop="@dimen/margin_12"
+        app:cardCornerRadius="2dp"
+        app:cardElevation="4dp">
+
+        <RelativeLayout
+            android:id="@+id/select_counselor_parent_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/shape_border_transparent"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp">
+
+            <com.hxqc.mall.thirdshop.maintenance.views.SelectableRoundedImageView
+                android:id="@+id/select_counselor_img"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:layout_centerVertical="true"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:scaleType="centerCrop"
+                android:src="@drawable/pic_normal"
+                android:layout_marginLeft="8dp"
+                app:sriv_oval="true" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_12"
+                android:layout_toRightOf="@id/select_counselor_img"
+                android:gravity="center_vertical"
+                android:layout_marginRight="8dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/select_counselor_name"
+                    style="@style/BlackText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    tools:text="王友红" />
+
+                <TextView
+                    android:id="@+id/select_counselor_info"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:maxLines="1"
+                    tools:text="个人介绍:多年经验,连续3年荣获金牌顾问,销售标兵等称号" />
+
+                <TextView
+                    android:id="@+id/select_counselor_logos"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="4dp"
+                    android:maxLines="1"
+                    tools:text="服务理念:顾客就是上帝" />
+            </LinearLayout>
+
+            <!-- <TextView
+                 android:id="@+id/select_counselor_name"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_centerVertical="true"
+                 android:layout_toRightOf="@id/select_counselor_img"
+                 android:layout_marginLeft="@dimen/margin_12"
+                 android:text="王友红"
+                 android:textColor="@color/black"
+                 android:textSize="@dimen/text_size_16" />-->
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/select_counselor_check"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_gravity="right"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:src="@drawable/ic_corner" />
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+

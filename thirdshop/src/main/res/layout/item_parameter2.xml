@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+  >
+
+    <LinearLayout
+        android:id="@+id/lay1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="18dp"
+        android:orientation="horizontal">
+
+        <com.hxqc.mall.thirdshop.views.AlignTextView
+            android:id="@+id/tv1"
+            style="@style/BlackText14"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="车身尺寸" />
+
+        <TextView
+            android:id="@+id/divide"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="2dp"
+            android:gravity="center_vertical"
+            android:text=":" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/lay1"
+        android:text="三厢" />
+
+
+</RelativeLayout>
+

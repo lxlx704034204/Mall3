@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="15dp"
+        android:background="@color/tag_background" />
+
+    <View
+        android:id="@+id/top_line"
+        style="@style/UnderLine" />
+
+    <RelativeLayout
+        android:id="@+id/head"
+        android:layout_width="match_parent"
+        android:layout_height="27dp"
+        android:layout_marginTop="@dimen/margin_16">
+
+        <ImageView
+            android:id="@+id/invalid_package"
+            android:layout_width="29dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_small_8"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/nav_invalid" />
+        <!--<TextView-->
+        <!--android:id="@+id/package_tag"-->
+        <!--style="@style/WhiteText14"-->
+        <!--android:layout_width="58dp"-->
+        <!--android:layout_height="19dp"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:layout_marginLeft="50dp"-->
+        <!--android:background="@color/acc_btn_disable"-->
+        <!--android:gravity="center"-->
+        <!--android:text="优惠套装" />-->
+        <ImageView
+            android:id="@+id/package_tag"
+            android:layout_width="58dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="50dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/invalid" />
+
+        <TextView
+            android:id="@+id/package_price"
+            style="@style/GrayText14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_toRightOf="@id/package_tag"
+            android:gravity="center_vertical"
+            android:text="该套餐已失效" />
+
+        <ImageView
+            android:id="@+id/delete_package"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:scaleType="center"
+            android:src="@drawable/close" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_marginTop="@dimen/normal_margin_big_16">
+
+        <ImageView
+            android:id="@+id/invalid_product"
+            android:layout_width="29dp"
+            android:layout_height="19dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_small_8"
+            android:gravity="center_vertical"
+            android:scaleType="fitXY"
+            android:src="@drawable/nav_invalid" />
+
+        <RelativeLayout
+            android:id="@+id/product_info"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="@dimen/normal_margin_big_16">
+
+            <com.hxqc.widget.SquareImageView
+                android:id="@+id/photo"
+                style="@style/AccImage"
+                android:layout_width="76dp"
+                android:layout_height="76dp" />
+
+            <TextView
+                android:id="@+id/name"
+                style="@style/GrayText14"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_toRightOf="@id/photo"
+                android:ellipsize="end"
+                android:lines="2"
+                tools:text="烦得很萨法瑞贵人噶让他发送仍然人个人特色提供人体人非让" />
+
+            <TextView
+                android:id="@+id/invalid"
+                style="@style/GrayText14"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_toRightOf="@id/photo"
+                android:text="该商品已失效" />
+
+            <ImageView
+                android:id="@+id/delete_product"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/close" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/bottom_blank"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_16" />
+
+    <View
+        android:id="@+id/bottom_line"
+        style="@style/UnderLine" />
+</LinearLayout>

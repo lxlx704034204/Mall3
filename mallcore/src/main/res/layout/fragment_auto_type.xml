@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/auto_type_header"
+        layout="@layout/layout_auto_type_list_header" />
+
+    <com.hxqc.widget.PinnedHeaderExpandableListView
+        android:id="@+id/auto_type_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/auto_type_header"
+        android:background="@color/white"
+        android:choiceMode="singleChoice"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:groupIndicator="@null"
+        android:scrollbarAlwaysDrawHorizontalTrack="false" />
+
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/auto_type_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/auto_type_header"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/normal_item_height_48"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/item_icon"
+        style="@style/Icon32"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/ic_form_input_phone_normal" />
+
+    <TextView
+        android:id="@+id/item"
+        style="@style/BlackText16"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/dialog_padding_24"
+        android:gravity="center_vertical" />
+</LinearLayout>

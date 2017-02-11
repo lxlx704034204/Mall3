@@ -1,0 +1,300 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="空间"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.comment.view.MyRatingBarView
+                android:id="@+id/comment_star_space"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_score_normal"
+                app:starFill="@drawable/ic_score_selected"
+                app:starImageSize="26dp" />
+
+            <TextView
+                android:id="@+id/comment_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="5.0分"
+                android:textColor="@color/cursor_orange"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="动力"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.comment.view.MyRatingBarView
+                android:id="@+id/comment_star_power"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_score_normal"
+                app:starFill="@drawable/ic_score_selected"
+                app:starImageSize="26dp" />
+
+            <TextView
+                android:id="@+id/comment_power"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="5.0分"
+                android:textColor="@color/cursor_orange"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="油耗"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.comment.view.MyRatingBarView
+                android:id="@+id/comment_star_gasoline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_score_normal"
+                app:starFill="@drawable/ic_score_selected"
+                app:starImageSize="26dp" />
+
+            <TextView
+                android:id="@+id/comment_gasoline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="5.0分"
+                android:textColor="@color/cursor_orange"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="舒适性"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.comment.view.MyRatingBarView
+                android:id="@+id/comment_star_comfort"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_score_normal"
+                app:starFill="@drawable/ic_score_selected"
+                app:starImageSize="26dp" />
+
+            <TextView
+                android:id="@+id/comment_comfort"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="5.0分"
+                android:textColor="@color/cursor_orange"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="外观"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.comment.view.MyRatingBarView
+                android:id="@+id/comment_star_facade"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_score_normal"
+                app:starFill="@drawable/ic_score_selected"
+                app:starImageSize="26dp" />
+
+            <TextView
+                android:id="@+id/comment_facade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="5.0分"
+                android:textColor="@color/cursor_orange"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="16dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="内饰"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <com.hxqc.mall.comment.view.MyRatingBarView
+                android:id="@+id/comment_star_interior"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                app:starCount="5"
+                app:starEmpty="@drawable/ic_score_normal"
+                app:starFill="@drawable/ic_score_selected"
+                app:starImageSize="26dp" />
+
+            <TextView
+                android:id="@+id/comment_interior"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="5.0分"
+                android:textColor="@color/cursor_orange"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:background="#f0f1f2" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/comment_photo"
+                android:layout_width="68dp"
+                android:layout_height="68dp"
+                android:scaleType="fitXY" />
+
+            <EditText
+                android:id="@+id/comment_edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:background="@android:color/transparent"
+                android:cursorVisible="false"
+                android:gravity="top|left"
+                android:hint="亲! 请留下您的评价, 可以为其他伙伴提供参考哦~"
+                android:maxLength="200"
+                android:minHeight="100dp"
+                android:textColor="@color/title_and_main_text"
+                android:textColorHint="@color/text_color_subheading"
+                android:textSize="@dimen/text_size_14" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="16dp"
+            android:gravity="right"
+            android:text="(字数限制为10-200字)"
+            android:textColor="@color/text_color_subheading"
+            android:textSize="@dimen/text_size_14" />
+
+        <com.hxqc.widget.GridViewNoSlide
+            android:id="@+id/comment_grid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:horizontalSpacing="6dp"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:scrollbars="none"
+            android:verticalSpacing="6dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:text="*最多上传6张照片"
+            android:textColor="@color/text_color_subheading"
+            android:textSize="@dimen/text_size_14" />
+
+        <Button
+            android:id="@+id/comment_submit"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="36dp"
+            android:text="发表评价" />
+    </LinearLayout>
+</ScrollView>

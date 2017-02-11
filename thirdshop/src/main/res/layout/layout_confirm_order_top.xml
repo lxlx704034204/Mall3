@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_quick_shop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slider_img_view_169">
+
+        <com.daimajia.slider.library.SliderLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/slider_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation="Default"
+            custom:pager_animation_span="1000" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#40000000">
+
+            <TextView
+                android:id="@+id/title"
+                style="@style/WhiteText16"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="5dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/margin_16"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingTop="@dimen/margin_16">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv1"-->
+                <!--style="@style/RedText16"-->
+                <!--android:text="*" />-->
+
+            <TextView
+                style="@style/BlackText16"
+                android:text="联系人:"
+                android:layout_marginTop="3dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="80dp"
+                android:orientation="vertical">
+
+                <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                    android:id="@+id/et_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请输入联系人姓名"
+                    android:maxLength="12"
+                    app:met_helperText=" "
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <!--<TextView-->
+                <!--android:id="@+id/tv2"-->
+                <!--style="@style/RedText16"-->
+                <!--android:text="*" />-->
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_marginTop="3dp"
+                android:text="手机号码:" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="80dp"
+                android:orientation="vertical">
+
+                <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                    android:id="@+id/et_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入手机号码"
+                    android:inputType="number"
+                    android:maxLength="11"
+                    app:met_helperText=" "
+                    android:textColor="@color/text_gray"
+                    android:textColorHint="@color/text_gray"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/quick_shop_hide_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv5"-->
+                    <!--style="@style/RedText16"-->
+                    <!--android:layout_centerVertical="true"-->
+                    <!--android:text="*" />-->
+
+                <TextView
+                    style="@style/BlackText16"
+                    android:text="车牌号:"
+                    android:layout_marginTop="10dp"/>
+
+                <com.hxqc.mall.auto.view.NewPlateNumberLayout
+                    android:id="@+id/commen_auto_info_plate_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp" />
+                <!---->
+                <!--<com.hxqc.mall.auto.view.CommenPlateNumberView-->
+                    <!--android:id="@+id/commen_auto_info_plate_number"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_marginLeft="80dp"-->
+                    <!--android:gravity="center_vertical" />-->
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv3"-->
+                    <!--style="@style/RedText16"-->
+                    <!--android:text="*" />-->
+
+                <TextView
+                    style="@style/BlackText16"
+
+                    android:text="服务门店:" />
+
+                <LinearLayout
+                    android:id="@+id/ll_store"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_store"
+                            style="@style/GrayText16"
+                            android:layout_marginRight="5dp"
+                            android:drawableRight="@drawable/ic_detail_pickup_point"
+
+                            tools:text="武汉新凯" />
+                        <!--<ImageView-->
+                        <!--style="@style/Icon20"-->
+                        <!--android:layout_toRightOf="@id/tv_store"-->
+                        <!--android:src="@drawable/ic_detail_pickup_point"-->
+                        <!--android:layout_marginRight="@dimen/margin_16"-->
+                        <!--/>-->
+                    </RelativeLayout>
+
+                    <include layout="@layout/layout_dividing_line" />
+                </LinearLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv4"-->
+                    <!--style="@style/RedText16"-->
+                    <!--android:text="*" />-->
+
+                <TextView
+                    style="@style/BlackText16"
+
+                    android:text="保养时间:" />
+
+                <LinearLayout
+                    android:id="@+id/ll_time"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="80dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/tv_time"
+                            style="@style/GrayText16"
+                            android:text="请选择保养时间" />
+
+                        <ImageView
+                            android:layout_width="8dp"
+                            android:layout_height="13dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="5dp"
+                            android:layout_marginRight="@dimen/margin_16"
+                            android:src="@drawable/ic_list_arrow" />
+                    </RelativeLayout>
+
+                    <include layout="@layout/layout_dividing_line" />
+                </LinearLayout>
+            </RelativeLayout>
+
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/margin_16"-->
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true">-->
+
+            <!--<TextView-->
+            <!--style="@style/BlackText16"-->
+            <!--android:text="服务顾问:" />-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_consultant"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_consultant"-->
+            <!--style="@style/GrayText16"-->
+            <!--android:text="请选择服务顾问" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="8dp"-->
+            <!--android:layout_height="13dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="@dimen/margin_16"-->
+            <!--android:src="@drawable/ic_list_arrow" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<include layout="@layout/layout_dividing_line" />-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="@dimen/margin_16"-->
+            <!--android:focusable="true"-->
+            <!--android:focusableInTouchMode="true">-->
+
+            <!--<TextView-->
+            <!--style="@style/BlackText16"-->
+            <!--android:text="维修技师:" />-->
+
+            <!--<LinearLayout-->
+            <!--android:id="@+id/ll_engineer"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginLeft="100dp"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginBottom="10dp">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/tv_engineer"-->
+            <!--style="@style/GrayText16"-->
+            <!--android:text="请选择维修技师" />-->
+
+            <!--<ImageView-->
+            <!--android:layout_width="8dp"-->
+            <!--android:layout_height="13dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_marginRight="@dimen/margin_16"-->
+            <!--android:src="@drawable/ic_list_arrow" />-->
+            <!--</RelativeLayout>-->
+
+            <!--<include layout="@layout/layout_dividing_line" />-->
+            <!--</LinearLayout>-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.hxqc.mall.thirdshop.views.CommonTitleView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/top_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title_text="@string/advisory" />
+
+
+
+    <com.hxqc.widget.ListViewNoSlide
+        android:id="@+id/advisory_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divider"
+        android:dividerHeight="1px" />
+</LinearLayout>

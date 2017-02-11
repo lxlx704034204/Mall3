@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                tools:context="com.hxqc.pay.fragment.OrderStep1ConfirmContractFragment">
+
+    <WebView
+        android:id="@+id/wv_get_contract_confirm_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fafafa"
+        android:layout_above="@+id/tv_confirmcontract"
+        />
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/tv_confirmcontract"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:background="#ff7242"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_height="@dimen/layout_btn_height">-->
+
+    <TextView
+        android:id="@+id/tv_confirmcontract"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_btn_height"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:background="#ff7242"
+        android:gravity="center"
+        android:text="@string/tv_confirm_cont"
+        android:textColor="#fff"
+        android:textSize="@dimen/btn_font_size"/>
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

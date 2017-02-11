@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_16">
+
+    <TextView
+        android:id="@+id/tv_combo_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:maxEms="10"
+        android:textColor="@color/text_color_orange"
+        android:textSize="@dimen/text_size_14"
+        tools:text="超级长的套餐名称"/>
+
+    <TextView
+        android:id="@+id/package_clear"
+        style="@style/BlueText14"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:gravity="right"
+        android:paddingBottom="20dp"
+        android:text="清空"
+        />
+
+    <LinearLayout
+        android:id="@+id/package_amount_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_combo_title"
+        android:layout_marginTop="4dp">
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="-2dp"
+            android:text="优惠价："/>
+
+        <TextView
+            android:id="@+id/tv_combo_price"
+            style="@style/RedText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="¥8000.00"/>
+
+    </LinearLayout>
+
+    <com.hxqc.widget.GridViewNoSlide
+        android:id="@+id/package_custom_goods_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/package_amount_layout"
+        android:layout_marginTop="8dp"
+        android:horizontalSpacing="8dp"
+        android:numColumns="2"
+        android:verticalSpacing="6dp"/>
+
+</RelativeLayout>

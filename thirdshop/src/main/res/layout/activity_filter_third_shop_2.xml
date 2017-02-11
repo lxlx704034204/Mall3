@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+            <TextView
+                android:id="@+id/change_city"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:drawableLeft="@drawable/t_icon_button_location"
+                android:gravity="center_vertical"
+                android:drawablePadding="2dp"
+                android:layout_gravity="right"
+                android:padding="10dp"
+                tools:text="武汉"
+                android:textSize="16sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <net.simonvt.menudrawer.OverlayDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:mdContentBackground="@color/window_color"
+        app:mdDrawOverlay="true"
+        app:mdDropShadowColor="#55000000"
+        app:mdDropShadowEnabled="true"
+        app:mdDropShadowSize="100dp"
+        app:mdMenuSize="304dp"
+        app:mdPosition="right">
+
+        <FrameLayout
+            android:id="@+id/mdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#E9E9E9"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="56dp"-->
+            <!--android:layout_marginTop="-56dp"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="vertical">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="41dp"-->
+            <!--android:layout_gravity="center_horizontal"-->
+            <!--android:layout_marginBottom="15dp"-->
+            <!--android:layout_marginLeft="15dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:layout_marginTop="15dp"-->
+            <!--android:background="@drawable/bg_search_title_white"-->
+            <!--android:gravity="center"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--style="@style/GrayText14"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:drawablePadding="10dp"-->
+            <!--android:drawableRight="@drawable/ic_cbb_arrow_down"-->
+            <!--android:gravity="center"-->
+            <!--android:paddingLeft="15dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:text="车型"/>-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="@color/divider"/>-->
+
+            <!--<RelativeLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+
+            <!--<EditText-->
+            <!--style="@style/BlackText14"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_toLeftOf="@+id/image_view"-->
+            <!--android:background="@color/white"-->
+            <!--android:hint="请输入需要搜索的内容"-->
+            <!--android:paddingLeft="10dp"-->
+            <!--android:paddingRight="10dp"-->
+            <!--android:maxLines="1"/>-->
+
+            <!--<ImageView-->
+            <!--android:id="@+id/image_view"-->
+            <!--android:layout_width="15dp"-->
+            <!--android:layout_height="15dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="10dp"-->
+            <!--android:layout_marginRight="15dp"-->
+            <!--android:src="@drawable/ic_search"/>-->
+            <!--</RelativeLayout>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+
+            <in.srain.cube.views.ptr.PtrFrameLayout
+                android:id="@+id/refresh_frame"
+                xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube_ptr:ptr_duration_to_close="300"
+                cube_ptr:ptr_duration_to_close_header="2000"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.7">
+
+                <com.hxqc.mall.core.views.MyCoordinatorLayout
+                    android:id="@+id/coordinatorlayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/white">
+
+                    <android.support.design.widget.AppBarLayout
+                        android:id="@+id/appbarlayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+                        <LinearLayout
+                            android:id="@+id/collapse_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@color/white"
+                            android:orientation="vertical"
+                            app:layout_scrollFlags="scroll|enterAlways">
+
+                            <fragment
+                                android:id="@+id/third_filter_fragment"
+                                class="com.hxqc.mall.thirdshop.activity.auto.fragment.FilterThirdShopCoreFragment_2"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"/>
+                        </LinearLayout>
+                    </android.support.design.widget.AppBarLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#FAFAFA"
+                        android:scrollbars="vertical"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+                    <LinearLayout
+                        android:id="@+id/tip_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="55dp"
+                        android:layout_gravity="top|center_vertical"
+                        android:background="#e6ffffff"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        app:layout_behavior="com.hxqc.mall.thirdshop.views.HeaderHideOrShowBehavior"
+                        app:show="@id/recycler_view">
+
+                        <TextView
+                            android:id="@+id/tip_car_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="16dp"
+                            android:maxLines="1"
+                            android:textStyle="bold"
+                            android:textColor="#404040"/>
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1px"
+                            android:background="@color/divider"/>
+                    </LinearLayout>
+
+                    <FrameLayout
+                        android:id="@+id/tip_fragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="top"
+                        android:background="@color/white"
+                        android:visibility="gone"/>
+
+                    <com.hxqc.mall.core.api.RequestFailView
+                        android:id="@+id/request_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom"
+                        android:visibility="gone"/>
+                </com.hxqc.mall.core.views.MyCoordinatorLayout>
+            </in.srain.cube.views.ptr.PtrFrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@id/mdMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"/>
+    </net.simonvt.menudrawer.OverlayDrawer>
+</LinearLayout>

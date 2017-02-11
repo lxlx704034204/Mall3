@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <!--<item
+        android:id="@+id/action_to_change"
+        android:icon="@drawable/ic_menu_change"
+        android:title="换车"
+        app:showAsAction="ifRoom|withText"/>-->
+
+    <item
+        android:id="@+id/action_to_home"
+        android:icon="@drawable/ic_menu_home"
+        android:title="首页"
+        app:showAsAction="ifRoom|withText"/>
+</menu>

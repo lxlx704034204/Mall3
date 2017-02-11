@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_bar"
+    android:layout_width="match_parent"
+    android:layout_height="49dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/item_detail_bottom_bar_background"
+    android:orientation="horizontal"
+    layout:divider="@drawable/bottom_line"
+    layout:showDividers="middle|beginning">
+
+    <TextView
+        android:id="@+id/share_button"
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:clickable="true"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/ic_service"
+        android:gravity="center_horizontal"
+        android:onClick="clickCallService"
+        android:padding="4dp"
+        android:text="客服"
+        />
+
+    <TextView
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:clickable="true"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/ic_share"
+        android:gravity="center_horizontal"
+        android:onClick="clickShare"
+        android:padding="4dp"
+        android:text="分享"
+        />
+
+    <com.hxqc.mall.views.BottomBarToBuy
+        android:id="@+id/tobuy_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        />
+
+
+</android.support.v7.widget.LinearLayoutCompat>

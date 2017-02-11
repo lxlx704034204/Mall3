@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color"
+>
+
+
+    <com.hxqc.mall.core.views.stickylist.StickyListHeadersListView
+        android:id="@+id/loan_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:divider="@null"
+        android:dividerHeight="0dp"
+        android:drawSelectorOnTop="true"
+        android:scrollbarStyle="outsideOverlay"
+        android:fastScrollEnabled="true"
+        android:overScrollMode="never"
+        />
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/request_view"
+        xmlns:auto="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sort_group_layout"
+        android:visibility="gone"
+        auto:emptyDescription="获取金融机构失败"
+        />
+
+    <!--<ScrollView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:background="@color/window_color">-->
+
+        <!--<com.hxqc.mall.views.loan.LoanFileGroup-->
+            <!--android:id="@+id/loan_group"-->
+            <!--xmlns:layout="http://schemas.android.com/apk/res-auto"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical"-->
+            <!--layout:divider="@drawable/package_line"-->
+            <!--layout:showDividers="middle"/>-->
+    <!--</ScrollView>-->
+
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="56dp"-->
+        <!--android:text="银行"-->
+        <!--android:textColor="#000"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="25sp"-->
+        <!--android:background="@color/divider_gray"-->
+        <!--/>-->
+
+</RelativeLayout>

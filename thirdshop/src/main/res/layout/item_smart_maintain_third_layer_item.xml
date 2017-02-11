@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/recommend_maintain_child_bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/parent_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/goods_photo"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:id="@+id/goods_name"
+            style="@style/BlackText14"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_alignTop="@+id/goods_photo"
+            android:layout_toRightOf="@id/goods_photo"
+            android:maxLines="2"
+            tools:text="高级啊实打实大师的弗兰克的老师傅了里的水开飞机收到了付款" />
+
+        <TextView
+            android:id="@+id/tv"
+            style="@style/BlackText14"
+            android:layout_alignLeft="@+id/goods_name"
+            android:text="配件单价："
+            android:layout_alignBottom="@+id/goods_photo"/>
+
+        <TextView
+            android:id="@+id/goods_price"
+            style="@style/BlackText14"
+            android:layout_toRightOf="@+id/tv"
+            android:layout_alignTop="@+id/tv"
+            tools:text="￥208.00" />
+
+
+        <TextView
+            android:id="@+id/goods_count"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="1"/>
+
+        <TextView
+            style="@style/BlackText14"
+            android:text="数量："
+            android:layout_alignTop="@+id/tv"
+            android:layout_toLeftOf="@+id/goods_count"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:id="@+id/iv_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:src="@drawable/radiobutton_normal" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dashed"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/maintain_dashed" />
+</LinearLayout>

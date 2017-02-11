@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/normal_padding_big_16">
+
+        <TextView
+            style="@style/BlackText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:text="@string/recharge_number"
+            />
+
+        <com.hxqc.mall.views.recharge.InputPhoneView
+            android:id="@+id/input_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_12" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_12"
+            android:orientation="horizontal">
+
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/charge_number"
+                 />
+
+            <TextView
+                android:id="@+id/send_score"
+                style="@style/OrangeText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="充100元送100积分" />
+        </LinearLayout>
+
+        <com.hxqc.mall.views.recharge.ChooseNumberView
+            android:id="@+id/choose_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/commit_charge"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_marginTop="35dp"
+            android:text="@string/title_activity_recharge" />
+
+
+    </LinearLayout>
+</ScrollView>

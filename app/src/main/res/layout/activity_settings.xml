@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat xmlns:layout="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            layout:divider="@drawable/line"
+            layout:showDividers="middle|end">
+
+            <com.hxqc.mall.views.MeItem
+                android:id="@+id/change_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.hxqc.mall.views.MeItem
+                android:id="@+id/change_pay_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.hxqc.mall.views.MeItem
+                android:id="@+id/forget_pay_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!--<View style="@style/UnderLine" />-->
+
+            <com.hxqc.mall.views.MeItem
+                android:id="@+id/delivery_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <!--<View style="@style/UnderLine"-->
+            <!--android:visibility="gone"/>-->
+
+            <com.hxqc.mall.views.MeItem
+                android:id="@+id/advice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<View style="@style/UnderLine" />-->
+
+            <com.hxqc.mall.views.SettingsItem
+                android:id="@+id/version_check"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<View style="@style/UnderLine" />-->
+
+            <com.hxqc.mall.views.SettingsItem
+                android:id="@+id/cache_clear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<View style="@style/UnderLine" />-->
+
+            <com.hxqc.mall.views.MeItem
+                android:id="@+id/help"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<View style="@style/UnderLine" />-->
+
+            <com.hxqc.mall.views.MeItem
+                android:id="@+id/about_us"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <!--<View style="@style/UnderLine" />-->
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <Button
+            android:id="@+id/exit"
+            style="@style/btn_vermilion"
+            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_marginTop="@dimen/setting_bottom_button_margin_top_40"
+            android:gravity="center"
+            android:text="@string/me_exit" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/setting_bottom_button_margin_top_40" />
+    </LinearLayout>
+</ScrollView>

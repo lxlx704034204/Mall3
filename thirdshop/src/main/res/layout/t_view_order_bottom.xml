@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/order_radio_group_height_54">
+
+    <TextView
+        android:id="@+id/order_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/RedText16"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        tools:text="订金：2000元"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/paid_text"
+        style="@style/GrayText16"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:text="已支付："
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/paid"
+        style="@style/RedText16"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/paid_text"
+        android:visibility="gone"/>
+
+    <Button
+        android:text="去付款"
+        android:id="@+id/order_operate"
+        style="@style/btn_orange"
+        android:layout_width="@dimen/button_min_width_116"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/normal_margin_big_16"
+        android:padding="0dp"
+        android:visibility="gone"/>
+</RelativeLayout>

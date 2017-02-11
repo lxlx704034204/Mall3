@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/vehicles_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingBottom="80dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/gray_yjf"
+                android:paddingBottom="10dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="10dp">
+
+                <TextView
+                    android:id="@+id/vehicles_trade_id"
+                    style="@style/GrayText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    tools:text="订单号:123456789123" />
+
+                <LinearLayout
+                    android:id="@+id/vehicles_customer_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:focusable="false"
+                        android:focusableInTouchMode="false"
+                        android:src="@drawable/ic_customer_orange" />
+
+                    <TextView
+                        style="@style/OrangeText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="3dp"
+                        android:text="客服" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!--   <TextView
+                   android:id="@+id/vehicles_trade_id"
+                   style="@style/GrayText16"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/gray_yjf"
+                   android:paddingTop="10dp"
+                   android:paddingBottom="10dp"
+                   android:paddingLeft="16dp"
+                   android:paddingRight="16dp"
+                   tools:text="订单号:123456789123" />-->
+
+            <com.hxqc.aroundservice.view.IllegalAutoInfoView
+                android:id="@+id/vehicles_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="车辆免检:" />
+
+                <TextView
+                    android:id="@+id/vehicles_exemption"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    tools:text="免检期间" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="车辆注册日期:" />
+
+                <TextView
+                    android:id="@+id/vehicles_date"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    tools:text="2014-11-13" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="收件人:" />
+
+                <TextView
+                    android:id="@+id/vehicles_name"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="李夏天" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="收件人电话:" />
+
+                <TextView
+                    android:id="@+id/vehicles_phone"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    tools:text="18666666666" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="详细地址:" />
+
+
+                <TextView
+                    android:id="@+id/vehicles_address"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    tools:text="湖北省武汉市汉阳区龙阳大道64号" />
+
+            </LinearLayout>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/vehicles_item_payment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="支付方式:" />
+
+                    <TextView
+                        android:id="@+id/vehicles_payment"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="支付宝" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="16dp">
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:ems="8"
+                    android:text="订单状态:" />
+
+                <TextView
+                    android:id="@+id/vehicles_order_detail"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    tools:text="待确认" />
+
+            </LinearLayout>
+
+            <com.hxqc.aroundservice.view.ListItemView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                huzj:cut_off_rule_height="2"
+                huzj:cut_off_rule_visiable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="下单时间:" />
+
+                    <TextView
+                        android:id="@+id/vehicles_order_create_time"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="下单时间" />
+                </LinearLayout>
+            </com.hxqc.aroundservice.view.ListItemView>
+
+            <com.hxqc.aroundservice.view.ListItemView
+                android:id="@+id/vehicles_pay_time_parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                huzj:cut_off_rule_height="2"
+                huzj:cut_off_rule_visiable="true">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="支付时间:" />
+
+                    <TextView
+                        android:id="@+id/vehicles_pay_time"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="支付时间" />
+                </LinearLayout>
+
+            </com.hxqc.aroundservice.view.ListItemView>
+
+            <include
+                layout="@layout/view_cut_off_rule_gray"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" />
+
+            <LinearLayout
+                android:id="@+id/vehicles_item_refund_state"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp">
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ems="8"
+                        android:text="退款状态:" />
+
+                    <TextView
+                        android:id="@+id/vehicles_refund_state"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        tools:text="待退款" />
+
+                </LinearLayout>
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--<include
+                    android:id="@+id/vehicles_original"
+                    layout="@layout/fragment_illegal_processing_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+                <com.hxqc.aroundservice.view.ChoosePictureLayout
+                    android:id="@+id/vehicles_original"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp" />
+
+                <!--<include
+                    android:id="@+id/vehicles_copy"
+                    layout="@layout/fragment_illegal_processing_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />-->
+                <com.hxqc.aroundservice.view.ChoosePictureLayout
+                    android:id="@+id/vehicles_copy"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+
+                <include
+                    layout="@layout/view_cut_off_rule_gray"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="20dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <com.hxqc.aroundservice.view.QueryResultBarV2
+        android:id="@+id/vehicles_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white" />
+
+    <com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/vehicles_no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="获取数据失败" />
+
+</RelativeLayout>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/count_lay"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:layout_below="@+id/topbar"
+        android:background="#f0f0f0">
+
+        <RelativeLayout
+            android:layout_width="150dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/kemu_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="75dp"
+                android:text="科目一"
+                android:textColor="@color/green"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="55dp"
+                android:layout_marginTop="45dp"
+                android:text="1311"
+                android:textColor="@color/green"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/divide"
+                android:layout_width="50dp"
+                android:layout_height="1dp"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="53dp"
+                android:layout_marginTop="80dp"
+                android:background="#d0d0d0" />
+
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dedede" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="150dp">
+
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_above="@+id/img2"
+                android:layout_marginBottom="14dp"
+                android:background="@drawable/bg_circle_green" />
+
+            <TextView
+                android:id="@+id/right_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/img2"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/img1"
+                android:text="做对0题"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/right_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/img2"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="14dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="40dp"
+                android:text="占0%"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/bg_circle_red" />
+
+            <TextView
+                android:id="@+id/wrong_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/img2"
+                android:text="做错0题"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/wrong_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="40dp"
+                android:text="占0%"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_below="@+id/img2"
+                android:layout_marginTop="14dp"
+                android:background="@drawable/bg_circle_gray" />
+
+            <TextView
+                android:id="@+id/unfinish_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/img3"
+                android:text="未做1311题"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/unfinish_per"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/img2"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="14dp"
+                android:text="占100%"
+                android:textColor="#333"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/spread_pie_chart"
+        android:layout_width="155dp"
+        android:layout_height="155dp"
+        android:layout_marginLeft="-3dp"
+        android:layout_below="@+id/topbar"
+        android:layout_marginTop="10dp" />
+
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/count_lay"
+        android:cacheColorHint="#00000000"
+        android:divider="#dedede"
+        android:dividerHeight="0.5dp"
+        tools:listitem="@layout/item_record_history"
+        tools:listheader="@layout/item_string"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="#00000000"
+        android:scrollbars="none"
+        android:smoothScrollbar="true" />
+
+
+    <com.hxqc.mall.core.views.CustomToolBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/toolbar_background" />
+
+
+</RelativeLayout>

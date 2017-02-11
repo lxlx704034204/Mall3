@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:layout_marginTop="35dp"
+        android:drawableLeft="@drawable/icon"
+        android:drawablePadding="@dimen/normal_padding_big_10"
+        android:gravity="center_vertical"
+        android:text="恭喜您，充值成功"
+        android:textColor="@color/green_txt"
+        android:textSize="30sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="228dp"
+        android:background="@drawable/bg_recharge"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="@dimen/normal_padding_big_16"
+        android:paddingRight="@dimen/normal_padding_big_16"
+        >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/item_padding_bottom_15">
+
+            <TextView
+                style="@style/GrayText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="会员名称：" />
+
+            <TextView
+                android:id="@+id/member_name"
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                tools:text="胡璐璐" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/item_padding_bottom_15">
+
+            <TextView
+                style="@style/GrayText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="会员手机：" />
+
+            <TextView
+                android:id="@+id/member_phone"
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                tools:text="187 7777 7777" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/item_padding_bottom_15">
+
+            <TextView
+                style="@style/GrayText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="充值金额：" />
+
+            <TextView
+                android:id="@+id/charge_number"
+                style="@style/RedText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                tools:text="4000元" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/item_padding_bottom_15"
+            android:visibility="gone"
+           >
+
+            <TextView
+                style="@style/GrayText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="5"
+                android:text="赠送积分：" />
+
+            <TextView
+                android:id="@+id/point_awarded"
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="11"
+                tools:text="400分" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

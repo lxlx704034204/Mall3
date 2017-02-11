@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.hxqc.mall.thirdshop.views.CommonTitleView xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="wrap_content"
+                                                   app:hasMore="false"
+                                                   app:title_text="@string/shop_address" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/normal_margin_big_16"
+        android:paddingLeft="@dimen/normal_margin_big_16"
+        android:paddingRight="@dimen/normal_margin_big_16">
+
+        <ImageView xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/shop_address_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/pic_normal" />
+    </LinearLayout>
+
+    <LinearLayout xmlns:shop="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/normal_margin_big_16"
+        android:paddingLeft="@dimen/normal_margin_big_16"
+        android:paddingRight="@dimen/normal_margin_big_16">
+
+
+        <com.hxqc.mall.core.views.ThirdFunctionButton
+            android:id="@+id/shop_address_location"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_marginRight="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_function_orange"
+            android:gravity="center"
+            shop:innerButtonText="当前位置"
+            shop:innerIcon="@drawable/t_icon_button_location"
+            shop:innerTextSize="14sp" />
+
+        <com.hxqc.mall.core.views.ThirdFunctionButton
+            android:id="@+id/shop_address_navigation"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/btn_height_35"
+            android:layout_marginLeft="8dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_btn_function_orange"
+            android:gravity="center"
+            shop:innerButtonText="@string/one_key_navigation"
+            shop:innerIcon="@drawable/t_icon_button_navigation"
+            shop:innerTextSize="14sp" />
+
+
+    </LinearLayout>
+</LinearLayout>

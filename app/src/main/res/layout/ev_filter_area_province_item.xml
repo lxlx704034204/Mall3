@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@color/ev_subsidy_filter_province_bg">
+
+    <TextView
+        android:id="@+id/province_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingLeft="16dp"
+        android:textColor="#333333"
+        android:gravity="center_vertical"
+        android:textSize="14sp"
+        tools:text="湖北"/>
+
+    <View
+        android:id="@+id/divider_line_right"
+        android:layout_width="1px"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:background="#D9D9D9"/>
+    
+    <View
+        android:id="@+id/divider_line_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="#D9D9D9"/>
+
+    <View
+        android:id="@+id/divider_line_top"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="1px"
+        android:background="#D9D9D9"/>
+</RelativeLayout>

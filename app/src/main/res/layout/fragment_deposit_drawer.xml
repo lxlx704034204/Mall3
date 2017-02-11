@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.simonvt.menudrawer.OverlayDrawer
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:mdDrawOverlay="false"
+    app:mdDropShadowColor="#55000000"
+    app:mdDropShadowEnabled="true"
+    app:mdDropShadowSize="600dp"
+    app:mdPosition="bottom">
+
+    <include
+        android:id="@id/mdMenu"
+        layout="@layout/bank_list"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@color/white"/>
+
+    <include
+        android:id="@id/mdContent"
+        layout="@layout/fragment_deposit"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+
+</net.simonvt.menudrawer.OverlayDrawer>

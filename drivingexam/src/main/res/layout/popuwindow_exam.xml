@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_above="@+id/main"
+        android:id="@+id/tab"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#eee"
+        android:paddingTop="13dp">
+
+
+        <RelativeLayout
+            android:id="@+id/submit_exam"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/submit_exam_img"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="14dp"
+                android:src="@drawable/files_2" />
+
+            <TextView
+                android:id="@+id/submit_exam_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@color/text_black"
+                android:layout_marginLeft="40dp"
+                android:gravity="center"
+                android:text="交卷"
+                android:textSize="17sp" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/right"
+            android:src="@drawable/yes_2" />
+
+        <TextView
+            android:id="@+id/right"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="90dp"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/font_green"
+            android:textSize="16sp" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/wrong"
+            android:src="@drawable/no_2" />
+
+
+        <TextView
+            android:id="@+id/wrong"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="50dp"
+            android:layout_toLeftOf="@+id/right"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="@color/font_red"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_toLeftOf="@+id/total_count"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#333"
+            android:textSize="16sp"
+          />
+
+        <TextView
+            android:id="@+id/total_count"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="14dp"
+            android:gravity="center"
+            android:text="/0"
+            android:textColor="#333"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tab"
+        android:src="@drawable/xiala" />
+
+
+    <RelativeLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true">
+
+        <GridView
+            android:id="@+id/gv"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#fff"
+            android:drawSelectorOnTop="true"
+            android:horizontalSpacing="6dp"
+            android:listSelector="#00000000"
+            android:numColumns="6"
+            android:paddingBottom="10dp"
+            android:paddingTop="8dp"
+            android:clipToPadding="false"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="12dp">
+
+
+        </GridView>
+
+    </RelativeLayout>
+</RelativeLayout>

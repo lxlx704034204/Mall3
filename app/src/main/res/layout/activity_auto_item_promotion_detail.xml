@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <net.simonvt.menudrawer.OverlayDrawer
+        android:id="@+id/drawer"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:mdContentBackground="@color/window_color"
+        app:mdDrawOverlay="true"
+        app:mdDropShadowColor="#55000000"
+        app:mdDropShadowEnabled="true"
+        app:mdDropShadowSize="5dp"
+        app:mdMenuSize="314dp"
+        app:mdPosition="right"> <!-- 314dp-->
+        <FrameLayout
+            android:id="@id/mdMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff">
+
+            <fragment
+                android:id="@+id/verify_fragment"
+                class="com.hxqc.mall.fragment.auto.AutoBuyVerifyPromotionFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_auto_verify"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@id/mdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/detail_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ScrollView
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_above="@+id/space"
+                    android:layout_below="@+id/promotion_time_layout"
+                    android:fillViewport="true">
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        xmlns:layout="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        layout:divider="@drawable/line"
+                        layout:showDividers="middle">
+
+                        <include layout="@layout/view_auto_detail_banner_layout"/>
+
+                        <com.hxqc.mall.views.auto.AutoPromotionInformationViewGroup
+                            android:id="@+id/promotion_information_view_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <!--自提点-->
+                        <com.hxqc.mall.views.auto.AutoDetailPickupPoint
+                            android:id="@+id/pickup_points"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <include
+                            android:id="@+id/color_view_group"
+                            layout="@layout/view_promotion_color"
+                            android:tag="sticky"/>
+                        <!--套餐-->
+                        <com.hxqc.mall.views.auto.AutoDetailPackageGroup
+                            android:id="@+id/item_package_group"
+                            android:layout_width="match_parent"
+                            android:layout_height="190dp"/>
+
+                        <com.hxqc.mall.views.auto.AutoDetailTabView
+                            xmlns:tab="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:tag="sticky"
+                            tab:tabIconDrawable="@drawable/ic_detail_process"
+                            tab:tabLabel="购买流程"
+                            tab:tabTagDrawable="@drawable/ic_cbb_arrow_up">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:tag="content">
+
+                                <View
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:background="@drawable/bg_shadow"/>
+
+                                <ImageView
+                                    android:id="@+id/detail_process"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    />
+                                <!--android:src="@drawable/pic_process"-->
+                            </LinearLayout>
+
+                        </com.hxqc.mall.views.auto.AutoDetailTabView>
+                        <!--图文介绍-->
+                        <com.hxqc.mall.views.auto.AutoDetailIntroduce
+                            android:id="@+id/introduce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                        <include layout="@layout/include_auto_detail_content"/>
+
+                    </android.support.v7.widget.LinearLayoutCompat>
+
+
+                </ScrollView>
+
+
+                <RelativeLayout
+                    android:id="@+id/promotion_time_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:background="#FFF2E1"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/item_padding_16"
+                    android:paddingRight="@dimen/item_padding_16"
+                    android:paddingTop="8dp">
+
+                    <ImageView
+                        android:id="@+id/left_icon"
+                        android:layout_width="@dimen/icon_size_24"
+                        android:layout_height="@dimen/icon_size_24"
+                        android:layout_centerVertical="true"
+                        android:src="@drawable/ic_time"/>
+
+                    <TextView
+                        android:id="@+id/promotion_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/left_icon"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/cursor_orange"
+                        android:textSize="16sp"/>
+                </RelativeLayout>
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_below="@id/promotion_time_layout"
+                    android:progressDrawable="@drawable/progress_bar_states"/>
+
+                <TextView
+                    android:id="@+id/auto_unavailable"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:background="#FFF2E1"
+                    android:gravity="center_vertical"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="@dimen/item_padding_16"
+                    android:paddingRight="@dimen/item_padding_16"
+                    android:paddingTop="8dp"
+                    android:text="非常抱歉，该车辆已下架"
+                    android:textColor="@color/cursor_orange"
+                    android:textSize="16sp"
+                    android:visibility="gone"
+                    />
+
+                <Space
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="49dp"
+                    android:layout_alignParentBottom="true"/>
+
+                <include layout="@layout/layout_auto_item_promotion_bottom_bar"/>
+            </RelativeLayout>
+
+            <com.hxqc.mall.core.api.RequestFailView
+                android:id="@+id/refresh_fail_view"
+                xmlns:fail="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                fail:emptyDescription="商品数据不存在"/>
+        </RelativeLayout>
+    </net.simonvt.menudrawer.OverlayDrawer>
+</LinearLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="series_thumb_width_96">96dp</dimen>
+    <dimen name="series_thumb_height_55">55dp</dimen>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="seckill_order_width">90dp</dimen>
+
+    <dimen name="goods_item_height">70dp</dimen>
+
+    <dimen name="goods_item_padding">16dp</dimen>
+    <dimen name="goods_item_pic_width">110dp</dimen>
+    <dimen name="auto_package_padding">9dp</dimen>
+    <dimen name="auto_package_margin_top">15.5dp</dimen>
+    <dimen name="auto_package_margin_left">11dp</dimen>
+    <dimen name="auto_package_choose_height">51dp</dimen>
+    <dimen name="auto_package_choose_padding">16dp</dimen>
+    <dimen name="auto_package_choose_bar_height">35dp</dimen>
+    <dimen name="goods_item_marginTop">0dp</dimen>
+    <dimen name="item_padding_10">10dp</dimen>
+    <dimen name="item_padding_8">8dp</dimen>
+    <dimen name="auto_package_padding_3">6dp</dimen>
+    <dimen name="head_checkbox_marginRight">2dp</dimen>
+    <dimen name="auto_package_toobar_padding_left">4dp</dimen>
+    <dimen name="auto_package_toobar_padding_right">7dp</dimen>
+
+    <!--comment dimes-->
+    <dimen name="margin_16">16dp</dimen>
+
+    <dimen name="margin_14">14dp</dimen>
+    <dimen name="margin_12">12dp</dimen>
+    <dimen name="height_bar_56">56dp</dimen>
+    <dimen name="height_bar_comment_46">46dp</dimen>
+
+    <dimen name="text_30">30sp</dimen>
+
+    <dimen name="content_margin_4">4dp</dimen>
+    <dimen name="news_item_icon_size">45dp</dimen>
+
+    <dimen name="news_item_height">65dp</dimen>
+
+    <dimen name="normal_padding_big_10">10dp</dimen>
+
+
+    <dimen name="order_amount_width">155dp</dimen>
+    <dimen name="text_size_8">8sp</dimen>
+    <dimen name="text_size_6">6sp</dimen>
+    <dimen name="margin_20">20dp</dimen>
+    <dimen name="about_us_logo_size_100">100dp</dimen>
+    <dimen name="margin_4">4dp</dimen>
+    <dimen name="text_size_7">7sp</dimen>
+    <dimen name="normal_size_10">10dp</dimen>
+    <dimen name="height_auto_info_item_image">60dp</dimen>
+    <dimen name="bill_list_type_size">45dp</dimen>
+    <dimen name="write_evaluation_window_hight">185dp</dimen>
+
+    <dimen name="height_list_year">30dp</dimen>
+
+    <!-- Per the design guidelines, navigation drawers should be between 240dp and 320dp:
+         https://developer.android.com/design/patterns/navigation-drawer.html -->
+    <dimen name="pic_width_100">100dp</dimen>
+
+    <dimen name="wallet_bottom_menu_window_height">121dp</dimen>
+</resources>

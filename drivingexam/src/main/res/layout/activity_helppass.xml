@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee"
+    android:orientation="vertical">
+
+    <com.hxqc.mall.core.views.CustomToolBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/toolbar_background" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topbar">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+
+                android:background="#fff"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="科目二 学车技巧"
+                android:textColor="#444"
+                android:textSize="15sp" />
+
+            <com.hxqc.widget.GridViewNoSlide
+                android:id="@+id/gv1"
+                android:layout_marginTop="1dp"
+                android:layout_marginBottom="1dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:clipToPadding="false"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:listSelector="#33555555"
+                android:drawSelectorOnTop="false"
+                android:verticalSpacing="1dp">
+
+            </com.hxqc.widget.GridViewNoSlide>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gv1"
+                android:layout_centerHorizontal="true"
+                android:background="#fff"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="科目三 学车技巧"
+                android:textColor="#444"
+                android:textSize="15sp" />
+
+            <com.hxqc.widget.GridViewNoSlide
+                android:id="@+id/gv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:clipToPadding="false"
+                android:layout_marginTop="1dp"
+                android:horizontalSpacing="1dp"
+                android:numColumns="2"
+                android:scrollbars="none"
+                android:stretchMode="columnWidth"
+                android:verticalSpacing="1dp">
+
+            </com.hxqc.widget.GridViewNoSlide>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

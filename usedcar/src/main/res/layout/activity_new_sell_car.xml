@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="?attr/colorPrimary" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:layout_below="@+id/toolbar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fafafa"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/plat_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ptbm" />
+
+                <TextView
+                    android:id="@+id/plat_button"
+                    style="@style/WhiteText14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_sell_car"
+                    android:padding="6dp"
+                    android:text="平台帮卖" />
+
+                <TextView
+                    android:id="@+id/plat_title"
+                    style="@style/BlackText18"
+                    android:layout_marginLeft="@dimen/normal_margin_small_8"
+                    android:layout_toRightOf="@id/plat_photo"
+                    android:text="平台帮卖" />
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_below="@id/plat_title"
+                    android:layout_marginLeft="@dimen/normal_margin_small_8"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:layout_marginTop="@dimen/normal_margin_small_8"
+                    android:layout_toLeftOf="@id/plat_button"
+                    android:layout_toRightOf="@id/plat_photo"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:text="专业检测评估师上门检测，全程免费，一对一服务" />
+            </RelativeLayout>
+
+            <View style="@style/UnderLine" />
+
+            <TextView
+                style="@style/BlackText18"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#F6F5FA"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin_16"
+                android:text="帮卖流程" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/one_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="填写信息表" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/two_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="免费预约车辆评估" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/three_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="车辆检测认证" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/four_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="网站发布" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/five_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="买家上门看车" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/six_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="车辆交易成功" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/UnderLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                android:layout_marginTop="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/free_valuation_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:src="@mipmap/free_valuation" />
+
+                <TextView
+                    android:id="@+id/free_valuation_title"
+                    style="@style/BlackText14"
+                    android:layout_toRightOf="@+id/free_valuation_icon"
+                    android:text="免费评估" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/free_valuation_title"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/free_valuation_icon"
+                    android:text="专业团队免费对车辆进行全方位评估，保证品质" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                android:layout_marginTop="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/free_photo_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:src="@mipmap/free_photo" />
+
+                <TextView
+                    android:id="@+id/free_photo_title"
+                    style="@style/BlackText14"
+                    android:layout_toRightOf="@+id/free_photo_icon"
+                    android:text="免费棚拍录入" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/free_photo_title"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/free_photo_icon"
+                    android:text="专业摄影人员360°拍照，完美展示提升竞争力" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                android:layout_marginTop="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/quick_trade_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:src="@mipmap/quick_trade" />
+
+                <TextView
+                    android:id="@+id/quick_trade_title"
+                    style="@style/BlackText14"
+                    android:layout_toRightOf="@+id/quick_trade_icon"
+                    android:text="快速交易" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quick_trade_title"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/quick_trade_icon"
+                    android:text="全程帮卖，一对一服务" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/activity_vertical_margin_16"
+                android:background="@color/bg_gray" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/person_photo"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/zyfb" />
+
+                <TextView
+                    android:id="@+id/person_button"
+                    style="@style/WhiteText14"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/btn_sell_car"
+                    android:padding="6dp"
+                    android:text="自由发布" />
+
+                <TextView
+                    android:id="@+id/person_title"
+                    style="@style/BlackText18"
+                    android:layout_marginLeft="@dimen/normal_margin_small_8"
+                    android:layout_toRightOf="@id/person_photo"
+                    android:text="自由发布" />
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_below="@id/person_title"
+                    android:layout_marginLeft="@dimen/normal_margin_small_8"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:layout_marginTop="@dimen/normal_margin_small_8"
+                    android:layout_toLeftOf="@id/person_button"
+                    android:layout_toRightOf="@id/person_photo"
+                    android:ellipsize="end"
+                    android:lines="2"
+                    android:text="编辑爱车基本信息，快速发布卖车" />
+            </RelativeLayout>
+
+            <View style="@style/UnderLine" />
+
+            <TextView
+                style="@style/BlackText18"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#F6F5FA"
+                android:gravity="center_vertical"
+                android:paddingLeft="@dimen/activity_horizontal_margin_16"
+                android:text="发布流程" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/divider"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/one_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="填写信息表" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/two_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="自行上传车辆信息" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="1px"
+                    android:background="@color/white">
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/three_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="网站审核发布" />
+
+                    <View
+                        android:layout_width="1px"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@color/divider" />
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_width="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/four_orange"
+                        android:drawablePadding="@dimen/normal_margin_small_8"
+                        android:text="买卖双方自行交易" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <View style="@style/UnderLine" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                android:layout_marginTop="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/quick_publish_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:src="@mipmap/quick_publish" />
+
+                <TextView
+                    android:id="@+id/quick_publish_title"
+                    style="@style/BlackText14"
+                    android:layout_toRightOf="@+id/quick_publish_icon"
+                    android:text="快速交易" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/quick_publish_title"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/quick_publish_icon"
+                    android:text="便捷发帖，快速审核上线" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                android:layout_marginTop="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/self_trade_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:src="@mipmap/self_trade" />
+
+                <TextView
+                    android:id="@+id/self_trade_title"
+                    style="@style/BlackText14"
+                    android:layout_toRightOf="@+id/self_trade_icon"
+                    android:text="自由交易" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/self_trade_title"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/self_trade_icon"
+                    android:text="线下自行联系，方便快捷" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                android:layout_marginTop="@dimen/activity_vertical_margin_16">
+
+                <ImageView
+                    android:id="@+id/person_business_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/normal_margin_small_8"
+                    android:src="@mipmap/person_business" />
+
+                <TextView
+                    android:id="@+id/person_business_title"
+                    style="@style/BlackText14"
+                    android:layout_toRightOf="@+id/person_business_icon"
+                    android:text="个人商家不限" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/person_business_title"
+                    android:layout_marginTop="2dp"
+                    android:layout_toRightOf="@+id/person_business_icon"
+                    android:text="不设门槛，免费发布" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/activity_vertical_margin_16" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#fafafa"
+        android:orientation="vertical">
+
+        <View style="@style/UnderLine" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="@dimen/normal_margin_small_8"
+            android:paddingLeft="@dimen/margin_16"
+            android:paddingRight="@dimen/margin_16"
+            android:paddingTop="@dimen/normal_margin_small_8">
+
+            <Button
+                android:id="@+id/bt_platform"
+                style="@style/btn_vermilion"
+                android:layout_width="0dp"
+                android:layout_marginRight="4dp"
+                android:layout_weight="1"
+                android:text="平台帮卖" />
+
+            <View
+                android:layout_width="@dimen/activity_horizontal_margin_16"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/bt_personal"
+                style="@style/btn_vermilion"
+                android:layout_width="0dp"
+                android:layout_marginLeft="4dp"
+                android:layout_weight="1"
+                android:text="自由发布" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView style="@style/reportpage_title"
+            android:text="举报原因" />
+
+        <com.hxqc.widget.GridViewNoSlide
+            android:id="@+id/gv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="2"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp" />
+
+        <TextView style="@style/reportpage_title"
+            android:text="详细描述" />
+
+        <EditText android:id="@+id/tv_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/editview_bgselector"
+            android:gravity="top"
+            android:hint="请输入详细描述"
+            android:lineSpacingMultiplier="1.2"
+            android:lines="5"
+            android:padding="6dp"
+            android:textColor="@color/title_and_main_text"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <TextView style="@style/reportpage_title"
+            android:text="手机号码" />
+
+        <EditText android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:background="@drawable/editview_bgselector"
+            android:gravity="top"
+            android:hint="请输入手机号码"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:padding="6dp"
+            android:textColor="@color/title_and_main_text"
+            android:textColorHint="#999999"
+            android:textSize="14sp" />
+
+        <!-- 提交及联系客服 -->
+        <LinearLayout android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button android:id="@+id/bt_submit"
+                style="@style/btn_vermilion"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="@dimen/normal_margin_big_16"
+                android:layout_marginRight="@dimen/normal_margin_big_16"
+                android:layout_marginTop="40dp"
+                android:text="提   交" />
+
+            <LinearLayout android:id="@+id/ll_call_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="15dp" >
+
+                <ImageView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_serviceguaranteeic" />
+
+                <TextView android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="客服电话: 400-733-6622"
+                    android:textColor="@color/text_blue"
+                    android:textSize="16sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

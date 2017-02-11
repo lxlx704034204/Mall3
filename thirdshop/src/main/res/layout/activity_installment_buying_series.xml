@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/instalment_buying_series_group_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:orientation="horizontal">
+
+        <com.hxqc.mall.thirdshop.accessory4s.views.AutoTypePopupView
+            android:id="@+id/instalment_buying_series_brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            hxqc:auto_type_popup_view_drawablePadding="9.5dp"
+            hxqc:auto_type_popup_view_drawableRight="@drawable/ic_cbb_arrow_down"
+            hxqc:auto_type_popup_view_text="品牌"
+            hxqc:auto_type_popup_view_textColor="@color/title_and_main_text"
+            hxqc:auto_type_popup_view_textSize="14sp" />
+
+        <!--<RelativeLayout
+            android:id="@+id/instalment_buying_brand"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="9.5dp"
+                android:drawableRight="@drawable/ic_cbb_arrow_down"
+                android:text="品牌"
+                android:textColor="@color/title_and_main_text" />
+        </RelativeLayout>-->
+
+        <include
+            layout="@layout/view_cut_off_rule_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <com.hxqc.mall.thirdshop.accessory4s.views.AutoTypePopupView
+            android:id="@+id/instalment_buying_series"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            hxqc:auto_type_popup_view_drawablePadding="9.5dp"
+            hxqc:auto_type_popup_view_drawableRight="@drawable/ic_cbb_arrow_down"
+            hxqc:auto_type_popup_view_text="车型"
+            hxqc:auto_type_popup_view_textColor="@color/title_and_main_text"
+            hxqc:auto_type_popup_view_textSize="14sp" />
+
+        <!--<RelativeLayout
+            android:id="@+id/instalment_buying_series"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="9.5dp"
+                android:drawableRight="@drawable/ic_cbb_arrow_down"
+                android:text="车型"
+                android:textColor="@color/title_and_main_text" />
+        </RelativeLayout>-->
+
+        <!--<include
+            layout="@layout/view_cut_off_rule_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent" />
+
+        <com.hxqc.mall.thirdshop.accessory4s.views.AutoTypePopupView
+            android:id="@+id/instalment_buying_model"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            hxqc:auto_type_popup_view_drawablePadding="9.5dp"
+            hxqc:auto_type_popup_view_drawableRight="@drawable/ic_cbb_arrow_down"
+            hxqc:auto_type_popup_view_text="车系"
+            hxqc:auto_type_popup_view_textColor="@color/title_and_main_text"
+            hxqc:auto_type_popup_view_textSize="14sp" />-->
+
+        <!--<RelativeLayout
+            android:id="@+id/instalment_buying_model"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="9.5dp"
+                android:drawableRight="@drawable/ic_cbb_arrow_down"
+                android:text="车系"
+                android:textColor="@color/title_and_main_text" />
+        </RelativeLayout>-->
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/instalment_buying_series_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/searchconditionbg_orange"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="5dp"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/instalment_buying_series_content_text"
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_weight="1"
+            tools:text="特斯拉" />
+
+        <!-- 取消按钮-->
+        <ImageView
+            android:id="@+id/instalment_buying_series_content_cancel"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:src="@mipmap/ic_forminputdelete" />
+    </RelativeLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/instalment_buying_series_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/instalment_buying_series_group_bar">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/instalment_buying_series_group_bar" />
+
+    <View
+        android:id="@+id/instalment_buying_series_bg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/instalment_buying_series_group_bar"
+        android:alpha="0.5"
+        android:background="@color/black"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/normal_size_5"
+    android:paddingLeft="@dimen/normal_padding_16"
+    android:paddingRight="@dimen/normal_padding_16"
+    android:paddingTop="@dimen/normal_size_5">
+
+    <LinearLayout
+        android:id="@+id/root_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/main_auto_item_pic"
+            android:layout_width="@dimen/promotion_pic_width"
+            android:layout_height="@dimen/promotion_pic_height"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_normal" />
+
+        <LinearLayout xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/promotion_item_padding_6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_auto_item_title"
+                style="@style/BlackText15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2"
+                android:padding="2dp"
+                tools:text="车辆标题" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/GrayText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/price_title" />
+
+                    <TextView
+                        android:id="@+id/main_auto_item_normal_price"
+                        style="@style/RedText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:text="@string/price_normal" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/main_auto_item_guide_price"
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="2dp"
+                    tools:text="@string/price_guide" />
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/main_auto_item_auto_type"
+                style="@style/GrayText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:visibility="gone"
+                tools:text="@string/auto_type" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/normal_size_5"
+        android:paddingTop="@dimen/normal_size_5">
+
+        <TextView
+            android:id="@+id/main_auto_item_test_drive"
+            style="@style/WhiteText14"
+            android:layout_width="@dimen/btn_width_60"
+            android:layout_height="@dimen/btn_height_30"
+            android:layout_marginRight="@dimen/main_series_item_text_margin"
+            android:background="@drawable/t_bg_shop_home_page_btn_pressed"
+            android:gravity="center"
+            android:padding="@dimen/normal_size_5"
+            android:text="@string/test_drive" />
+
+        <TextView
+            android:id="@+id/main_auto_item_inquiry"
+            style="@style/WhiteText14"
+            android:layout_width="@dimen/btn_width_60"
+            android:layout_height="@dimen/btn_height_30"
+            android:layout_marginLeft="@dimen/main_series_item_text_margin"
+            android:background="@drawable/t_bg_shop_home_page_btn_pressed"
+            android:gravity="center"
+            android:padding="@dimen/normal_size_5"
+            android:text="@string/inquiry" />
+    </LinearLayout>
+</LinearLayout>

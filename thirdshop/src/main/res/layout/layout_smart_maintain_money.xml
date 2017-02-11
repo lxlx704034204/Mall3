@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_gravity="right"
+              android:orientation="vertical"
+              android:padding="@dimen/margin_16">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/text1"
+            style="@style/GrayText12"
+            android:text="配件总额:" />
+
+        <TextView
+            android:id="@+id/accessory"
+            style="@style/RedText12"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text1"
+            android:text="￥ 361.00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/text2"
+            style="@style/GrayText12"
+            android:text="工时总额:" />
+
+        <TextView
+            android:id="@+id/labor_hour"
+            style="@style/RedText12"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text2"
+            android:text="￥ 36.00" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/text3"
+            style="@style/GrayText12"
+            android:text="应付总额:" />
+
+        <TextView
+            android:id="@+id/payable"
+            style="@style/RedText12"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text3"
+            android:text="￥ 336.00" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_dividing_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/text4"
+            style="@style/GrayText12"
+            android:text="套餐折扣:" />
+
+        <TextView
+            android:id="@+id/package_discount"
+            style="@style/RedText12"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text4"
+            android:text="￥ -36.00" />
+
+    </RelativeLayout>
+
+    <include layout="@layout/layout_dividing_line" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/text6"
+            style="@style/GrayText12"
+            android:text="实付金额:" />
+
+        <TextView
+            android:id="@+id/pay"
+            style="@style/RedText12"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/text6"
+            android:text="￥ 1036.00" />
+
+
+    </RelativeLayout>
+
+</LinearLayout>

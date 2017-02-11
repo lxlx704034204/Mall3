@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:focusableInTouchMode="false"
+    android:orientation="vertical">
+
+    <View style="@style/UnderLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/home_page_little_title_height_40">
+
+        <ImageView
+            android:id="@+id/left_icon"
+            android:layout_width="@dimen/home_page_little_title_left_icon_width_6"
+            android:layout_height="@dimen/home_page_little_title_left_icon_height_16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:background="@drawable/ic_home_key"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/RedText14"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/right_icon_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/right_icon"
+                android:layout_width="@dimen/icon_size_14"
+                android:layout_height="@dimen/icon_size_14"
+                android:layout_marginRight="@dimen/normal_margin_small_8"
+                android:background="@drawable/t_ic_arrow"
+                android:gravity="center" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/right_text"
+            style="@style/GrayText14"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="0dp"
+            android:layout_toLeftOf="@id/right_icon_container"
+            android:paddingBottom="8dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:text="全部" />
+    </RelativeLayout>
+
+    <!--<View style="@style/UnderLine" />-->
+</LinearLayout>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <include layout="@layout/layout_confirm_order_top" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:background="#EBEBEB" />
+
+                <com.hxqc.mall.thirdshop.maintenance.views.ConfirmOrderDetail
+                    android:id="@+id/confirm_order"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RelativeLayout
+                    android:id="@+id/relative_scores"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_scores"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_scores"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/checkbox_selected_disabled" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/tv_scores"
+                        style="@style/GrayText14"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/rl_scores"
+                        android:text="可使用积分100分" />
+
+                    <TextView
+                        android:id="@+id/scores_discount"
+                        style="@style/RedText14"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="抵扣 ￥10.00" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/scores_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5"
+                    android:visibility="gone"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_coupon"
+                    android:layout_width="match_parent"
+                    android:layout_height="42dp"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_coupon_check"
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent">
+                        <ImageView
+                            android:id="@+id/iv_coupon"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:layout_centerInParent="true"
+                            android:src="@drawable/checkbox_selected_disabled" />
+                    </RelativeLayout>
+
+
+                    <TextView
+                        android:id="@+id/tv_coupon"
+                        style="@style/GrayText14"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@id/rl_coupon_check"
+                        android:text="可使用的优惠券" />
+
+                    <TextView
+                        android:id="@+id/coupon_discount"
+                        style="@style/RedText14"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="30dp"
+                        android:text="抵扣 ￥10.00" />
+
+                    <ImageView
+                        android:layout_width="8dp"
+                        android:layout_height="13dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:src="@drawable/ic_list_arrow" />
+
+                </RelativeLayout>
+
+                <View
+                    android:id="@+id/coupon_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#D5D5D5"
+                    android:visibility="gone"/>
+
+                <include layout="@layout/layout_confirm_order_money" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <include layout="@layout/layout_dividing_line" />
+
+        <include layout="@layout/layout_smart_maintain_bottom" />
+
+    </LinearLayout>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

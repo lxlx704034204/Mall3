@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/item_order_height_45">
+
+    <TextView
+        android:id="@+id/left_text"
+        style="@style/BlackText14"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16" />
+
+    <TextView
+        android:id="@+id/right_text"
+        style="@style/GrayText14"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/normal_margin_big_16" />
+</RelativeLayout>

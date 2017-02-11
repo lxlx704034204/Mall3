@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar_56"
+        android:background="#F0F0F0">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:text="请选择"
+            android:textColor="@color/title_and_main_text"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View style="@style/UnderLine" />
+
+    <com.hxqc.widget.GridViewNoSlide
+        android:id="@+id/gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:numColumns="2"
+        android:verticalSpacing="19dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="112dp"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/undercarriage_reason"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <EditText
+            android:id="@+id/et_reason"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:gravity="top"
+            android:hint="点击输入下架其他原因"
+            android:lineSpacingMultiplier="1.2"
+            android:lines="5"
+            android:maxLength="200"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="12dp"
+            android:textColor="@color/title_and_main_text"
+            android:textColorHint="@color/straight_matter_and_secondary_text"
+            android:textSize="12sp"
+
+            />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_submit"
+        style="@style/btn_vermilion"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="58dp"
+        android:text="提交"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp">
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="26dp"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_toLeftOf="@+id/tv_call_number"
+            android:src="@mipmap/ic_serviceguaranteeic" />
+
+        <TextView
+            android:id="@+id/tv_call_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="客服电话:400-733-6622"
+            android:textColor="@color/text_blue" />
+
+    </RelativeLayout>
+
+</LinearLayout>

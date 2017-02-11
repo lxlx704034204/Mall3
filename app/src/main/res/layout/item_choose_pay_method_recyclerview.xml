@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+        <RelativeLayout
+            style="@style/main_margin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            >
+            <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                android:id="@+id/mcit_get_bank_rcv"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="false"
+                android:hint="@string/pay_online_met_bank_type_hint"
+                android:maxLines="1"
+                android:textSize="@dimen/main_font_size"
+                />
+
+            <RelativeLayout android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/mcit_get_bank_rcv">
+
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/et_get_money"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/pay_online_met_amount_hint"
+                    android:inputType="numberDecimal"
+                    android:maxLength="10"
+                    android:maxLines="1"
+                    android:textSize="@dimen/main_font_size"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_pay_notify_first_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/text_color_orange"
+                    android:textSize="@dimen/text_size_12"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            
+        </RelativeLayout>
+
+        <ImageButton
+            android:id="@+id/tv_del"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/corner_close"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="8dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_upper_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text=""
+            android:textColor="@color/text_gray"
+            android:textSize="12sp"
+            />
+
+
+        <!--style="@style/btn_border"-->
+        <!--android:layout_alignParentEnd="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:drawableRight="@drawable/orderstep2_list_arrow"-->
+        <!--android:drawablePadding="4dp"-->
+        <!--android:text="@string/tv_go_to_pay"-->
+        <!--android:textSize="@dimen/main_font_size"-->
+
+        <Button
+            android:id="@+id/tv_go_to_pay"
+            style="@style/btn_border"
+            android:layout_alignParentRight="true"
+            android:drawableRight="@drawable/orderstep2_list_arrow"
+            android:text="@string/tv_go_to_pay"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+</LinearLayout>

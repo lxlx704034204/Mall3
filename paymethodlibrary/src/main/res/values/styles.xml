@@ -1,0 +1,66 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <style name="AppBaseTheme" parent="android:Theme.Light"/>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        <item name="android:textColorSecondary">#ff000000</item>
+    </style>
+
+    <style name="Theme_dialog_yjf" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="title_style_yjf">
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textSize">@dimen/title_txt_size</item>
+    </style>
+
+    <style name="titlebar_style_yjf">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/title_h</item>
+        <item name="android:background">@color/title_bg_color_yjf</item>
+    </style>
+
+    <style name="test_edit_text_yjf">
+        <item name="android:textSize">@dimen/default_txt_size</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:fromAlpha">0.0</item>
+        <item name="android:toAlpha">0.0</item>
+    </style>
+
+    <style name="default_txt_style_yjf">
+        <item name="android:textSize">@dimen/default_txt_size</item>
+        <item name="android:textColor">#4A4A4A</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+
+
+    <!--系统对话框-->
+    <!--<style name="MaterialDialog" parent="android:Theme.DeviceDefault.Light.Dialog.NoActionBar">-->
+        <!--<item name="android:textColor">@color/text_color_title</item>-->
+        <!--<item name="titleTextColor">@color/text_color_title</item>-->
+        <!--<item name="android:textColorPrimary">@color/text_gray</item>-->
+        <!--<item name="android:buttonBarButtonStyle">@null</item>-->
+    <!--</style>-->
+
+    <style name="balanceDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@null</item>
+        <!--<item name="android:windowBackground">@color/float_transparent</item>-->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+
+    <style name="take_photo_anim" parent="android:Animation">
+        <item name="android:windowEnterAnimation">@anim/pop_enter_anim</item>
+        <item name="android:windowExitAnimation">@anim/pop_exit_anim</item>
+    </style>
+
+</resources>

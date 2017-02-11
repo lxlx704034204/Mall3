@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:orientation="vertical">
+
+    <ListView
+        android:id="@+id/newwenergycarmai_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:listSelector="@android:color/transparent"
+        android:layout_marginTop="59dp"
+        android:divider="@android:color/transparent"
+        android:scrollbars="none"/>
+
+    <include layout="@layout/view_toolbar_layout"/>
+</FrameLayout>
+

@@ -1,0 +1,187 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hxqc.mall.usedcar">
+
+    <application
+        android:supportsRtl="true">
+
+        <activity
+            android:name=".activity.BuyCarActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <activity
+            android:name=".activity.PlatformCarDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <activity
+            android:name=".activity.ReadmeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"
+            android:windowSoftInputMode="adjustResize" />
+
+        <activity
+            android:name=".activity.InstalmentActivity"
+            android:label="@string/title_activity_instalment"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.QAActivity"
+            android:label="@string/title_activity_qa"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ExchangeEntranceActivity"
+            android:label="@string/title_activity_exchange"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.QAStandardActivity"
+            android:label="@string/title_activity_detail"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.PersonalCarDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <activity
+            android:name=".activity.ImageActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name=".activity.UsedCarSearchActivity"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar">
+            <intent-filter>
+                <action android:name="Search" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SellerInfoActivity"
+            android:label="@string/title_activity_seller_info"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="SellerInfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.NewSellCarActivity"
+            android:label="@string/title_activity_want_to_sell"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <activity
+            android:name=".activity.AutoValuationActivity"
+            android:label="@string/title_activity_auto_valuation"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar">
+            <intent-filter>
+                <action android:name="AutoValuation" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hxqc.mall.usedcar.activity.ValuationResultActivity"
+            android:label="@string/title_activity_valuation_result"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar">
+            <intent-filter>
+                <action android:name="ValuationResult"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ReportActivity"
+            android:label="@string/title_activity_user_report"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="SellCarInfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SellCarInfoActivity"
+            android:label="@string/title_activity_sell_car"
+            android:screenOrientation="portrait">
+
+            <intent-filter>
+                <action android:name="MeSellCarInfo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.ChooseCityActivity"
+            android:label="@string/title_activity_choose_city"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="ChooseCity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.SellCarActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:windowSoftInputMode="stateHidden|adjustResize"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name=".activity.ExchangeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name=".activity.BuyCarFilterActivity"
+            android:label="@string/title_activity_buy_car_filter">
+            <intent-filter>
+                <action android:name="BuyCarFilter" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.SellCarDetailInfoActivity"
+            android:label="@string/title_activity_sell_car">
+            <intent-filter>
+                <action android:name="SellCarDetail" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.UndercarriageActivity"
+            android:label="@string/title_activity_undercarriage">
+            <intent-filter>
+                <action android:name="UndercarriageReason" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.PlatformSellCarActivity"
+            android:theme="@style/AppThemeBase.ToolBar">
+            <intent-filter>
+                <action android:name="PlatformSell" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+
+        </activity>
+    </application>
+
+</manifest>

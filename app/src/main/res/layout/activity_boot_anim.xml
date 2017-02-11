@@ -1,0 +1,18 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                tools:context="com.hxqc.mall.activity.LaunchActivity">
+    <!--android:background="@drawable/page_2_bg_05"-->
+    <!--android:background="@drawable/splash_screen"-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        />
+    <!--android:background="@drawable/splash_screen"-->
+
+
+
+</RelativeLayout>

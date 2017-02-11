@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottom"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                style="@style/WhiteText16"
+                android:layout_width="match_parent"
+                android:layout_height="132dp"
+                android:background="@mipmap/bg_exchange_banner" />
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                android:text="置换流程" />
+
+            <View
+                style="@style/UnderLine"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                android:weightSum="16">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+
+                <com.hxqc.widget.SquareImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@mipmap/ic_exchange_icon01" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:src="@mipmap/dian" />
+
+                <com.hxqc.widget.SquareImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@mipmap/ic_exchange_icon02" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:src="@mipmap/dian" />
+
+                <com.hxqc.widget.SquareImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@mipmap/ic_exchange_icon03" />
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="5dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="2"
+                    android:src="@mipmap/dian" />
+
+                <com.hxqc.widget.SquareImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:src="@mipmap/ic_exchange_icon04" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/normal_margin_small_8"
+                android:weightSum="4">
+
+                <TextView
+                    style="@style/BlackText12"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="线上申请" />
+
+                <TextView
+                    style="@style/BlackText12"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="到店估车" />
+
+                <TextView
+                    style="@style/BlackText12"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="交易抵扣车款" />
+
+                <TextView
+                    style="@style/BlackText12"
+                    android:layout_width="0dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:text="交付新车" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                android:background="@color/tag_background" />
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                android:text="置换特点" />
+
+            <View
+                style="@style/UnderLine"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginTop="@dimen/activity_horizontal_margin_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                android:padding="@dimen/activity_horizontal_margin_16">
+
+                <ImageView
+                    android:id="@+id/exchange_valuation"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_exchange_valuation" />
+
+                <TextView
+                    android:id="@+id/valuation"
+                    style="@style/BlackText14"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_toRightOf="@id/exchange_valuation"
+                    android:text="精确估车" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_below="@id/valuation"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/exchange_valuation"
+                    android:text="保值置换，物有所值" />
+            </RelativeLayout>
+
+            <View
+                style="@style/UnderLine"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                android:padding="@dimen/activity_horizontal_margin_16">
+
+                <ImageView
+                    android:id="@+id/exchange_trade"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_exchange_trade" />
+
+                <TextView
+                    android:id="@+id/trade"
+                    style="@style/BlackText14"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_toRightOf="@id/exchange_trade"
+                    android:text="快速交易" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_below="@id/trade"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/exchange_trade"
+                    android:text="一对一服务，快速反馈" />
+            </RelativeLayout>
+
+            <View
+                style="@style/UnderLine"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                android:padding="@dimen/activity_horizontal_margin_16">
+
+                <ImageView
+                    android:id="@+id/exchange_promotion"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerVertical="true"
+                    android:src="@mipmap/ic_exchange_promotion" />
+
+                <TextView
+                    android:id="@+id/promotion"
+                    style="@style/BlackText14"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_toRightOf="@id/exchange_promotion"
+                    android:text="新车优惠" />
+
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_below="@id/promotion"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/exchange_promotion"
+                    android:text="享受新车置换福利政策" />
+            </RelativeLayout>
+
+            <View
+                style="@style/UnderLine"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:paddingBottom="@dimen/activity_horizontal_margin_16" />
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/bottom"
+        style="@style/btn_vermilion"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/activity_horizontal_margin_16"
+        android:onClick="toExchange"
+        android:text="旧车置换" />
+</RelativeLayout>

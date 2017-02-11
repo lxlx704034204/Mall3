@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_background"
+            android:padding="16dp"
+            android:text="@string/illegal_explain"
+            android:textColor="@color/cursor_orange"
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/common_illegal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bg_star"
+                android:text="号牌种类:" />
+            <!--        <com.hxqc.aroundservice.view.CommonSpinnerView
+                        android:id="@+id/illegal_query_auto_variety"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape_auto_variety_bg"
+                        android:drawableRight="@drawable/ic_cbb_arrow"
+                        android:paddingBottom="12dp"
+                        android:paddingLeft="16dp"
+                        android:paddingRight="16dp"
+                        android:paddingTop="12dp"
+                        android:hint="小型汽车"/>-->
+            <!--   <com.hxqc.mall.core.views.SpinnerPopWindow
+                   android:id="@+id/illegal_query_auto_variety"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@drawable/shape_auto_variety_bg"
+                   android:paddingTop="6dp"
+                   android:paddingBottom="6dp">
+
+                   <TextView
+                       android:id="@+id/illegal_query_auto_variety_tv"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:textColor="@color/straight_matter_and_secondary_text"
+                       android:textSize="16sp" />
+
+                   <ImageView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_alignParentRight="true"
+                       android:layout_centerVertical="true"
+                       android:src="@drawable/ic_city_arrow" />
+
+               </com.hxqc.mall.core.views.SpinnerPopWindow>-->
+
+            <!--
+                    <TextView
+                        android:id="@+id/illegal_query_auto_variety_tv"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="选择车型"
+                        style="@style/auto_edit_text_2"
+                        android:textColor="@color/straight_matter_and_secondary_text"
+                        android:textColorHint="@color/bg_gray"
+                        android:textSize="16sp" />-->
+
+            <com.hxqc.mall.core.views.SpinnerPopWindow
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/illegal_query_auto_variety_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="小型车"
+                    android:text="小型车"
+                    android:textColor="@color/straight_matter_and_secondary_text"
+                    android:textColorHint="@color/bg_gray"
+                    android:textSize="16sp"
+                    />
+
+                <!--        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:src="@drawable/drop_down_unselected_icon" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_province"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/divider" />
+            </com.hxqc.mall.core.views.SpinnerPopWindow>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/common_illegal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bg_star"
+                android:text="查询地区:" />
+
+            <com.hxqc.mall.core.views.SpinnerPopWindow
+                android:id="@+id/illegal_query_auto_province"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/illegal_query_auto_province_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="湖北武汉"
+                    android:textColor="@color/straight_matter_and_secondary_text"
+                    android:textColorHint="@color/bg_gray"
+                    android:textSize="16sp"
+                    />
+
+                <!--<ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/drop_down_unselected_icon" />-->
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_province"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/divider" />
+            </com.hxqc.mall.core.views.SpinnerPopWindow>
+
+            <!--<com.hxqc.mall.core.views.SpinnerPopWindow
+                android:id="@+id/illegal_query_auto_city"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp">
+
+                <TextView
+                    android:id="@+id/illegal_query_auto_city_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="选择城市"
+                    android:text="武汉"
+                    android:textColor="@color/straight_matter_and_secondary_text"
+                    android:textColorHint="@color/bg_gray"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/drop_down_unselected_icon" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_province"
+                    android:layout_marginTop="25dp"
+                    android:background="@color/divider" />
+            </com.hxqc.mall.core.views.SpinnerPopWindow>-->
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/common_illegal_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bg_star"
+                android:text="车牌号码:" />
+
+            <!--   <com.hxqc.mall.auto.view.PlateNumberTextView
+                   android:id="@+id/illegal_query_plate_city"
+                   style="@style/auto_edit_text_2"
+                   android:layout_width="40dp"
+                   android:layout_height="wrap_content"
+                   android:cursorVisible="false"
+                   android:drawablePadding="12dp"
+                   android:drawableRight="@drawable/ic_cbb_arrow_down"
+                   android:maxLength="1"
+                   android:paddingBottom="16dp"
+                   android:paddingTop="16dp"
+                   android:textColorHint="@color/text_gray" />
+
+               <com.hxqc.mall.auto.view.PlateNumberTextView
+                   android:id="@+id/illegal_query_plate_num"
+                   style="@style/auto_edit_text_2"
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="16dp"
+                   android:hint="请填写车牌号"
+                   android:maxLength="6"
+                   android:paddingBottom="16dp"
+                   android:paddingRight="16dp"
+                   android:paddingTop="16dp" />-->
+
+            <!--<com.hxqc.mall.auto.view.CommenPlateNumberView
+                android:id="@+id/illegal_query_number"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                />-->
+
+            <EditText
+                style="@style/auto_edit_text_2"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:text="鄂A" />
+
+            <com.hxqc.mall.auto.view.PlateNumberTextView
+                android:id="@+id/illegal_query_plate_num"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请填写车牌号"
+                android:maxLength="5"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp" />
+
+        </LinearLayout>
+
+        <com.hxqc.mall.auto.view.CommonEditInfoItemView
+            android:id="@+id/illegal_query_chassis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            huzj:commen_info_item_content_hint="请输入后5位车架号"
+            huzj:commen_info_item_content_hintColor="@color/bg_gray"
+            huzj:commen_info_item_content_inputType="number"
+            huzj:commen_info_item_content_maxLength="5"
+            huzj:commen_info_item_title_drawableLeft="@drawable/bg_star"
+            huzj:commen_info_item_title_ems="5"
+            huzj:commen_info_item_title_text="车架号:"
+            huzj:commen_info_item_title_textColor="@color/text_color_subheading" />
+
+        <com.hxqc.mall.auto.view.CommonEditInfoItemView
+            android:id="@+id/illegal_query_engine"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            huzj:commen_info_item_content_focusable="false"
+            huzj:commen_info_item_content_focusableInTouchMode="false"
+            huzj:commen_info_item_content_hint="请先选择查询地区"
+            huzj:commen_info_item_content_hintColor="@color/bg_gray"
+            huzj:commen_info_item_content_inputType="number"
+            huzj:commen_info_item_title_ems="5"
+            huzj:commen_info_item_title_text="发动机号:"
+            huzj:commen_info_item_title_textColor="@color/text_color_subheading" />
+
+        <!--  <RelativeLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <com.hxqc.mall.auto.view.CommonEditInfoItemView
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginRight="80dp"
+                  huzj:commen_info_item_content_focusable="false"
+                  huzj:commen_info_item_content_focusableInTouchMode="false"
+                  huzj:commen_info_item_content_hint="请填写验证码"
+                  huzj:commen_info_item_content_hintColor="@color/bg_gray"
+                  huzj:commen_info_item_title_text="验证码:"
+                  huzj:commen_info_item_title_textColor="@color/text_color_subheading" />
+
+              <ImageView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentRight="true"
+                  android:layout_centerVertical="true"
+                  android:layout_marginRight="16dp"
+                  android:background="@drawable/ic_launcher"/>
+          </RelativeLayout>-->
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center"
+             android:orientation="horizontal"
+             android:paddingLeft="10dp"
+             android:paddingRight="16dp">
+
+             <TextView
+                 style="@style/commen_edit_title"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:drawableLeft="@drawable/bg_transparent"
+                 android:text="验证码:" />
+
+             <EditText
+                 android:id="@+id/illegal_query_verification"
+                 style="@style/commen_edit_content"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_weight="1"
+                 android:hint="请输入验证码" />
+
+             <EditText
+                 style="@style/commen_edit_content"
+                 android:layout_width="0dp"
+                 android:layout_height="wrap_content"
+                 android:layout_gravity="center_vertical"
+                 android:layout_weight="1"
+                 android:hint="验证码" />
+
+         </LinearLayout>-->
+
+        <TextView
+            style="@style/RedText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/explanation" />
+
+        <Button
+            android:id="@+id/illegal_query_query"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="查询" />
+
+        <TextView
+            android:id="@+id/illegal_query_explain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginTop="16dp"
+            android:background="@color/order_tip_gray"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingBottom="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="8dp"
+            android:textColor="@color/order_tip_text_gray"
+            android:textSize="14sp"
+            tool:text="@string/illegal_explain" />
+
+        <!--    <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="10dp"
+                android:text="暂只对鄂A车牌进行违章处理!"
+                android:textColor="@color/title_red" />-->
+    </LinearLayout>
+
+
+</ScrollView>

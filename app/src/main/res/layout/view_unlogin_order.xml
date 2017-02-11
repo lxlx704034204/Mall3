@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/white"
+                android:padding="@dimen/activity_horizontal_margin_16"
+>
+
+
+    <LinearLayout
+        android:id="@+id/ll_001"
+        android:layout_marginTop="28dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+    >
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/home_order_tips_view_text"
+        />
+
+        <Button
+            android:id="@+id/login"
+            style="@style/btn_orange"
+            android:layout_width="@dimen/button_min_width_116"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="35dp"
+            android:text="@string/me_login"
+        />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_above="@+id/ll_001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_notloggedin"
+        android:layout_centerHorizontal="true"
+    />
+
+
+</RelativeLayout>

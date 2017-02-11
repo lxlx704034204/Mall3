@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+        <LinearLayout
+            android:id="@+id/service"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_service" />
+
+            <TextView
+                style="@style/WhiteText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:gravity="center"
+                android:text="客服" />
+        </LinearLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/grand_parent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.hxqc.mall.thirdshop.views.ShopDetailsHeadView
+                    android:id="@+id/four_s_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RelativeLayout
+                    android:id="@+id/rl_car_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/car_logo"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="@dimen/margin_16"
+                        android:layout_marginLeft="@dimen/margin_16"
+                        android:layout_marginTop="@dimen/margin_16"
+                        android:src="@drawable/pic_normal_square" />
+
+                    <TextView
+                        android:id="@+id/car_name"
+                        style="@style/BlackText16"
+                        android:layout_alignTop="@+id/car_logo"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@+id/car_logo"
+                        tools:text="奔驰E260 2015款 啊反对反对大哥" />
+
+                    <TextView
+                        android:id="@+id/text1"
+                        style="@style/GrayText14"
+                        android:layout_alignLeft="@id/car_name"
+                        android:layout_below="@id/car_name"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginTop="5dp"
+                        android:text="行驶里程  " />
+
+                    <TextView
+                        android:id="@+id/car_mile"
+                        style="@style/OrangeText14"
+                        android:layout_alignTop="@+id/text1"
+                        android:layout_toRightOf="@+id/text1"
+                        tools:text="3000" />
+
+                    <TextView
+                        android:id="@+id/text2"
+                        style="@style/GrayText14"
+                        android:layout_alignTop="@+id/text1"
+                        android:layout_toRightOf="@+id/car_mile"
+                        android:text="  公里" />
+                </RelativeLayout>
+
+                <include layout="@layout/layout_dividing_line" />
+
+
+
+                <LinearLayout
+                    android:id="@+id/ll_parent"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <RelativeLayout
+                    android:id="@+id/add_maintain"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    android:layout_marginRight="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:background="@drawable/bg_maintain"
+                    android:paddingBottom="10dp"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="60dp"
+                        android:src="@drawable/ic_plus" />
+
+                    <TextView
+                        style="@style/OrangeText16"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="90dp"
+                        android:text=" 自行选择其他保养与维修项目" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible">
+
+                    <include layout="@layout/layout_4s_quick_confirm_order_money"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+
+
+        <include layout="@layout/layout_dividing_line" />
+
+        <include layout="@layout/layout_smart_maintain_bottom" />
+
+    </LinearLayout>
+
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

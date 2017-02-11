@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="RecommendMaintenanceProgramView">
+        <attr name="program_title" format="string"/>
+        <attr name="show_button" format="boolean"/>
+    </declare-styleable>
+    <!--SelectableRoundedImageView-->
+    <declare-styleable name="SelectableRoundedImageView">
+        <attr name="sriv_left_top_corner_radius" format="dimension" />
+        <attr name="sriv_right_top_corner_radius" format="dimension" />
+        <attr name="sriv_left_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_right_bottom_corner_radius" format="dimension" />
+        <attr name="sriv_border_width" format="dimension" />
+        <attr name="sriv_border_color" format="color" />
+        <attr name="sriv_oval" format="boolean" />
+        <attr name="android:scaleType" />
+    </declare-styleable>
+
+    <!--ReserveDateView-->
+    <declare-styleable name="ReserveDateView">
+        <attr name="reserve_date_left_list_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="reserve_date_left_list_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="reserve_date_left_list_weight" format="float" />
+        <attr name="reserve_date_left_list_background" format="reference|color" />
+
+        <attr name="reserve_date_right_list_width" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="reserve_date_right_list_height" format="dimension">
+            <enum name="fill_parent" value="-1" />
+            <enum name="match_parent" value="-1" />
+            <enum name="wrap_content" value="-2" />
+        </attr>
+        <attr name="reserve_date_right_list_weight" format="float" />
+        <attr name="reserve_date_right_list_background" format="reference|color" />
+    </declare-styleable>
+
+</resources>

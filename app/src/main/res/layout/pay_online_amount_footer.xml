@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+              xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical">
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#efefef"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <TextView
+        android:id="@+id/tv_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/about_us_margin_top_10"
+        android:layout_marginBottom="@dimen/about_us_margin_top_10"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_16"
+        android:drawableLeft="@drawable/ic_orderstep2plus"
+        android:text="@string/tv_add_pay_method"
+        android:textColor="@color/text_blue"
+        android:textSize="@dimen/main_font_size"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+
+    <Button
+        android:id="@+id/btn_complete"
+        style="@style/btn_orange"
+        android:layout_width="match_parent"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+        android:layout_marginStart="@dimen/activity_horizontal_margin_16"
+        android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+        android:layout_marginEnd="@dimen/activity_horizontal_margin_16"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/btn_complete_information"
+        />
+
+</LinearLayout>

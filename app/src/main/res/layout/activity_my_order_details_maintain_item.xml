@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+   <TextView
+       android:id="@+id/myorder_details_maintenanceItems_name"
+       style="@style/BlackText14"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_margin="10dp"
+       android:text="1.更换机油，机滤"
+       android:textStyle="bold"/>
+    <com.hxqc.widget.ListViewNoSlide
+        android:id="@+id/myorder_details_maintenanceItems_goods"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@null"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="@dimen/order_amount_width"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="配件小计："/>
+            <TextView
+                android:id="@+id/myorder_details_maintenanceItems_accessories_subtotal"
+                style="@style/PriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="¥ 268.00"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/order_amount_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="工时小计："/>
+            <TextView
+                android:id="@+id/myorder_details_maintenanceItems_workCost_subtotal"
+                style="@style/PriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="¥ 268.00"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="@dimen/order_amount_width"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+            <TextView
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="本项小计："/>
+            <TextView
+                android:id="@+id/myorder_details_maintenanceItems_project_subtotal"
+                style="@style/PriceText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="¥ 268.00"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <View style="@style/UnderLine"/>
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="@dimen/margin_16"
+              android:paddingLeft="@dimen/margin_16"
+              android:paddingRight="@dimen/margin_16">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Q：车源质量是否有保障？"
+        android:textColor="@color/text_color_orange"/>
+
+    <TextView
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="A：恒信汽车电商承诺所售车辆均为全新车，并按国家及汽车生产厂家的三包标准享受全国联保。"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Q：全额支付后是否可以退车？"
+        android:textColor="@color/text_color_orange"/>
+
+    <TextView
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:lineSpacingMultiplier="1.3"
+        android:text="A：签订《客户交车确认表》前，可随时申请退车，并全额退还车款至您付款的账户。签订《客户交车确认表》后，符合国家质量监督检验检疫总局《家用汽车产品修理、更换、退货责任规定》中情况的可以进行退车。"/>
+</LinearLayout>

@@ -1,0 +1,93 @@
+<resources>
+    <string name="smart_maintain">保养方案</string>
+    <string name="normal_maintenance">常规保养</string>
+    <string name="appointment_maintenance">修车预约</string>
+    <!--<string name="location">定位</string>-->
+    <string name="other_maintenance_package">其他优惠套餐</string>
+    <string name="to_fix_auto">我要修车</string>
+    <string name="service_advisor">服务顾问</string>
+    <string name="maintenance_book">保养手册</string>
+    <string name="recommend_maintain">推荐保养套餐</string>
+    <string name="comsumption_detail">消费详情</string>
+    <string name="charge_detail">充值详情</string>
+    <string name="score_detail">积分详情</string>
+    <string name="maintenance_content">保养内容：</string>
+    <string name="driven_distance">行驶里程：</string>
+    <string name="maintenance_count">保养金额：</string>
+    <string name="auto_plate">车牌号：</string>
+    <string name="next_maintenance_time">下次保养时间：</string>
+    <string name="next_repair_advice">下次维修建议：</string>
+    <string name="maintenance_record">保养记录</string>
+    <string name="choose_yuan">元</string>
+    <string name="charge_record">充值历史记录：</string>
+    <string name="name">姓名：</string>
+    <string name="post">岗位：</string>
+    <string name="complete">完成</string>
+    <string name="your_last_maintenance_time">您上次保养的时间</string>
+    <string name="last_driven_distance">行驶里程</string>
+    <string name="km">公里</string>
+    <string name="phone_number">手机号码:</string>
+    <string name="car_owner_name">车主姓名:</string>
+    <string name="input_car_owner_name">请填写车主姓名</string>
+    <string name="input_phone_name">请填写手机号码</string>
+    <string name="no_auto_data_letter">完善车辆信息后为您精准推荐保养套餐</string>
+    <string name="title_activity_reserve_maintain">在线预约</string>
+    <string name="title_activity_repair_reserve">修车预约</string>
+    <string name="title_activity_service_advise">预约服务顾问</string>
+    <string name="title_activity_service_mechanic">预约维修技师</string>
+    <string name="title_activity_service_type">服务类型</string>
+
+    <string name="warranty">质保到</string>
+    <string name="base_maintenance_program">基本保养套餐</string>
+
+    <!--服务类型-->
+    <string name="service_type_repair">维修</string>
+    <string name="service_type_maintain">保养</string>
+    <string name="service_type_spray">钣喷</string>
+    <string name="service_type_inspect">检查故障</string>
+    <string-array name="service_type_repair_list">
+        <item>发动机积碳过多</item>
+        <item>轮胎动平衡</item>
+        <item>四轮定位</item>
+        <item>更换减震器</item>
+        <item>前轮轴承</item>
+        <item>更换电瓶</item>
+    </string-array>
+
+    <!--钣喷修复-->
+    <string name="spray_text_one">项目</string>
+    <string name="spray_text_two">报价(元)</string>
+    <string name="spray_text_three">作业时间(小时)</string>
+    <string name="spray_text_four">保险杠喷漆(单个)</string>
+    <string name="spray_text_fife">门板喷漆(单个)</string>
+    <string name="spray_text_six">前引擎盖喷漆</string>
+    <string name="spray_text_seven">后盖喷漆</string>
+    <string name="spray_text_eight">前部翼子板喷漆(单个)</string>
+    <string name="spray_text_nine">车辆修复9大工序</string>
+    <string-array name="spray_9_process">
+        <item>拆卸</item>
+        <item>钣金修复</item>
+        <item>喷涂底漆</item>
+        <item>喷涂面漆</item>
+        <item>磨灭</item>
+        <item>抛光</item>
+        <item>喷涂清漆</item>
+        <item>烤房干燥</item>
+        <item>装配</item>
+    </string-array>
+    <string name="spray_price_600">￥600</string>
+    <string name="spray_price_800">￥800</string>
+    <string name="spray_price_400">￥400</string>
+    <string name="spray_hour_2">2</string>
+    <string name="spray_hour_3">3</string>
+    <string name="spray_hour_5">5</string>
+    <string name="spray_hour_6">6</string>
+    <string name="tel">咨询电话：</string>
+    <string name="experience">工作经验：</string>
+    <string name="motto">工作格言：</string>
+    <string name="skill">工作特长：</string>
+    <string name="to_see_maintan_program">去看保养方案</string>
+    <string name="save">完成</string>
+
+
+</resources>

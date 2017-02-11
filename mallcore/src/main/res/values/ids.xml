@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="blank" type="id" />
+    <item name="expandable_text" type="id" />
+    <item name="expand_collapse" type="id" />
+
+
+    <item name="VariousShowViewContent" type="id"/>
+
+    <item name="drop_down_content" type="id"/>
+
+    <item name="left_text" type="id"/>
+
+
+    <!--扫码  start-->
+    <item type="id" name="decode"/>
+    <item type="id" name="decode_failed"/>
+    <item type="id" name="decode_succeeded"/>
+    <item type="id" name="launch_product_query"/>
+    <item type="id" name="quit"/>
+    <item type="id" name="restart_preview"/>
+    <item type="id" name="return_scan_result"/>
+    <!--扫码  end-->
+</resources>

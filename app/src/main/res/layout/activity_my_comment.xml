@@ -1,0 +1,27 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/comment_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f5f6"
+        app:tabIndicatorColor="@color/cursor_orange"
+        app:tabIndicatorHeight="2dp"
+        app:tabMode="fixed"
+        app:tabSelectedTextColor="@color/cursor_orange"
+        app:tabTextColor="@color/text_color_subheading" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="@color/divider" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/comment_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

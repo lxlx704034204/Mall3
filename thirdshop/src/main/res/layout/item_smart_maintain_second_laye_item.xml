@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:id="@+id/ll_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:id="@+id/goods_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginBottom="8dp"
+                 />
+            <TextView
+                android:id="@+id/goods_name"
+                style="@style/BlackText14"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_toRightOf="@id/goods_photo"
+                android:layout_alignTop="@+id/goods_photo"
+                android:maxLines="2"
+                tools:text="高级啊实打实大师的法伤的双方都放得开积分抵扣就分开的减肥" />
+
+            <RelativeLayout
+                android:id="@+id/rl_one_litre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/goods_name"
+                android:layout_below="@+id/tv"
+                android:background="@drawable/btn_border"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="5dp"
+                android:visibility="gone">
+                <TextView
+                    android:id="@+id/litre_goods"
+                    style="@style/OrangeText14"
+                    android:text="添加1L装"
+                    />
+                <ImageView
+                    android:id="@+id/litre_photo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/litre_goods"
+                    android:layout_marginLeft="8dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/maintain_down"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv"
+                style="@style/BlackText14"
+                android:layout_alignLeft="@+id/goods_name"
+                android:text="配件单价："
+                android:layout_alignBottom="@+id/goods_photo"/>
+
+            <TextView
+                android:id="@+id/goods_price"
+                style="@style/BlackText14"
+                android:layout_toRightOf="@+id/tv"
+                android:layout_alignTop="@+id/tv"
+                tools:text="￥208.00" />
+
+            <TextView
+                android:id="@+id/goods_count"
+                style="@style/BlackText14"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv"
+                android:layout_marginRight="@dimen/margin_16"
+                android:text="1"/>
+
+            <TextView
+                style="@style/BlackText14"
+                android:text="数量："
+                android:layout_alignTop="@+id/tv"
+                android:layout_toLeftOf="@+id/goods_count"/>
+
+            <RelativeLayout
+                android:id="@+id/change"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/text_color_orange"
+                android:visibility="gone">
+
+                <ImageView
+                    style="@style/Icon24"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/ic_replace" />
+
+                <TextView
+                    style="@style/WhiteText14"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="55dp"
+                    android:text="更换" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/rl_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <include layout="@layout/layout_dividing_line"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:id="@+id/add_goods_photo"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/pic_normal"
+                android:layout_marginTop="@dimen/margin_16"
+                android:layout_marginLeft="@dimen/margin_16"
+                />
+
+            <TextView
+                android:id="@+id/add_goods_name"
+                style="@style/BlackText14"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_toRightOf="@+id/add_goods_photo"
+                android:layout_alignTop="@+id/add_goods_photo"
+                android:maxLines="2"
+                android:text="高级啊实打实大师的法伤的双方都放得开积分抵扣就分开的减肥" />
+
+            <TextView
+                android:id="@+id/tv_2"
+                style="@style/BlackText14"
+                android:text="配件单价："
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/add_goods_name"
+                android:layout_alignLeft="@+id/add_goods_name"/>
+            <TextView
+                android:id="@+id/add_goods_price"
+                style="@style/BlackText14"
+                android:text="￥208.00"
+                android:layout_toRightOf="@+id/tv_2"
+                android:layout_alignTop="@+id/tv_2"/>
+
+            <TextView
+                android:id="@+id/add_goods_count"
+                style="@style/BlackText14"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@+id/tv_2"
+                android:layout_marginRight="@dimen/margin_16"
+                android:text="1"/>
+
+            <TextView
+                style="@style/BlackText14"
+                android:text="数量："
+                android:layout_alignTop="@+id/tv_2"
+                android:layout_toLeftOf="@+id/add_goods_count"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <View
+        android:id="@+id/dashed"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/maintain_dashed" />
+</LinearLayout>

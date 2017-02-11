@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="50dp">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:divider="@drawable/line"
+            app:showDividers="middle">
+
+            <!-- 头部车辆信息 -->
+            <com.hxqc.mall.core.views.Order.OrderDescription
+                android:id="@+id/order_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/normal_padding_big_16"/>
+
+            <com.hxqc.mall.thirdshop.views.CarDetailGroupView
+                android:id="@+id/buy_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:group_title="购车方式:"/>
+
+            <com.hxqc.mall.thirdshop.views.CarDetailGroupView
+                android:id="@+id/shop_insurance"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:group_label="店内上保险方便快捷并享受优惠"
+                app:group_title="店内保险:"/>
+
+            <com.hxqc.mall.thirdshop.views.CarDetailGroupView
+                android:id="@+id/shop_decoration"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:group_label="4S店做装饰能享受店内质保和厂家质保"
+                app:group_title="店内装饰:"/>
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_above="@+id/bottom_layout"
+        android:background="@drawable/down_to_up_shadow"/>
+
+    <RelativeLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="@dimen/item_padding_16"
+        android:paddingRight="@dimen/item_padding_16">
+
+        <com.hxqc.mall.core.views.autotext.AutofitTextView
+            android:id="@+id/auto_cost"
+            style="@style/RedText14"
+            xmlns:autofit="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="4dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_toLeftOf="@+id/to_pay_order"
+            android:gravity="center_vertical|left|start"
+            android:maxLines="1"
+            android:textStyle="bold"
+            autofit:minTextSize="8sp"
+            tools:text="订金：2000元"/>
+
+        <Button
+            android:id="@+id/to_pay_order"
+            style="@style/btn_orange"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="支付订金"/>
+    </RelativeLayout>
+</RelativeLayout>

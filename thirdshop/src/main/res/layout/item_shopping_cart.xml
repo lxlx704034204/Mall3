@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.hxqc.mall.thirdshop.accessory.views.ShoppingCartValid
+        android:id="@+id/shopping_cart_valid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.hxqc.mall.thirdshop.accessory.views.ShoppingCartInvalid
+        android:id="@+id/shopping_cart_invalid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>

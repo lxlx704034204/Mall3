@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/btn_click_style"
+    android:id="@+id/main"
+    android:layout_height="wrap_content">
+
+    <FrameLayout
+        android:id="@+id/lay1"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/btn_click_circle"
+        >
+          <TextView
+              android:id="@+id/num"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:text="A"
+              android:textSize="17sp"
+              android:gravity="center"
+              android:textColor="@color/text_black2white"
+              />
+
+    </FrameLayout>
+
+    <ImageView
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="9dp"
+        android:id="@+id/status"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        />
+
+    <TextView
+        android:id="@+id/option"
+        android:layout_toRightOf="@+id/lay1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="14dp"
+        android:paddingRight="14dp"
+        android:textColor="#333"
+        android:text="正确"
+        android:textSize="16sp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context="activity.DeliveryAddressActivity">
+    <item
+        android:id="@+id/action_message"
+        android:icon="@drawable/ic_menu_message"
+        android:textSize="16sp"
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
+    <item
+        android:id="@+id/action_brand_filter"
+        android:icon="@drawable/ic_menu_filter"
+        android:textSize="16sp"
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

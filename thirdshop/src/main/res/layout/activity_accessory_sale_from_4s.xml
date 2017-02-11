@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <com.hxqc.mall.thirdshop.accessory4s.views.BorderScrollView
+        android:id="@+id/sale_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="54dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hxqc.mall.thirdshop.views.ShopDetailsHeadView
+                    android:id="@+id/sale_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <!-- 遮罩 -->
+                <View
+                    android:id="@+id/sale_shade1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#55000000"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1">
+
+                <!-- 用品列表 -->
+                <com.hxqc.widget.ListViewNoSlide
+                    android:id="@+id/sale_list"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="vertical" />
+
+                <!-- 错误View -->
+                <com.hxqc.mall.core.api.RequestFailView
+                    android:id="@+id/sale_fail1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:visibility="gone" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!-- 遮罩 -->
+                    <View
+                        android:id="@+id/sale_shade2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="45dp"
+                        android:background="#55000000"
+                        android:visibility="gone" />
+
+                    <!-- 筛选条 -->
+                    <com.hxqc.mall.thirdshop.accessory4s.views.FilterTipFrom4SView
+                        android:id="@+id/sale_tip"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+                </FrameLayout>
+            </FrameLayout>
+        </LinearLayout>
+    </com.hxqc.mall.thirdshop.accessory4s.views.BorderScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true">
+
+        <com.hxqc.mall.thirdshop.views.CallBar xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/sale_call"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:call_title="@string/hot_line" />
+
+        <View
+            android:id="@+id/sale_shade3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#55000000"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <!-- 错误View -->
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/sale_fail2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</RelativeLayout>

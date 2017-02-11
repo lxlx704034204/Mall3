@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:huzj="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <!--    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hxqc.mall.auto.view.AsteriskTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    huzj:auto_info_asterisk_color="@color/title_red"
+                    huzj:auto_info_asterisk_size="@dimen/text_size_14"
+                    huzj:auto_info_asterisk_text="*"
+                    huzj:auto_info_content_color="@color/text_color_subheading"
+                    huzj:auto_info_content_size="@dimen/text_size_14"
+                    huzj:auto_info_content_text="车 牌 号:" />
+
+                <com.hxqc.mall.auto.view.PlateNumberTextView
+                    android:id="@+id/add_auto_info_license_city"
+                    style="@style/auto_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="21dp"
+                    android:drawablePadding="16dp"
+                    android:drawableRight="@drawable/ic_cbb_arrow_down"
+                    android:padding="16dp"
+                    android:text="鄂" />
+
+                <com.hxqc.mall.auto.view.PlateNumberTextView
+                    android:id="@+id/add_auto_info_license_number"
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="请填写车牌号" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <com.hxqc.mall.auto.view.AsteriskTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    huzj:auto_info_asterisk_color="@color/text_color_subheading"
+                    huzj:auto_info_asterisk_size="@dimen/text_size_14"
+                    huzj:auto_info_asterisk_text="车辆识别码:"
+                    huzj:auto_info_content_color="@color/text_color_orange"
+                    huzj:auto_info_content_size="@dimen/text_size_14"
+                    huzj:auto_info_content_text="(VIN)" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/add_auto_info_vin"
+                        style="@style/auto_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:hint="请输入车辆识别代码"
+                        android:padding="16dp" />
+
+                    <TextView
+                        style="@style/OrangeText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="16dp"
+                        android:layout_gravity="right"
+                        android:text="可输入行驶证VIN,获取更准确的车辆信息" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.hxqc.mall.auto.view.AsteriskTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    huzj:auto_info_asterisk_color="@color/title_red"
+                    huzj:auto_info_asterisk_size="@dimen/text_size_14"
+                    huzj:auto_info_asterisk_text="*"
+                    huzj:auto_info_content_color="@color/text_color_subheading"
+                    huzj:auto_info_content_size="@dimen/text_size_14"
+                    huzj:auto_info_content_text="车辆信息:" />
+
+                <TextView
+                    android:id="@+id/add_auto_info_type"
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="17dp"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:hint="选择车型"
+                    android:maxLines="1"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/commen_auto_info_maintain_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:background="#FFF2E1"
+                android:orientation="vertical"
+                android:paddingBottom="@dimen/margin_10"
+                android:paddingLeft="@dimen/margin_16"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="@dimen/margin_10"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/commen_auto_info_maintain"
+                    style="@style/OrangeText16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="您上次保养的时间2016.02.18   行驶里程6000公里" />
+
+                <TextView
+                    android:id="@+id/commen_auto_info_date"
+                    style="@style/OrangeText16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:maxLines="1"
+                    android:text="质保到2016年2月11日" />
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/commen_auto_info_mileage_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.hxqc.mall.auto.view.AsteriskTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:padding="16dp"
+                    huzj:auto_info_asterisk_color="@color/title_red"
+                    huzj:auto_info_asterisk_size="@dimen/text_size_14"
+                    huzj:auto_info_asterisk_text="*"
+                    huzj:auto_info_content_color="@color/text_color_subheading"
+                    huzj:auto_info_content_size="@dimen/text_size_14"
+                    huzj:auto_info_content_text="行驶里程:" />
+
+                <EditText
+                    android:id="@+id/add_auto_info_mileage"
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="116dp"
+                    android:hint="请填写行驶里程"
+                    android:padding="16dp" />
+
+                <TextView
+                    style="@style/GrayText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="16dp"
+                    android:text="km" />
+
+            </RelativeLayout>-->
+
+        <com.hxqc.mall.auto.view.CommenAutoInfoHeaderView
+            android:id="@+id/add_auto_info_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        </com.hxqc.mall.auto.view.CommenAutoInfoHeaderView>
+
+        <!-- <LinearLayout
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="horizontal">
+
+             <TextView
+                 style="@style/GrayText14"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:padding="16dp"
+                 android:text="车主姓名:" />
+
+             <EditText
+                 android:id="@+id/add_auto_info_name"
+                 style="@style/auto_edit_text"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:layout_marginLeft="25dp"
+                 android:hint="请填写姓名"
+                 android:padding="16dp" />
+         </LinearLayout>-->
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:background="@color/divider"
+            android:visibility="gone" />
+
+        <com.hxqc.mall.auto.view.CommonEditInfoItemView
+            android:id="@+id/add_auto_info_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            huzj:commen_info_item_content_hint="请填写车主姓名"
+            huzj:commen_info_item_content_maxLength="12"
+            huzj:commen_info_item_title_text="车主姓名:"
+            huzj:commen_info_item_title_ems="7"/>
+
+        <com.hxqc.mall.auto.view.CommonEditInfoItemView
+            android:id="@+id/add_auto_info_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            huzj:commen_info_item_content_hint="请填写手机号码"
+            huzj:commen_info_item_content_inputType="phone"
+            huzj:commen_info_item_content_maxLength="11"
+            huzj:commen_info_item_title_text="手机号码:"
+            huzj:commen_info_item_title_ems="7"/>
+
+        <LinearLayout
+            android:id="@+id/add_auto_info_pn_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/common_edit_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/bg_transparent"
+                android:text="车  牌  号:" />
+
+            <com.hxqc.mall.auto.view.CommenPlateNumberView
+                android:id="@+id/add_auto_info_pn"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"/>
+
+        </LinearLayout>
+
+        <com.hxqc.mall.auto.view.CommonEditInfoItemView
+            android:id="@+id/add_auto_info_register_date"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            huzj:commen_info_item_content_hint="请选择上牌时间"
+            huzj:commen_info_item_content_inputType="phone"
+            huzj:commen_info_item_content_maxLength="11"
+            huzj:commen_info_item_title_text="@string/register_date"
+            huzj:commen_info_item_content_focusable="false"
+            huzj:commen_info_item_content_focusableInTouchMode="false"
+            huzj:commen_info_item_title_ems="7"/>
+
+
+
+        <!--  <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal">
+
+              <TextView
+                  style="@style/GrayText14"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:padding="16dp"
+                  android:text="手机号码:" />
+
+              <EditText
+                  android:id="@+id/add_auto_info_phone"
+                  style="@style/auto_edit_text"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginLeft="25dp"
+                  android:hint="请填写手机号码"
+                  android:padding="16dp" />
+          </LinearLayout>-->
+
+        <TextView
+            style="@style/RedText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="@string/explanation" />
+
+        <Button
+            android:id="@+id/add_auto_info_btn"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="16dp"
+            android:text="完成" />
+    </LinearLayout>
+
+    <!--   <android.inputmethodservice.KeyboardView
+           android:id="@+id/keyboard_view"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_alignParentBottom="true"
+           android:background="@android:color/darker_gray"
+           android:keyBackground="@android:color/white"
+           android:keyTextColor="@android:color/black"
+           android:shadowColor="@android:color/white"
+           android:shadowRadius="0.0"
+           android:visibility="gone" />-->
+
+</RelativeLayout>

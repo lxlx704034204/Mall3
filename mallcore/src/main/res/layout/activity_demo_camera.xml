@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_16">
+
+        <ImageView
+            android:id="@+id/driver_licence"
+            android:layout_width="190dp"
+            android:layout_height="132dp"
+            android:background="@color/bg_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_driver1"
+                style="@style/BlackText20"
+                android:text="驾驶证拍照" />
+
+            <TextView
+                android:id="@+id/add_driver2"
+                style="@style/BlackText20"
+                android:layout_marginTop="30dp"
+                android:text="驾驶证选图" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_16">
+
+        <ImageView
+            android:id="@+id/driving_licence"
+            android:layout_width="190dp"
+            android:layout_height="132dp"
+            android:background="@color/bg_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_driving1"
+                style="@style/BlackText20"
+                android:text="行驶证拍照" />
+
+            <TextView
+                android:id="@+id/add_driving2"
+                style="@style/BlackText20"
+                android:layout_marginTop="30dp"
+                android:text="行驶证选图" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_16">
+
+        <ImageView
+            android:id="@+id/id_card"
+            android:layout_width="170dp"
+            android:layout_height="108dp"
+            android:background="@color/bg_gray" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/add_id1"
+                style="@style/BlackText20"
+                android:text="身份证拍照" />
+
+            <TextView
+                android:id="@+id/add_id2"
+                style="@style/BlackText20"
+                android:layout_marginTop="30dp"
+                android:text="身份证选图" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

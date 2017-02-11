@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="@color/transparent"
+              android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_around_info_window"
+        android:orientation="vertical"
+        android:paddingBottom="18dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingTop="9dp">
+
+        <TextView
+            android:id="@+id/title_around_map"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="2"
+            android:maxWidth="230dp"
+            android:textSize="15sp"
+            tools:text="龙翔冻结停车场"
+        />
+
+        <TextView
+            android:id="@+id/address_around_map"
+            style="@style/BlackText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLines="2"
+            android:maxWidth="230dp"
+            android:minWidth="220dp"
+            android:textSize="13sp"
+            tools:text="地址：汉阳区龙阳大道龙翔东路水墨甲秀5栋"
+        />
+
+
+        <View
+            android:id="@+id/around_map_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="4dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/btn_gray"
+        />
+
+        <TextView
+            android:id="@+id/park_station_type"
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:gravity="center"
+            android:text="停车场类型：公共停车场"
+            android:textSize="13sp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:paddingLeft="4dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/GrayText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="收费标准："
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/park_fee"
+                style="@style/OrangeText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxWidth="180dp"
+                android:textSize="13sp"
+                tools:text="免费（自2015年10月1日起取消收费）"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/gas_ll_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                style="@style/GrayText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dp"
+                android:gravity="start"
+                android:text="总停车位:"
+                android:textSize="13sp"
+                />
+
+            <TextView
+                android:id="@+id/park_spaces"
+                style="@style/OrangeText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginStart="8dp"
+                tools:text="500"
+                />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/map_around_navi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="12dp"
+            android:layout_marginTop="6dp"
+            android:background="@color/font_blue">
+            <TextView
+
+                style="@style/BlueText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:drawableLeft="@drawable/a_ic_map_navi"
+                android:drawablePadding="2dp"
+                android:drawableStart="@drawable/a_ic_map_navi"
+                android:gravity="center"
+                android:padding="6dp"
+                android:text="到这去"
+                android:textColor="@color/white"
+            />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_gravity="center_horizontal"-->
+        <!--android:layout_marginTop="-4dp"-->
+        <!--android:src="@drawable/map_around_mark"-->
+    <!--/>-->
+
+
+</LinearLayout>

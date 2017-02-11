@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!-- 车辆大图 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <ImageView
+            android:id="@+id/top_photo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/pic_normal_square" />
+
+        <TextView
+            android:id="@+id/top_car_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/top_photo"
+            android:layout_marginBottom="12dp"
+            android:background="#55000000"
+            android:paddingBottom="5dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/top_count"
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_alignBottom="@id/top_photo"
+            android:layout_alignRight="@id/top_photo"
+            android:layout_margin="12dp"
+            android:background="@drawable/bg_car_detail_img_count"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <!-- 车型 -->
+    <TextView
+        android:id="@+id/top_car"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:textColor="@color/title_and_main_text"
+        android:textSize="@dimen/text_size_18" />
+
+    <!-- 价格 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            android:id="@+id/top_car_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/main_and_price"
+            android:textSize="@dimen/text_size_18" />
+
+        <ImageView
+            android:id="@+id/top_car_price_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"
+            android:src="@mipmap/ic_car_detail_triangle" />
+
+        <RelativeLayout
+            android:id="@+id/top_car_price_parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_car_detail_price"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/top_new_car_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/top_purchase_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="48dp"
+                android:layout_toRightOf="@id/top_new_car_price"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/top_new_car_all_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/top_new_car_price"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/text_gray"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/top_save_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/top_purchase_price"
+                android:layout_below="@id/top_purchase_price"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/main_and_price"
+                android:textSize="@dimen/text_size_14" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

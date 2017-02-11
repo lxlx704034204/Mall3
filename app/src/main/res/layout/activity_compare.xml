@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <com.hxqc.mall.core.views.CustomToolBar
+        android:id="@+id/topbar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/toolbar_background"
+        app:toolbarTitle="车型对比" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/jbcs"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/space"
+            android:layout_weight="1"
+            android:background="@drawable/bg_flag_red_bottom"
+            android:gravity="center"
+            android:text="基本参数"
+            android:textColor="@color/text_color_orange"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/bjtj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/space"
+            android:layout_weight="1"
+            android:background="@null"
+            android:gravity="center"
+            android:text="编辑推荐"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/kbdb"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/space"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="口碑对比"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/yhpj"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="18dp"
+            android:layout_toLeftOf="@+id/space"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="用户评价"
+            android:textColor="@color/text_gray"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dedede" />
+
+    <RelativeLayout
+        android:id="@+id/lay_model_choose"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        >
+        <RelativeLayout
+            android:id="@+id/hide_lay"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:visibility="invisible">
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:alpha="0.6"
+                android:background="@drawable/check_eyes"
+                android:button="@null"
+                android:clickable="false" />
+
+            <TextView
+                android:id="@+id/hide"
+                android:layout_width="80dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="-4dp"
+                android:gravity="center|bottom"
+                android:paddingBottom="18dp"
+                android:text="隐藏相同"
+                android:textColor="#888"
+                android:textSize="12sp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/hide_lay"
+            android:background="#dedede" />
+
+        <com.hxqc.carcompare.ui.view.CHScrollView
+            android:id="@+id/item_scroll_title"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="0.5dp"
+            android:layout_toRightOf="@+id/hide_lay"
+            android:layout_weight="1"
+            android:scrollbars="none">
+
+        </com.hxqc.carcompare.ui.view.CHScrollView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dedede" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/scroll_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hxqc.mall.core.views.sticklistviewbyzf.StickyListHeadersListView
+            android:id="@+id/scroll_list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:divider="#dedede"
+            android:dividerHeight="0.5dp"
+            android:footerDividersEnabled="true" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/scroll_list"
+            android:background="#dedede" />
+
+    </RelativeLayout>
+
+    <com.hxqc.mall.core.views.sticklistviewbyzf.StickyListHeadersListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:cacheColorHint="@android:color/transparent"
+        android:visibility="gone" />
+
+
+</LinearLayout>

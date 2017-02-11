@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+        android:id="@+id/layout_license_city"
+        style="@style/auto_edit_text_2"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:cursorVisible="false"
+        android:drawableRight="@drawable/ic_cbb_arrow_down"
+        android:maxLength="2"
+        android:minLines="1"
+        android:paddingBottom="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/title_and_main_text" />
+
+    <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+        android:id="@+id/layout_license_num"
+        style="@style/auto_edit_text_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:hint="请输入车牌号"
+        android:imeOptions="actionNext"
+        android:maxLength="5"
+        android:nextFocusForward="@+id/down"
+        android:singleLine="true"
+        app:met_helperText="  " />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              tools:ignore="UnusedResources">
+
+    <com.hxqc.mall.usedcar.views.SellCar.SellCarProvinceEdit
+        android:id="@+id/license_city"
+        style="@style/BlackText14"
+        android:layout_width="40dp"
+        android:cursorVisible="false"
+        android:drawableRight="@drawable/ic_cbb_arrow_down"
+        app:met_helperText=""
+        app:xml="@xml/licence_city" />
+
+    <com.hxqc.mall.usedcar.views.SellCar.SellCarNumberEdit
+        android:id="@+id/license_num"
+        style="@style/BlackText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:hint="请输入车牌号"
+        android:maxLength="6"
+        android:nextFocusForward="@+id/down"
+        android:singleLine="true"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        app:met_helperText="  "
+        app:xml="@xml/licence_num" />
+
+</LinearLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/BlackText14"
+        android:text="备注说明：" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+        android:background="@color/divider"
+        android:padding="1px">
+
+        <EditText
+            android:id="@+id/remark"
+            style="@style/BlackText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:hint="请输入"
+            android:maxLength="500"
+            android:maxLines="20"
+            android:minLines="5"
+            android:textColorHint="#BBBBBB"
+            android:textCursorDrawable="@drawable/edittext_cursor" />
+
+        <TextView
+            android:id="@+id/readme"
+            style="@style/BlackText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:ellipsize="end"
+            android:gravity="top"
+            android:hint="请输入"
+            android:maxLines="6"
+            android:minLines="5"
+            android:textColorHint="#BBBBBB"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/count"
+        style="@style/GrayText10"
+        android:layout_gravity="end"
+        android:layout_marginTop="4dp"
+        android:text="0/500" />
+</LinearLayout>

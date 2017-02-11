@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_loan_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="@dimen/height_bar_56">
+
+    <ImageView
+        android:id="@+id/iv_bank_image"
+        android:layout_width="wrap_content"
+        android:layout_height="36dp"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:scaleType="fitStart" />
+
+    <ImageView
+        android:id="@+id/iv_gogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@drawable/ic_choose_normal" />
+
+    <LinearLayout
+        android:id="@+id/ll_item_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_bank_image"
+        android:layout_marginEnd="@dimen/margin_16"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginStart="@dimen/margin_16"
+        android:orientation="vertical" />
+
+    <View
+        android:id="@+id/v_loan_divider"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/ll_item_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@color/divider" />
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_loan_file_label"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/iv_bank_image"-->
+    <!--android:layout_marginTop="@dimen/margin_16"-->
+    <!--android:text="@string/loan_label_need_file"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_loan_need_file"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/iv_bank_image"-->
+    <!--android:layout_marginLeft="@dimen/content_margin_4"-->
+    <!--android:layout_marginTop="@dimen/margin_16"-->
+    <!--android:layout_toRightOf="@+id/tv_loan_file_label"-->
+    <!--android:text="身份证、收入证明和住址证明（水、电、气、电话或物管等费用账单）"-->
+    <!--android:textColor="@color/deep_gray"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--/>-->
+
+    <!--<View-->
+    <!--android:id="@+id/v1111"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_below="@+id/tv_loan_need_file"-->
+    <!--android:layout_marginTop="@dimen/margin_16"-->
+    <!--android:background="@color/divider_gray"/>-->
+
+    <!--<RelativeLayout-->
+    <!--android:id="@+id/mid"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="54dp"-->
+    <!--android:layout_below="@+id/v1111"-->
+    <!-->-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/cycle_label"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/loan_label_cycle"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/cycle"-->
+    <!--android:layout_toLeftOf="@+id/v_mid"-->
+    <!--android:layout_toRightOf="@+id/cycle_label"-->
+    <!--android:layout_marginRight="4dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="2个工作日"-->
+    <!--android:textColor="@color/deep_gray"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--/>-->
+
+    <!--<View-->
+    <!--android:id="@+id/v_mid"-->
+    <!--android:layout_width="1dp"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@color/divider_gray"-->
+    <!--android:layout_centerHorizontal="true"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_rate_label"-->
+    <!--android:layout_toRightOf="@+id/v_mid"-->
+    <!--android:layout_marginLeft="12dp"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--android:text="@string/loan_label_rate"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/rate"-->
+    <!--android:layout_toRightOf="@+id/tv_rate_label"-->
+    <!--android:layout_marginRight="4dp"-->
+    <!--android:layout_width="wrap_content" -->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="14.2%"-->
+    <!--android:textColor="@color/deep_gray"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--android:layout_centerVertical="true"-->
+    <!--/>-->
+    <!--</RelativeLayout>-->
+
+    <!--<View-->
+    <!--android:id="@+id/v2222"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_below="@+id/mid"-->
+    <!--android:background="@color/divider_gray"/>-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/tv_other_label"-->
+    <!--android:layout_below="@+id/v2222"-->
+    <!--android:layout_marginTop="@dimen/margin_16"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="#000"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--android:text="@string/loan_label_other"-->
+    <!--/>-->
+
+    <!--<TextView-->
+    <!--android:layout_toRightOf="@+id/tv_other_label"-->
+    <!--android:layout_below="@+id/v2222"-->
+    <!--android:layout_marginTop="@dimen/margin_16"-->
+    <!--android:layout_marginLeft="@dimen/content_margin_4"-->
+    <!--android:id="@+id/tv_other_notify"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:textColor="@color/deep_gray"-->
+    <!--android:textSize="@dimen/text_size_12"-->
+    <!--android:text="无需支付担保费用或履约保证保险费用"-->
+    <!--/>-->
+
+</RelativeLayout>

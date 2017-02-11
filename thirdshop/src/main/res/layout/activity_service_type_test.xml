@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/service_type_bg"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/view_cut_off_rule_orange"
+            android:layout_width="80dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="16dp" />
+
+        <RelativeLayout style="@style/service_type_left_img">
+
+            <ImageView
+                android:id="@+id/service_type_repair_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_repair_img" />
+
+            <TextView
+                android:id="@+id/service_type_repair_tv"
+                style="@style/service_type_text"
+                android:layout_toRightOf="@id/service_type_repair_img"
+                android:text="@string/service_type_repair" />
+
+            <CheckBox
+                android:id="@+id/serviec_type_repair_cb"
+                style="@style/service_type_right_img"
+                android:background="@drawable/selector_check"
+                android:button="@null"
+                android:focusable="false"
+                android:focusableInTouchMode="false" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/service_type_repair_list"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_marginBottom="12dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+    </LinearLayout>
+
+
+    <RelativeLayout style="@style/service_type_bg">
+
+        <include
+            layout="@layout/view_cut_off_rule_orange"
+            android:layout_width="80dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/service_type_maintain_img"
+            style="@style/service_type_left_img"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_maintain_img" />
+
+        <TextView
+            android:id="@+id/service_type_maintain_tv"
+            style="@style/service_type_text"
+            android:layout_toRightOf="@id/service_type_maintain_img"
+            android:text="@string/service_type_maintain" />
+
+        <CheckBox
+            android:id="@+id/service_type_maintain_cb"
+            style="@style/service_type_right_img"
+            android:background="@drawable/selector_check"
+            android:button="@null" />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/service_type_spray_item"
+        style="@style/service_type_bg">
+
+        <include
+            layout="@layout/view_cut_off_rule_orange"
+            android:layout_width="80dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/service_type_spry_img"
+            style="@style/service_type_left_img"
+            android:src="@drawable/selector_spry_img" />
+
+        <TextView
+            android:id="@+id/service_type_spry_tv"
+            style="@style/service_type_text"
+            android:layout_toRightOf="@id/service_type_spry_img"
+            android:text="@string/service_type_spray" />
+
+        <CheckBox
+            android:id="@+id/service_type_spray_cb"
+            style="@style/service_type_right_img"
+            android:background="@drawable/selector_check"
+            android:button="@null" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/service_type_inspect_item"
+        style="@style/service_type_bg">
+
+        <include
+            layout="@layout/view_cut_off_rule_orange"
+            android:layout_width="80dp"
+            android:layout_height="3dp"
+            android:layout_marginLeft="16dp" />
+
+        <ImageView
+            android:id="@+id/service_type_inspect_img"
+            style="@style/service_type_left_img"
+            android:src="@drawable/selector_inspect_img" />
+
+        <TextView
+            android:id="@+id/service_type_inspect_tv"
+            style="@style/service_type_text"
+            android:layout_toRightOf="@id/service_type_inspect_img"
+            android:text="@string/service_type_inspect" />
+
+        <CheckBox
+            android:id="@+id/service_type_inspect_cb"
+            style="@style/service_type_right_img"
+            android:background="@drawable/selector_check"
+            android:button="@null" />
+    </RelativeLayout>
+
+</LinearLayout>

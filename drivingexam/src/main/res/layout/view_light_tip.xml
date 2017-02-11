@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="#fff"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="14dp"
+        android:src="@drawable/icon_jingyan"
+        />
+    
+    <View
+        android:id="@+id/divide"
+        android:layout_toRightOf="@+id/img"
+        android:layout_width="0.5dp"
+        android:layout_height="24dp"
+        android:background="#dedede"
+        android:layout_centerVertical="true"
+        />
+
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_toRightOf="@+id/divide"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="正式考试将从八套题目中随机抽取一套作为临场考题，八套考题有细微差别"
+        android:textSize="12sp"
+        android:textColor="#666"
+        android:lineSpacingExtra="4dp"
+        />
+
+    <TextView
+        android:layout_marginLeft="14dp"
+        android:layout_marginRight="14dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:text="\n朕知道了"
+        android:textSize="12sp"
+        android:textColor="#1D6CFD"
+        android:lineSpacingExtra="4dp"
+        />
+
+</RelativeLayout>

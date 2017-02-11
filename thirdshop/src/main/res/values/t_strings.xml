@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--第三方店铺string-->
+    <string name="title_activity_shop_brand">新车销售</string>
+    <!--店铺首页by李烽-->
+    <string name="gold_sellers">金牌顾问</string>
+    <string name="main_sale">主营系列</string>
+    <string name="main_auto">主推车型</string>
+    <string name="shop_address">公司地址</string>
+    <string name="promotions">最新促销活动</string>
+    <string name="price_normal">￥%1$s</string>
+    <string name="price_title">店铺参考价：</string>
+    <string name="price_guide">厂商指导价：￥%1$s</string>
+    <string name="auto_type">车型：%1$s</string>
+    <string name="test_drive">试驾</string>
+    <string name="inquiry">询价</string>
+    <string name="call_phone">拨打电话：</string>
+    <string name="to_call">拨打</string>
+    <string name="cancel">取消</string>
+    <string name="location">当前位置</string>
+    <string name="navigation">一键导航</string>
+    <string name="consumer_hot_line">客服电话</string>
+    <string name="hot_line">咨询电话</string>
+
+    <!--促销-->
+    <string name="title_activity_sales_news_detail">资讯详情</string>
+    <string name="title_activity_sales_pdetail">促销详情</string>
+    <string name="title_activity_sales_deposit_pay">预付订金</string>
+    <string name="title_activity_sales_order_confirm">确认订单信息</string>
+    <string name="title_activity_deposit_finish">支付完成</string>
+    <string name="t_sales_p_post_time">发布时间：</string>
+    <string name="t_sales_p_deadline_time">距促销结束：</string>
+    <string name="t_test_disclaimer">免责声明：上述文章内容由经销商自行发布，其真实性、准确性及合法性由经销商负责，恒信汽车不提供任何保证，亦不承担任何法律责任。
+    </string>
+    <string name="t_ask_price">询问底价</string>
+    <string name="t_order_driver">预约试驾</string>
+    <string name="t_spd_share">分享</string>
+    <string name="t_spd_deposit_notify">(*如果未成功交易，订金可退)</string>
+
+    <string name="t_spd_deposit_notify_top">订单提交成功，请您尽快支付订金</string>
+    <string name="t_spd_deposit_pay">预付订金</string>
+    <string name="t_spd_deposit_tips1">预付订金后可参加本次活动车型的所有优惠</string>
+    <string name="t_spd_deposit_tips2">预付订金，如线下不能成功交易，线下立退订金</string>
+    <string name="t_pay_success_label">支付成功</string>
+    <string name="t_pay_success_finish">完成</string>
+
+
+
+    <string name="t_spd_oc_tip">简单填写一下信息，轻松了解车型底价（您的私人信息将会得到严格保密）</string>
+    <string name="t_spd_oc_event_name">活动名称</string>
+    <string name="t_spd_oc_shop_name">商家名称</string>
+    <string name="star_for_important">*</string>
+    <string name="t_spd_oc_username">您的姓名</string>
+    <string name="t_spd_oc_username_hint">请输入您的姓名</string>
+    <string name="t_spd_oc_phone">手机号码</string>
+    <string name="t_spd_oc_phone_hint">请输入您的手机号码</string>
+    <string name="t_spd_oc_confirm">确定</string>
+    <string name="t_spd_oc_agree">我同意</string>
+    <string name="t_spd_oc_claimer">《个人信息保护声明》</string>
+    <!--===================================================-->
+
+
+    <string name="title_activity_shop_details">店铺详情</string>
+    <string name="title_activity_filter_third_shop">网上4S店报价</string>
+    <string name="ask_price">询问底价</string>
+    <string name="dial">拨打电话</string>
+    <string name="itemOrigPrice">厂商指导价:</string>
+    <string name="decrease">降幅:</string>
+    <string name="reduce_price">降价:</string>
+    <string name="reference_price">店铺参考价:</string>
+    <string name="shop_menu_action_home">首页</string>
+    <string name="shop_menu_action_shop">店铺</string>
+
+    <string name="shop_details_tab_1">首页</string>
+    <string name="shop_details_tab_2">车型报价</string>
+    <string name="shop_details_tab_3">常规保养</string>
+    <string name="shop_details_tab_4">修车预约</string>
+    <string name="shop_details_tab_5">限时特价车</string>
+    <string name="shop_details_tab_6">促销信息</string>
+    <string name="shop_details_tab_7">紧急救援</string>
+    <string name="shop_details_tab_8">用品销售</string>
+    <string name="shop_details_tab_9">分期购车</string>
+
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tag_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/order_id"
+        style="@style/GreenText16"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        tools:text="订单号：125588555555555" />
+</LinearLayout>
+

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxqc.mall.thirdshop.views.FourSShopItem xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_4s_shop"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+</com.hxqc.mall.thirdshop.views.FourSShopItem>

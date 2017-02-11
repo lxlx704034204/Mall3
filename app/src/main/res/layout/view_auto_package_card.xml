@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/ll_click_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingLeft="@dimen/margin_16"
+    android:paddingRight="@dimen/margin_16"
+    android:paddingTop="12dp">
+    <include
+        android:id="@+id/v_head_"
+        layout="@layout/include_auto_package_head"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_item_combo"
+        android:layout_width="match_parent"
+        android:layout_height="128dp"
+        android:layout_below="@+id/v_head_"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="@color/white"
+        android:fadingEdge="none"
+        android:scrollbarStyle="insideOverlay"/>
+
+    <CheckBox
+        android:id="@+id/v_gogogogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_package_choose"
+        android:button="@null"
+        />
+
+</RelativeLayout>
+

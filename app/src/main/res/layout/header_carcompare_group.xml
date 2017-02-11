@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="38dp"
+    android:background="#eaeaea">
+
+
+    <RelativeLayout
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical"
+            android:text="基本参数"
+            android:textColor="@color/font_red"
+            android:textSize="16sp">
+
+        </TextView>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/selection"
+            android:layout_width="100dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="129dp"
+            android:background="@drawable/bg_line_around">
+
+            <TextView
+                android:id="@+id/mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="显示全部"
+                android:textColor="@color/font_orange"
+                android:textSize="13sp" />
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="7dp"
+                android:layout_marginRight="3dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:clickable="false"
+                android:background="@drawable/check_arrow_orange"
+                android:button="@null" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="79dp"
+            android:drawableLeft="@drawable/xz1"
+            android:drawablePadding="4dp"
+            android:orientation="vertical"
+            android:text="标配"
+            android:textColor="#666"
+            android:textSize="12sp">
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:drawableLeft="@drawable/xz2"
+            android:drawablePadding="4dp"
+            android:orientation="vertical"
+            android:text="选配-无"
+            android:textColor="#666"
+            android:textSize="12sp">
+
+        </TextView>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dedede" />
+    </RelativeLayout>
+
+</RelativeLayout>

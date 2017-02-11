@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:tools="http://schemas.android.com/tools"
+          package="hxqc.mall">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="android.permission.BROADCAST_STICKY"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.ACCESS_DOWNLOAD_MANAGER"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="org.simalliance.openmobileapi.SMARTCARD"/>
+    <uses-permission android:name="android.permission.NFC"/>
+
+    <uses-feature android:name="android.hardware.nfc.hce"/>
+
+    <!-- <uses-permission-sdk-23 android:name="android.permission.MANAGE_DOCUMENTS"/>&lt;!&ndash;//换头像需要的权限&ndash;&gt; -->
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS"/>
+
+    <!-- //换头像需要的权限 -->
+    <!-- <uses-permission android:name="android.permission.WRITE_APN_SETTINGS"/> -->
+    <application
+        android:name="com.hxqc.mall.application.Application"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher_1"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppThemeBase"
+        tools:replace="android:label,android:allowBackup">
+
+        <!-- &lt;!&ndash; @string/app_name &ndash;&gt; -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="${amap_apikey}"/>
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="561e3cd667e58e140a000c5d"/>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="6a425e0108c0b18ec67956a6d67878e2"/>
+
+        <service
+            android:name="com.hxqc.tinker.service.SampleResultService"
+            android:exported="false"/>
+
+        <!-- ============================================================================================ -->
+        <receiver
+            android:name="com.hxqc.tinker.alarm.TinkerFixReceiver"
+            android:process=":tinker"/>
+
+        <activity
+            android:name="com.hxqc.mall.activity.LaunchActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/StartAppTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <data android:scheme="hxmall"/>
+                <action android:name="android.intent.action.VIEW"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hxqc.mall.activity.MainActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.WebActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.BrandActivity"
+            android:label="@string/title_activity_brand"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.PersonalInfoActivity"
+            android:label="@string/title_activity_me_personal_info"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.ExpressActivity"
+            android:label="@string/title_activity_me_express"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.DeliveryAddressActivity"
+            android:label="@string/title_activity_me_delivery_address"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.SettingsActivity"
+            android:label="@string/title_activity_me_settings"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.WishListActivity"
+            android:label="@string/title_activity_me_wish_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.HelpCenterActivity"
+            android:label="@string/title_activity_me_helpCenter"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.AboutUsActivity"
+            android:label="@string/title_activity_me_about_us"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.AdviceActivity"
+            android:label="@string/title_activity_me_advice"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.ComplaintsActivity2"
+            android:label="@string/title_activity_complaint"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.ComplaintsActivity"
+            android:label="@string/title_activity_complaint"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.OrderDetailActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_me_order_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.UserOrderActivity"
+            android:label="@string/title_activity_me_user_order"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.SpecialOfferActivity"
+            android:label="@string/title_activity_special_offer"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.AddAddressActivity"
+            android:label="@string/title_activity_me_add_address"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.AdvantageActivity"
+            android:label="@string/title_activity_me_advantage"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.EditAddressActivity"
+            android:label="@string/title_activity_me_edit_address"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.UserCommentActivity"
+            android:label="@string/title_activity_me_user_comment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.FilterAutoActivity"
+            android:label="@string/title_activity_filter"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.AutoListActivity"
+            android:label="@string/title_activity_autolist"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.ParameterActivity"
+            android:label="@string/title_activity_parameter"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.AtlasActivity"
+            android:label="@string/title_activity_atlas"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.EventDetailActivity"
+            android:label="@string/title_activity_event_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.AutoItemDetailPromotionActivity"
+            android:label="@string/title_activity_promotion_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.AutoItemDetailCommonActivity"
+            android:label="@string/title_activity_common_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.PromotionQueueWaitActivity"
+            android:label="@string/title_activity_promotion_queue_wait"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.ApplicationRefundActivity"
+            android:label="@string/title_activity_application_refund"
+            android:screenOrientation="portrait"/>
+
+        <!-- <activity -->
+        <!-- android:name=".launch.activity.authenticate.RegisterAgreementActivity" -->
+        <!-- android:label="@string/title_activity_register_agreement" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <activity
+            android:name="com.hxqc.mall.activity.auto.AutoPackageChooseActivity"
+            android:label="@string/title_activity_package_choose"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <!-- android:theme="@style/AppRecycler" -->
+        <activity
+            android:name="com.hxqc.mall.activity.order.LoanBankChooseActivity"
+            android:label="@string/title_activity_loan_bank_choose"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.comment.CommentActivity"
+            android:label="@string/title_activity_CommentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar">
+            <intent-filter>
+                <action android:name="Comment"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hxqc.mall.activity.comment.SendCommentActivity"
+            android:label="@string/title_activity_send_comment"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="SendComment"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hxqc.mall.activity.order.MaintainSendCommentActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_send_comment"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="SendComment"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hxqc.mall.activity.comment.SendAppendActivity"
+            android:label="@string/title_activity_send_append"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.comment.ImageInfoActivity"
+            android:label="@string/title_activity_image_info"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.comment.MyCommentDetailActivity"
+            android:label="@string/title_activity_my_comment_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.message.MyMessageActivity"
+            android:label="@string/title_activity_my_message"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.message.MessageListActivity"
+            android:label="@string/title_activity_message_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.AMapAutoSaleActivity"
+            android:label="@string/title_activity_amap_auto_sale"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.auto.QualityGuaranteeActivity"
+            android:label="@string/title_activity_quality_guarantee_ativity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.MaintainOrderDetailsActivity"
+            android:label="@string/title_activity_order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.recharge.RechargeActivity"
+            android:label="@string/title_activity_recharge"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name="com.hxqc.mall.activity.recharge.PaymentWayListActivity"
+            android:label="@string/title_activity_recharge_pay"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.recharge.RechargePayActivity"
+            android:label="@string/title_activity_recharge_pay"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.recharge.RechargeSuccessActivity"
+            android:label="@string/title_activity_recharge_success"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.MyWalletActivity"
+            android:label="@string/title_activity_my_wallet"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.RepairOrderDetailsActivity"
+            android:label="@string/title_activity_repair_order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.bill.MyBillListActivity"
+            android:label="@string/title_activity_my_bill_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.bill.BillDetailActivity"
+            android:label="@string/title_activity_bill_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.password.RealNameAuthenticationActivity"
+            android:label="@string/title_activity_real_name_authentication"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.MyOrderActivity"
+            android:label="@string/title_activity_my_order"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <!-- ====================================================================新能源=========================================== -->
+        <activity
+            android:name="com.hxqc.newenergy.activity.Ev_NewEnergyCarTemaiActivity"
+            android:label="@string/title_activity_ev_temai"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.newenergy.activity.Ev_ModelAndSubsidyActivity"
+            android:label="@string/title_activity_evModelSubsidy"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.newenergy.activity.Ev_NewEnergyActivity"
+            android:label="@string/title_activity_evAuto"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN"/> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER"/> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name="com.hxqc.newenergy.activity.EV_ModelsandsubsidiesDatailActivity"
+            android:label="@string/title_activity_evSandsubSidieDetail"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.newenergy.activity.Ev_RecommendMoreActivity"
+            android:label="@string/title_activity_ev_recommend"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.newenergy.activity.Ev_NewInformationMoreActivity"
+            android:label="@string/title_activity_ev_newsInfo"
+            android:screenOrientation="portrait"
+            android:theme="@style/Base.Theme.AppCompat.Light"/>
+        <activity
+            android:name="com.hxqc.newenergy.activity.PositionActivity"
+            android:label="@string/position"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.newenergy.activity.Ev_NewsWebActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <!-- ================================================================新能源====================================================== -->
+        <activity
+            android:name="com.hxqc.mall.activity.me.ResetUserInfoActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_reset_user_info"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.password.ForgetPWDActivity"
+            android:label="@string/title_activity_me_forget_pay_password"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.password.ModifierPaidPWDActivity"
+            android:label="@string/title_activity_me_change_pay_password"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.password.ForgetPayPWDStep2Activity"
+            android:label="@string/title_activity_real_name_authentication"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.me.password.ModifierPayPWDStep2Activity"
+            android:label="@string/title_activity_real_name_authentication"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.MaintainOrderCancelActivity"
+            android:label="@string/title_activity_order_cancel"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.RepairOrderCancelActivity"
+            android:label="@string/title_activity_order_cancel"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.AccessoryOrderCancelActivity"
+            android:label="@string/title_activity_order_cancel"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.Accessory4SShopOrderCancelActivity"
+            android:label="@string/title_activity_order_cancel"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.Accessory4SShopOrderRefundActivity"
+            android:label="@string/title_activity_order_refund"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.SeckillOrderCancelActivity"
+            android:label="@string/title_activity_order_cancel"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.MaintainOrderRefundActivity"
+            android:label="@string/title_activity_order_refund"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.SeckillOrderRefundActivity"
+            android:label="@string/title_activity_order_refund"
+            android:screenOrientation="portrait"/>
+
+        <!-- <activity android:name="com.hxqc.mall.activity.me.password.BasePWDInputActivity"/> -->
+        <!-- ==================================================================周边服务============================================== -->
+        <activity
+            android:name="com.hxqc.aroundservice.activity.AroundServiceAMapActivity"
+            android:label="@string/title_activity_around_service"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalQueryAndAgencyActivity"
+            android:label="@string/title_activity_IllegalQueryAndAgency"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalQueryActivity"
+            android:label="@string/title_activity_illegal_query"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalConfiscateActivity"
+            android:label="@string/title_activity_illegal_confiscate"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalQueryResultActivity"
+            android:label="@string/title_activity_illegal_query_result"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalDetailActivity"
+            android:label="@string/title_activity_illegal_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalProcessingSuccessActivity"
+            android:label="@string/title_activity_illegal_process_success"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.TrafficControlActivity"
+            android:label="@string/title_activity_traffic"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.PositionActivity"
+            android:label="@string/position"
+            android:screenOrientation="portrait"/>
+        <!-- <activity -->
+        <!-- android:name=".thirdshop.maintenance.activity.ChooseBrandActivity" -->
+        <!-- android:label="选择品牌" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalProcessingActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_illegal_process"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.VehicleInspectionActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/activity_vehicle_inspection"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.DriversLicenseChangeActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/activity_drivers_license_change"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.MyIllegalOrderActivity"
+            android:label="@string/title_activity_my_illegal_order"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.OrderDetailActivity"
+            android:label="@string/title_activity_order_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.LargeImageActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.IllegalDetailLargeImageActivity"
+            android:label="@string/title_activity_illegal_picture"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.PeripheralServicesPayActivity"
+            android:label="@string/title_activity_payment_methods"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.CancelOrderDetailActivity"
+            android:label="@string/title_activity_cancel_order"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.CircumPayFinishActivity"
+            android:label="@string/title_activity_payment_success"
+            android:screenOrientation="portrait"/>
+        <!-- ==================================================================周边服务============================================== -->
+
+        <activity
+            android:name="com.hxqc.pay.activity.PayMainActivity"
+            android:alwaysRetainTaskState="true"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar">
+            <intent-filter>
+                <action android:name="PayMain"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.hxqc.pay.activity.PickupPlaceActivity"
+            android:label="@string/title_activity_pickup_place"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.PaymentActivity"
+            android:label="@string/title_activity_payment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.DepositActivity"
+            android:label="@string/title_activity_deposit"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.PaySpareMoneyActivity"
+            android:label="@string/title_activity_pay_spare_money"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.FinishDepositActivity"
+            android:label="@string/title_activity_finish_deposit"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.PickCarHelpActivity"
+            android:label="@string/title_activity_pick_car_help"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.TestPickUpActivity"
+            android:label="@string/title_activity_test_pick_up"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.YJFActivity"
+            android:label="@string/title_activity_yjf"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.pay.activity.UploadInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_upload_info"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden"/>
+
+        <!-- ======================================================自营支付==================================== -->
+
+        <activity
+            android:name="com.hxqc.mall.activity.PositionActivity"
+            android:label="@string/position"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.SeckillOrderDetailActivity"
+            android:label="@string/title_activity_seckill_order_detail"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.CarWashShopDetailActivity"
+            android:screenOrientation="portrait"/>
+
+        <!-- ======================================================洗车==================================== -->
+        <activity
+            android:name="com.hxqc.fastreqair.activity.WashCarShopActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.fastreqair.activity.CarWashOrderDetailsActivity"
+            android:label="@string/title_activity_carwash_order_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.hxqc.fastreqair.activity.CarWashShopListActivity"
+            android:label="@string/title_activity_washCarShop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.fastreqair.activity.CarWashSendCommentActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_send_comment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.fastreqair.activity.WashCarCommentListActivity"
+            android:label="@string/title_activity_wash_car_comment_list"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.fastreqair.activity.WashCarActivity"
+            android:label="@string/title_activity_wash_car"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.fastreqair.activity.CarWashShopListOnMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.AccessoryOrderDetailActivity"
+            android:label="@string/title_activity_accessory_order_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.Accessory4SShopOrderDetailActivity"
+            android:label="@string/title_activity_accessory_order_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.hxqc.fastreqair.activity.WashCarPayFinishActivity"
+            android:label="@string/title_activity_wash_car_pay_finish"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity
+            android:name="com.hxqc.aroundservice.activity.AroundServiceListOnMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:windowSoftInputMode="adjustPan|stateHidden"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.InvoiceInfoActivity"
+            android:label="@string/title_activity_invoice_info"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.Maintain4SShopOrderDetailsActivity"
+            android:label="@string/title_activity_maintain4_sshop_order_details"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!-- 汽车资讯部分 -->
+        <!-- 汽车图集 -->
+        <activity
+            android:name="com.hxqc.autonews.activities.AutoGalleryActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <!-- 汽车图文 -->
+        <activity
+            android:name="com.hxqc.autonews.activities.AutoInfoDetailActivity"
+            android:label="@string/title_activity_auto_info_detail"/>
+        <activity
+            android:name="com.hxqc.autonews.activities.SendCommentActivity"
+            android:configChanges="mcc|mnc|keyboard|keyboardHidden|navigation|orientation|screenSize|fontScale"
+            android:label="@string/title_activity_send_comment_hy"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.autonews.activities.PublicCommentActivity"
+            android:label="@string/title_activity_public_comment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.autonews.activities.UserCommentActivity"
+            android:label="@string/title_activity_user_comment_hy"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.autonews.activities.AllCommentActivity"
+            android:label="@string/title_activity_all_comment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.autonews.activities.CommentDetailActivity"
+            android:label="@string/title_activity_comment_detail"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.autonews.activities.MyCommentActivity"
+            android:label="@string/title_activity_my_comment"
+            android:screenOrientation="portrait"/>
+
+        <!-- ==================================================================车型对比============================================== -->
+        <activity
+            android:name="com.hxqc.carcompare.ui.addcar.CarCompareListActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.carcompare.ui.addcar.CarChooseListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.carcompare.ui.compare.CarCompareDetailActivity"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+        <activity
+            android:name="com.hxqc.carcompare.ui.discuss.UserDiscussActivity"
+            android:label="@string/title_activity_public_comment"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.carcompare.ui.discuss.DiscussDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"/>
+
+        <!-- ==================================================================车型对比============================================== -->
+
+
+        <!-- ==================================================================GlideModule============================================== -->
+        <meta-data
+            android:name="com.hxqc.mall.core.util.utils.glide.MyGlideMoudle"
+            android:value="GlideModule"/>
+
+        <activity
+            android:name="com.hxqc.qr.offlinepay.HomeQRPayConfirmActivity"
+            android:label="@string/title_activity_qr_pay_confirm"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.qr.offlinepay.HomeQRPayChargeActivity"
+            android:label="@string/title_activity_qr_pay_charge"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.qr.offlinepay.HomeQRPayFinishActivity"
+            android:label="@string/title_activity_qr_pay_finish"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.autonews.activities.NewAutoCalendarActivity"
+            android:label="@string/title_activity_auto_calendar"/>
+        <activity
+            android:name="com.hxqc.mall.activity.order.OrderRefundInfoActivity"
+            android:label="@string/title_activity_refund_info"
+            android:screenOrientation="portrait"></activity>
+    </application>
+
+</manifest>

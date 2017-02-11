@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/change_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:drawableLeft="@drawable/t_icon_button_location"
+            android:drawablePadding="2dp"
+            android:gravity="center_vertical"
+            android:padding="10dp"
+            android:text="地图"
+            android:textSize="16sp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <com.hxqc.mall.core.views.DropDownMenu
+        android:id="@+id/drop_down_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menuUnselectedIcon="@drawable/ic_cbb_arrow_down"
+        app:menuSelectedIcon="@drawable/ic_cbb_arrow_up"
+        app:menuBackgroundColor="#F7F7F7"
+        app:underlineColor="#D7D7D7"
+        app:underlineHeight="1dp"
+        app:menuHeight="40dp"
+        app:drawableMarginLeft="11dp"
+        app:dividerPadding="4dp">
+
+        <FrameLayout
+            android:id="@id/drop_down_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <in.srain.cube.views.ptr.PtrFrameLayout
+                android:id="@+id/auto_refresh_frame"
+                xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube_ptr:ptr_duration_to_close="300"
+                cube_ptr:ptr_duration_to_close_header="2000"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.7">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/auto_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/line"/>
+            </in.srain.cube.views.ptr.PtrFrameLayout>
+
+            <com.hxqc.mall.core.api.RequestFailView
+                android:id="@+id/request_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:emptyDescription="未找到合适店铺"/>
+        </FrameLayout>
+    </com.hxqc.mall.core.views.DropDownMenu>
+</LinearLayout>

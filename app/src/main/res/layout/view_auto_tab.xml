@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FAFAFA"
+    android:orientation="vertical"
+    >
+
+    <RelativeLayout
+        android:id="@+id/auto_tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_tab_height"
+        >
+
+        <ImageView
+            android:id="@+id/auto_tab_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin_left_16"
+            tools:src="@drawable/ic_detail_image"/>
+
+        <TextView
+            android:id="@+id/auto_tab_label"
+            style="@style/auto_detail_label"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/auto_tab_icon"
+            android:gravity="center_vertical"
+            tools:text="图文介绍"/>
+
+        <ImageView
+            android:id="@+id/auto_tab_type_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin_left_16"
+            android:layout_marginRight="@dimen/item_padding_16"
+            tools:src="@drawable/ic_city_arrow"/>
+    </RelativeLayout>
+</LinearLayout>
+

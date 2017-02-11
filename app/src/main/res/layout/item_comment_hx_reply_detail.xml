@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:id="@+id/comment_reply_view"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+>
+
+
+    <TextView
+        android:id="@+id/comment_reply_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_color_orange"
+        android:textSize="@dimen/text_size_12"
+        tools:text="恒信回复："
+    />
+    <TextView
+        android:id="@+id/comment_reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/title_and_main_text"
+        android:textSize="@dimen/text_size_12"
+        tools:text="cnacjcacajklcnajcnlancalcnacalcla"
+    />
+    <TextView
+        android:id="@+id/comment_reply_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_size_12"
+        tools:text="2015-02-02 14:32:50"
+    />
+
+</LinearLayout>

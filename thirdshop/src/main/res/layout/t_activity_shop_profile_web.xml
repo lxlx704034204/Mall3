@@ -1,0 +1,19 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+   >
+    <include
+        android:id="@+id/shopprofile_include"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/activity_web"
+        android:layout_marginBottom="51dp"/>
+    <com.hxqc.mall.thirdshop.views.CallBar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/shopprofile_call_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:call_title="@string/hot_line"/>
+</RelativeLayout>

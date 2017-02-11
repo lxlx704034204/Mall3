@@ -1,0 +1,20 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/window_color"
+                tools:context="com.hxqc.mall.activity.auto.ParameterActivity">
+
+    <View
+        android:id="@+id/layout"
+        android:layout_width="1dp"
+        android:layout_height="1dp"/>
+
+    <com.hxqc.widget.PinnedHeaderExpandableListView
+        android:id="@+id/parameter_expand_listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:groupIndicator="@null"
+        android:scrollbarAlwaysDrawHorizontalTrack="false"/>
+
+</RelativeLayout>

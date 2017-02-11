@@ -1,0 +1,142 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/toolbar_comment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_bar_56"
+        android:background="@drawable/bg_menubar_shadow"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_score_avg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:text="0"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_30"/>
+
+        <RatingBar
+            android:id="@+id/ratingbar_score_bar"
+            style="@style/roomRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_toRightOf="@id/tv_score_avg"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:rating="1.5"
+            android:stepSize="0.20"
+            />
+
+        <TextView
+            android:id="@+id/tv_comment_sum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="@dimen/margin_16"
+            android:drawablePadding="2dp"
+            android:drawableTop="@drawable/ic_comment_user"
+            android:gravity="center"
+            android:text="0"
+            android:textColor="#66141A"
+            android:textSize="@dimen/text_size_12"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sort_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioGroup
+            android:id="@+id/factor_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/sort_1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sort_1"
+                style="@style/FactorTabChild"
+                android:text="时间"/>
+
+
+            <com.hxqc.mall.core.views.ThirdRadioButton
+                android:id="@+id/sort_2"
+                style="@style/FactorTabChild"
+                android:background="@drawable/ic_3type_sort"
+                android:text="评分"/>
+
+        </RadioGroup>
+
+        <com.hxqc.mall.core.views.LineTranslateAnimView
+            android:id="@+id/line_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/factor_group"
+            android:textColor="@drawable/textcolor_3type_radio"
+            app:animDurations="200"
+            app:lineCount="2"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_no_data_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <com.hxqc.mall.core.api.RequestFailView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/comment_fail_notice_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:emptyDescription="未获取到评论信息"
+            />
+
+        <in.srain.cube.views.ptr.PtrFrameLayout
+            xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/refresh_c_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            cube_ptr:ptr_duration_to_close="300"
+            cube_ptr:ptr_duration_to_close_header="2000"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.7">
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rlv_comment_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </in.srain.cube.views.ptr.PtrFrameLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,530 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.hxqc.mall.thirdshop">
+
+    <application android:allowBackup="false">
+        <activity
+            android:name=".activity.ThirdShopOrderListActivity"
+            android:label="@string/title_activity_me_user_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ThirdShopOrderDetailActivity"
+            android:label="@string/title_activity_me_order_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.TestDriveActivity"
+            android:label="@string/third_title_activity_test_drive"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ThirdShopSearchActivity"
+            android:label="@string/title_activity_thirdShopSearch"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".activity.AskLeastMoneyActivity"
+            android:label="@string/third_title_activity_ask_price"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FavorableCarDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpecialCarDetailMainActivity"
+            android:label="@string/title_activity_specialCarDeatil"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FourSShopListActivity"
+            android:label="@string/title_activity_4sShopList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SpecialCarDetailActivity"
+            android:label="@string/title_activity_specialCarDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ClauseDetailActivity"
+            android:label="@string/third_title_activity_clause_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.ShopDetailsActivity"
+            android:label="@string/title_activity_shop_details"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.shop.ShopHomeActivity"
+            android:label="@string/title_activity_shopHome"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".activity.shop.MaintenanceHomeActivity" -->
+        <!-- android:label="@string/title_activity_maintanceHome" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:windowSoftInputMode="adjustPan|stateHidden" /> -->
+        <activity
+            android:name=".activity.shop.MaintenanceHomeActivity_1"
+            android:label="@string/title_activity_maintanceHome"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".activity.shop.ShopFlashSaleListActivity"
+            android:label="@string/title_activity_shopSaleList"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".activity.FilterThirdShopActivity" -->
+        <!-- android:label="@string/title_activity_filter_third_shop" -->
+        <!-- android:screenOrientation="portrait"/> -->
+        <activity
+            android:name=".activity.FilterThirdShopActivity"
+            android:label="@string/title_activity_filter_third_shop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.FilterThirdShopActivity_2"
+            android:label="@string/title_activity_filterThirdShop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.auto.activity.ThirdShopFilterForNewAuto"
+            android:label="@string/title_activity_filter_third_shop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.auto.activity.ThirdShopFilterForSpecialAuto"
+            android:label="@string/title_activity_filterThirdShop"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.ThirdShopAltasActivity"
+            android:label="@string/title_activity_atlas"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SalesNewsDetailActivity"
+            android:label="@string/title_activity_sales_news_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SalesPDetailActivity"
+            android:label="@string/title_activity_sales_pdetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SalesDepositPayActivity"
+            android:label="@string/title_activity_salesDepositPay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SalesOrderConfirmActivity"
+            android:label="@string/title_activity_sales_order_confirm"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewsImageInfoActivity"
+            android:label="@string/title_activity_news_image_info"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".activity.DepositFinishActivity"
+            android:label="@string/title_activity_deposit_finish"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopProFileWebActivity"
+            android:label="@string/title_activity_shop_pro_file_web"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PositionActivity"
+            android:label="@string/title_activity_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.PositionActivityForSpecialCar"
+            android:label="@string/title_activity_location"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopBrandActivity"
+            android:label="@string/title_activity_shop_brand"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.ShopAutoModelActivity"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.ThirdShopAMapActivity"
+            android:label="@string/title_activity_third_shop_amap"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.InvoiceActivity"
+            android:label="@string/title_activity_invoice"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.MaintenancePromotionActivity"
+            android:label="@string/title_activity_sales_pdetail"
+            android:screenOrientation="portrait" />
+        <!-- ==========================用品旧版===================================== -->
+        <activity
+            android:name=".accessory.activity.AccessorySaleActivity"
+            android:label="@string/accessory_title_activity_sale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory.activity.ProductDetailActivity"
+            android:label="@string/accessory_title_activity_product_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory4s.activity.ShoppingCart4SActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/accessory_title_activity_shopping_cart"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".accessory.activity.ShoppingCartActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/accessory_title_activity_shopping_cart"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"
+            android:windowSoftInputMode="adjustPan" />
+        <!-- <activity -->
+        <!-- android:name=".accessory.activity.OrderDetailActivity" -->
+        <!-- android:label="@string/accessory_title_activity_order_detail" -->
+        <!-- android:screenOrientation="portrait" -->
+        <!-- android:theme="@style/AppToolBarTheme" /> -->
+        <activity
+            android:name=".accessory.activity.AccessoryShopPayFinishActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory4s.activity.AccessoryShopPayFinish4SActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory4s.activity.AccessoryPayFinish4SActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory.activity.AccessoryShopListActivity"
+            android:label="@string/accessory_title_activity_shop_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory.activity.PhotoActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory.activity.AccessoryPayFinishActivity"
+            android:label="@string/accessory_title_activity_pay_completed"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory.activity.AccessoryShopListOnMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".accessory.activity.RefundActivity"
+            android:label="@string/accessory_title_activity_refund"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory.activity.PackageListActivity"
+            android:label="@string/accessory_title_activity_package_list"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory.activity.ConfirmOrderActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/accessory_title_activity_confirm_order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".accessory4s.activity.ConfirmOrder4SActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/accessory_title_activity_confirm_order"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".accessory.activity.PaySubscriptionActivity"
+            android:label="@string/accessory_title_activity_pay_subscription"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory4s.activity.PayActivity"
+            android:label="@string/accessory_title_activity_pay"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory.activity.FilterAccessoryActivity"
+            android:label="@string/accessory_title_activity_sale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory.activity.PositionActivity"
+            android:label="@string/position"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory.activity.AccessoryPriceListActivity"
+            android:label="@string/accessory_price"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <!-- ==========================用品新版===================================== -->
+        <activity
+            android:name=".accessory4s.activity.AccessorySaleFromHomeActivity"
+            android:label="@string/accessory_title_activity_sale"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".accessory4s.activity.EditTestActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory4s.activity.AccessorySaleFrom4SActivity"
+            android:label="@string/accessory_title_activity_sale"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory4s.activity.ProductDetailNewActivity"
+            android:label="@string/accessory_title_activity_product_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory4s.activity.PackageListNewActivity"
+            android:label="@string/accessory_title_activity_package_list"
+            android:screenOrientation="portrait" />
+        <!-- ======================保养==================================== -->
+        <activity
+            android:name=".maintenance.activity.SmartMaintenanceActivity"
+            android:label="@string/smart_maintain"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.FilterMaintenanceShopListActivity2"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+
+        <activity android:name=".maintenance.activity.FilterMaintenanceShopListActivity"
+            android:screenOrientation="portrait"
+            android:label="@string/appointment_maintenance"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".maintenance.activity.PositionActivity"
+            android:label="@string/post"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.ReserveMaintainActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_reserve_maintain"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" />
+        <activity
+            android:name=".maintenance.activity.ReserveMaintainAndHeadActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_repair_reserve"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <activity
+            android:name=".maintenance.activity.ReserveMaintainAndHeadActivityO1"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_repair_reserve"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+        <activity
+            android:name=".maintenance.activity.ServiceAdviserActivity"
+            android:label="@string/title_activity_service_advise"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.InspectActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.ServiceMechanicActivity"
+            android:label="@string/title_activity_service_mechanic"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.MaintainAndRepairActivity"
+            android:label="@string/title_activity_maintainandrepair"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.MerchandiseDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.ConfirmOrderActivity"
+            android:label="@string/title_activity_confirm_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.ReserveSuccessActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".maintenance.activity.ServiceTypeActivity"
+            android:label="@string/title_activity_service_type"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateAlwaysHidden"/>
+        <!--
+                  <activity
+                  android:name="com.hxqc.mall.auto.activity.RepairRecordActivity"
+                  android:label="@string/maintenance_record" />
+        -->
+        <activity
+            android:name=".maintenance.activity.MaintenanceRecordActivity"
+            android:label="@string/maintenance_record" />
+        <activity
+            android:name=".maintenance.activity.EmergencyRescueActivity"
+            android:label="@string/title_activity_rescue"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".maintenance.activity.ChoicePayMaintenanceActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/title_activity_choice_pay_maintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.FinishPayMaintenanceActivity"
+            android:label="@string/title_activity_finish_pay_maintenance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.PackageListActivity"
+            android:label="@string/title_activity_goodsPackage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.FourSShopMaintenanceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+
+        <!-- ================================================================================ -->
+        <activity
+            android:name=".activity.shop.ModelsOfferActivity"
+            android:label="@string/title_activity_models_offer"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.ShopSalesPromotionActivity"
+            android:label="@string/title_activity_shopsalesPromotion"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.MaintenanceShopListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".maintenance.activity.ShopQuoteActivity"
+            android:label="@string/title_activity_ShopQuote"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".maintenance.activity.FourSAndQuickShopQuoteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".maintenance.activity.FourSAndQuickMaintainAndRepairActivity"
+            android:label="@string/title_activity_fours_and_quick_maintain_and_repair"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.FourSAndQuickConfirmOrderActivity"
+            android:label="@string/title_activity_fours_and_quick_confirm_order"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.ShopFinishPayActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.FilterSeckillActivity"
+            android:label="@string/title_activity_filter" />
+        <activity
+            android:name=".activity.FilterSeckillIndefiniteActivity"
+            android:label="@string/title_activity_filter" />
+        <activity
+            android:name=".activity.FilterCarModelActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.FourSMallActivity"
+            android:label="@string/title_activity_4sMall"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.FourSMallActivity2"
+            android:label="@string/title_activity_4sMall"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.FlashSaleListActivity"
+            android:label="@string/title_activity_flashSaleList"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name=".activity.FourSBrandActivity" -->
+        <!-- android:label="新车销售" -->
+        <!-- android:screenOrientation="portrait" /> -->
+        <activity
+            android:name=".activity.NewCarSeriesListActivity"
+            android:label="@string/title_activity_newCarSeries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.NewCarModelListActivity"
+            android:label="@string/title_activity_newCarSeries"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ShopInfoOfNewCarListActivity"
+            android:label="@string/title_activity_newCarSeries" />
+
+        <!-- 新车销售new -->
+        <activity
+            android:name=".activity.NewCarModelListActivity2"
+            android:label="@string/title_activity_newCarSeries"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+
+        <!-- 新车销售车型详情 -->
+        <activity
+            android:name=".activity.NewCarModelDetailActivity"
+            android:label="@string/title_activity_newCarModelDetail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+        <activity
+            android:name=".activity.AskLeastMoneyActivity2"
+            android:label="@string/third_title_activity_ask_price"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.MaintenanceCommentListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.AdvisoryListActivity"
+            android:label="@string/title_activity_advisoryList" />
+        <activity
+            android:name=".activity.ConfirmSpecialCarOrderActivity"
+            android:label="@string/title_activity_confirmCarOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SiteNewsListActivity"
+            android:label="@string/title_activity_siteNewsList"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.IntroduceShopActivity"
+            android:label="@string/title_activity_shopDetail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".maintenance.activity.MaintenanceShopListOnMapActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".activity.ThirdShopOrderCancelActivity"
+            android:label="@string/title_activity_cancelOrder"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.ThirdShopOrderRefundActivity"
+            android:label="@string/title_activity_orderRefund"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory4s.activity.InstallmentBuyingSeriesActivity"
+            android:label="@string/title_activity_installment_buying"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".accessory4s.activity.InstallmentBuyingModelActivity"
+            android:label="@string/title_activity_installment_buying"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.shop.InstallmentBuyCarActivity"
+            android:label="@string/title_activity_installmentbuyCar"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SelectCarByConditionActivity"
+            android:label="@string/select_car_by_condition"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.GroupBuyMergeActivity1"
+            android:label="@string/group_buy"
+            android:theme="@style/AppThemeBase.ToolBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".activity.GroupBuyMergeActivity"
+            android:label="@string/group_buy"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+    </application>
+
+</manifest>

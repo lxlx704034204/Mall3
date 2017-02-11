@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_image_upload">
+
+    <ImageView
+        android:id="@+id/image"
+        style="@style/image_view_image_upload" />
+
+    <com.hxqc.pay.views.ImageCoverProgress
+        android:id="@+id/progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <ImageView
+        android:id="@+id/image_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:paddingLeft="30dp"
+        android:paddingTop="30dp"
+        android:src="@drawable/ic_edit1" />
+
+</RelativeLayout>
+

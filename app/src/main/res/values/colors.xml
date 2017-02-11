@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ev_subsidy_filter_province_bg">#F9F9F9</color>
+
+    <color name="green_txt" >#18A05E</color>
+    <color name="auto_gallery_bg_color">#333333</color>
+</resources>

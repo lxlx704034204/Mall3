@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--网上4s-->
+<!--
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white_bg"
+     >
+    <View
+        android:id="@+id/myorder_online4s_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_big_16"
+        android:background="@color/divider_line_bg"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myorder_online4s_shopaddress"
+        android:layout_below="@+id/myorder_online4s_divider_line"
+        style="@style/BlackText16"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/ic_shop"
+        android:drawablePadding="8dp"
+        android:text="武汉星凯凯迪拉克"
+        android:drawableRight="@drawable/ic_list_arrow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myorder_online4s_orderState"
+        android:layout_below="@+id/myorder_online4s_divider_line"
+        android:layout_alignParentRight="true"
+        android:textColor="#C43C48"
+        android:textStyle="bold"
+        android:layout_margin="10dp"
+        android:textSize="@dimen/text_size_14"
+        android:text="待付款"/>
+    <View android:id="@+id/myorder_online4s_line"
+        android:layout_below="@+id/myorder_online4s_shopaddress"  style="@style/UnderLine"/>
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_margin="10dp"
+        android:id="@+id/myorder_online4s_orderImage"
+        android:src="@drawable/pic_normal"
+        android:layout_below="@+id/myorder_online4s_line"
+        />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_alignTop="@+id/myorder_online4s_orderImage"
+        android:layout_toRightOf="@+id/myorder_online4s_orderImage"
+        android:layout_below="@+id/myorder_online4s_line">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myorder_online4s_orderType"
+        style="@style/GrayText14"
+        android:text="奔驰GLK级限时优惠店内让利达10万"/>
+
+    <TextView
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/myorder_online4s_orderItem"
+        style="@style/BlackText14"
+        android:text="活动时间：2015.05.23-2015.06.23"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="20dp"
+        android:text="去付款"
+        android:layout_below="@+id/myorder_online4s_orderImage"
+        android:id="@+id/myorder_online4s_orderBut"
+        android:background="@drawable/btn_orange"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/myorder_online4s_divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_big_16"
+        android:background="@color/tag_background"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/window_color">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/myorder_online4s_status"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_16">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/myorder_online4s_shopaddress"
+                style="@style/BlackText16"
+                android:textStyle="bold"
+                android:drawableLeft="@drawable/ic_shop"
+                android:drawablePadding="8dp"
+                android:text="武汉星凯凯迪拉克"
+                android:drawableRight="@drawable/ic_list_arrow"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/myorder_online4s_status"
+            style="@style/OrangeText12"
+            android:textSize="13sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            tools:text="已支付定金"/>
+    </RelativeLayout>
+
+    <View style="@style/UnderLine"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/myorder_online4s_detail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/margin_16">
+
+            <ImageView
+                android:id="@+id/myorder_online4s_image"
+                android:layout_width="84dp"
+                android:layout_height="50dp"
+                android:scaleType="fitXY"
+                tools:src="@drawable/ic_launcher"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/myorder_online4s_name"
+                    style="@style/BlackText14"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:text="奔驰GLK级限时优惠店内让利达10万"/>
+
+                <TextView
+                    android:id="@+id/myorder_online4s_time"
+                    style="@style/GrayText13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:layout_marginTop="8dp"
+                    tools:text="活动时间 : 2015.11.30 — 2015.11.30"/>
+
+                <TextView
+                    android:id="@+id/myorder_online4s_captcha"
+                    style="@style/BlackText13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    tools:text="验证码：123456789123456"/>
+
+
+            </LinearLayout>
+        </LinearLayout>
+        <View style="@style/UnderLine"/>
+        <TextView
+            android:id="@+id/myorder_online4s_refundStatus"
+            style="@style/BlackText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_marginTop="@dimen/margin_10"
+            android:layout_marginBottom="@dimen/margin_10"
+            android:visibility="gone"
+            tools:text="待退款"/>
+    </LinearLayout>
+
+    <View style="@style/UnderLine" />
+
+    <LinearLayout
+        android:id="@+id/myorder_online4s_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:gravity="right">
+        <Button
+            android:id="@+id/myorder_online4s_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            style="@style/btn_orange"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:text="去付款"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?><!--保养记录-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/normal_padding_big_16">
+
+            <ImageView
+                android:id="@+id/auto_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/normal_padding_big_16"
+                android:layout_marginRight="@dimen/normal_padding_big_16"
+                android:src="@drawable/pic_icon" />
+
+            <TextView
+                android:id="@+id/auto_model"
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/auto_icon"
+                android:layout_marginBottom="@dimen/normal_padding_big_16"
+                android:layout_toEndOf="@+id/auto_icon"
+                android:layout_toRightOf="@+id/auto_icon"
+                tools:text="凯迪拉克SRX 2015款 3.0L 至尊土豪豪华型" />
+
+            <TextView
+                android:id="@+id/auto_plate"
+                style="@style/GrayText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/auto_model"
+                android:layout_alignStart="@+id/auto_model"
+                android:layout_below="@+id/auto_model"
+                tools:text="@string/auto_plate" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FDF7EB"
+            android:padding="@dimen/normal_padding_big_16">
+
+            <TextView
+                android:id="@+id/next_maintenance_time"
+                style="@style/OrangeText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="@string/next_maintenance_time" />
+
+            <TextView
+                android:id="@+id/next_repair_advice"
+                style="@style/OrangeText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/next_maintenance_time"
+                tools:text="@string/next_repair_advice" />
+
+            <Button
+                android:id="@+id/to_see"
+                style="@style/btn_orange"
+                android:layout_width="wrap_content"
+                android:layout_alignParentRight="true"
+                android:onClick="toSeeDetail"
+                android:text="去看看" />
+        </RelativeLayout>
+
+        <com.hxqc.widget.ListViewNoSlide
+            android:id="@+id/maintenance_record_list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:focusableInTouchMode="false" />
+    </LinearLayout>
+</ScrollView>

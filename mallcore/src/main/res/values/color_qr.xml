@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="qr_contents_text">#ff000000</color>
+    <color name="qr_encode_view">#ffffffff</color>
+    <color name="qr_possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
+    <color name="qr_result_minor_text">#ffc0c0c0</color>
+    <color name="qr_result_points">#c099cc00</color> <!-- Android standard ICS color -->
+    <color name="qr_result_text">#ffffffff</color>
+    <color name="qr_result_view">#b0000000</color>
+    <color name="qr_status_text">#ffffffff</color>
+    <color name="qr_transparent">#00000000</color>
+    <color name="qr_viewfinder_laser">#ffcc0000</color> <!-- Android standard ICS color -->
+    <color name="qr_viewfinder_mask">#60000000</color>
+    <color name="qr_grey_light">#44555555</color>
+    <color name="qr_white">#ffffff</color>
+    <color name="qr_orange">#ff7043</color>
+
+</resources>

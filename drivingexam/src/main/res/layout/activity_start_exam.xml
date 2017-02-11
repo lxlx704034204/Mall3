@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/toolbar_background">
+
+        <ImageView
+            android:id="@+id/goback"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/btn_click_transfor_bg"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:src="@drawable/ic_back" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp"
+            android:gravity="center"
+            android:text="科目一模拟考试"
+            android:textColor="#fff"
+            android:textSize="19sp" />
+
+        <ImageView
+            android:id="@+id/user_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignTop="@+id/level"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/no_user" />
+
+        <TextView
+            android:id="@+id/unlogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/user_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="15dp"
+            android:text="未登录"
+            android:textColor="#fff"
+            android:textSize="14sp" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/user_img2"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_alignTop="@+id/level"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp" />
+
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/top_2"
+            android:gravity="center"
+            android:paddingBottom="6dp"
+            android:paddingLeft="23dp"
+            android:paddingRight="23dp"
+            android:paddingTop="6dp"
+            android:text="马路杀手"
+            android:textColor="#fff"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/nickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="14dp"
+            android:text="匿名用户"
+            android:textColor="#fff"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top_bg"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.5">
+
+            <TextView
+                android:id="@+id/kemu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/bg_line_round_corner_red"
+                android:gravity="center"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="全国通用 小车C1/C2/C3"
+                android:textColor="@color/font_red"
+                android:textSize="17sp" />
+
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/kemu"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="16dp"
+                android:text="考试时间"
+                android:textColor="#777"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/exam_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv1"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@+id/tv1"
+                android:text="45分钟"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv1"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp"
+                android:text="考题数量"
+                android:textColor="#777"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/exam_amount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv2"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@+id/tv2"
+                android:text="100题"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv2"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp"
+                android:text="合格标准"
+                android:textColor="#777"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/pass_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv3"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@+id/tv3"
+                android:text="满分100分，90分及格"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv3"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="13dp"
+                android:text="出题规则"
+                android:textColor="#777"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/tv4"
+                android:layout_marginLeft="26dp"
+                android:layout_marginTop="24dp"
+                android:layout_toRightOf="@+id/tv4"
+                android:text="按交管局出题规则"
+                android:textColor="#333"
+                android:textSize="16sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.1">
+
+
+            <Button
+                android:id="@+id/do_exam_1"
+                style="@style/btn_orange"
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="14dp"
+                android:layout_toLeftOf="@+id/divide"
+                android:gravity="center"
+                android:text="全真模拟考试"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/do_exam_2"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="14dp"
+                android:layout_toRightOf="@+id/divide"
+                android:background="@drawable/btn_roundcorner_gray"
+                android:gravity="center"
+                android:text="优先做未做题"
+                android:textColor="#fff"
+                android:textSize="16sp" />
+
+
+            <View
+                android:id="@+id/divide"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+            <TextView
+                android:id="@+id/tip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/do_exam_2"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:drawableLeft="@drawable/tishi"
+                android:drawablePadding="3dp"
+                android:text="温馨提示:"
+                android:textColor="#777"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tishi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tip"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="模拟考试下不能修改答案，每错一题扣一分。"
+                android:textColor="#777"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

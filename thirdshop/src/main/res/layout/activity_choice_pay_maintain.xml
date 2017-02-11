@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#EFEFEF"
+                android:padding="@dimen/margin_16">
+                <TextView
+                    android:id="@+id/text"
+                    style="@style/GreenText18"
+                    android:text="订单号："/>
+                <TextView
+                    android:id="@+id/order_number"
+                    style="@style/GreenText18"
+                    android:layout_toRightOf="@id/text"
+                    tools:text="304464321654"/>
+
+            </RelativeLayout>
+
+            <com.hxqc.mall.payment.view.PaymentTypeChoice
+                android:id="@+id/payment_type_choice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+
+</LinearLayout>

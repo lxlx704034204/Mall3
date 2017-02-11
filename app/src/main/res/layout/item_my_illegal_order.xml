@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/illegal_order_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/illegal_order_number"
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="订单号:123456789" />
+
+            <TextView
+                android:id="@+id/illegal_order_state"
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="支付成功" />
+
+        </RelativeLayout>
+
+        <include
+            layout="@layout/view_cut_off_rule_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="20dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="20dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:id="@+id/illegal_order_bg"
+                    android:layout_width="@dimen/app_item_auto_image_width_96"
+                    android:layout_height="@dimen/app_item_auto_image_height_55"
+                    android:layout_gravity="center"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/pic_normal" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/illegal_order_plate_number"
+                        style="@style/BlackText14"
+                        tools:text="鄂A12345" />
+
+                    <TextView
+                        android:id="@+id/illegal_order_service"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        tools:text="服务类系:违章处理" />
+
+                    <TextView
+                        android:id="@+id/illegal_order_money"
+                        style="@style/RedText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        tools:text="￥1100.00" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        <com.hxqc.aroundservice.view.IllegalAutoInfoView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <Button
+        android:id="@+id/illegal_order_pay"
+        style="@style/btn_orange"
+        android:layout_gravity="right"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="12dp"
+        android:text="去付款" />
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="15dp" />
+
+</LinearLayout>

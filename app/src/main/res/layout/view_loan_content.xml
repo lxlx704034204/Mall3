@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_loan_layout"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+    >
+
+    <TextView
+    android:id="@+id/tv_loan_content_key"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/margin_16"
+    android:textColor="#000"
+    android:textSize="@dimen/text_size_14"
+    android:textStyle="bold"
+    />
+
+    <TextView
+    android:id="@+id/tv_loan_content_value"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/content_margin_4"
+    android:layout_marginStart="@dimen/content_margin_4"
+    android:layout_marginTop="@dimen/margin_16"
+    android:layout_marginBottom="@dimen/margin_16"
+    android:layout_toRightOf="@+id/tv_loan_content_key"
+    android:layout_toEndOf="@+id/tv_loan_content_key"
+    style="@style/GrayText14"
+    />
+
+
+    <View
+    android:id="@+id/v1111"
+    android:layout_width="match_parent"
+    android:layout_height="1dp"
+    android:layout_below="@+id/tv_loan_content_value"
+    android:background="@color/divider"/>
+</RelativeLayout>

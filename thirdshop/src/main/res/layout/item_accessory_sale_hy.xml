@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <ImageView
+            android:id="@+id/accessory_sale_photo"
+            style="@style/AccImage"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            android:layout_marginRight="10dp" />
+
+        <TextView
+            android:id="@+id/accessory_sale_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/accessory_sale_photo"
+            android:layout_toRightOf="@id/accessory_sale_photo"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/text_color_title"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/accessory_sale_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/accessory_sale_photo"
+            android:layout_toRightOf="@id/accessory_sale_photo"
+            android:textColor="@color/main_and_price"
+            android:textSize="@dimen/text_size_14" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider" />
+</LinearLayout>

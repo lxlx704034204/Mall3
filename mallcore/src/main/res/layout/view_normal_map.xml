@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="horizontal"
+    android:padding="@dimen/normal_padding_big_16">
+
+    <TextView
+        android:id="@+id/key_tv_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="7"
+        android:textColor="#666"
+        android:textSize="14sp"
+        tools:text="标题标题" />
+
+    <LinearLayout
+        android:id="@+id/value_container_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end|center_vertical"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/map_item_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:gravity="end"
+            android:minWidth="5dp"
+            android:textColor="#999"
+            android:textColorHint="#999"
+            android:textSize="14sp"
+            android:visibility="gone"
+            tools:hint="请输入" />
+
+        <ImageView
+            android:id="@+id/value_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/default_value_tv_1"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#999"
+            android:visibility="visible"
+            tools:text="内容内容" />
+
+        <ImageView
+            android:id="@+id/more"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="0dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="0dp"
+            android:paddingStart="10dp"
+            android:src="@drawable/ic_list_arrow"
+            android:visibility="visible" />
+    </LinearLayout>
+</LinearLayout>

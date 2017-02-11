@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingStart="16dp"
+    android:paddingEnd="16dp"
+    android:background="#F9F9F9"
+    >
+
+    <TextView
+        android:id="@+id/p_item_num"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@drawable/grey_shape"
+        android:gravity="center"
+        tools:text="1"
+        style="@style/WhiteText12"
+        />
+
+    <TextView
+        android:id="@+id/p_item_text"
+        style="@style/GrayText12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_toEndOf="@+id/p_item_num"
+        android:layout_toRightOf="@+id/p_item_num"
+        tools:text="由于最新优惠，新能源电动车，由于最新优惠，新能源电动车，由于最新优惠，新能源电动车，由于最新优惠，新能源电动车，由于最新优惠，新能源电动车，由于最新优惠，新能源电动车，" />
+
+</RelativeLayout>

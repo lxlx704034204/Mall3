@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <net.simonvt.menudrawer.OverlayDrawer
+        android:id="@+id/reserve_maintain_header_drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:mdContentBackground="@color/window_color"
+        app:mdDrawOverlay="true"
+        app:mdDropShadowColor="#55000000"
+        app:mdDropShadowEnabled="true"
+        app:mdDropShadowSize="100dp"
+        app:mdMenuSize="304dp"
+        app:mdPosition="right">
+
+        <FrameLayout
+            android:id="@+id/mdMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <fragment
+                android:id="@+id/reserve_maintain_header_menu"
+                class="com.hxqc.mall.auto.fragment.AutoTypeFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/mdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include layout="@layout/activity_reserve_maintain_info_and_head" />
+        </FrameLayout>
+
+    </net.simonvt.menudrawer.OverlayDrawer>
+
+    <com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/reserve_maintain_header_fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="获取数据失败" />
+
+</RelativeLayout>

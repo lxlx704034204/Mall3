@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+              android:padding="16dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView android:textStyle="bold"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择用品："/>
+
+        <TextView
+            android:id="@+id/verify_package_change"
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="104dp"
+            android:clickable="true"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="选择本车适用的汽车用品"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_list_arrow"/>
+    </RelativeLayout>
+
+    <android.support.v7.widget.LinearLayoutCompat
+        android:id="@+id/package_layout"
+        xmlns:layout="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_verify_grid"
+        android:orientation="vertical"
+        android:visibility="gone"
+        layout:divider="@drawable/line"
+        layout:showDividers="middle">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="6dp">
+
+            <TextView
+                android:id="@+id/package_title"
+                style="@style/GrayText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="8"
+                tools:text="自定义套餐"/>
+
+            <TextView
+                android:id="@+id/package_amount"
+                style="@style/RedText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                tools:text="¥3000.00"/>
+        </RelativeLayout>
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/package_goods_detail"
+            xmlns:layout="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/package_title"
+            android:orientation="vertical"
+            android:visibility="gone"
+            layout:divider="@drawable/line"
+            layout:showDividers="middle"/>
+    </android.support.v7.widget.LinearLayoutCompat>
+</LinearLayout>

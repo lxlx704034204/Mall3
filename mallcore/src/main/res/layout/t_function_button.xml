@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="6dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="6dp"
+                tools:background="@color/cursor_orange"
+                android:id="@+id/t_function_background"
+
+>
+
+
+    <LinearLayout
+        android:id="@+id/ll_t_function_inner_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+    >
+
+        <ImageView
+            android:id="@+id/iv_t_function_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:src="@drawable/t_icon_button_location"
+        />
+
+        <TextView
+            android:id="@+id/tv_t_function_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingRight="6dp"
+            android:paddingLeft="6dp"
+            android:textColor="#fff"
+            tools:text="一键导航"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

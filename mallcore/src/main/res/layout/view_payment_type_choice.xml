@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <TextView
+        style="@style/BlackText16"
+        android:layout_marginTop="@dimen/normal_margin_small_8"
+        android:paddingLeft="@dimen/normal_margin_big_16"
+        android:text="选择支付方式" />
+
+    <TextView
+        android:id="@+id/pay_hint"
+        android:visibility="gone"
+        style="@style/GrayText14"
+        android:layout_marginTop="6dp"
+        android:paddingLeft="@dimen/normal_margin_big_16"
+        android:text="您可选择线上支付，也可以选择到店支付" />
+
+    <View
+        style="@style/UnderLine"
+        android:layout_marginTop="@dimen/normal_margin_small_8" />
+
+    <com.hxqc.widget.ListViewNoSlide
+        android:id="@+id/pay_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@color/divider"
+        android:dividerHeight="1px"
+        android:listSelector="@android:color/transparent" />
+
+    <View style="@style/UnderLine" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/RedText18"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            tools:text="合计：¥ 2000" />
+
+        <Button
+            android:id="@+id/confirm"
+            style="@style/btn_orange"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="2dp"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_marginTop="2dp"
+            android:text="确定" />
+
+    </RelativeLayout>
+
+</LinearLayout>

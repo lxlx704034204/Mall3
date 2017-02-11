@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/window_color"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/toolbar_search_textview"
+            style="@style/toolbar_edit_text"
+            />
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/sort_group_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <RadioGroup
+            android:id="@+id/factor_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkedButton="@+id/sort_1"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/sort_1"
+                style="@style/FactorTabChild"
+                android:text="综合"/>
+
+            <RadioButton
+                android:id="@+id/sort_2"
+                style="@style/FactorTabChild"
+                android:text="销量"/>
+
+            <com.hxqc.mall.core.views.ThirdRadioButton
+                android:id="@+id/sort_3"
+                style="@style/FactorTabChild"
+                android:background="@drawable/ic_3type_sort"
+                android:text="价格"/>
+
+            <RadioButton
+                android:id="@+id/sort_4"
+                style="@style/FactorTabChild"
+                android:text="降幅"/>
+        </RadioGroup>
+
+        <com.hxqc.mall.core.views.LineTranslateAnimView
+            android:id="@+id/line_anim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/factor_group"
+            android:textColor="@drawable/textcolor_3type_radio"
+            app:animDurations="200"
+            app:lineCount="4"/>
+    </RelativeLayout>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout
+        android:id="@+id/auto_refresh_frame"
+        xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sort_group_layout"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ListView
+            android:id="@+id/auto_recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@drawable/line"
+            />
+
+
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/request_view"
+        xmlns:auto="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/sort_group_layout"
+        android:visibility="gone"
+        auto:emptyDescription="未找到符合条件车辆"
+        />
+
+</RelativeLayout>

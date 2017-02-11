@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <View
+            android:id="@+id/show_view"
+            android:layout_width="150dp"
+            android:layout_height="1px"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="104dp">
+
+            <android.support.v7.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F0F0F0"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical"
+                layout:divider="@drawable/line"
+                layout:showDividers="middle">
+
+                <include layout="@layout/view_auto_detail_banner_layout"/>
+
+                <include layout="@layout/t_third_favorable_car_price_information"/>
+
+                <!--自提点-->
+                <!--<com.hxqc.mall.thirdshop.views.ThirdPickupPoint-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--app:tabLabel="店铺地址"/>-->
+
+                <!-- 分期付款相关内容 -->
+                <include
+                    android:id="@+id/auto_loan_view"
+                    layout="@layout/view_auto_loan"/>
+
+                <!--自提点-->
+                <com.hxqc.mall.core.views.VariousShowView
+                    android:id="@+id/pickup_points"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    layout:labelText="店铺地址"
+                    layout:labelTextBold="true"
+                    layout:labelTextColor="@color/text_color_red"
+                    layout:labelTextSize="16sp"
+                    layout:leftIcon="@drawable/ic_detail_pickup_point"
+                    layout:rightOperateIcon="@drawable/ic_list_arrow"/>
+
+                <!--颜色-->
+                <com.hxqc.mall.thirdshop.views.T_AutoCarDetailColor
+                    android:id="@+id/color_view_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <!--图文介绍-->
+                <com.hxqc.mall.thirdshop.views.ThirdAutoDetailIntroduce
+                    android:id="@+id/introduce"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:focusable="false"/>
+
+                <com.hxqc.mall.core.views.VariousShowView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickToEvaluate"
+                    layout:labelText="口碑评价"
+                    layout:labelTextBold="true"
+                    layout:labelTextColor="@color/text_color_red"
+                    layout:labelTextSize="16sp"
+                    layout:leftIcon="@drawable/koubei"
+                    layout:rightOperateIcon="@drawable/ic_list_arrow"/>
+
+                <com.hxqc.mall.thirdshop.views.AutoDetailTabView
+                    android:id="@+id/item_parameter"
+                    xmlns:tab="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="clickToParameter"
+                    android:tag="sticky"
+                    tab:tabIconDrawable="@drawable/car_detail_params"
+                    tab:tabLabel="产品参数"
+                    tab:tabTagDrawable="@drawable/ic_list_arrow"/>
+            </android.support.v7.widget.LinearLayoutCompat>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="vertical">
+
+            <com.hxqc.mall.thirdshop.views.CallBar
+                android:id="@+id/call_bar"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"/>
+
+            <include layout="@layout/t_car_detail_bottom_bar"/>
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="50dp"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="@color/text_color_orange"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="toShop">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/to_shop"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:drawableLeft="@drawable/ic_popup_shop1"-->
+            <!--android:drawablePadding="6dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="商家店铺"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#B0000B"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#E02C37"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="toAskLeastPrice">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/ask_least_price"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:drawableLeft="@drawable/ic_quote_ask"-->
+            <!--android:drawablePadding="6dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="询问底价"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp"/>-->
+            <!--</LinearLayout>-->
+
+            <!--<View-->
+            <!--android:layout_width="1dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:background="#B0000B"/>-->
+
+            <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:background="#E02C37"-->
+            <!--android:clickable="true"-->
+            <!--android:gravity="center"-->
+            <!--android:onClick="toApplyTestDrive">-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/apply_test_drive"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:drawableLeft="@drawable/ic_quote_testdrive"-->
+            <!--android:drawablePadding="6dp"-->
+            <!--android:gravity="center"-->
+            <!--android:text="预约试驾"-->
+            <!--android:textColor="@color/white"-->
+            <!--android:textSize="16sp"/>-->
+            <!--</LinearLayout>-->
+            <!--</LinearLayout>-->
+        </LinearLayout>
+
+        <!--<ImageView-->
+        <!--android:layout_width="40dp"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_marginBottom="80dp"-->
+        <!--android:clickable="true"-->
+        <!--android:onClick="makePhoneCall"-->
+        <!--android:src="@drawable/but_quote_tel"/>-->
+    </RelativeLayout>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/refresh_fail_view"
+        xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="商品数据不存在"/>
+</FrameLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.simonvt.menudrawer.OverlayDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:mdContentBackground="@color/window_color"
+        app:mdDrawOverlay="true"
+        app:mdDropShadowColor="#55000000"
+        app:mdDropShadowEnabled="true"
+        app:mdDropShadowSize="100dp"
+        app:mdMenuSize="304dp"
+        app:mdPosition="right">
+
+        <FrameLayout
+            android:id="@id/mdMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#fff"
+            android:orientation="vertical"/>
+
+
+        <LinearLayout
+            android:id="@id/mdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioGroup
+                    android:id="@+id/factor_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checkedButton="@+id/sort_shop"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/sort_shop"
+                        style="@style/FactorTabChild"
+                        android:background="@drawable/t_ic_shop_models"
+                        android:text="店铺"/>
+
+                    <RadioButton
+                        android:id="@+id/sort_auto_type"
+                        style="@style/FactorTabChild"
+                        android:background="@drawable/t_ic_shop_brand"
+                        android:text="车型"/>
+                </RadioGroup>
+
+                <com.hxqc.mall.core.views.LineTranslateAnimView
+                    android:id="@+id/line_anim"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/factor_group"
+                    app:animDurations="200"
+                    app:lineCount="2"/>
+            </RelativeLayout>
+
+            <fragment
+                android:id="@+id/third_filter_fragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </net.simonvt.menudrawer.OverlayDrawer>
+</LinearLayout>
+

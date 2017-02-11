@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="12dp"
+        android:gravity="center|right"
+        android:text="2"
+        android:textColor="@color/green"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_toRightOf="@+id/score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_alignBaseline="@+id/score"
+        android:gravity="center"
+        android:text="分"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <View
+        android:id="@+id/divide"
+        android:layout_width="1dp"
+        android:layout_height="1dp"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-18dp"
+        android:layout_toLeftOf="@+id/divide"
+        android:drawableLeft="@drawable/clock"
+        android:drawablePadding="5dp"
+        android:gravity="center"
+        android:text="9分10秒"
+        android:textColor="#333"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp"
+        android:layout_toRightOf="@+id/divide"
+        android:gravity="right"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/jiangbei"
+            android:drawablePadding="3dp"
+            android:gravity="center"
+            android:text="恒信车神"
+            android:textColor="#333"
+            android:textSize="15sp" />
+
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:gravity="center"
+            android:text="2016-12-31 21:21:33"
+            android:textColor="#999"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+</RelativeLayout>

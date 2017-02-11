@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/layout_maintenance_program_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_padding_big_16">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_color_orange"
+            android:textSize="@dimen/text_size_14"
+            android:textStyle="bold"
+            tools:text="@string/other_maintenance_package" />
+    </LinearLayout>
+
+    <!--<include layout="@layout/view_maintenance_program_content" />-->
+    <com.hxqc.mall.thirdshop.maintenance.views.MaintenanceProgramItem
+        android:id="@+id/package_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

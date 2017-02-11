@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxqc.mall.usedcar.views.UsedCarDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:background="#FDF7EB">
+
+                    <TextView
+                        style="@style/BlackText12"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:text="简单填写以下信息，专属客服为您服务。" />
+
+                    <TextView
+                        style="@style/GrayText12"
+                        android:layout_gravity="center_vertical"
+                        android:text="（" />
+
+                    <TextView
+                        style="@style/RedText12"
+                        android:layout_gravity="center_vertical"
+                        android:text="*" />
+
+                    <TextView
+                        style="@style/GrayText12"
+                        android:layout_gravity="center_vertical"
+                        android:text="为必填项）" />
+                </LinearLayout>
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                    app:editHint="请输入姓名"
+                    app:editInputType="text"
+                    app:editMaxLength="12"
+                    app:editName="您的姓名："
+                    app:editStar="*"
+                    app:validatorEdit="contactName" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        android:id="@+id/star"
+                        style="@style/RedText14"
+                        android:layout_marginTop="13dp"
+                        android:text="*" />
+
+                    <TextView
+                        android:id="@+id/sex"
+                        style="@style/BlackText14"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/star"
+                        android:text="您的性别：" />
+
+                    <RadioGroup
+                        android:id="@+id/sex_radio"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="13dp"
+                        android:orientation="horizontal">
+
+                        <RadioButton
+                            android:id="@+id/male"
+                            style="@style/GrayText12"
+                            android:button="@drawable/checkbox"
+                            android:checked="true"
+                            android:paddingLeft="@dimen/normal_margin_small_8"
+                            android:text="先生" />
+
+                        <RadioButton
+                            android:id="@+id/female"
+                            style="@style/GrayText12"
+                            android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                            android:button="@drawable/checkbox"
+                            android:paddingLeft="@dimen/normal_margin_small_8"
+                            android:text="女士" />
+                    </RadioGroup>
+                </RelativeLayout>
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    app:editHint="请输入手机号码"
+                    app:editInputType="phone"
+                    app:editMaxLength="11"
+                    app:editName="手机号码："
+                    app:editStar="*"
+                    app:validatorEdit="contactPhone" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItem
+                    android:id="@+id/sell_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemHint="请选择品牌"
+                    app:itemName="出售车辆："
+                    app:itemStar="*"
+                    app:validatorString="请选择出售车辆" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItem
+                    android:id="@+id/area"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    app:itemHint="请选择车牌所在地"
+                    app:itemName="车牌所在地："
+                    app:itemStar="*"
+                    app:validatorString="请选择车牌所在地" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItemChooseDate
+                    android:id="@+id/on_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:itemHint="请选择首次上牌时间"
+                    app:itemName="首次上牌时间：" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/mile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:editHint="请输入行驶里程"
+                    app:editMaxLength="5"
+                    app:editName="行驶里程："
+                    app:editUnit="万公里" />
+
+                <com.hxqc.mall.usedcar.views.RemarkView
+                    android:id="@+id/remark_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginTop="13dp"
+                    app:remarkTitle="备注说明：" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItem
+                    android:id="@+id/buy_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                    app:itemHint="请选择品牌车型"
+                    app:itemMaxLines="2"
+                    app:itemName="意向车型："
+                    app:itemStar="*"
+                    app:validatorString="请选择意向车型" />
+
+                <com.hxqc.mall.usedcar.views.RemarkView
+                    android:id="@+id/remark_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginTop="13dp"
+                    app:remarkTitle="备注说明：" />
+
+                <Button
+                    android:id="@+id/submit"
+                    style="@style/btn_vermilion"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                    android:layout_marginRight="@dimen/activity_vertical_margin_16"
+                    android:layout_marginTop="32dp"
+                    android:text="提交信息" />
+
+                <TextView
+                    android:id="@+id/consult"
+                    style="@style/RedText14"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="24dp"
+                    android:text="免费咨询：400-1868-555" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="24dp" />
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/right"
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+</com.hxqc.mall.usedcar.views.UsedCarDrawer>

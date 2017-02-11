@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".GPhotoActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_content_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/toast_orange"
+        />
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:background="#dd333335"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:background="#00000000"
+            android:textColor="#fff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:onClick="preview"
+            android:text="预览"/>
+
+        <TextView
+            android:id="@+id/send_image_size_textview"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_toLeftOf="@+id/send_commit"
+            android:background="@drawable/bg_album_numbe"
+            android:layout_width="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/send_commit"
+            android:background="#00000000"
+            android:textColor="#00A30C"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:onClick="commit"
+            android:text="完成"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

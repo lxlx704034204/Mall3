@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/window_color"
+        android:paddingLeft="@dimen/normal_padding_big_16"
+        android:paddingRight="@dimen/normal_padding_big_16">
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/nickname"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_text_margin_top_12"
+            android:hint="@string/me_nickname_hint"
+            android:maxLength="20"
+            android:maxLines="1" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/real_name"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nickname"
+            android:hint="@string/me_real_name_hint"
+            android:maxLength="10"
+            android:maxLines="1" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/birthday"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/real_name"
+            android:drawableRight="@drawable/ic_list_arrow"
+            android:inputType="none"
+            android:focusable="false"
+            android:hint="@string/me_birthday" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/area"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/birthday"
+            android:drawableRight="@drawable/ic_list_arrow"
+            android:inputType="none"
+            android:focusable="false"
+            android:hint="@string/me_area" />
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/detail_address"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/area"
+            android:hint="@string/me_detail_address_hint"
+            android:maxLength="60"
+            android:maxLines="5"/>
+
+        <RadioGroup
+            android:id="@+id/set_sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/detail_address"
+            android:layout_marginTop="@dimen/personal_info_radio_group_margin_top_40"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox"
+                android:drawablePadding="@dimen/personal_info_radio_button_padding_left_10"
+                android:text="@string/me_male"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <RadioButton
+                android:id="@+id/female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personal_info_radio_button_margin_left_30"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox"
+                android:drawablePadding="@dimen/personal_info_radio_button_padding_left_10"
+                android:text="@string/me_female"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+
+            <RadioButton
+                android:id="@+id/secret"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/personal_info_radio_button_margin_left_30"
+                android:background="@android:color/transparent"
+                android:button="@null"
+                android:drawableLeft="@drawable/checkbox"
+                android:drawablePadding="@dimen/personal_info_radio_button_padding_left_10"
+                android:text="@string/me_secret"
+                android:textColor="@color/title_and_main_text"
+                android:textSize="@dimen/text_size_14" />
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/save"
+            style="@style/btn_orange"
+            android:layout_below="@id/set_sex"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/personal_info_button_margin_top_30"
+            android:text="@string/me_save" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/right"
+        android:layout_width="@dimen/floating_right_width_319"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:clickable="true"/>
+</android.support.v4.widget.DrawerLayout>

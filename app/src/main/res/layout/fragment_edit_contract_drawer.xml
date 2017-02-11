@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<net.simonvt.menudrawer.OverlayDrawer
+    android:id="@+id/drawer"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:mdDrawOverlay="false"
+    app:mdDropShadowColor="#55000000"
+    app:mdDropShadowEnabled="true"
+    app:mdDropShadowSize="600dp"
+    app:mdPosition="right">
+
+    <include
+        android:id="@id/mdMenu"
+        layout="@layout/layout_city_choose_menu"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        />
+
+    <ScrollView
+        android:id="@id/mdContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        >
+
+        <include
+            layout="@layout/fragment_edit_contract"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+    </ScrollView>
+
+
+</net.simonvt.menudrawer.OverlayDrawer>

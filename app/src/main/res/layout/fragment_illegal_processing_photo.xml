@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+
+            <TextView
+                android:id="@+id/photo_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="4dp"
+                android:textColor="@color/text_color_subheading"
+                android:textSize="16sp"
+                tool:text="@string/license_original" />
+
+            <com.hxqc.aroundservice.view.DialogImageView
+                android:id="@+id/photo_sample"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/photo_title"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:padding="5dp"
+                android:src="@drawable/ic_photo_sample"
+                android:visibility="gone" />
+
+            <com.hxqc.aroundservice.view.DialogTextView
+                android:id="@+id/photo_sample_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="8dp"
+                android:text="@string/sample_photo"
+                android:textColor="@color/cursor_orange"
+                android:textSize="@dimen/text_size_14"
+                android:visibility="gone"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/photo_reupload"
+            style="@style/btn_orange"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="24dp"
+            android:text="重新上传"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/photo_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@color/gray_yjf"
+        android:focusable="false"
+        android:focusableInTouchMode="false">
+
+        <com.hxqc.mall.core.views.HeightVSWidthImageView
+            android:id="@+id/photo_bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            hxqc:heightVsWidth="0.69"
+            android:scaleType="center"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_common_pictures" />
+
+        <com.hxqc.mall.core.views.HeightVSWidthImageView
+            android:id="@+id/photo_bg_2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            hxqc:heightVsWidth="0.64"
+            android:layout_centerInParent="true"
+            android:scaleType="center"
+            android:visibility="gone"
+            android:src="@drawable/ic_common_pictures" />
+    </RelativeLayout>
+</LinearLayout>

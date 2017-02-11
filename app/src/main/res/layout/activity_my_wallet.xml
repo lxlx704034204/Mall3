@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_my_wallet" />
+
+        <TextView
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_36"
+            android:text="@string/my_wallet_useful_balance" />
+
+        <TextView
+            android:id="@+id/total_balance_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_6"
+            android:textColor="@color/text_black"
+            android:textSize="30sp"
+            tools:text="￥5420" />
+
+        <Button
+            android:id="@+id/query_score_btn"
+            style="@style/btn_orange"
+            android:layout_width="250dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:onClick="toQueryScore"
+            android:text="@string/query_score"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/comsumer_detail_btn"
+            style="@style/btn_default"
+            android:layout_width="250dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:background="@drawable/btn_orange"
+            android:onClick="toConsumerDetail"
+            android:text="@string/comsumer_detail"
+            android:textColor="@color/white" />
+
+        <Button
+            style="@style/btn_white"
+            android:layout_width="250dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:onClick="charge"
+            android:text="@string/title_activity_recharge" />
+
+        <Button
+            style="@style/btn_white"
+            android:layout_width="250dp"
+            android:layout_marginTop="@dimen/margin_10"
+            android:onClick="useBalance"
+            android:text="@string/my_wallet_use_balance" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:visibility="gone" />
+
+</FrameLayout>

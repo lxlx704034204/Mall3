@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/order_radio_group_height_54">
+
+    <RadioGroup
+        android:id="@+id/payment_type"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/online_pay"
+            style="@style/GrayText14"
+            android:layout_height="match_parent"
+            android:background="@drawable/radio_button"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:text="@string/me_online_all_pay"/>
+
+        <View
+            android:layout_width="@dimen/normal_margin_small_8"
+            android:layout_height="match_parent"/>
+
+        <RadioButton
+            android:id="@+id/go_home_pay"
+            style="@style/GrayText14"
+            android:layout_height="match_parent"
+            android:background="@drawable/radio_button"
+            android:button="@null"
+            android:gravity="center_vertical"
+            android:text="@string/me_go_home_pay"/>
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/paid_text"
+        style="@style/GrayText12"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16"
+        android:text="@string/me_has_pay"/>
+
+    <TextView
+        android:id="@+id/paid"
+        style="@style/RedText12"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/paid_text"/>
+
+    <Button
+        android:id="@+id/order_operate"
+        style="@style/btn_orange"
+        android:layout_width="@dimen/button_min_width_116"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:padding="0dp"
+        android:text="@string/me_to_pay"/>
+</RelativeLayout>
+

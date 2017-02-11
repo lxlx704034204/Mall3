@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.GridLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="12dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingTop="12dp"
+    app:columnCount="2"
+    app:rowCount="3">
+
+    <TextView
+        android:id="@+id/subsidy_country"
+        style="@style/GrayText12"
+        android:layout_width="@dimen/common_info_l1_width"
+        android:layout_height="wrap_content"
+        tools:text="国家补贴:%111.11"/>
+
+    <TextView
+        android:id="@+id/subsidy_manufacturer"
+        style="@style/GrayText12"
+        android:layout_width="@dimen/common_info_l1_width"
+        android:layout_height="wrap_content"
+        tools:text="国家补贴:%111.11"/>
+
+    <TextView
+        android:id="@+id/subsidy_local"
+        style="@style/GrayText12"
+        android:layout_width="@dimen/common_info_l1_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        tools:text="国家补贴:%111.11"/>
+
+    <TextView
+        android:id="@+id/subsidy_hengxin"
+        style="@style/GrayText12"
+        android:layout_width="@dimen/common_info_l1_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        tools:text="国家补贴:%111.11"/>
+
+    <LinearLayout
+        android:layout_width="@dimen/common_info_l1_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:layout_columnSpan="2"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="补贴总额："/>
+
+        <TextView
+            android:id="@+id/subsidy_total"
+            style="@style/RedText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="%111.11"/>
+    </LinearLayout>
+
+
+    <TextView
+        style="@style/RedText12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="温馨提示：地方补贴以提车地点所在城市为准"
+        app:layout_columnSpan="2"/>
+</android.support.v7.widget.GridLayout>

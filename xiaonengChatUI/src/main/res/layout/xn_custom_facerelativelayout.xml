@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.xiaoneng.uiview.FaceRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/FaceRelativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="@color/xn_edge" />
+
+    <RelativeLayout
+        android:id="@+id/rl_input"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/xn_function_bg"
+        android:padding="4dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:id="@+id/oo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_weight="4"
+                android:background="@color/xn_function_bg" >
+
+                <ImageButton
+                    android:id="@+id/btn_voice"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:background="@drawable/btnvoice1"
+                    android:scaleType="fitXY" />
+
+                <!-- 文本框 -->
+
+                <EditText
+                    android:id="@+id/et_sendmessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="46dp"
+                    android:layout_toLeftOf="@+id/btn_face"
+                    android:background="@drawable/record1"
+                    android:focusable="true"
+                    android:gravity="left|center_vertical"
+                    android:inputType="textMultiLine"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="3dp"
+                    android:paddingRight="3dp"
+                    android:paddingBottom="3dp"
+                    android:maxLines="1"
+                    android:textColor="@color/xn_black"
+                    android:textCursorDrawable="@null"
+                    android:visibility="visible" />
+
+                <Button
+                    android:id="@+id/btn_record"
+                    android:layout_width="wrap_content"
+                    android:layout_height="36dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="46dp"
+                    android:layout_toLeftOf="@+id/btn_face"
+                    android:background="@drawable/recordselector"
+                    android:gravity="center"
+                    android:text="@string/xn_custom_record"
+                    android:textColor="@color/xn_press_text"
+                    android:textSize="18sp"
+                    android:visibility="gone" />
+
+                <!-- 表情点击按钮 -->
+
+                <ImageButton
+                    android:id="@+id/btn_face"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6dp"
+                    android:background="@drawable/emo"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ooo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginTop="7dp"
+                android:layout_weight="1" >
+
+                <!-- 发送按钮 -->
+
+                <Button
+                    android:id="@+id/btn_send"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/send_bt"
+                    android:text="@string/xn_custom_send"
+                    android:textColor="@color/xn_white"
+                    android:visibility="invisible" />
+                <!-- 加号点击按钮 -->
+
+                <ImageButton
+                    android:id="@+id/btn_plus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/moreselector"
+                    android:scaleType="fitXY" />
+            </RelativeLayout>
+            
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+
+    <View
+         android:id="@+id/view02"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+         android:layout_below="@id/rl_input"
+        android:background="@color/xn_edge" />
+    <RelativeLayout
+        android:id="@+id/ll_facechoose"
+        android:layout_width="fill_parent"
+        android:layout_height="121dp"
+        android:layout_below="@id/view02"
+        android:background="@color/xn_function_bg"
+        android:visibility="gone"
+         >
+
+        <cn.xiaoneng.uiview.MyViewPager
+            android:id="@+id/vp_contains"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </cn.xiaoneng.uiview.MyViewPager>
+
+        <LinearLayout
+            android:id="@+id/iv_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center"
+            android:orientation="horizontal" >
+        </LinearLayout>
+        
+    </RelativeLayout>
+
+</cn.xiaoneng.uiview.FaceRelativeLayout>

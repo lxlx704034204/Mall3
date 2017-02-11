@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="60dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:paddingLeft="@dimen/margin_16"
+    android:paddingRight="@dimen/margin_16"
+    android:paddingBottom="5dp"
+    android:paddingTop="10dp"
+    android:background="#F5F5F5">
+
+    <TextView
+        android:id="@+id/goods_count"
+        style="@style/BlackText16"
+        tools:text="1."/>
+    <TextView
+        android:id="@+id/item_name"
+        style="@style/BlackText16"
+        tools:text="阿诗丹顿"
+        android:layout_toRightOf="@+id/goods_count"/>
+
+
+    <TextView
+        android:id="@+id/work_price"
+        style="@style/RedText14"
+        android:layout_alignParentRight="true"
+        android:layout_width="70dp"
+        android:gravity="left"
+        tools:text="方法大放送"
+        android:layout_alignTop="@+id/tv2" />
+
+    <TextView
+        android:id="@+id/tv2"
+        style="@style/GrayText14"
+        android:text="工时费: "
+        android:layout_toLeftOf="@+id/work_price" />
+
+    <TextView
+        android:id="@+id/goods_second_name"
+        style="@style/GrayText14"
+        tools:text="阿诗丹顿"
+        android:layout_below="@+id/item_name"
+        android:layout_alignLeft="@+id/item_name"
+        android:layout_marginTop="6dp"/>
+
+    <TextView
+        android:id="@+id/goods_price"
+        style="@style/RedText14"
+        android:layout_alignParentRight="true"
+        android:layout_width="70dp"
+        android:gravity="left"
+        android:layout_alignBottom="@+id/goods_second_name"
+        tools:text="方法大放送"/>
+
+    <TextView
+        android:id="@+id/tv1"
+        style="@style/GrayText14"
+        android:text="材料费: "
+        android:layout_toLeftOf="@+id/goods_price"
+        android:layout_alignBottom="@+id/goods_second_name"/>
+
+</RelativeLayout>

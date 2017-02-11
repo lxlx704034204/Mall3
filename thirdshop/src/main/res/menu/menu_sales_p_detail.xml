@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      >
+
+    <item
+        android:id="@+id/action_to_share"
+        android:title=""
+        android:icon="@drawable/ic_menu_share"
+        app:showAsAction="ifRoom|withText"/>
+
+    <item
+        android:id="@+id/action_to_home"
+        android:icon="@drawable/ic_menu_home"
+        android:title=""
+        app:showAsAction="ifRoom|withText"/>
+
+</menu>

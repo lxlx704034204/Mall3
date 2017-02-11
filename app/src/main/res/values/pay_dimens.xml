@@ -1,0 +1,27 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    //---material edit text-------
+    <dimen name="default_padding_top">8dp</dimen>
+    <dimen name="default_padding_bottom">8dp</dimen>
+    <dimen name="inner_padding_left">0dp</dimen>
+    <dimen name="inner_padding_right">0dp</dimen>
+    <dimen name="floating_label_text_size">12sp</dimen>
+    <dimen name="bottom_text_size">12sp</dimen>
+    <dimen name="inner_components_spacing">8dp</dimen>
+    <dimen name="bottom_ellipsis_height">4dp</dimen>
+
+
+
+    //-------字体大小---------
+    <dimen name="main_font_size">16sp</dimen>
+    <dimen name="btn_font_size">16sp</dimen>
+    <dimen name="little_font_size">12sp</dimen>
+    <dimen name="deposit_font_mark_10">12sp</dimen>
+
+
+    //-------按钮大小---------
+    <dimen name="layout_btn_height">49dp</dimen>
+
+
+    //-----------------------
+</resources>

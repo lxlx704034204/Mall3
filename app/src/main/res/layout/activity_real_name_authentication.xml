@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+        >
+            <!--姓名： 请输入真实姓名-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+            >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="37dp"
+                    android:layout_marginRight="37dp"
+                    android:text="@string/text_real_name_label"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+                <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                    android:id="@+id/real_name"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/text_real_name_hint"
+                    android:maxLength="40"
+                    android:textSize="13sp"
+                    app:met_helperText=" "
+                    app:met_textColorHint="@color/straight_matter_and_secondary_text"
+                    />
+            </LinearLayout>
+
+            <!--身份证：请输入身份证号码-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:text="@string/text_real_id_label"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+                <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                    android:id="@+id/real_id"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/text_real_id_hint"
+                    android:maxLength="18"
+                    android:textSize="13sp"
+                    app:met_helperText=" "
+                    app:met_textColorHint="@color/straight_matter_and_secondary_text"
+                    />
+            </LinearLayout>
+
+            <!--验证码：请输入验证码    蓝字   ：获取验证码-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:id="@+id/real_code_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="23dp"
+                    android:layout_marginRight="23dp"
+                    android:layout_marginTop="9dp"
+                    android:text="@string/text_real_code_label"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"
+                />
+
+                <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                    android:id="@+id/real_code"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toEndOf="@+id/real_code_label"
+                    android:layout_toRightOf="@+id/real_code_label"
+                    android:hint="@string/text_real_code_hint"
+                    android:maxLength="6"
+                    android:textSize="13sp"
+                    app:met_helperText=" "
+                    app:met_textColorHint="@color/straight_matter_and_secondary_text"
+                    />
+
+                <com.hxqc.mall.launch.view.CountdownButton
+                    android:id="@+id/get_identifying_code"
+                    style="@style/BlueText14"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="4dp"
+                    android:padding="@dimen/click_padding_6"
+                    android:text="@string/me_get_identifying_code"
+                    android:textSize="13sp"
+                />
+            </RelativeLayout>
+
+            <!--支付密码：请设置支付密码    由6位数字组成-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:windowSoftInputMode="stateAlwaysHidden"
+            >
+
+                <TextView
+                    android:id="@+id/real_pwd_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/text_real_pwd_label"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+
+                <com.hxqc.mall.core.views.materialedittext.pwd.MaterialPWDEditText
+                    android:id="@+id/real_pwd"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_toEndOf="@+id/real_pwd_label"
+                    android:layout_toRightOf="@+id/real_pwd_label"
+                    android:hint="@string/text_real_pwd_notify"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:textSize="13sp"/>
+
+                <TextView
+                    android:id="@+id/real_notify_pwd"
+                    style="@style/OrangeText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/real_pwd"
+                    android:text="请输入6位支付密码"
+                    android:textColor="#e7492E"
+                    android:visibility="invisible"
+                    />
+
+            </RelativeLayout>
+
+            <!--确认密码：请再次输入密码    确认密码与支付密码一致-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="13dp">
+
+                <TextView
+                    android:id="@+id/real_pwd_confirm_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/text_real_pwd_confirm_label"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+                <com.hxqc.mall.core.views.materialedittext.pwd.MaterialPWDEditText
+                    android:id="@+id/real_pwd_confirm"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_toEndOf="@+id/real_pwd_confirm_label"
+                    android:layout_toRightOf="@+id/real_pwd_confirm_label"
+                    android:hint="确认支付密码"
+                    android:inputType="numberPassword"
+                    android:maxLength="6"
+                    android:textSize="13sp"
+                    />
+
+                <TextView
+                    android:id="@+id/real_notify_pwd_confirm"
+                    style="@style/OrangeText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/real_pwd_confirm"
+                    android:text="@string/text_real_pwd_confirm_notify"
+                    android:textColor="#e7492E"
+                    android:visibility="invisible"
+                />
+            </RelativeLayout>
+
+            <!--提示：为保障账户安全请输入真实的身份信息-->
+            <TextView
+                style="@style/OrangeText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="13dp"
+                android:background="#FFF2E1"
+                android:maxLines="1"
+                android:paddingBottom="14dp"
+                android:paddingEnd="@dimen/activity_horizontal_margin_16"
+                android:paddingLeft="@dimen/activity_horizontal_margin_16"
+                android:paddingRight="@dimen/activity_horizontal_margin_16"
+                android:paddingStart="@dimen/activity_horizontal_margin_16"
+                android:paddingTop="14dp"
+                android:text="@string/text_real_bottom_notify"/>
+
+            <!--保存按钮-->
+            <Button
+                android:id="@+id/real_save_btn"
+                style="@style/btn_orange"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:text="@string/save_with_space"/>
+
+            <com.hxqc.mall.core.views.VoiceCaptchaView
+                android:id="@+id/tv_vcv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:textColor="#A8A8A8"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+    >
+
+        <include
+            layout="@layout/keyboard_view_view"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

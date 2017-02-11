@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:Android="http://schemas.android.com/apk/res/android">
+
+    <item Android:drawable="@drawable/bg_round_corner_gray_press" Android:state_pressed="true"/>
+    <item Android:drawable="@drawable/bg_round_corner_gray_press" Android:state_selected="true"/>
+    <!-- focused -->
+    <item Android:drawable="@drawable/bg_round_corner_gray"/>
+    <!-- default -->
+
+</selector>

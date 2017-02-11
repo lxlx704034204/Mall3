@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:background="#bf000000"
+              android:orientation="vertical"
+              android:paddingEnd="38dp"
+              android:paddingLeft="12dp"
+              android:paddingRight="38dp"
+              android:paddingStart="12dp"
+>
+
+
+    <TextView
+        android:id="@+id/to_home"
+        style="@style/WhiteText16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_popup_home1"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_popup_home1"
+        android:gravity="center_vertical"
+        android:paddingBottom="12dp"
+        android:paddingTop="@dimen/margin_16"
+        android:text="@string/shop_menu_action_home"/>
+
+
+    <!--<View-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1px"-->
+    <!--android:background="@color/divider"/>-->
+
+    <TextView
+        android:id="@+id/to_shop"
+        style="@style/WhiteText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_popup_shop1"
+        android:drawablePadding="10dp"
+        android:drawableStart="@drawable/ic_popup_shop1"
+        android:gravity="center"
+        android:paddingBottom="@dimen/margin_16"
+        android:paddingTop="12dp"
+        android:text="@string/shop_menu_action_shop"/>
+
+</LinearLayout>

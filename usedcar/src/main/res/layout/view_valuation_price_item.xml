@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/item_title"
+        style="@style/GrayText12"
+        android:layout_gravity="center_horizontal"
+        tools:text="车况良好" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_small_8">
+
+        <View
+            style="@style/UnderLine"
+            android:layout_centerVertical="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@mipmap/valuation_detail_point" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/item_price"
+        style="@style/GrayText12"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/normal_margin_small_8"
+        tools:text="17.46万" />
+</LinearLayout>

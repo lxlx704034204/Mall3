@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp">
+
+        <ImageView
+            android:id="@+id/repair_record_auto_bg"
+            android:layout_width="@dimen/app_item_auto_image_height_55"
+            android:layout_height="@dimen/app_item_auto_image_height_55"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_title_plate_number" />
+
+                <TextView
+                    android:id="@+id/repair_record_license_number"
+                    style="@style/BlackText16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="bold"
+                    tools:text="鄂A123456" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/item_title_auto_type" />
+
+                <TextView
+                    android:id="@+id/repair_record_auto"
+                    style="@style/BlackText14"
+                    tools:text="宝马5系 2.0升 涡轮增压 2014款520Li 典雅款" />
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <!--<RelativeLayout
+        android:id="@+id/repair_record_other_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_fill_auto_info"
+        android:paddingBottom="12dp"
+        android:paddingLeft="@dimen/item_padding_16"
+        android:paddingRight="@dimen/item_padding_16"
+        android:paddingTop="12dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/repair_record_next_maintenance_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/auto_text_orange_16"
+                    android:text="下次保养公里数:" />
+
+                <TextView
+                    android:id="@+id/repair_record_next_maintenance_distance_content"
+                    style="@style/auto_text_orange_16"
+                    tools:text="10000公里" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/repair_record_maintenance_items_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/auto_text_orange_16"
+                    android:layout_marginTop="6dp"
+                    android:text="下次维修建议:" />
+
+                <TextView
+                    android:id="@+id/repair_record_maintenance_items_total_content"
+                    style="@style/auto_text_orange_16"
+                    android:layout_marginTop="6dp"
+                    tools:text="更换火花塞" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/repair_record_look"
+            style="@style/btn_orange"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="去看看"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_16" />
+
+    </RelativeLayout>-->
+
+    <com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/repair_record_fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="获取数据失败" />
+
+
+</LinearLayout>

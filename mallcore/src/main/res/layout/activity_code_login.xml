@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true">
+
+    <!--<ImageView-->
+        <!--android:id="@+id/welcome"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:background="@drawable/bg_login"-->
+        <!--android:layout_above="@+id/input_phone_number"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--/>-->
+    <com.hxqc.mall.launch.view.InputPhoneVerificationCode
+        android:id="@+id/input_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+         />
+
+    <com.hxqc.mall.launch.view.InputIdentifyingCodeNoButton
+        android:id="@+id/input_identifying_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_phone_number"
+        />
+    <com.hxqc.mall.core.views.AgreementView
+        android:id="@+id/xieyi"
+        style="@style/GrayText14"
+        android:layout_below="@+id/input_identifying_code"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_10" />
+    <Button
+        android:id="@+id/login"
+        style="@style/btn_orange"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/xieyi"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="20dp"
+        android:text="@string/me_login_launch" />
+    <TextView
+        android:id="@+id/accountpassword_login"
+        style="@style/OrangeText16"
+        android:layout_below="@+id/login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="@string/me_aplogin_launch"
+        />
+    <com.hxqc.mall.core.views.VoiceCaptchaView
+        android:id="@+id/voice_captcha"
+        style="@style/GrayText12"
+        android:layout_below="@+id/accountpassword_login"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="@dimen/margin_16" />
+</RelativeLayout>
+
+

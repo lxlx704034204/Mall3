@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat
+    android:id="@+id/root_view"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:layout="http://schemas.android.com/apk/res-auto"
+    xmlns:filter="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    layout:divider="@drawable/line"
+    layout:showDividers="middle"
+    android:background="@color/white">
+
+    <com.hxqc.mall.views.FilterFactorView
+        android:id="@+id/filter_third_brand"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        filter:label="品牌"/>
+
+    <com.hxqc.mall.views.FilterFactorView
+        android:id="@+id/filter_third_series"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        filter:label="车系"/>
+
+    <com.hxqc.mall.views.FilterFactorView
+        android:id="@+id/filter_third_auto_model"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        filter:label="车型"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"/>
+</android.support.v7.widget.LinearLayoutCompat>

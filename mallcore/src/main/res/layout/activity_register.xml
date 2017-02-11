@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/window_color">
+
+    <com.hxqc.mall.launch.view.InputPhoneVerificationCode
+        android:id="@+id/input_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/normal_margin_big_16" />
+
+    <com.hxqc.mall.launch.view.InputPassword
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_phone_number" />
+
+    <RelativeLayout
+        android:id="@+id/agreement"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height_48"
+        android:layout_below="@id/input_identifying_code">
+
+        <CheckBox
+            android:id="@+id/agree"
+            style="@style/BlackText16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/register_checkbox_margin_left_20.5"
+            android:button="@drawable/checkbox"
+            android:checked="true"
+            android:paddingLeft="@dimen/register_checkbox_padding_left_23.5"
+            android:text="同意" />
+
+        <TextView
+            android:id="@+id/register_agreement"
+            style="@style/BlueText16"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/register_agreement_margin_left_14"
+            android:layout_toRightOf="@id/agree"
+            android:text="@string/me_register_agreement" />
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/register"
+        style="@style/btn_orange"
+        android:layout_below="@id/agreement"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="@dimen/normal_button_margin_top_big_24"
+        android:text="@string/me_register_launch" />
+
+    <LinearLayout
+        android:id="@+id/registered_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/register"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_button_margin_top_small_15">
+
+        <TextView
+            style="@style/BlackText14"
+            android:gravity="center_vertical"
+            android:text="@string/me_registered" />
+
+        <TextView
+            style="@style/BlueText14"
+            android:gravity="center_vertical"
+            android:text="@string/me_please_login" />
+    </LinearLayout>
+    <com.hxqc.mall.core.views.VoiceCaptchaView
+        android:id="@+id/voice_captcha"
+        style="@style/GrayText12"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/registered_login"
+        android:layout_marginTop="@dimen/margin_16" />
+    <TextView
+        style="@style/company_name" />
+
+    <com.hxqc.mall.launch.view.InputIdentifyingCodeNoButton
+        android:id="@+id/input_identifying_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/input_password"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+</RelativeLayout>

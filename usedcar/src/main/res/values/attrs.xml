@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="SellCarEditText">
+        <attr name="editStar" format="string" />
+        <attr name="editName" format="string" />
+        <attr name="editMaxLength" format="integer" />
+        <attr name="editHint" format="string" />
+        <attr name="editUnit" format="string" />
+        <attr name="editInputType">
+            <enum name="phone" value="1" />
+            <enum name="text" value="2" />
+        </attr>
+        <attr name="validatorEdit">
+            <enum name="contactName" value="1" />
+            <enum name="contactPhone" value="2" />
+            <enum name="range" value="3" />
+        </attr>
+        <attr name="validatorEditString" format="string" />
+    </declare-styleable>
+    <declare-styleable name="SellCarItem">
+        <attr name="itemName" format="string" />
+        <attr name="itemStar" format="string" />
+        <attr name="itemHint" format="string" />
+        <attr name="validatorString" format="string" />
+        <attr name="itemMaxLines" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="SellCarItemChooseDate">
+        <attr name="isNecessary" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="RemarkView">
+        <attr name="remarkTitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="ValuationPriceItem">
+        <attr name="valuationPriceItemTitle" format="string" />
+    </declare-styleable>
+    <declare-styleable name="FuturePriceView">
+        <attr name="futureTitle" format="string" />
+        <attr name="chartUnit" format="string" />
+    </declare-styleable>
+</resources>

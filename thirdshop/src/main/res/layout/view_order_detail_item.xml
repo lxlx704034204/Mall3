@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="55dp">
+
+    <TextView
+        android:id="@+id/left"
+        style="@style/BlackText14"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_padding_big_16"
+        tools:text="商家名称" />
+
+    <TextView
+        android:id="@+id/right"
+        style="@style/BlackText14"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/item_me_left_icon_margin_right_32"
+        android:layout_marginRight="@dimen/normal_padding_big_16"
+        android:layout_toRightOf="@id/left"
+        android:ellipsize="end"
+        android:gravity="end"
+        android:maxLines="2"
+        tools:text="武汉星凯凯迪拉克感觉染色和估计帕" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/normal_padding_big_16"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/top"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            tools:text="凯迪拉克" />
+
+        <TextView
+            android:id="@+id/bottom"
+            style="@style/BlackText14"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="4dp"
+            tools:text="星凯凯迪拉克" />
+    </LinearLayout>
+
+    <View
+        style="@style/UnderLine"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

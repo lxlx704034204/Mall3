@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_16"
+    android:background="#F5F5F5">
+
+    <TextView
+        style="@style/BlackText16"
+        android:text="工时费总额"/>
+
+    <TextView
+        android:id="@+id/work_cost"
+        style="@style/RedText16"
+        android:layout_alignParentRight="true"/>
+
+</RelativeLayout>

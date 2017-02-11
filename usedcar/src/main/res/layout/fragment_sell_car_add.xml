@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/height_bar_56"
+                android:background="?attr/colorPrimary">
+
+
+                <TextView
+                    android:id="@+id/title"
+                    style="@style/WhiteText18"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:focusable="true"
+                android:focusableInTouchMode="true">
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/et_brand"
+                    style="@style/FloatingEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_16"
+                    android:layout_marginRight="@dimen/margin_16"
+                    android:layout_marginTop="@dimen/margin_16"
+                    android:hint="品牌"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:textColor="@color/title_and_main_text"
+                    android:textColorHint="@color/straight_matter_and_secondary_text"
+                    android:textSize="14sp" />
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/et_models"
+                    style="@style/FloatingEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/et_brand"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="车系"
+                    android:maxLength="20"
+                    android:maxLines="1"
+                    android:textColor="@color/title_and_main_text"
+                    android:textColorHint="@color/straight_matter_and_secondary_text"
+                    android:textSize="14sp" />
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/et_car"
+                    style="@style/FloatingEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_models"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="10dp"
+                    android:hint="车型"
+                    android:maxLength="20"
+                    android:maxLines="2"
+                    android:textColor="@color/title_and_main_text"
+                    android:textColorHint="@color/straight_matter_and_secondary_text"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/bt_confirm"
+                    style="@style/btn_vermilion"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@id/et_car"
+                    android:layout_marginRight="16dp"
+                    android:layout_marginTop="30dp"
+                    android:text="确定" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

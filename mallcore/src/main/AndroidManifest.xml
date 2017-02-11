@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.hxqc.mall.core">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_TOP_ACTIVITY_INFO" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <!-- &lt;!&ndash;【可选】如果需要设置前台是否显示通知，需要设置这个权限&ndash;&gt; -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- &lt;!&ndash; 开机启动添加 &ndash;&gt; -->
+    <!--<uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>-->
+    <application
+        android:allowBackup="false"
+        tools:replace="android:allowBackup">
+
+        <!-- @string/app_name -->
+        <!--<meta-data-->
+            <!--android:name="com.amap.api.v2.apikey"-->
+            <!--android:value="6e81e3f58e4531af5625e38a6631d9db" />-->
+
+        <!-- ============================登录 注册 修改忘记密码============================================= -->
+        <!-- 修改密码 -->
+        <activity
+            android:name="com.hxqc.mall.launch.activity.ChangePasswordActivity"
+            android:label="@string/title_activity_me_change_password"
+            android:screenOrientation="portrait" />
+        <!-- 找回密码 -->
+        <activity
+            android:name="com.hxqc.mall.launch.activity.ForgetPasswordActivity"
+            android:label="@string/title_activity_me_find_password"
+            android:screenOrientation="portrait" />
+        <!-- 新用户注册 -->
+        <activity
+            android:name="com.hxqc.mall.launch.activity.RegisterActivity"
+            android:label="@string/title_activity_me_user_register"
+            android:screenOrientation="portrait" />
+        <!-- 登录 -->
+        <activity
+            android:name="com.hxqc.mall.launch.activity.LoginActivity"
+            android:label="@string/title_activity_me_user_login"
+            android:screenOrientation="portrait"
+            />
+        <activity
+            android:name="com.hxqc.mall.launch.activity.CodeLoginActivity"
+            android:label="@string/title_activity_me_user_login"
+            android:screenOrientation="portrait"
+            />
+        <!-- =============================高德地图========================================== -->
+
+        <activity
+            android:name="com.hxqc.mall.amap.activity.SimpleNaviActivity"
+            android:label="@string/title_activity_simple_navi"
+            android:screenOrientation="portrait" />
+
+        <service android:name="com.amap.api.location.APSService" />
+        <!-- ============================================================================ -->
+
+        <activity
+            android:name="com.hxqc.mall.auto.activity.MaintainAutoInfoActivity"
+            android:label="@string/title_activity_auto_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hxqc.mall.auto.activity.AutoInfoActivityV3"
+            android:label="@string/title_activity_auto_info"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hxqc.mall.auto.activity.AddOrEditAutoInfoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_edit_auto_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.hxqc.mall.auto.activity.MaintainEditAutoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_edit_auto_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.hxqc.mall.auto.activity.CenterEditAutoActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_edit_auto_info"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden|adjustPan" />
+        <activity
+            android:name="com.hxqc.mall.auto.activity.AutoDetailActivity"
+            android:label="@string/title_activity_auto_detail"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeBase.ToolBar" />
+
+        <activity
+            android:name="com.hxqc.mall.auto.activity.RepairRecordActivity"
+            android:label="@string/title_activity_repair_record"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.hxqc.mall.auto.activity.CompleteDialogActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogActivityStyle"/>
+        <activity
+            android:name="com.hxqc.mall.activity.coupon.MyCouponActivity"
+            android:label="@string/my_coupon"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hxqc.mall.activity.coupon.CouponDetailActivity"
+            android:label="@string/coupon_detail"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hxqc.mall.auto.activity.automodel.ChooseBrandActivity"
+            android:label="@string/title_activity_choose_brand"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.hxqc.mall.auto.activity.automodel.ChooseAutoModelActivity"
+            android:label="@string/title_activity_choose_model"
+            android:screenOrientation="portrait" />
+
+        <!-- =============================评论列表========================================== -->
+        <activity
+            android:name="com.hxqc.mall.comment.activity.MyCommentListActivity"
+            android:label="@string/title_activity_my_comment_list"
+            android:screenOrientation="portrait" />
+        <!--=============================图片管理===================================-->
+        <activity
+            android:name="com.hxqc.mall.photolibrary.activity.GPhotoActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name="com.hxqc.mall.photolibrary.activity.PreviewImageActivity"
+            android:label="@string/title_activity_preview_image"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+        <activity
+            android:name="com.hxqc.mall.photolibrary.activity.ImageBucketChooseActivity"
+            android:label="@string/title_activity_image_bucket_choose"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.photolibrary.activity.ImageChooseActivity"
+            android:label="@string/title_activity_image_choose"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.photolibrary.activity.ImageZoomActivity"
+            android:label="@string/title_activity_image_zoom"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.camera.RectCameraActivity"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name="com.hxqc.mall.camera.CameraActivity"
+            android:screenOrientation="portrait"/>
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            />
+        <!--大图-->
+        <activity
+            android:name="com.hxqc.mall.photolibrary.activity.ImagePagerActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/DialogStyleActivity" />
+        <activity android:name="com.hxqc.mall.camera.DemoCameraActivity" />
+        <!--========================图片管理=======================================-->
+        <!--========================二维码     start=======================================-->
+        <activity
+            android:name="com.hxqc.mall.qr.android.CaptureActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+
+        <activity android:name="com.hxqc.mall.qr.android.QRTransferActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize|navigation"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar"
+            />
+
+        <!--========================二维码     end=======================================-->
+    </application>
+</manifest>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:background="@color/white"
+              android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:id="@+id/sv_send_comment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <com.hxqc.mall.comment.view.MyRatingBarView
+                android:id="@+id/mrbv_press_star"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                hxqc:starCount="5"
+                hxqc:starEmpty="@drawable/ic_score_normal"
+                hxqc:starFill="@drawable/ic_score_selected"
+                hxqc:starImageSize="32dp"
+                />
+
+            <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                android:id="@+id/met_write_comment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_14"
+                android:background="@null"
+                android:hint="请留下您的评论"
+                android:textColor="#000"
+                android:textColorHint="#989898"
+                android:textCursorDrawable="@drawable/edittext_cursor"
+                android:textSize="@dimen/text_size_16"
+                hxqc:baseColor="#989898"
+                hxqc:maxCharacters="200"
+                />
+
+
+            <GridView
+                android:id="@+id/gridview"
+                android:layout_width="wrap_content"
+                android:layout_height="350dp"
+                android:layout_marginTop="@dimen/about_us_margin_top_10"
+                android:horizontalSpacing="6dp"
+                android:numColumns="4"
+                android:scrollbars="none"
+                android:verticalSpacing="6dp" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <include layout="@layout/view_shadow_activity"/>
+</RelativeLayout>

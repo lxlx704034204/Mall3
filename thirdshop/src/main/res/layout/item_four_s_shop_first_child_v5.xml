@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/rl_item_group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/margin_16"
+        android:paddingRight="@dimen/margin_16"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp">
+
+        <ImageView
+            android:id="@+id/iv_select"
+            style="@style/Icon20"
+            android:layout_centerVertical="true"/>
+
+        <TextView
+            android:id="@+id/goods_count"
+            style="@style/BlackText16"
+            tools:text="1."/>
+
+        <TextView
+            android:id="@+id/item_name"
+            style="@style/BlackText16"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv_select"
+            android:layout_toLeftOf="@+id/tv2"
+            tools:text="方法大放送"/>
+
+        <TextView
+            android:id="@+id/work_price"
+            style="@style/RedText14"
+            android:layout_alignBottom="@+id/item_name"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/tv2"
+            tools:text="方法大放送"/>
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/GrayText14"
+            android:layout_alignBottom="@+id/item_name"
+            android:layout_toLeftOf="@+id/work_price"
+            android:layout_centerVertical="true"
+            android:text="工时费 "/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="8dp">
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/shape_dashed_line" />
+
+    <RelativeLayout
+        android:id="@+id/rl_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingRight="@dimen/margin_16">
+
+        <TextView
+            android:id="@+id/item_price"
+            style="@style/RedText14"
+            android:layout_alignParentRight="true"
+            tools:text="11111"/>
+        <TextView
+            android:id="@+id/tv1"
+             style="@style/BlackText14"
+            android:layout_toLeftOf="@+id/item_price"
+            android:text="套餐价"
+            android:layout_marginRight="6dp"/>
+
+        <TextView
+            android:id="@+id/old_price"
+            style="@style/GrayText14"
+            tools:text="123"
+            android:layout_toLeftOf="@+id/tv1"
+            android:layout_marginRight="@dimen/margin_16"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

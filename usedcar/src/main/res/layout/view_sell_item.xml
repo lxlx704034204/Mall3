@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:id="@+id/star"
+        style="@style/RedText14"
+        android:layout_marginTop="12dp"
+        tools:text="*" />
+
+    <TextView
+        android:id="@+id/item_name"
+        style="@style/BlackText14"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/star"
+        tools:text="肥嘟嘟订" />
+
+    <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+        android:id="@+id/choose_result"
+        style="@style/BlackText14"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"
+        android:drawableRight="@drawable/ic_list_arrow"
+        android:editable="false"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:inputType="none"
+        android:maxLines="1"
+        android:textColorHint="@color/straight_matter_and_secondary_text"
+        app:met_helperText="" />
+
+</RelativeLayout>

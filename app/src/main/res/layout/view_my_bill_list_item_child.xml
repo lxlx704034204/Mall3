@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_with_bottom_line"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="@dimen/normal_padding_big_16">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bill_week"
+            style="@style/GrayText16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:text="周日" />
+
+        <TextView
+            android:id="@+id/bill_date"
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="01-19" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/bill_type"
+        style="@style/OrangeText12"
+        android:layout_width="@dimen/bill_list_type_size"
+        android:layout_height="@dimen/bill_list_type_size"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_20"
+        android:background="@drawable/bg_bill_list_type_charge"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        tools:text="充值" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bill_number"
+            style="@style/OrangeText20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            tools:text="+200分" />
+
+        <TextView
+            android:id="@+id/bill_content"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="支付宝充值" />
+    </LinearLayout>
+    <!--<TextView-->
+    <!--android:id="@+id/bill_number"-->
+    <!--style="@style/OrangeText16"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginBottom="@dimen/margin_6"-->
+    <!--android:text="@string/get"-->
+    <!--android:textStyle="bold" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/bill_date"-->
+    <!--style="@style/GrayText12"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:text="2015-02-02 18:65" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/bill_description"-->
+    <!--style="@style/BlackText14"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:maxLines="2"-->
+    <!--android:layout_below="@+id/bill_number"-->
+    <!--tools:text="现金充值" />-->
+
+</LinearLayout>

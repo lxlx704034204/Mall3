@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shop="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/window_color"
+    >
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/third_shop_map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_operator_bar"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_operator_bar"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_me_function_textview"
+        android:orientation="vertical"
+        >
+        <RelativeLayout android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp">
+            <TextView
+                android:id="@+id/tv_amap_shop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                tools:text="一汽大众汉阳店"
+                android:textColor="#b9000000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_toLeftOf="@+id/third_shop_amap_distance"
+                android:layout_toStartOf="@+id/third_shop_amap_distance"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:maxLines="2"
+                />
+            <TextView
+                android:id="@+id/third_shop_amap_distance"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:gravity="center_vertical"
+                android:text="计算中..."
+                android:textColor="#999999"
+                android:textSize="14sp"
+                />
+
+        </RelativeLayout>
+
+        <View android:layout_width="match_parent" android:layout_height="1dp"
+            android:background="#e1e1e1"/>
+
+        <LinearLayout
+            android:id="@+id/shop_amap_bottom_bar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:orientation="horizontal"
+            >
+
+            <com.hxqc.mall.core.views.ThirdFunctionButton
+                android:id="@+id/shop_my_loc"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                shop:backgroundTF="@drawable/bg_btn_function_orange"
+                shop:innerButtonText="当前位置"
+                shop:innerIcon="@drawable/t_icon_button_location"
+                shop:innerTextSize="12sp"
+                />
+
+            <com.hxqc.mall.core.views.ThirdFunctionButton
+                android:id="@+id/shop_amap_navi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                shop:backgroundTF="@drawable/bg_btn_function_orange"
+                shop:innerButtonText="一键导航"
+                shop:innerIcon="@drawable/t_icon_button_navigation"
+                shop:innerTextSize="12sp"/>
+
+            <com.hxqc.mall.core.views.ThirdFunctionButton
+                android:id="@+id/shop_amap_phone"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                shop:backgroundTF="@drawable/bg_btn_function_green"
+                shop:innerButtonText="咨询电话"
+                shop:innerIcon="@drawable/t_icon_button_tel"
+                shop:innerTextSize="12sp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

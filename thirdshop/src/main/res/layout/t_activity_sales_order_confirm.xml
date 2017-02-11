@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color"
+    >
+
+    <TextView
+        android:id="@+id/oc_tip_textview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFF2E1"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:textColor="#666668"
+        android:textSize="12sp"
+        tools:text="@string/t_spd_oc_tip"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/call_bar"
+        android:layout_below="@+id/oc_tip_textview">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <LinearLayout
+                android:id="@+id/event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/t_spd_oc_event_name"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/tv_event_name"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"
+                    tools:text="奔驰GLE级钜惠2.6万元 欢迎观赏"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/shop_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/event_name"
+                android:layout_marginTop="40dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/t_spd_oc_shop_name"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/tv_shop_name"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="6dp"
+                    android:layout_marginStart="6dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"
+                    tools:text="武汉星威汽车销售服务有限公司"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oc_ll_name"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/shop_name"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star_for_important"
+                    android:textColor="@color/text_color_red"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/t_spd_oc_username"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/input_customer_name"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/t_spd_oc_username_hint"
+                    android:maxLength="20"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oc_ll_phone"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/oc_ll_name"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/star_for_important"
+                    android:textColor="@color/text_color_red"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="16dp"
+                    android:text="@string/t_spd_oc_phone"
+                    android:textColor="@color/title_and_main_text"
+                    android:textSize="14sp"/>
+
+                <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+                    android:id="@+id/input_customer_phone"
+                    style="@style/MaterialEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:hint="@string/t_spd_oc_phone_hint"
+                    android:inputType="phone"
+                    android:textSize="13sp"/>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/submit"
+                style="@style/btn_orange"
+                android:layout_width="match_parent"
+                android:layout_below="@+id/oc_ll_phone"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="10dp"
+                android:text="@string/t_spd_oc_confirm"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/submit"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp">
+
+                <CheckBox
+                    android:id="@+id/claimer_checkbox"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:button="@drawable/checkbox"
+                    android:gravity="right|center_vertical"
+                    android:text="@string/t_spd_oc_agree"
+                    android:checked="true"
+                    android:textColor="#656565"
+                    android:textSize="12sp"/>
+
+                <TextView
+                    android:id="@+id/goto_claimer_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/t_spd_oc_claimer"
+                    android:textColor="@color/text_color_blue"
+                    android:textSize="12sp"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <com.hxqc.mall.thirdshop.views.CallBar
+        android:id="@+id/call_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/refresh_fail_view"
+        xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="获取数据失败"/>
+
+</RelativeLayout>

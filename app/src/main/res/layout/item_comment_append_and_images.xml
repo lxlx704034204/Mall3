@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical"
+              android:background="#ffffdabc"
+    >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/dotline_default"/>
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/tv_append_since_post_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_gray"
+            android:layout_marginRight="8dp"
+            android:textSize="12sp"
+            android:text="18天后"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#ff38ff87"
+            android:text="追加评论"
+            />
+
+    </LinearLayout>
+
+    <com.hxqc.mall.core.views.ExpandableTextView
+        android:id="@+id/tv_comment_append_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        expandableTextView:animAlphaStart="1"
+        expandableTextView:maxCollapsedLines="2"
+        android:layout_marginBottom="8dp"
+        >
+
+        <TextView
+            android:id="@id/expandable_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_and_main_text"
+            android:textSize="14sp" />
+
+        <com.hxqc.mall.core.views.TextImageButton
+            android:id="@id/expand_collapse"
+            android:layout_width="@dimen/btn_width_default_116"
+            android:layout_height="@dimen/btn_height_default_46"
+            android:layout_gravity="right"
+            android:layout_marginTop="1dp" />
+
+    </com.hxqc.mall.core.views.ExpandableTextView>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_comment_append_images"
+        android:layout_width="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_height="61dp"
+        android:cacheColorHint="@color/white"
+        android:background="#fffadb5f"
+        android:scrollbarStyle="insideOverlay"/>
+
+
+    <TextView
+        android:layout_marginTop="8dp"
+        android:id="@+id/tv_append_post_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_gray"
+        android:textSize="12sp"
+        android:text="2015-02-02 14:32:50"
+        android:layout_marginBottom="20dp"
+        />
+
+</LinearLayout>

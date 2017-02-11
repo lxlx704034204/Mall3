@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="text_size_6">6sp</dimen>
+    <dimen name="text_size_10">10sp</dimen>
+    <dimen name="text_size_12">12sp</dimen>
+    <dimen name="text_size_13">13sp</dimen>
+    <dimen name="text_size_14">14sp</dimen>
+    <dimen name="text_size_15">15sp</dimen>
+    <dimen name="text_size_16">16sp</dimen>
+    <dimen name="text_size_18">18sp</dimen>
+    <dimen name="text_size_20">20sp</dimen>
+    <dimen name="text_size_24">24sp</dimen>
+    <dimen name="text_size_17">17sp</dimen>
+    <dimen name="text_size_5">5sp</dimen>
+
+    <!--主要按钮或控件点击状态-->
+    <color name="text_color_orange">#ff7043</color>
+    <!--主色、价格-->
+    <color name="text_color_red">#e02c36</color>
+    <!--纯白-->
+    <color name="text_color_white">#FFFFFF</color>
+    <!--标题等主要文字-->
+    <color name="text_color_title">#de000000</color>
+    <!--主推车型文字-->c
+    <color name="text_color_main_sale">#3f3f3f</color>
+    <!--正文或次要文字-->
+    <color name="text_color_subheading">#8a000000</color>
+    <!--绿色文字-->
+    <color name="text_color_green">#179f61</color>
+    <!--可点击-->
+    <color name="text_color_blue">#2196f3</color>
+    <color name="text_color_light_gray">#DBD9DA</color>
+    <!--优惠卷颜色-->
+    <color name="text_color_violet">#bc85d0</color>
+
+    <!--基本字体-->
+    <style name="BaseText">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+    <!--绿色18号字体-->
+    <style name="GreenText18" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/text_color_green</item>
+    </style>
+    <!--绿色16号字体-->
+    <style name="GreenText16" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_green</item>
+    </style>
+    <!--绿色20号字体-->
+    <style name="GreenText20" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/text_color_green</item>
+    </style>
+    <!--绿色24号字体-->
+    <style name="GreenText24" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_24</item>
+        <item name="android:textColor">@color/text_color_green</item>
+    </style>
+    <!--橙色12号字体-->
+    <style name="OrangeText12" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_color_orange</item>
+    </style>
+    <!--橙色10号字体-->
+    <style name="OrangeText10" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/text_color_orange</item>
+    </style>
+    <!--橙色14号字体-->
+    <style name="OrangeText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_orange</item>
+    </style>
+    <!--紫色14号字体-->
+    <style name="VioletText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_violet</item>
+    </style>
+    <!--红色18号字体-->
+    <style name="RedText18" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+    <!--红色20号字体-->
+    <style name="RedText20" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+    <!--红色14号字体-->
+    <style name="RedText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+    <!--红色16号字体-->
+    <style name="RedText16" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+    <!--红色12号字体-->
+    <style name="RedText13" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+    <!--红色12号字体-->
+    <style name="RedText12" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+    <!--红色10号字体-->
+    <style name="RedText10" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+    <style name="WhiteText5" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_5</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+    <style name="WhiteText6" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_6</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+    <style name="WhiteText12" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+
+    <style name="WhiteText13" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+    <!--白色14号字体-->
+    <style name="WhiteText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+    <!--白色16号字体-->
+    <style name="WhiteText16" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+    <!--白色18号字体-->
+    <style name="WhiteText18" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+    <!--白色20号字体-->
+    <style name="WhiteText20" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/text_color_white</item>
+    </style>
+    <!--橙色16号字体-->
+    <style name="OrangeText16" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_orange</item>
+    </style>
+    <!--橙色18号字体-->
+    <style name="OrangeText18" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/text_color_orange</item>
+    </style>
+    <!--橙色20号字体-->
+    <style name="OrangeText20" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/text_color_orange</item>
+    </style>
+    <!--黑色12号字体-->
+    <style name="BlackText12" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--黑色13号字体-->
+    <style name="BlackText13" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--黑色14号字体-->
+    <style name="BlackText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--黑色15号字体-->
+    <style name="BlackText15" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_15</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--褐色14号字体-->
+    <style name="BrownText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_main_sale</item>
+    </style>
+    <!--黑色16号字体-->
+    <style name="BlackText16" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--黑色17号字体-->
+    <style name="BlackText17" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_17</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--黑色18号字体-->
+    <style name="BlackText18" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_18</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+    <!--黑色20号字体-->
+    <style name="BlackText20" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_20</item>
+        <item name="android:textColor">@color/text_color_title</item>
+    </style>
+
+    <!--灰色10号字体-->
+    <style name="GrayText10" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/text_color_subheading</item>
+    </style>
+    <!--灰色13号字体-->
+    <style name="GrayText13" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/text_color_subheading</item>
+    </style>
+    <!--灰色12号字体-->
+    <style name="GrayText12" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@color/text_color_subheading</item>
+    </style>
+    <!--灰色14号字体-->
+    <style name="GrayText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_subheading</item>
+    </style>
+    <!--灰色16号字体-->
+    <style name="GrayText16" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@color/text_color_subheading</item>
+    </style>
+    <!--蓝色12号字体-->
+    <style name="BlueText12" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_12</item>
+        <item name="android:textColor">@drawable/text_blue</item>
+    </style>
+    <!--蓝色14号字体-->
+    <style name="BlueText14" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@drawable/text_blue</item>
+    </style>
+    <!--蓝色16号字体-->
+    <style name="BlueText16" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_16</item>
+        <item name="android:textColor">@drawable/text_blue</item>
+    </style>
+    <!--价格字体-->
+    <style name="PriceText" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_14</item>
+        <item name="android:textColor">@color/text_color_red</item>
+    </style>
+
+    <!--浅灰色16号字体  第三方店铺 店铺地址-->
+    <style name="LightGrayText13" parent="BaseText">
+        <item name="android:textSize">@dimen/text_size_13</item>
+        <item name="android:textColor">@color/text_color_light_gray</item>
+    </style>
+
+</resources>

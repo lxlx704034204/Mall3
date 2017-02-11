@@ -1,0 +1,112 @@
+﻿[
+    {
+        "discount": 156,
+        "mutualExclusionGroup": "1",
+        "revisability": 1,
+        "amount": "456",
+        "workCost": "35-35",
+        "descriptionUrl": "http:www.baidu.com",
+        "deduction": 20,
+        "summary": "大保养是对整车的一次大检修保养",
+        "itemGroupID": "dby",
+        "goods": [
+            {
+                "additionTag": "高级机油1L",
+                "addition": {
+                    "count": 1,
+                    "name": "高级机油1L",
+                    "price": 100,
+                    "goodsID": "goodsID_004"
+                },
+                "price": 123,
+                "count": 3,
+                "replaceable": [
+                    {
+                        "count": 3,
+                        "price": 234,
+                        "name": "中级机油4L",
+                        "goodsID": "goodsID_002"
+                    },
+                    {
+                    "addition": {
+                                    "count": 1,
+                                    "name": "低级机油1L",
+                                    "price": 10,
+                                    "goodsID": "goodsID_005"
+                                    },
+                        "count": 3,
+                        "price": 100,
+                        "name": "低级机油4L",
+                        "goodsID": "goodsID_003"
+                    }
+                ],
+                "name": "高级机油4L",
+                "goodsID": "goodsID_001"
+            },
+            {
+                "goodsID": "goodsID_004",
+                "replaceable": [],
+                "count": 1,
+                "price": 100,
+                "name": "高级机油1L"
+            }
+        ],
+        "name": "小保养",
+        "itemId": "itemId_0001"
+    },
+    {
+            "discount": 156,
+            "mutualExclusionGroup": "1",
+            "revisability": 1,
+            "amount": "456",
+            "workCost": "35-35",
+            "descriptionUrl": "http:www.baidu.com",
+            "deduction": 20,
+            "summary": "大保养是对整车的一次大检修保养",
+            "itemGroupID": "kv",
+            "goods": [
+                {
+                    "additionTag": "高级机油1L",
+                    "addition": {
+                        "count": 1,
+                        "name": "高级机油1L",
+                        "price": 100,
+                        "goodsID": "goodsID_004"
+                    },
+                    "price": 123,
+                    "count": 3,
+                    "replaceable": [
+                        {
+                            "count": 3,
+                            "price": 234,
+                            "name": "中级机油4L",
+                            "goodsID": "goodsID_002"
+                        },
+                        {
+                        "addition": {
+                                        "count": 1,
+                                        "name": "低级机油1L",
+                                        "price": 10,
+                                        "goodsID": "goodsID_005"
+                                        },
+                            "count": 3,
+                            "price": 100,
+                            "name": "低级机油4L",
+                            "goodsID": "goodsID_003"
+                        }
+                    ],
+                    "name": "高级机油4L",
+                    "goodsID": "goodsID_001"
+                },
+                {
+                    "goodsID": "goodsID_004",
+                    "replaceable": [],
+                    "count": 1,
+                    "price": 100,
+                    "name": "高级机油1L"
+                }
+            ],
+            "name": "小保养",
+            "itemId": "itemId_0001"
+        }
+]

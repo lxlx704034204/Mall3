@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <!--<include-->
+    <!--android:id="@+id/unperfect_view"-->
+    <!--layout="@layout/layout_unperfect_auto_detail" />-->
+
+    <!--<include-->
+    <!--android:id="@+id/perfect_view"-->
+    <!--layout="@layout/layout_perfect_auto_detail" />-->
+    <LinearLayout
+        android:id="@+id/to_my_auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_padding_big_16"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/auto_brand_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            tools:src="@drawable/pic_normal_square" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/models_tv"
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginStart="5dp"
+                android:layout_toEndOf="@+id/auto_brand_icon"
+                android:layout_toRightOf="@+id/auto_brand_icon"
+                android:gravity="center_vertical"
+                android:maxLines="1"
+                tools:text="奔驰E260 2015款 200L 运动型" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/auto_brand_icon"
+                android:layout_alignLeft="@+id/models_tv"
+                android:layout_alignStart="@+id/models_tv"
+                android:layout_below="@+id/models_tv"
+                android:layout_marginLeft="5dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/auto_driven_distance"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="行驶里程" />
+
+                <EditText
+                    android:id="@+id/input_driven_distance"
+                    style="@style/OrangeText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bg_bottom_line"
+                    android:gravity="center"
+                    android:imeOptions="actionDone"
+                    android:inputType="number"
+                    android:maxLines="1"
+                    android:minEms="2"
+                    android:paddingLeft="2dp"
+                    android:paddingRight="2dp"
+                    tools:text="588" />
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="公里" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_list_arrow" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/line_one"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_line" />
+
+    <TextView
+        android:id="@+id/last_time_data"
+        style="@style/OrangeText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_6"
+        android:layout_marginLeft="@dimen/normal_padding_big_16"
+        android:layout_marginRight="@dimen/normal_padding_big_16"
+        android:layout_marginTop="@dimen/normal_padding_big_16"
+        tools:text="" />
+
+    <TextView
+        android:id="@+id/warranty"
+        style="@style/OrangeText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/normal_padding_big_16"
+        android:layout_marginLeft="@dimen/normal_padding_big_16"
+        android:layout_marginRight="@dimen/normal_padding_big_16"
+        android:maxLines="1"
+        tools:text="" />
+
+    <ImageView
+        android:id="@+id/line_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_line"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="@dimen/normal_padding_big_16"
+        android:layout_marginRight="@dimen/normal_padding_big_16"
+        android:layout_marginTop="@dimen/margin_10"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:src="@mipmap/ic_home_car" />-->
+
+        <TextView
+            android:id="@+id/next_maintenance"
+            style="@style/BlackText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_home_car"
+            android:drawablePadding="5dp"
+            android:text="距离下次保养公里" />
+        <!--</LinearLayout>-->
+
+        <!--<LinearLayout-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_weight="1"-->
+        <!--android:gravity="center_vertical"-->
+        <!--android:orientation="horizontal">-->
+
+        <!--<ImageView-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginEnd="5dp"-->
+        <!--android:layout_marginRight="5dp"-->
+        <!--android:src="@mipmap/ic_home_security" />-->
+
+        <TextView
+            android:id="@+id/next_insurance"
+            style="@style/BlackText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/ic_home_security"
+            android:drawablePadding="5dp"
+            android:text="距离下次保险天" />
+        <!--</LinearLayout>-->
+    </LinearLayout>
+</LinearLayout>

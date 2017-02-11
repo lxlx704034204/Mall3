@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="horizontal"
+              android:paddingBottom="12dp"
+              android:paddingTop="12dp">
+
+    <CheckBox
+        android:focusable="false"
+        android:id="@+id/focus_check"
+        android:layout_width="wrap_content"
+        android:layout_height="25dp"
+        android:button="@drawable/ic_bottombar_focus"
+        android:drawablePadding="8dp"
+        android:enabled="false"
+        android:text="关注"
+        android:textColor="#fff"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="49dp"
+        android:layout_height="49dp"
+        android:drawablePadding="4dp"
+        android:drawableTop="@drawable/ic_focus_normal"
+        android:gravity="center_horizontal"
+        android:onClick="clickOnFocus"
+        android:textSize="12sp"
+        android:text="关注"
+        />
+</LinearLayout>

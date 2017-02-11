@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:paddingLeft="@dimen/margin_16"
+              android:paddingRight="@dimen/margin_16"
+>
+
+    <com.hxqc.mall.comment.view.MyRatingBarView
+        android:id="@+id/mrbv_press_star_check_comment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:clickable="false"
+        hxqc:starCount="5"
+        hxqc:starEmpty="@drawable/ic_score_normal"
+        hxqc:starFill="@drawable/ic_score_selected"
+        hxqc:starImageSize="32dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_check_comment_"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:textColor="#989898"
+        android:textSize="14sp"
+        tools:text="ssss"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_check_comment_images"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:cacheColorHint="@color/white"
+        android:scrollbarStyle="insideOverlay"
+        />
+
+    <TextView
+        android:id="@+id/tv_check_comment_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/text_gray"
+        android:textSize="@dimen/text_size_12"
+        tools:text="2015-02-02 14:32:50"
+        />
+
+    <include layout="@layout/item_comment_hx_reply_detail"/>
+
+</LinearLayout>

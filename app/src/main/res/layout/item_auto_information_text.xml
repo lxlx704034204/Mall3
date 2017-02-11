@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="@dimen/item_padding_bottom_15">
+
+    <TextView
+        android:id="@+id/group_title"
+        style="@style/BlackText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_6"
+        android:layout_marginTop="@dimen/margin_16"
+        android:text="精选推荐"
+        android:textStyle="bold"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/auto_icon"
+        android:layout_width="@dimen/pic_width_100"
+        android:layout_height="@dimen/height_auto_info_item_image"
+        android:layout_below="@+id/group_title"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_6"
+        android:layout_marginTop="@dimen/margin_16"
+        android:adjustViewBounds="true"
+        android:maxHeight="@dimen/height_auto_info_item_image"
+        tools:src="@drawable/pic_normal" />
+
+    <TextView
+        android:id="@+id/info_title"
+        style="@style/BlackText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/auto_icon"
+        android:layout_below="@+id/group_title"
+        android:layout_marginBottom="@dimen/margin_6"
+        android:layout_marginLeft="@dimen/margin_6"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_toRightOf="@+id/auto_icon"
+        android:ellipsize="end"
+        android:lines="2"
+        android:textColor="#2a2a2a"
+        tools:text="豪华不奢华四款不到30万价价比高性价比高性价比高性价比高性价比豪华SUV" />
+
+    <!--<View-->
+    <!--android:id="@+id/info_line"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="1dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:background="@color/divider" />-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/auto_icon"
+        android:layout_alignLeft="@+id/info_title"
+        android:layout_alignStart="@+id/info_title"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/info_type"
+            style="@style/GrayText12"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:lines="1"
+            tools:text="导购资讯" />
+
+        <TextView
+            android:id="@+id/info_date"
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_16"
+            tools:text="08月30日" />
+    </LinearLayout>
+</RelativeLayout>

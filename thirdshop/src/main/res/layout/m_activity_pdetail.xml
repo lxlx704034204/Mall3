@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+>
+
+    <ScrollView
+        android:id="@+id/sv_sales_detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/call_bar"
+        android:paddingBottom="16dp"
+    >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_sales_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/title_red"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="奔驰A级限时优惠4.5万"
+            />
+
+            <TextView
+                android:id="@+id/tv_sales_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sales_title"
+                android:layout_marginTop="12dp"
+                android:background="#fff2e1"
+                android:paddingBottom="6dp"
+                android:paddingLeft="@dimen/margin_16"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="6dp"
+                android:textColor="@color/title_red"
+                android:textSize="12sp"
+                tools:text="促销时间：2015.5.23-2015.6.23"
+            />
+
+            <LinearLayout
+                android:id="@+id/ll_tf_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_sales_time"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+            >
+                <TextView
+                    android:id="@+id/tv_s_detail_post_time"
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="时间：2015.5.23"
+                />
+
+                <TextView
+                    android:id="@+id/tv_s_detail_shop_name"
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="36dp"
+                    android:layout_marginStart="36dp"
+                    tools:text="经销商：武汉星威汽车"
+                />
+
+            </LinearLayout>
+
+            <com.hxqc.mall.thirdshop.maintenance.views.MaintenanceHTMLView
+                android:id="@+id/v_html_img_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_tf_1"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="16dp"
+            />
+
+            <TextView
+                android:id="@+id/tv_s_disclaimer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/v_html_img_info"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/bg_sales_textview_red"
+                android:paddingBottom="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingTop="10dp"
+                android:text="@string/t_test_disclaimer"
+                android:textColor="#e02c36"
+                android:textSize="12sp"
+            />
+
+
+            <include
+                android:layout_marginTop="16dp"
+                android:id="@+id/shop_detail"
+                layout="@layout/t_item_p_detail_shop_piece"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_s_disclaimer"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"/>
+        </RelativeLayout>
+    </ScrollView>
+
+    <com.hxqc.mall.thirdshop.views.CallBar
+        android:id="@+id/call_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+    />
+
+</RelativeLayout>

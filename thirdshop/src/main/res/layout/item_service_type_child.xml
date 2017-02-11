@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:background="@color/normal_bg"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <!--<com.hxqc.mall.thirdshop.maintenance.views.SelectableRoundedImageView
+            android:id="@+id/service_type_repair_item_img"
+            android:layout_width="48dp"
+            android:layout_height="42dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_normal"
+            app:sriv_left_bottom_corner_radius="8dp"
+            app:sriv_left_top_corner_radius="8dp"
+            app:sriv_right_bottom_corner_radius="0dp"
+            app:sriv_right_top_corner_radius="0dp" />-->
+
+        <TextView
+            android:id="@+id/service_type_repair_item_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="四轮定位"
+            android:textColor="@color/text_bg_service_type_item"
+            android:textSize="@dimen/text_size_12" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

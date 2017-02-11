@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_padding_big_16">
+
+        <ImageView
+            android:id="@+id/auto_brand_icon"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            tools:src="@drawable/pic_icon" />
+
+        <TextView
+            android:id="@+id/models_tv"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            android:layout_toRightOf="@+id/auto_brand_icon"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            tools:text="奔驰E260 2015款 200L 运动型" />
+
+        <TextView
+            android:id="@+id/auto_driven_distance"
+            style="@style/GrayText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/auto_brand_icon"
+            android:layout_alignLeft="@+id/models_tv"
+            android:layout_alignStart="@+id/models_tv"
+            android:maxLines="1"
+            android:text="行驶里程公里" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_list_arrow" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_line" />
+
+    <TextView
+        android:id="@+id/last_time_data"
+        style="@style/OrangeText14"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_padding_big_16"
+        android:text="您上次保养时间，行驶里程0公里" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_home_line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/normal_padding_big_16"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_home_car" />
+
+            <TextView
+                android:id="@+id/next_maintenance"
+                style="@style/BlackText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离下次保养天" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="5dp"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_home_security" />
+
+            <TextView
+                android:id="@+id/next_insurance"
+                style="@style/BlackText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="距离下次保险天" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

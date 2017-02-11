@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>活动内容</title>
+		<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+		<meta http-equiv="program" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache, must-revalidate">
+		<meta http-equiv="expires" content="0">
+		<link rel="stylesheet" type="text/css" href="css/Activity.css"/>
+		<script type="text/javascript" charset="utf-8">
+
+		var data = [jsonData];
+
+					function setData(){
+						var item='';
+						for (i in data) {
+							var activity=data[i];
+
+							item+='<div class="setMeal">'
+									+'<div class="name">'+activity.name+'</div>';
+
+									for (var j = 0; j < activity.items.length; j++) {
+										item+='<div class="item">'
+											+'<p class="item-name">'+(activity.items)[j].name+'</p>';
+
+											for (var k = 0; k < (activity.items)[j].goods.length; k++) {
+												item+='<div class="item-goods">'
+													+'<div class="item-goods-name">'+((activity.items)[j].goods)[k].name+'<span class="item-goods-count">*'+((activity.items)[j].goods)[k].count+'</span></div>'
+													+'<div class="item-goods-price">￥'+((activity.items)[j].goods)[k].price+'</div>'
+												+'</div>';
+											}
+
+											item+='<div class="item-goods">'
+												+'<div class="item-goods-name">工时费</div>'
+												+'<div class="item-goods-price">￥'+(activity.items)[j].workCost+'</div>'
+											+'</div>'
+										+'</div>';
+									}
+
+
+									item+='<div class="balance item">'
+										+'<div class="balance-price">'
+											+'<div class="oldprice">原价 : <span class="sapn-oldprice">￥'+activity.amount+'</span></div>'
+											+'<div class="newprice">活动价 : <span class="r-newprice">￥<span class="span-newprice">'+activity.discount+'</span></span></div>'
+										+'</div>'
+
+										+'<input class="buynow" type="button" value="立即订购" onclick="redirectItem(\''+activity.packageID+'|'+activity.name+'\',\'PACKAGE_ITEM\')"/>'
+									+'</div>';
+
+									item+='<div class="item">'
+										+'<p class="item-name">适用车型</p>';
+										for (var a = 0; a < eval(activity.suitable).length; a++) {
+											item+='<p class="item-applicableCar">'+eval(activity.suitable)[a]+'</p>';
+										}
+									item+='</div>'
+								+'</div>';
+						}
+
+						document.getElementById("activity").innerHTML=item;
+					}
+
+
+					window.onload=setData;
+
+					function redirectItem(p,type){
+  							var androidData = p;
+                            Android.showResponseView(androidData,type);
+                     }
+		</script>
+
+		<style type="text/css">
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: "microsoft yahei";
+	margin: 0px;
+
+}
+
+input[type="submit"], input[type="reset"], input[type="button"], button { -webkit-appearance: none; /*去掉苹果的默认UI来渲染按钮*/}
+
+-webkit-tap-highlight-color: rgba(0,0,0,0);-webkit-tap-highlight-color: transparent; /* For some Androids */
+
+section#activity {
+    /*padding: 17px;*/
+}
+.setMeal {
+    border: 1px solid #D5D5D5;
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+.name {
+    font-size: 1.4rem;
+    color: #424242;
+    font-weight: 600;
+    height: 45px;
+    line-height: 45px;
+    padding: 0px 13px;
+    background: #F5F5F5;
+}
+.item {
+    padding: 0px 13px;
+    border-top: 1px solid #E0E0E0;
+    font-size:1.3rem;
+}
+p.item-name {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.item-goods {
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+    -webkit-box-pack: justify;
+    -moz-justify-content: space-between;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    height: 27px;
+    color: #666;
+    font-size:1.3rem;
+}
+.item-goods-price {
+    color: #F24B50;
+}
+.balance {
+    text-align: right;
+}
+.balance-price {
+    display: -webkit-box; /* 老版本语法: Safari, iOS, Android browser, older WebKit browsers. */
+    display: -moz-box; /* 老版本语法: Firefox (buggy) */
+    display: -ms-flexbox; /* 混合版本语法: IE 10 */
+    display: -webkit-flex; /* 新版本语法: Chrome 21+ */
+    display: flex; /* 新版本语法: Opera 12.1, Firefox 22+ */
+   -webkit-box-pack: end;
+    -moz-justify-content: flex-end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    justify-content: flex-end;
+    height: 55px;
+    line-height: 55px;
+    color: #666;
+    font-size:1.3rem;
+}
+.oldprice {
+    margin-right: 30px;
+    line-height: 60px;
+}
+span.sapn-oldprice {
+    text-decoration: line-through;
+    color: #B7B6B6;
+}
+span.r-newprice {
+    color: #F24B50;
+}
+span.span-newprice {
+    font-size: 1.6rem;
+}
+
+input.buynow:hover{
+    background: #FD5D29;
+    border:none
+}
+
+input.buynow {
+    width: 105px;
+    height: 37px;
+    margin-bottom: 10px;
+    background: #FF7143;
+    border: none;
+    color: #fff;
+    font-size: 1.6rem;
+    border-radius: 4px;
+    outline:none;
+}
+
+		</style>
+	</head>
+	<body>
+		[content]
+	</body>
+</html>

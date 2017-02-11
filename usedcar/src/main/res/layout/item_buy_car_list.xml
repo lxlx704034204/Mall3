@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/buy_car_list_photo"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:id="@+id/buy_car_list_sold_flag"
+            android:layout_width="135dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/my_collection_sold2" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:gravity="center_vertical"
+        android:minHeight="80dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/buy_car_list_title"
+            style="@style/BlackText14"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buy_car_list_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:maxLines="1"
+                android:textColor="@color/text_color_title"
+                android:textSize="@dimen/text_size_12" />
+
+            <!--<ImageView-->
+            <!--android:id="@+id/buy_car_list_from_flag"-->
+            <!--android:layout_width="12dp"-->
+            <!--android:layout_height="12dp" />-->
+
+            <!--<TextView-->
+            <!--android:id="@+id/buy_car_list_from"-->
+            <!--style="@style/GrayText12"-->
+            <!--android:layout_marginLeft="4dp" />-->
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/buy_car_list_price"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/text_color_red"
+                android:textSize="@dimen/text_size_14" />
+
+            <ImageView
+                android:id="@+id/buy_car_list_from_flag"
+                android:layout_width="12dp"
+                android:layout_height="12dp" />
+
+            <TextView
+                android:id="@+id/buy_car_list_from"
+                style="@style/GrayText12"
+                android:layout_marginLeft="4dp" />
+
+            <ImageView
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:src="@mipmap/ic_historicalsearch"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/buy_car_list_submit_time"
+                style="@style/GrayText12"
+                android:layout_marginLeft="4dp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

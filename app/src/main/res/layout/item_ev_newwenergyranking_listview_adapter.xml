@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical"
+    >
+
+    <ImageView
+        android:id="@+id/car_img"
+        android:layout_width="match_parent"
+        android:layout_height="162dp"
+        android:visibility="gone"
+        android:background="@drawable/pic_normal_square"
+        android:layout_marginBottom="8dp"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:id="@+id/content_number_text"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/grey_shape"
+            android:gravity="center"
+            android:textColor="@color/text_color_white"
+            android:textSize="20dp"/>
+
+
+        <ImageView
+            android:id="@+id/content_ico"
+            android:layout_width="@dimen/app_item_auto_image_width_96"
+            android:layout_height="@dimen/app_item_auto_image_height_55"
+            android:background="@drawable/pic_normal_square"
+            android:layout_marginLeft="12dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/content_title_text"
+                style="@style/BlackText16"
+                android:layout_width="match_parent"
+                android:ellipsize="end"
+                android:lines="2"
+                android:maxLines="2"
+               />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/type_text"
+                    style="@style/GrayText14"
+                    android:text="特价：  "
+                    />
+
+                <TextView
+                    android:id="@+id/content_price"
+                    style="@style/RedText14"
+                    android:textStyle="bold"
+                    tools:text="28.60万元"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

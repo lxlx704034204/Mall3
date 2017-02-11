@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="false"
+    android:focusableInTouchMode="false"
+    android:background="#fff"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:id="@+id/maintenance_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:divider="@drawable/bg_item_shadow"
+            app:showDividers="middle">
+
+            <com.hxqc.mall.thirdshop.maintenance.views.AutoDetailView
+                android:id="@+id/auto_data_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.hxqc.mall.thirdshop.maintenance.views.RecommendMaintenanceProgramView
+                android:id="@+id/smart_maintenance_program"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:show_button="true" />
+
+
+            <com.hxqc.widget.ListViewNoSlide
+                android:id="@+id/other_maintenance_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#d5d5d5"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+
+            <com.hxqc.widget.ListViewNoSlide
+                android:id="@+id/base_maintenance_package"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="#d5d5d5"
+                android:dividerHeight="1dp"
+                android:visibility="gone" />
+
+            <!--<com.hxqc.mall.thirdshop.maintenance.views.RecommendMaintenanceProgramView xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/base_maintenance_program"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:visibility="gone"-->
+                <!--app:program_title="@string/base_maintenance_program"-->
+                <!--app:show_button="false" />-->
+
+
+            <com.hxqc.mall.thirdshop.maintenance.views.ServiceAdviserListView
+                android:id="@+id/service_advisor_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <com.hxqc.mall.thirdshop.maintenance.views.TechnicianListView
+                android:id="@+id/technician_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.LinearLayoutCompat>
+
+        <include
+            android:id="@+id/no_data_layout"
+            layout="@layout/layout_no_auto_data"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</ScrollView>

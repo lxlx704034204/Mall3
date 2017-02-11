@@ -1,0 +1,24 @@
+<resources>
+
+
+    //margin
+
+    <style name="main_margin">
+        <item name="android:layout_marginLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:layout_marginRight">@dimen/activity_horizontal_margin</item>
+    </style>
+
+    //按钮
+    //一般按钮
+
+    <style name="image_view_image_upload">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#d7d7d7</item>
+        <item name="android:scaleType">center</item>
+        <item name="android:src">@drawable/ic_pic_camera</item>
+    </style>
+    <!--<item name="android:background">#d7d7d7</item>-->
+    //长按钮
+
+</resources>

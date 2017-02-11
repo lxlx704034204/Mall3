@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color"
+    android:paddingLeft="@dimen/normal_margin_big_16"
+    android:paddingRight="@dimen/normal_margin_big_16">
+
+    <RelativeLayout
+        android:id="@+id/input_phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+            android:id="@+id/phone_number"
+            style="@style/FloatingEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/edit_text_margin_top_12"
+            android:hint="@string/me_phone_number_hint"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="11"
+            android:maxLines="1" />
+
+        <ImageView
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/edit_text_right_button_margin_top_28"
+            android:padding="@dimen/click_padding_6"
+            android:src="@drawable/form_input_delete" />
+    </RelativeLayout>
+
+    <com.hxqc.mall.core.views.materialedittext.MaterialEditText
+        android:id="@+id/advice"
+        style="@style/FloatingEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_phone_number"
+        android:hint="@string/me_advice_hint"
+        android:maxLength="200" />
+
+    <TextView
+        android:id="@+id/advice_num"
+        style="@style/GrayText12"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/advice"
+        android:layout_marginTop="@dimen/advice_num_margin_top_12"
+        android:text="0/200" />
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/first_check_box_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/advice_num"
+        android:layout_marginTop="@dimen/normal_margin_big_16">
+
+        <CheckBox
+            android:id="@+id/flow"
+            style="@style/AdviceCheckBox"
+            android:text="@string/me_advice_flow" />
+
+        <CheckBox
+            android:id="@+id/ui"
+            style="@style/AdviceCheckBox"
+            android:layout_marginLeft="@dimen/advice_checkbox_margin_5"
+            android:text="@string/me_advice_interface" />
+
+        <CheckBox
+            android:id="@+id/function"
+            style="@style/AdviceCheckBox"
+            android:layout_marginLeft="@dimen/advice_checkbox_margin_5"
+            android:text="@string/me_advice_function" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_centerHorizontal="true"
+        android:id="@+id/second_check_box_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/first_check_box_row"
+        android:layout_marginTop="@dimen/advice_checkbox_margin_5">
+
+        <CheckBox
+            android:id="@+id/operate"
+            style="@style/AdviceCheckBox"
+            android:text="@string/me_advice_operate" />
+
+        <CheckBox
+            android:id="@+id/new_need"
+            style="@style/AdviceCheckBox"
+            android:layout_marginLeft="@dimen/advice_checkbox_margin_5"
+            android:text="@string/me_advice_new_need" />
+
+        <CheckBox
+            android:id="@+id/other"
+            android:layout_width="@dimen/advice_checkbox_width_106"
+            android:layout_height="@dimen/advice_checkbox_height_40"
+            android:layout_marginLeft="@dimen/advice_checkbox_margin_5"
+            android:background="@drawable/radio_btn_advice"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/me_advice_other"
+            android:textColor="@color/radio_btn_advice_text"
+            android:textSize="@dimen/title_text_size_16" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/submit"
+        style="@style/btn_orange"
+        android:layout_below="@id/second_check_box_row"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/normal_button_margin_top_big_24"
+        android:text="@string/me_advice_submit" />
+
+</RelativeLayout>

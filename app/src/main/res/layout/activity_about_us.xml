@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/about_us_logo_size_100"
+        android:layout_height="@dimen/about_us_logo_size_100"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/about_us_margin_top_70"
+        android:src="@drawable/hxqc_erwzma" />
+
+    <TextView
+        android:id="@+id/version"
+        style="@style/GrayText14"
+        android:layout_below="@+id/weibo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/about_us_margin_top_10" />
+    <TextView
+        android:id="@+id/slogan"
+        style="@style/GrayText14"
+        android:layout_below="@id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/about_us_margin_top_10" />
+    <View
+        android:id="@+id/line1"
+        style="@style/UnderLine"
+        android:layout_below="@id/slogan"
+        android:layout_marginTop="@dimen/about_us_margin_top_70" />
+
+    <TextView
+        android:id="@+id/official_website"
+        style="@style/BlueText16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height_48"
+        android:layout_below="@id/line1"
+        android:gravity="center"
+        android:text="@string/title_activity_me_advantage"/>
+
+    <View
+        android:id="@+id/line2"
+        style="@style/UnderLine"
+        android:layout_below="@id/official_website" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/weibo"
+        style="@style/BlueText16"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_item_height_48"
+        android:layout_below="@id/line2"
+        android:gravity="center"
+        android:text="@string/me_weibo" />
+    <TextView
+       style="@style/company_name" />
+</RelativeLayout>

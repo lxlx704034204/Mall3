@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/window_color">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:divider="@drawable/line"
+            app:showDividers="middle">
+
+            <!--<fragment-->
+                <!--android:id="@+id/reset_avatar_fragment"-->
+                <!--class="com.hxqc.mall.fragment.me.ResetAvatarFragment"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:visibility="gone" />-->
+
+            <include layout="@layout/fragment_reset_avatar" />
+
+            <com.hxqc.mall.views.bill.NormalMapView
+                android:id="@+id/nick_name_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                app:inputHint="请输入昵称"
+                app:itemType="INPUT"
+                app:keyText="昵称" />
+
+            <com.hxqc.mall.views.bill.NormalMapView
+                android:id="@+id/full_name_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                app:inputHint="请输入真实姓名"
+                app:itemType="INPUT"
+                app:keyText="姓名" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:onClick="fullNameClick"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/normal_padding_big_16"
+                    android:paddingRight="@dimen/normal_padding_big_16"
+                    android:paddingTop="@dimen/normal_padding_big_16"
+                    android:text="姓名"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/input_full_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请输入购车人姓名或公司名称"
+                    android:padding="@dimen/normal_padding_big_16"
+                    android:textColor="#999"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    android:text="性别"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/gender_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="#fff"
+                    android:gravity="end|center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingRight="@dimen/normal_padding_big_16">
+
+                    <RadioButton
+                        android:id="@+id/gender_man"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:button="@drawable/checkbox"
+                        android:paddingLeft="10dp"
+                        android:text="男"
+                        android:textColor="#666" />
+
+                    <RadioButton
+                        android:id="@+id/gender_woman"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/margin_16"
+                        android:layout_marginRight="@dimen/margin_16"
+                        android:button="@drawable/checkbox"
+                        android:paddingLeft="10dp"
+                        android:text="女"
+                        android:textColor="#666" />
+
+                    <RadioButton
+                        android:id="@+id/gender_secret"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:button="@drawable/checkbox"
+                        android:checked="true"
+                        android:paddingLeft="10dp"
+                        android:text="保密"
+                        android:textColor="#666" />
+
+                </RadioGroup>
+            </LinearLayout>
+
+            <com.hxqc.mall.views.bill.NormalMapView
+                android:id="@+id/level_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemType="VALUE_ICON"
+                app:keyText="会员等级" />
+
+            <com.hxqc.mall.views.bill.NormalMapView
+                android:id="@+id/birthday_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemType="CLICKABLE"
+                app:keyText="出生日期"
+                app:valueText="请选择出生日期" />
+
+            <com.hxqc.mall.views.bill.NormalMapView
+                android:id="@+id/area_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemType="CLICKABLE"
+                app:keyText="所在区域"
+                app:valueText="请选择所在区域" />
+
+            <!--<com.hxqc.mall.views.bill.NormalMapView-->
+            <!--android:id="@+id/address_item"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--app:inputHint="请填写详细地址"-->
+            <!--app:itemType="INPUT"-->
+            <!--app:keyText="详细地址" />-->
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#fff"
+                android:onClick="addressClick"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/normal_padding_big_16"
+                    android:paddingRight="@dimen/normal_padding_big_16"
+                    android:paddingTop="@dimen/normal_padding_big_16"
+                    android:text="详细地址"
+                    android:textColor="#666"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/input_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:hint="请填写详细地址"
+                    android:padding="@dimen/normal_padding_big_16"
+                    android:textColor="#999"
+                    android:textColorHint="#999"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="#efefef" />
+
+            <com.hxqc.mall.views.bill.NormalMapView
+                android:id="@+id/authenticate_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:itemType="CLICKABLE"
+                app:keyText="设置支付密码"
+                app:valueText="去设置" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="@dimen/normal_padding_big_16">
+
+                <Button
+                    android:id="@+id/save"
+                    style="@style/btn_orange"
+                    android:layout_width="wrap_content"
+                    android:background="@drawable/btn_orange"
+                    android:onClick="save"
+                    android:text="@string/btn_ci_save" />
+            </LinearLayout>
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/right"
+        android:layout_width="@dimen/floating_right_width_319"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:clickable="true" />
+</android.support.v4.widget.DrawerLayout>
+

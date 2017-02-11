@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <ImageView
+        android:id="@+id/maintenance_program_icon"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginRight="10dp"
+        tools:src="@drawable/pic_icon" />
+
+
+    <TextView
+        android:id="@+id/maintenance_program_content"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/maintenance_program_name"
+        android:layout_alignStart="@+id/maintenance_program_name"
+        android:layout_below="@+id/maintenance_program_name"
+        android:layout_marginBottom="5dp"
+        android:lines="2"
+        tools:text="保养项目：机油、机油过滤器、火花塞" />
+
+    <TextView
+        android:id="@+id/maintenance_program_name"
+        style="@style/BlackText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/maintenance_program_icon"
+        android:layout_marginBottom="5dp"
+        android:layout_toEndOf="@+id/maintenance_program_icon"
+        android:layout_toRightOf="@+id/maintenance_program_icon"
+        android:textStyle="bold"
+        tools:text="小保养" />
+
+    <TextView
+        android:id="@+id/program_price"
+        style="@style/RedText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/program_cost"
+        android:layout_alignBottom="@+id/program_cost"
+        android:layout_alignLeft="@+id/maintenance_program_content"
+        android:layout_alignStart="@+id/maintenance_program_content"
+        tools:text="￥175.00" />
+
+    <TextView
+        android:id="@+id/program_cost"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/maintenance_program_content"
+        android:layout_marginLeft="@dimen/normal_padding_big_16"
+        android:layout_marginStart="@dimen/normal_padding_big_16"
+        android:layout_toEndOf="@+id/program_price"
+        android:layout_toRightOf="@+id/program_price"
+        tools:text="￥225.00" />
+
+    <Button
+        android:id="@+id/maintenance_program_detail_btn"
+        style="@style/btn_orange"
+        android:layout_below="@+id/program_cost"
+        android:layout_toEndOf="@+id/maintenance_program_icon"
+        android:layout_toRightOf="@+id/maintenance_program_icon"
+        android:text="查看详情" />
+</RelativeLayout>

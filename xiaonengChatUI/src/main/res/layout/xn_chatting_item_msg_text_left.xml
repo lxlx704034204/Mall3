@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:imagecontrol="http://schemas.android.com/apk/com.xiaoneng.xnlibrary"
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:padding="6dp">
+
+    <RelativeLayout
+        android:id="@+id/rl_lefttext_sendtime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_lt_sendtime"
+            style="@style/chat_text_date_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="5dp"
+            tools:text="sssss"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="6dp"
+        android:clickable="false"
+        android:focusable="true" >
+
+        <RelativeLayout
+            android:id="@+id/rl_lt_sendcontent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <cn.xiaoneng.uiview.CustomImageView
+                android:id="@+id/div_userhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:clickable="false"
+                android:src="@drawable/kefu" />
+
+            <RelativeLayout
+                android:id="@+id/l_rl_text_uname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="14dp"
+                android:layout_toRightOf="@id/div_userhead"
+                android:focusable="true" >
+
+                <TextView
+                    android:id="@+id/l_text_uname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="2222"
+                    android:textColor="@color/xn_black"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_chatcontent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/l_rl_text_uname"
+                android:layout_marginLeft="4dp"
+                android:layout_toRightOf="@id/div_userhead"
+                android:autoLink="all"
+                android:background="@drawable/l22"
+                android:focusable="true"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3dp"
+                tools:text="sssssssss"
+                android:textColor="@color/xn_black"
+                android:textIsSelectable="true"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

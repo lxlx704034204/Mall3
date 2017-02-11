@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/rl_recommend_onclick"
+                android:paddingTop="@dimen/item_padding_top_15"
+    >
+
+    <ImageView
+        android:id="@+id/iv_auto_image"
+        android:layout_width="@dimen/app_item_auto_image_width_96"
+        android:layout_height="@dimen/app_item_auto_image_height_55"
+        android:layout_marginLeft="@dimen/item_margin_left_16"
+        android:background="@drawable/pic_normal"/>
+
+    <TextView
+        android:id="@+id/tv_auto_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/item_margin_left_16"
+        android:layout_marginRight="@dimen/item_padding_right_16"
+        android:layout_toRightOf="@id/iv_auto_image"
+        tools:text="一汽大众 新高尔夫 2015款 1.6L 自动舒适型"
+        android:minLines="2"
+        android:textColor="@color/title_and_main_text"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:id="@+id/tv_auto_price"
+        style="@style/item_auto_data_price"
+        android:layout_toRightOf="@+id/iv_auto_image"
+        android:layout_marginLeft="@dimen/item_margin_left_16"
+        android:layout_below="@+id/tv_auto_name"
+        android:layout_marginTop="10dp"
+        tools:text="¥21.58万"
+        android:textColor="@color/main_and_price"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@id/tv_auto_price"
+        android:background="@drawable/line"/>
+</RelativeLayout>

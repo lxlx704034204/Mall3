@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <layer-list>
+
+            <item>
+                <bitmap android:gravity="end|top" android:src="@drawable/checkbox_selected" />
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="5dp" />
+                    <stroke android:width="3dp" android:color="@color/font_orange" />
+                </shape>
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>

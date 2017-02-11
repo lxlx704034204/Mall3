@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/rl_sales_item_click_view"
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:paddingBottom="12dp"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="12dp">
+
+    <ImageView
+        android:id="@+id/iv_s_p_item"
+        android:layout_width="@dimen/app_item_auto_image_width_96"
+        android:layout_height="@dimen/app_item_auto_image_height_55"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginRight="12dp"
+        android:layout_marginEnd="12dp"
+        tools:background="@drawable/pic_normal"
+    />
+
+    <TextView
+        android:id="@+id/tv_s_p_title"
+        style="@style/BlackText14"
+        android:textSize="15sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6dp"
+        android:layout_toRightOf="@+id/iv_s_p_item"
+        android:layout_toEndOf="@+id/iv_s_p_item"
+        tools:text="title"
+    />
+
+    <include
+        android:id="@+id/include_time"
+        layout="@layout/t_item_sales_time_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_s_p_title"
+        android:layout_toEndOf="@+id/iv_s_p_item"
+        android:layout_toRightOf="@+id/iv_s_p_item"
+    />
+
+    <TextView
+        android:id="@+id/tv_s_p_info"
+        style="@style/GrayText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/include_time"
+        android:layout_marginTop="6dp"
+        android:layout_toEndOf="@+id/iv_s_p_item"
+        android:layout_toRightOf="@+id/iv_s_p_item"
+        android:ellipsize="end"
+        android:maxLines="2"
+        tools:text="content"
+    />
+</RelativeLayout>

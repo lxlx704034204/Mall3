@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#EFEFEF"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:id="@+id/type_shop"
+        style="@style/GrayText16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="12dp"
+        android:paddingTop="16dp"
+        android:text="店铺"/>
+
+
+    <View
+    android:layout_width="match_parent"
+    android:layout_height="1px"
+    android:background="#D6D6D6"/>
+
+    <TextView
+        android:id="@+id/type_car"
+        style="@style/GrayText16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="16dp"
+        android:paddingTop="12dp"
+        android:text="车型"/>
+
+</LinearLayout>

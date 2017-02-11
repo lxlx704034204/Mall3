@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <net.simonvt.menudrawer.OverlayDrawer
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:mdContentBackground="@color/window_color"
+        app:mdDrawOverlay="true"
+        app:mdDropShadowColor="#55000000"
+        app:mdDropShadowEnabled="true"
+        app:mdDropShadowSize="5dp"
+        app:mdMenuSize="314dp"
+        app:mdPosition="right"> <!-- 314dp-->
+
+        <FrameLayout
+            android:id="@id/mdMenu"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAFAFA"
+            android:orientation="vertical">
+
+            <fragment
+                android:id="@+id/special_car_param_fragment"
+                class="com.hxqc.mall.thirdshop.fragment.CarDetailBuyParamFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout="@layout/fragment_car_detail"/>
+        </FrameLayout>
+
+        <RelativeLayout
+            android:id="@id/mdContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/detail_content_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+                <ScrollView
+                    android:id="@+id/scroll_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="49dp">
+
+                    <android.support.v7.widget.LinearLayoutCompat
+                        xmlns:layout="http://schemas.android.com/apk/res-auto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#F0F0F0"
+                        android:focusable="true"
+                        android:focusableInTouchMode="true"
+                        android:orientation="vertical"
+                        layout:divider="@drawable/line"
+                        layout:showDividers="middle|end">
+
+                        <!-- 头部的图片 -->
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="220dp"
+                            android:onClick="toPictures">
+
+                            <ImageView
+                                android:id="@+id/banner"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:scaleType="fitXY"
+                                tools:src="@drawable/pic_normal"/>
+
+                            <ImageView
+                                android:id="@+id/sale_area"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="20dp"
+                                tools:src="@drawable/spcial_car_country"/>
+
+                            <com.hxqc.mall.thirdshop.views.TimeCounterView
+                                android:id="@+id/time_counter"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_marginRight="15dp"
+                                android:layout_marginTop="20dp"/>
+
+                            <TextView
+                                android:id="@+id/auto_descriptions"
+                                style="@style/WhiteText14"
+                                android:layout_width="match_parent"
+                                android:layout_height="50dp"
+                                android:layout_alignParentBottom="true"
+                                android:alpha="0.75"
+                                android:background="#000"
+                                android:ellipsize="end"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="@dimen/activity_horizontal_margin_16"
+                                android:paddingRight="@dimen/activity_horizontal_margin_16"
+                                android:maxLines="1"
+                                tools:text="卡罗拉 2014款"/>
+                        </RelativeLayout>
+
+                        <!-- 价格展示  -->
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="57dp"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/GrayText12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="价格"/>
+
+                                <TextView
+                                    android:id="@+id/car_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#E72D32"
+                                    android:textSize="14sp"
+                                    tools:text="￥14.18万"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/line"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/GrayText12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="厂商指导价"/>
+
+                                <TextView
+                                    android:id="@+id/factory_price"
+                                    style="@style/GrayText14"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    tools:text="￥14.18万"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/line"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/GrayText12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="直降"/>
+
+                                <TextView
+                                    android:id="@+id/price_sale"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:drawableRight="@drawable/ic_arrow"
+                                    android:textColor="#E72D32"
+                                    android:textSize="14sp"
+                                    tools:text="0"/>
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="1px"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/line"/>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    style="@style/GrayText12"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginBottom="10dp"
+                                    android:text="订金"/>
+
+                                <TextView
+                                    android:id="@+id/car_deposit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="#E72D32"
+                                    android:textSize="14sp"
+                                    tools:text="￥2000元"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="55dp"
+                            android:background="#FAFAFA"
+                            android:orientation="horizontal"
+                            android:paddingLeft="16dp"
+                            android:paddingRight="16dp">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/car_detail_color"/>
+
+                                <TextView
+                                    style="@style/RedText16"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="16dp"
+                                    android:text="车辆颜色"
+                                    android:textStyle="bold"/>
+                            </LinearLayout>
+
+                            <include
+                                layout="@layout/layout_color_show"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="45dp"/>
+                        </RelativeLayout>
+
+                        <!-- 实拍图片 -->
+                        <com.hxqc.mall.core.views.VariousShowView
+                            android:id="@+id/car_pics"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            app:labelText="实拍图片"
+                            app:labelTextBold="true"
+                            app:labelTextColor="@color/text_color_red"
+                            app:leftIcon="@drawable/car_detail_picture"
+                            app:rightOperateIcon="@drawable/ic_list_arrow">
+
+                            <!--<com.hxqc.widget.ListViewNoSlide-->
+                            <!--android:id="@+id/listview"-->
+                            <!--android:layout_width="match_parent"-->
+                            <!--android:layout_height="200dp"-->
+                            <!--android:background="@color/black"/>-->
+                        </com.hxqc.mall.core.views.VariousShowView>
+
+                        <com.hxqc.mall.core.views.VariousShowView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="clickToCarDetail"
+                            app:labelText="车辆详情"
+                            app:labelTextBold="true"
+                            app:labelTextColor="@color/text_color_red"
+                            app:leftIcon="@drawable/car_detail_info"
+                            app:rightOperateIcon="@drawable/ic_list_arrow"
+                            layout:labelTextSize="16sp"/>
+
+                        <!--图文介绍-->
+                        <com.hxqc.mall.thirdshop.views.ThirdAutoDetailIntroduce
+                            android:id="@+id/introduce"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:focusable="false"/>
+
+                        <com.hxqc.mall.core.views.VariousShowView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="clickToEvaluate"
+                            app:labelText="口碑评价"
+                            app:labelTextBold="true"
+                            app:labelTextColor="@color/text_color_red"
+                            app:leftIcon="@drawable/koubei"
+                            app:rightOperateIcon="@drawable/ic_list_arrow"
+                            layout:labelTextSize="16sp"/>
+
+                        <com.hxqc.mall.thirdshop.views.AutoDetailTabView
+                            android:id="@+id/item_parameter"
+                            xmlns:tab="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:onClick="clickToParameter"
+                            android:tag="sticky"
+                            tab:tabIconDrawable="@drawable/car_detail_params"
+                            tab:tabLabel="产品参数"
+                            tab:tabTagDrawable="@drawable/ic_list_arrow"/>
+                    </android.support.v7.widget.LinearLayoutCompat>
+                </ScrollView>
+
+                <include layout="@layout/layout_special_car_detail_bottom_bar"/>
+            </RelativeLayout>
+
+            <com.hxqc.mall.core.api.RequestFailView
+                android:id="@+id/refresh_fail_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                app:emptyDescription="商品数据不存在"/>
+        </RelativeLayout>
+    </net.simonvt.menudrawer.OverlayDrawer>
+</LinearLayout>

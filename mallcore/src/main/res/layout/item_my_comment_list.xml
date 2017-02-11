@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/shop_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F0F0F0">
+
+        <ImageView
+            android:id="@+id/iv"
+            style="@style/Icon24"
+            android:src="@drawable/comment_shop"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/shop_name"
+            style="@style/BlackText16"
+            tools:text="武汉星威奔驰"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iv"
+            android:layout_marginLeft="10dp"/>
+
+        <!--<ImageView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_list_arrow"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_toRightOf="@+id/shop_name"-->
+            <!--android:layout_marginLeft="@dimen/margin_16"/>-->
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#D5D5D5"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.hxqc.mall.comment.view.MyRatingBarView
+            android:id="@+id/starView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="10dp"
+            android:clickable="false"
+            hxqc:starCount="5"
+            hxqc:starEmpty="@drawable/ic_productcomment_list_score_normal"
+            hxqc:starFill="@drawable/ic_productcomment_list_score_selected"
+            hxqc:starImageSize="20dp"
+            android:layout_marginLeft="@dimen/margin_16"/>
+
+        <TextView
+            android:id="@+id/tv_comment_post_time"
+            style="@style/GrayText14"
+            android:layout_alignParentRight="true"
+            android:text="2015-02-02 14:32:50"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_centerVertical="true"
+            />
+    </RelativeLayout>
+
+
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/comment"
+        style="@style/BlackText14"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="8dp"
+        tools:text="asdasddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rlv_comment_images"
+        android:layout_width="match_parent"
+        android:layout_height="61dp"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="8dp"
+        android:cacheColorHint="@color/white"
+        android:scrollbarStyle="insideOverlay" />
+
+    <TextView
+        android:id="@+id/order_id"
+        style="@style/OrangeText14"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        tools:text="111111111111"/>
+
+</LinearLayout>

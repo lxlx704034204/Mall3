@@ -1,0 +1,94 @@
+<resources>
+    <string name="order_number">订单号：</string>
+    <string name="third_title_activity_test_drive">试乘试驾</string>
+    <string name="third_title_activity_ask_price">询问底价</string>
+    <string name="third_title_activity_clause_detail">个人信息保护声明</string>
+    <string name="title_activity_shop_pro_file_web">ShopProFileWebActivity</string>
+    <string name="title_activity_news_image_info">图片详情</string>
+    <string name="title_activity_atlas">图集</string>
+    <string name="title_activity_me_order_detail">订单详情</string>
+    <string name="title_activity_me_user_order">我的订单</string>
+    <string name="title_activity_third_shop_amap">店铺地址</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="position">定位</string>
+    <string name="title_activity_models_offer">车型报价</string>
+    <string name="title_activity_installmentbuycar">分期购车</string>
+    <string name="sale_price">特价：</string>
+    <string name="separator">|</string>
+    <string name="time_left">剩余时间：</string>
+
+    <string name="appointment_tip_msg">提交信息后，我们的销售人员会在30分钟以内联系您，请保持手机畅通。您也可直接致电联系我们（</string>
+    <string name="advisory">咨询</string>
+    <string name="first_time_on_the_card">首次上牌时间:</string>
+    <string name="choosr_register_date">请选择上牌时间</string>
+    <string name="title_activity_maintenance_home">维修保养</string>
+    <string name="title_activity_shop_flash_list">限时特价车</string>
+    <string name="title_activity_flash_sale_list">限时特价车</string>
+    <string name="title_activity_new_car_series_list">新车销售</string>
+    <string name="title_activity_new_car_model_list">新车销售</string>
+    <string name="title_activity_shop_info_of_new_car_list">新车销售</string>
+    <string name="title_activity_advisory_list">咨询列表</string>
+    <string name="title_activity_site_news_list">资讯列表</string>
+    <string name="title_activity_maintainandrepair">保养与维修项目</string>
+    <string name="title_activity_confirm_order">确认订单</string>
+    <string name="title_activity_choice_pay_maintenance">选择支付方式</string>
+    <string name="title_activity_finish_pay_maintenance">支付完成</string>
+    <string name="title_activity_fours_and_quick_maintain_and_repair">保养与维修项目</string>
+    <string name="title_activity_fours_and_quick_confirm_order">确认订单</string>
+    <string name="title_activity_thirdShopSearch">第三方商店搜索</string>
+    <string name="title_activity_specialCarDeatil">特价车详情</string>
+    <string name="title_activity_4sShopList">推荐店铺</string>
+    <string name="title_activity_specialCarDetail">车辆详情</string>
+    <string name="title_activity_shopHome">店铺首页</string>
+    <string name="title_activity_maintanceHome">维修保养</string>
+    <string name="title_activity_shopSaleList">限时特价车</string>
+    <string name="title_activity_filterThirdShop">推荐店铺</string>
+    <string name="title_activity_salesDepositPay">选择支付方式</string>
+    <string name="title_activity_location">定位</string>
+    <string name="title_activity_invoice">发票信息</string>
+    <string name="title_activity_rescue">紧急救援</string>
+    <string name="title_activity_goodsPackage">优惠套餐</string>
+    <string name="title_activity_shopsalesPromotion">促销列表</string>
+    <string name="title_activity_filter">筛选</string>
+    <string name="title_activity_4sMall">4S店网上商城</string>
+    <string name="title_activity_flashSaleList">限时特价车</string>
+    <string name="title_activity_newCarSeries">新车销售</string>
+    <string name="title_activity_newCarModelDetail">车型详情</string>
+    <string name="title_activity_advisoryList">咨询列表</string>
+    <string name="title_activity_confirmCarOrder">确认订单信息</string>
+    <string name="title_activity_siteNewsList">资讯列表</string>
+    <string name="title_activity_shopDetail">店铺详情</string>
+    <string name="title_activity_installmentbuyCar">分期购车</string>
+    <string name="title_activity_cancelOrder">取消订单</string>
+    <string name="title_activity_orderRefund">申请退款</string>
+    <string name="one_key_navigation">一键导航</string>
+    <string name="title_activity_ShopQuote">选择保养项目</string>
+    <string name="save_line">救援电话</string>
+    <string name="title_activity_select_car_by_condition">条件选车</string>
+    <string name="title_activity_installment_buying">分期购车</string>
+    <string name="title_activity_installment_buycar">分期购车</string>
+    <string name="select_car_by_condition">条件选车</string>
+    <string name="group_buy">团购会</string>
+    <string name="change_car"><u>换车</u></string>
+
+    <string-array name="maintenanceCondition">
+        <item>全部城区</item>
+        <item>江岸区</item>
+        <item>武昌区</item>
+        <item>江汉区</item>
+        <item>硚口区</item>
+        <item>汉阳区</item>
+        <item>青山区</item>
+        <item>洪山区</item>
+        <item>东西湖区</item>
+        <item>汉南区</item>
+        <item>蔡甸区</item>
+        <item>江夏区</item>
+        <item>黄陂区</item>
+        <item>新洲区</item>
+        <item>经济开发区</item>
+    </string-array>
+</resources>

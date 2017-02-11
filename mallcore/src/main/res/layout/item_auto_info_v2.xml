@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="16dp">
+
+        <ImageView
+            android:id="@+id/item_auto_info_log"
+            android:layout_width="@dimen/app_item_auto_image_height_55"
+            android:layout_height="@dimen/app_item_auto_image_height_55"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pic_normal_square" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_auto_info_type"
+                style="@style/BlackText14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="宝马5系 2.0升 涡轮增压 2014款520Li 典雅款" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/item_auto_info_plate_num"
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="12dp"
+                    android:ems="6"
+                    tools:text="鄂A123456" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/item_auto_info_plate_num"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/asd"
+                        style="@style/GrayText14"
+                        android:layout_width="56dp"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:text="行驶里程" />
+
+                    <TextView
+                        android:id="@+id/item_auto_info_driving_distance"
+                        style="@style/GrayText14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:lines="1"
+                        tools:text="120000000000000" />
+
+                    <TextView
+                        style="@style/GrayText14"
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:lines="1"
+                        android:text="km" />
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/auto_is_default"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_information_def"
+        android:visibility="gone" />
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

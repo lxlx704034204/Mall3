@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:id="@+id/pop_readme"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingBottom="@dimen/normal_margin_small_8"
+                android:paddingLeft="@dimen/activity_vertical_margin_16"
+                android:paddingRight="@dimen/activity_vertical_margin_16"
+                android:visibility="gone"
+                tools:ignore="UnusedResources">
+
+    <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/card_corner_radius_2"
+        app:cardElevation="@dimen/normal_margin_small_8">
+
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/normal_margin_small_8">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/BlackText12"
+                    android:text="范例：" />
+
+                <ImageView
+                    android:id="@+id/close_pop"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/ic_close" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/example"
+                style="@style/GrayText10"
+                android:layout_marginTop="4dp"
+                android:text="我的这辆车整体车况还不错，全程在4S店保养。全车没有什么大伤，有过一些小磕碰也都已经及时喷漆处理。车身整体比较耐看，驾驶操控性能好，动力够用，起步加速快，平时比较爱惜，上下班代步，市区道路行驶，年平均行驶里程较少，空间还可以，家用能满足各种需求。加装真皮、导航以及倒车影像。如果觉得还不错，就给我打电话看车吧。"
+                android:textIsSelectable="true" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

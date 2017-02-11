@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_16">
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginRight="@dimen/margin_6">
+
+            <ImageView
+                android:id="@+id/item_icon"
+                android:layout_width="96dp"
+                android:layout_height="55dp"
+                android:layout_centerVertical="true"
+                tools:src="@drawable/pic_normal_square" />
+
+            <com.hxqc.mall.thirdshop.views.AreaLabel
+                android:id="@+id/area_label"
+                android:layout_width="48dp"
+                android:layout_height="20dp" />
+
+            <TextView
+                android:id="@+id/mark"
+                style="@style/WhiteText12"
+                android:layout_width="45dp"
+                android:layout_height="20dp"
+                android:gravity="center"
+                android:visibility="gone"
+                tools:background="@drawable/mark_blue"
+                tools:text="售本省" />
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_6"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_title"
+                style="@style/BlackText14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/normal_size_5"
+                android:textStyle="bold"
+                tools:text="【直降50000元】奥迪Q5（进口）2013款 40 TFSI hybrid" />
+
+            <TextView
+                android:id="@+id/model_name"
+                style="@style/BlackText12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="2" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/sale_price" />
+
+                <TextView
+                    android:id="@+id/sale_price"
+                    style="@style/RedText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="￥55.80万" />
+
+                <TextView
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="2dp"
+                    android:text="@string/separator"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/original_price"
+                    style="@style/GrayText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    tools:text="￥60.80万" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_6"
+                android:orientation="horizontal">
+                <TextView
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/itemOrigPrice" />
+                <TextView
+                    android:id="@+id/original_price_1"
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="￥60.80万" />
+            </LinearLayout>
+            <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<TextView-->
+            <!--style="@style/GrayText14"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="@string/time_left" />-->
+
+            <com.hxqc.mall.thirdshop.views.CountDownView_1
+                android:id="@+id/count_down_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <!--</LinearLayout>-->
+        </LinearLayout>
+    </LinearLayout>
+
+    <View style="@style/UnderLine" />
+</LinearLayout>

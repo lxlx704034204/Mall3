@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hxqc="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="11.5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="8dp"
+        android:paddingTop="12.5dp">
+
+        <TextView
+            android:id="@+id/item_installment_buying_auto_model"
+            style="@style/BlackText13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="9.5dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            android:text="奔驰GLA" />
+
+        <!--<com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_auto_shop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_model"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="5.5dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            android:gravity="center_vertical"
+            hxqc:trl_left_text="店铺名称:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="武汉恒信奥迪4S店"
+            hxqc:trl_right_textColor="@color/install_buying_content"
+            hxqc:trl_right_textSize="11sp" />-->
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_auto_shop_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_model"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="13dp"
+            android:gravity="center_vertical"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_text="店铺参考价:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="34.25-35.45万"
+            hxqc:trl_right_textColor="@color/install_buying_content"
+            hxqc:trl_right_textSize="11sp" />
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_manufacturer_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_model"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@id/item_installment_buying_auto_shop_price"
+            android:gravity="center_vertical"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_text="厂商指导价:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="34.25-35.45万"
+            hxqc:trl_right_textColor="@color/install_buying_content"
+            hxqc:trl_right_textSize="11sp" />
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_down_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_shop_price"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="9.5dp"
+            android:gravity="center_vertical"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_text="首付比例:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="30%"
+            hxqc:trl_right_textColor="@color/Red_yjf"
+            hxqc:trl_right_textSize="11sp" />
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_periods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_shop_price"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="9.5dp"
+            android:layout_toRightOf="@id/item_installment_buying_auto_shop_price"
+            android:gravity="center_vertical"
+            hxqc:trl_left_ems="5"
+            hxqc:trl_left_text="分期期数:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_textSize="11sp"
+            hxqc:trl_right_text="24期"
+            hxqc:trl_right_textColor="@color/Red_yjf"
+            hxqc:trl_right_textSize="11sp" />
+
+        <!--<TextView
+            android:id="@+id/item_installment_buying_auto_shop"
+            style="@style/BlackText13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_model"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            tools:text="店铺名称" />-->
+
+        <!--<TextView
+            android:id="@+id/item_installment_buying_auto_shop_price"
+            style="@style/BlackText13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_shop"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            tools:text="店铺参考价" />-->
+
+        <!--<TextView
+            android:id="@+id/item_installment_buying_manufacturer_price"
+            style="@style/BlackText13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/item_installment_buying_auto_shop_price"
+            android:layout_marginLeft="9.5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/item_installment_buying_img"
+            tools:text="厂商指导价" />-->
+    </RelativeLayout>
+
+    <!--<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="6dp">
+
+        <TextView
+            android:id="@+id/instalment_buying_title_1"
+            style="@style/BlackText12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分期购车:" />
+
+        <LinearLayout
+            android:id="@+id/instalment_buying_down_payment_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6.5dp"
+            android:layout_toRightOf="@id/instalment_buying_title_1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首付" />
+
+            <TextView
+                android:id="@+id/item_installment_buying_down_payment"
+                style="@style/OrangeText12"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                tools:text="30%" />
+
+            <ProgressBar
+                android:id="@+id/item_installment_buying_down_payment_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:max="100"
+                android:progress="10"
+                android:progressDrawable="@drawable/shape_progressbar_horizontal"
+                android:background="@android:color/transparent"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/instalment_buying_down_payment_title"
+            android:layout_marginLeft="6.5dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/instalment_buying_title_1"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="分期" />
+
+            <TextView
+                android:id="@+id/item_installment_buying_periods"
+                style="@style/OrangeText12"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                tools:text="24期" />
+
+            <ProgressBar
+                android:id="@+id/item_installment_buying_periods_pb"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dp"
+                android:max="100"
+                android:progress="70"
+                android:progressDrawable="@drawable/shape_progressbar_horizontal" />
+
+        </LinearLayout>
+
+    </RelativeLayout>-->
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_down_payment_money"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="11dp"
+            hxqc:trl_left_text="首付:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_textSize="13sp"
+            hxqc:trl_right_text="$25万"
+            hxqc:trl_right_textColor="@color/text_color_orange"
+            hxqc:trl_right_textSize="13sp" />
+
+        <!--<RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="11dp">
+
+            <TextView
+                android:id="@+id/instalment_buying_title_2"
+                style="@style/BlackText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="首付:" />
+
+            <TextView
+                android:id="@+id/item_installment_buying_down_payment_money"
+                style="@style/OrangeText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/instalment_buying_title_2"
+                tools:text="$25万" />
+
+        </RelativeLayout>-->
+
+        <include
+            layout="@layout/view_cut_off_rule_gray"
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="6dp"
+            android:layout_marginTop="6dp" />
+
+        <com.hxqc.mall.auto.view.TextRelativeLayout
+            android:id="@+id/item_installment_buying_monthly"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="11dp"
+            hxqc:trl_left_text="月供:"
+            hxqc:trl_left_textColor="@color/install_buying_title"
+            hxqc:trl_left_textSize="13sp"
+            hxqc:trl_right_text="$25万/月"
+            hxqc:trl_right_textColor="@color/text_color_orange"
+            hxqc:trl_right_textSize="13sp" />
+
+        <!--<RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:padding="11dp">
+
+            <TextView
+                android:id="@+id/instalment_buying_title_3"
+                style="@style/BlackText13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="月供:" />
+
+            <TextView
+                android:id="@+id/item_installment_buying_monthly"
+                style="@style/OrangeText12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/instalment_buying_title_3"
+                tools:text="$25万/月" />
+
+        </RelativeLayout>-->
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="7dp" />
+</LinearLayout>

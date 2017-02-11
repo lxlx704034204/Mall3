@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxqc.mall.core.views.SlidingUpView.SlidingUpLayout
+    android:id="@+id/slidinguplayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    app:SUVDragView="@+id/dragView"
+    app:SUVFadeColor="#00000000"
+    app:SUVInitialState="anchored"
+    app:SUVOverlay="true"
+    app:SUVPanelHeight="45dp"
+    app:SUVScrollableView="@+id/list_view"
+    app:SUVSearchViewContainer="@+id/search_view_container"
+    app:SUVShadowHeight="4dp"
+    app:SUVToolView="@+id/tool_view"
+    app:SUVViewPager="@+id/view_pager">
+
+    <!-- MAIN CONTENT -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.amap.api.maps.MapView
+            android:id="@+id/map"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </FrameLayout>
+
+    <!-- SLIDING LAYOUT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include layout="@layout/layout_sliding_panel_drag_view"/>
+
+        <!--  #F4F4F4 -->
+        <FrameLayout
+            android:id="@+id/scrollableView_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <in.srain.cube.views.ptr.PtrFrameLayout
+                android:id="@+id/refresh_frame"
+                xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                cube_ptr:ptr_duration_to_close="300"
+                cube_ptr:ptr_duration_to_close_header="2000"
+                cube_ptr:ptr_keep_header_when_refresh="true"
+                cube_ptr:ptr_pull_to_fresh="false"
+                cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+                cube_ptr:ptr_resistance="1.7">
+
+                <com.hxqc.mall.core.views.PullListView
+                    android:id="@+id/list_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:listSelector="@android:color/transparent"
+                    android:scrollbars="none"
+                    android:overScrollMode="never"/>
+            </in.srain.cube.views.ptr.PtrFrameLayout>
+
+            <android.support.v4.view.ViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:visibility="gone"/>
+
+            <com.hxqc.mall.core.api.RequestFailView
+                android:id="@+id/fail_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:visibility="gone"
+                app:emptyDescription="未找到合适店铺"/>
+        </FrameLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include layout="@layout/layout_map_search_view"/>
+
+        <ImageButton
+            android:id="@+id/around_map_reloc"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:background="@drawable/around_map_reloc"/>
+
+        <ImageView
+            android:id="@+id/traffic_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/around_map_reloc"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/around_map_reloc"
+            android:src="@drawable/road_conditions"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:id="@+id/distance_control"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginEnd="13dp"
+            android:layout_marginRight="13dp"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/around_map_increase"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_map_around_increase_selecter"/>
+
+            <ImageButton
+                android:id="@+id/around_map_reduce"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:background="@drawable/bg_map_around_reduce_selecter"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.hxqc.mall.core.views.SlidingUpView.SlidingUpLayout>

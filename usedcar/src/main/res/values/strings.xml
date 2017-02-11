@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <array name="usedcar_tabbar_array" tools:ignore="UnusedResources">
+        <item>首页</item>
+        <item>买车</item>
+        <item>卖车</item>
+        <item>我的</item>
+    </array>
+    <string name="valuation_hint">请填写车辆信息，以便准确估价</string>
+    <string name="valuation_brand_model">品牌车型</string>
+    <string name="valuation_first_on_card">首次上牌日期</string>
+    <string name="valuation_range">行驶里程（万公里）</string>
+    <string name="valuation_city">所在城市</string>
+    <string name="seller_info_all_cars">全部车源</string>
+    <string name="valuation_result_send" tools:ignore="UnusedResources">发布车源</string>
+    <string name="choose_series_no_data">暂无车系</string>
+    <string name="choose_model_no_data">暂无车型</string>
+    <string name="used_car_search_history">搜索历史</string>
+    <string name="used_car_clear_history">清空历史</string>
+    <string name="home_page_search_hint" tools:ignore="UnusedResources">输入品牌/车系</string>
+    <string name="home_page_hot_car" tools:ignore="UnusedResources">热门车源 </string>
+    <string name="home_page_more" tools:ignore="UnusedResources">更多</string>
+    <string name="home_page_quick_search" tools:ignore="UnusedResources">快速选车 </string>
+    <string name="home_page_price" tools:ignore="UnusedResources">价格区间</string>
+    <string name="home_page_brand" tools:ignore="UnusedResources">推荐品牌</string>
+    <string name="home_page_click_choose" tools:ignore="UnusedResources">点击选择</string>
+    <string name="home_page_warm_hint" tools:ignore="UnusedResources">温馨提示：</string>
+    <string name="home_page_hint_different_city" tools:ignore="UnusedResources">定位与当前城市不同，要切换到城市吗？</string>
+    <string name="home_page_no_city" tools:ignore="UnusedResources">抱歉，当前城市尚未开通！\n为您推荐所有车源！</string>
+    <string name="used_car_hot_search">热门搜索</string>
+    <string name="hint_wrong_date" tools:ignore="UnusedResources">请选择正确的上牌时间</string>
+    <string name="hint_no_brand_model">请选择品牌车型</string>
+    <string name="hint_no_licensing_date">请选择上牌日期</string>
+    <string name="hint_no_range">请输入行驶里程</string>
+    <string name="hint_range_too_large">请提供50万公里及以下的车辆</string>
+    <string name="hint_no_city">请选择所在城市</string>
+    <string name="loc_fail">定位失败</string>
+    <string name="locing">正在定位</string>
+    <string name="personal">个人</string>
+    <string name="authentication">认证</string>
+    <string name="principal" tools:ignore="UnusedResources">自营</string>
+    <string name="reload">重新加载</string>
+    <string name="message_fall_notice" tools:ignore="UnusedResources">降价通知</string>
+    <string name="message_delete" tools:ignore="UnusedResources">删除消息</string>
+    <string name="message_report_info" tools:ignore="UnusedResources">举报信息</string>
+    <string name="message_no_data" tools:ignore="UnusedResources">暂无消息</string>
+    <string name="brand_navigation">品牌导航</string>
+    <string name="choose_series">选择车系</string>
+    <string name="choose_model">选择车型</string>
+    <string name="action_release">我要卖车</string>
+    <string name="action_empty">清空</string>
+    <string name="action_share" tools:ignore="UnusedResources">分享</string>
+    <string name="action_collection" tools:ignore="UnusedResources">收藏</string>
+    <string name="action_car_config" tools:ignore="UnusedResources">参数配置</string>
+
+    <string name="title_activity_instalment">分期购车</string>
+    <string name="title_activity_exchange">二手车置换</string>
+    <string name="title_activity_qa">恒信质保</string>
+    <string name="title_activity_detail">查看详情</string>
+    <string name="activity_seedetail" tools:ignore="UnusedResources">查看细节</string>
+    <string name="title_activity_user_report">用户举报</string>
+
+    <string name="title_activity_undercarriage">下架原因</string>
+    <string name="title_activity_sell_car">我的卖车信息</string>
+    <string name="activity_my_collection" tools:ignore="UnusedResources">我的收藏</string>
+    <string name="title_activity_auto_valuation">车辆评估</string>
+    <string name="title_activity_seller_info">个人信息</string>
+    <string name="title_activity_want_to_sell">我要卖车</string>
+    <string name="title_activity_valuation_result">估价结果</string>
+    <string name="activity_service_security" tools:ignore="UnusedResources">服务保障</string>
+    <string name="activity_promotion" tools:ignore="UnusedResources">活动</string>
+    <string name="activity_buy_strategy" tools:ignore="UnusedResources">购车攻略</string>
+    <string name="activity_subscription" tools:ignore="UnusedResources">我的订阅</string>
+    <string name="activity_message" tools:ignore="UnusedResources">我的消息</string>
+    <string name="activity_sellcar">我要卖车</string>
+    <string name="title_activity_search">搜索</string>
+    <string name="title_activity_buy_car_filter">筛选</string>
+    <string name="activity_buy_car_info" tools:ignore="UnusedResources">我的买车信息</string>
+    <string name="title_activity_choose_city">选择城市</string>
+    <string name="title_fragment_me_info_car" tools:ignore="UnusedResources">我的卖车信息</string>
+    <string name="title_fragment_me_buy_car" tools:ignore="UnusedResources">我的买车信息</string>
+    <string name="title_fragment_me_my_collection" tools:ignore="UnusedResources">我的收藏</string>
+    <string name="title_fragment_me_my_subscription" tools:ignore="UnusedResources">我的订阅</string>
+    <string name="title_fragment_me_recent_visit" tools:ignore="UnusedResources">最近浏览</string>
+    <string name="title_fragment_me_recommended" tools:ignore="UnusedResources">为你推荐</string>
+    <string name="auto_valuation_brand_model" tools:ignore="UnusedResources">品牌车型</string>
+    <string name="auto_valuation_licensing_date" tools:ignore="UnusedResources">上牌日期</string>
+    <string name="auto_valuation_city" tools:ignore="UnusedResources">所在城市</string>
+    <string name="audit_details" tools:ignore="UnusedResources">未通过原因：</string>
+    <string name="month_picker_complete" tools:ignore="UnusedResources">完成</string>
+    <!-- activity的跳转信息 -->
+    <string name="action_sellcarinfo" tools:ignore="UnusedResources">SellCarInfo</string>
+    <string name="action_seller_info" tools:ignore="UnusedResources">SellerInfo</string>
+    <string name="action_buy_strategy" tools:ignore="UnusedResources">BuyStrategy</string>
+    <string name="action_service_security" tools:ignore="UnusedResources">ServiceSecurity</string>
+    <string name="action_mycollection" tools:ignore="UnusedResources">MyCollection</string>
+    <string name="action_auto_valuation" tools:ignore="UnusedResources">AutoValuation</string>
+    <string name="action_valuation_result" tools:ignore="UnusedResources">ValuationResult</string>
+    <string name="action_search">Search</string>
+    <string name="action_subscription" tools:ignore="UnusedResources">Subscription</string>
+    <string name="action_message" tools:ignore="UnusedResources">MyMessage</string>
+    <string name="action_buy_car_info" tools:ignore="UnusedResources">BuyCarInfo</string>
+    <string name="action_undercarriage" tools:ignore="UnusedResources">UndercarriageReason</string>
+    <string name="action_platform_sell">PlatformSell</string>
+    <string name="action_promotion" tools:ignore="UnusedResources">Promotion</string>
+    
+    <string name="action_sell_car_info">MeSellCarInfo</string>
+    <string name="action_used_car" tools:ignore="UnusedResources">UsedCar</string>
+    <string name="action_choose_city">ChooseCity</string>
+    <string name="action_sell_car_detail">SellCarDetail</string>
+    <string name="action_sellcar" tools:ignore="UnusedResources">SellCar</string>
+</resources>

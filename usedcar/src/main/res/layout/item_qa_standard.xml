@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/divider"
+    android:paddingLeft="1px"
+    android:paddingRight="1px">
+
+    <TextView
+        android:id="@+id/name"
+        style="@style/BlackText14"
+        android:layout_width="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:paddingBottom="@dimen/activity_vertical_margin_16"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="@dimen/activity_vertical_margin_16" />
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/activity_vertical_margin_16"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="@dimen/activity_vertical_margin_16">
+
+        <TextView
+            android:id="@+id/price1"
+            style="@style/BlackText14"
+            android:layout_centerVertical="true"
+            tools:text="¥10,000" />
+
+        <ImageView
+            android:id="@+id/particulars1"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/particulars" />
+
+        <View
+            android:id="@+id/none1"
+            android:layout_width="32dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/title_and_main_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/activity_vertical_margin_16"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="@dimen/activity_vertical_margin_16">
+
+        <TextView
+            android:id="@+id/price2"
+            style="@style/BlackText14"
+            android:layout_centerVertical="true"
+            tools:text="¥10,000" />
+
+        <ImageView
+            android:id="@+id/particulars2"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/particulars" />
+
+        <View
+            android:id="@+id/none2"
+            android:layout_width="32dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/title_and_main_text" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="1px"
+        android:layout_height="1px" />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/activity_vertical_margin_16"
+        android:paddingLeft="6dp"
+        android:paddingRight="6dp"
+        android:paddingTop="@dimen/activity_vertical_margin_16">
+
+        <TextView
+            android:id="@+id/price3"
+            style="@style/BlackText14"
+            android:layout_centerVertical="true"
+            tools:text="¥10,000" />
+
+        <ImageView
+            android:id="@+id/particulars3"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/particulars" />
+
+        <View
+            android:id="@+id/none3"
+            android:layout_width="32dp"
+            android:layout_height="1dp"
+            android:layout_centerInParent="true"
+            android:background="@color/title_and_main_text" />
+    </RelativeLayout>
+
+</LinearLayout>

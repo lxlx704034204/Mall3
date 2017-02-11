@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/auto_package_padding_3"
+                android:paddingRight="@dimen/auto_package_padding_3"
+                android:paddingTop="@dimen/auto_package_padding">
+
+    <TextView
+        android:id="@+id/package_title"
+        style="@style/BlackText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        tools:text="飞哥导航仪包牌套餐" />
+
+    <TextView
+        android:id="@+id/original_price"
+        style="@style/GrayText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/package_title"
+        android:layout_marginRight="@dimen/auto_package_margin_left"
+        android:layout_marginTop="@dimen/auto_package_margin_top"
+        tools:text="原价:7,650.0元"
+
+        />
+
+    <TextView
+        android:id="@+id/current_price"
+        style="@style/RedText14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/package_title"
+
+        android:layout_marginTop="@dimen/auto_package_margin_top"
+        android:layout_toRightOf="@+id/original_price"
+        tools:text="优惠价:6,450.0元" />
+
+    <TextView
+        android:id="@+id/clear_choose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="@string/clear_choose"
+        android:textColor="@color/font_blue"
+        android:textSize="@dimen/text_size_14"
+        android:visibility="gone" />
+
+    <CheckBox
+        android:id="@+id/package_cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/head_checkbox_marginRight"
+        android:background="@drawable/ic_package_choose"
+        android:button="@null" />
+</RelativeLayout>

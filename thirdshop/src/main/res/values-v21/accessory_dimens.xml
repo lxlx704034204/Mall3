@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 卡片布局 高度 -->
+    <dimen name="card_height">152dp</dimen>
+    <!-- 卡片布局 UI 边距 -->
+    <dimen name="card_horizontal_spacing">16dp</dimen>
+    <dimen name="card_vertical_spacing">8dp</dimen>
+    <dimen name="card_vertical_spacing_debug">8dp</dimen>
+</resources>

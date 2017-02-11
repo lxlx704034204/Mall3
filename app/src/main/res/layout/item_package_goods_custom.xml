@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+    >
+
+
+    <com.hxqc.mall.views.autopackage.SquarePackageImageView
+        android:id="@+id/iv_p_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+    <TextView
+        android:id="@+id/tv_p_title"
+        style="@style/GrayText12"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_p_img"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="4dp"
+        android:ellipsize="end" android:lines="2"
+        android:maxLines="2"
+        tools:text="长城润滑油 FD-2 汽车 防冻液 冷却液 4L -35℃ 旗舰店"/>
+
+    <TextView
+        android:id="@+id/tv_p_amount"
+        style="@style/RedText12"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_p_title"
+        tools:text="¥89元"/>
+
+    <CheckBox android:layout_alignRight="@+id/iv_p_img"
+        android:id="@+id/package_goods_check"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_p_title"
+        android:background="@drawable/bg_package_goods"
+        android:button="@null"/>
+</RelativeLayout>

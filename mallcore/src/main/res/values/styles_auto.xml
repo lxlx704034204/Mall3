@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="auto_edit_text" parent="MaterialEditText">
+        <item name="android:background">@drawable/bg_auto_edit_text</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="auto_edit_text_2" parent="MaterialEditText">
+        <item name="android:background">@drawable/bg_auto_edit_text_v2</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="auto_text_maintain_asterisk" parent="@style/auto_text_maintain">
+        <item name="android:paddingLeft">4.5dp</item>
+        <item name="android:drawableLeft">@drawable/bg_star</item>
+    </style>
+
+    <style name="auto_text_maintain" parent="@style/GrayText14">
+        <item name="android:ems">5</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+
+    <style name="auto_text_maintain_v2" parent="@style/GrayText14">
+        <item name="android:ems">6</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+    <!--autoinfo-->
+    <style name="auto_text_gray_14" parent="@style/GrayText14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="auto_text_gray_12" parent="@style/GrayText12">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="auto_text_gray_16" parent="@style/GrayText16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="auto_text_black_14" parent="@style/BlackText14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="auto_text_black_16" parent="@style/BlackText16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="auto_text_red_14" parent="@style/RedText14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="auto_text_blue_14">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/light_blue</item>
+        <item name="android:textSize">@dimen/text_size_14</item>
+    </style>
+
+    <style name="auto_text_orange_16" parent="@style/OrangeText16">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!--车辆信息删除弹窗字体样式-->
+    <style name="auto_info_message" parent="@style/BlackText16">
+        <item name="android:lineSpacingMultiplier">1.5</item>
+        <item name="android:minHeight">80dp</item>
+        <item name="android:paddingBottom">15dp</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">20dp</item>
+        <item name="android:paddingTop">15dp</item>
+    </style>
+
+    <style name="auto_info_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:background">#00000000</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+    </style>
+
+    <!--通用列表条目-->
+    <style name="common_edit_title" parent="GrayText16">
+        <item name="android:drawableLeft">@drawable/bg_star</item>
+        <item name="android:ems">7</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <style name="common_edit_title_trpa" parent="GrayText16">
+        <item name="android:drawableLeft">@drawable/bg_transparent</item>
+        <item name="android:ems">7</item>
+        <item name="android:paddingBottom">8dp</item>
+    </style>
+
+    <!--违章通用列表条目-->
+    <style name="common_illegal_title" parent="GrayText16">
+        <item name="android:drawableLeft">@drawable/bg_star</item>
+        <item name="android:ems">5</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+
+    <!--违章通用列表条目-->
+    <style name="common_illegal_title_8" parent="GrayText16">
+        <item name="android:drawableLeft">@drawable/bg_star</item>
+        <item name="android:ems">5</item>
+        <item name="android:paddingBottom">8dp</item>
+        <item name="android:paddingTop">8dp</item>
+    </style>
+
+    <style name="common_edit_content" parent="auto_edit_text_2">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:paddingBottom">16dp</item>
+        <item name="android:paddingTop">16dp</item>
+    </style>
+
+
+</resources>

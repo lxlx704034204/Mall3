@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/home_scroll_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/OrangeText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/content_background"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="10dp"
+            android:text="@string/explain_add_auto" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp">
+
+            <TextView
+                style="@style/common_edit_title_trpa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="车辆信息:" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/commen_auto_info_type"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请选择车辆信息(必填)"
+                android:maxLines="2"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp"
+                android:textColorHint="@color/gray_yjf" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/commen_auto_info_mileage_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="16dp"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/common_edit_title_trpa"
+                android:layout_width="wrap_content"
+                android:layout_height=  "wrap_content"
+                android:text="累计行驶里程:" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/commen_auto_info_mileage"
+                style="@style/MaterialEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_km"
+                android:hint="请输入行驶里程(必填)"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="10"
+                android:textColorHint="@color/gray_yjf" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/complete"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_marginBottom="@dimen/margin_16"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="@dimen/margin_16"
+            android:text="@string/save" />
+
+    </LinearLayout>
+</ScrollView>
+

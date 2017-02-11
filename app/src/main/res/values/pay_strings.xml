@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_settings">Settings</string>
+    //-------付款 头----
+    <string name="pay_main_sign_contract">签订合同</string>
+    <string name="pay_main_payment">付款</string>
+    <string name="pay_main_complete_information">完善信息</string>
+    <string name="pay_main_complete">完成</string>
+    //--------------------------
+    <string name="title_activity_pickup_place">自提点选择</string>
+    //------------合同信息填写----------
+    <string name="tv_label_username">购车人</string>
+    <string name="et_hint_username">车主姓名/公司名称</string>
+    <string name="tv_label_phone">联系方式</string>
+    <string name="et_hint_phone">手机号码</string>
+    <string name="tv_label_id">证件号码</string>
+    <string name="et_hint_id">身份证/公司组织机构代码</string>
+    <string name="tv_label_city">所在城市</string>
+    <string name="et_hint_city">省/市/区</string>
+    <string name="tv_label_address">详细地址</string>
+    <string name="et_hint_address">街道名称、门牌号码</string>
+    <string name="btn_get_cont">生成正式版购车合同</string>
+    <string name="tv_preview_cont">预览合同样本</string>
+    //------------合同-----------------
+    <string name="tv_confirm_cont">同意上述条款</string>
+    <string name="tv_sample_cont">购车合同</string>
+
+    //------------支付-----------------
+
+    //---金额显示头
+    <string name="tv_total_money">总额</string>
+    <string name="tv_already_paid">已支付</string>
+    <string name="tv_still_need_to_pay">还需支付</string>
+    <string name="tv_pay_deposit_label">支付订金：</string>
+    <string name="btn_complete_information">完善信息</string>
+    <string name="tv_add_pay_method"> &#160;增加支付</string>
+    <string name="tv_go_to_pay">去支付&#160;</string>
+    //---------订金---------------------
+    <string name="tv_deposit_success_label">订单提交成功，请您尽快付款！</string>
+    <string name="met_bank_type_hint">请选择银行或支付平台</string>
+
+    //-----------支付---------------------------
+    <string name="pay_online_met_bank_type_hint">选择银行或支付平台</string>
+    <string name="pay_online_met_amount_hint">输入支付金额</string>
+    //----------完善信息-------------
+
+
+    <string name="invoice_title_info">发票信息</string>
+    <string name="invoice_title_label">发票抬头：</string>
+    <string name="id_label">证件号码：</string>
+
+
+    <string name="tv_consignee_label">收货人：</string>
+    <string name="tv_home_delivery">送货上门</string>
+    <string name="tv_pickup_point_label">提车点自提</string>
+    <string name="tv_pickup_point_choose_label">请选择自提点</string>
+    <string name="btn_ci_save">保存</string>
+    <string name="label_delivery">1.送车上门，根据距离不同收取一定物流费用(500–1000元)</string>
+    <string name="label_pick_point">提车点自提，恒信汽车直接办理出库手续并协助办理临时牌照</string>
+    //------------提车点---------------
+    <string name="pickup_point_btn_shop">本店提车</string>
+    <string name="pickup_point_btn_phone">电话联系</string>
+
+    //------------完成-----------------
+    <string name="tv_order_handed">订单已提交</string>
+    <string name="tv_online_part_notice">您已支付部分车款，请在24小时内支付余款</string>
+    <string name="btn_online_part_pay">继续支付</string>
+    <string name="btn_upload_info">上传贷款资料</string>
+    <string name="tv_online_all">尊敬的用户，您的车辆正在出库中，请保持手机畅通</string>
+    <string name="btn_online_all">如何提车</string>
+    <string name="tv_underline_notice">
+        尊敬的%1$s，24小时内会有客服人员与您联系，请保持手机畅通。如果有任何疑问，请拨打我们的客服电话。
+    </string>
+    <string name="tv_installment_notice">
+        尊敬的%1$s，24小时内由专人为您办理分期手续，请保持手机畅通。如果有任何疑问，请拨打我们的客服电话。
+    </string>
+    <string name="tv_bottom_call_text">如有疑问请拨打：</string>
+    <string name="tv_check_call_text">您还可以：</string>
+    <string name="tv_check_orders">查看订单</string>
+
+    //-------------------------------
+    <string name="title_activity_payment">测试付款界面</string>
+    <string name="title_activity_deposit">订金支付</string>
+    <string name="title_activity_pay_spare_money">余款支付</string>
+    <string name="title_activity_finish_deposit">完成订金</string>
+    <string name="title_activity_pick_car_help">提车帮助</string>
+    //--------------
+    <string name="fragment_description_finish_deposit">订金完成显示</string>
+    <string name="fragment_description_edit_contract">合同填写</string>
+    <string name="fragment_description_deposit">订金支付</string>
+    <string name="fragment_description_pay_online">线上支付</string>
+    <string name="fragment_description_complete_info">完善信息</string>
+    <string name="fragment_description_complete">完成界面</string>
+    <string name="fragment_description_no_data">空数据界面</string>
+    <string name="title_activity_test_pick_up">TestPickUpActivity</string>
+    <string name="title_activity_yjf">YJFActivity</string>
+    <string name="title_activity_upload_info">贷款信息</string>
+    <string name="save_with_space">保 存</string>
+    <string name="yuan">元</string>
+    <string name="phone_number">手机号码:</string>
+    <string name="name">姓名:</string>
+
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

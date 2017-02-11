@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:divider="@drawable/line"
+    android:orientation="vertical"
+    android:showDividers="middle">
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickToParameter"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_param"
+        tab:tabLabel="产品参数"
+        tab:tabTagDrawable="@drawable/ic_list_arrow"/>
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_introduction"
+        tab:tabLabel="企业介绍"
+        tab:tabTagDrawable="@drawable/ic_cbb_arrow_up">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="content">
+
+            <com.hxqc.mall.views.AutoSquareImageView
+                android:id="@+id/detail_introduction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="content"/>
+            <!--android:background="@drawable/pic_introduction"-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shadow"/>
+        </RelativeLayout>
+
+    </com.hxqc.mall.views.auto.AutoDetailTabView>
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_advantage"
+        tab:tabLabel="恒信优势"
+        tab:tabTagDrawable="@drawable/ic_cbb_arrow_up">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:tag="content">
+
+
+            <ImageView
+                android:id="@+id/detail_pic_strength"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:tag="content"/>
+            <!--android:src="@drawable/pic_strength"-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_shadow"/>
+        </RelativeLayout>
+
+    </com.hxqc.mall.views.auto.AutoDetailTabView>
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_info"
+        tab:tabLabel="购买须知"
+        tab:tabTagDrawable="@drawable/ic_cbb_arrow_up">
+
+        <include
+            layout="@layout/include_detail_purchase_notes"
+            android:tag="content"/>
+
+    </com.hxqc.mall.views.auto.AutoDetailTabView>
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:onClick="openToQA"
+        android:orientation="vertical"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_question"
+        tab:tabLabel="常见问题"
+        tab:tabTagDrawable="@drawable/ic_list_arrow"/>
+
+    <include
+        layout="@layout/include_question_answer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="content"/>
+
+    <com.hxqc.mall.views.auto.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickToComment"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/ic_detail_comment"
+        tab:tabLabel="用户评价"
+        tab:tabTagDrawable="@drawable/ic_list_arrow"/>
+</LinearLayout>

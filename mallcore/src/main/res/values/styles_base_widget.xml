@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="btn_default" parent="@style/Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">36dp</item>
+        <item name="android:minHeight">36dp</item>
+        <item name="android:minWidth">88dip</item>
+    </style>
+
+    <style name="btn_white" parent="btn_default">
+        <item name="android:textColor">@color/title_and_main_text</item>
+        <item name="android:background">@drawable/btn_white</item>
+    </style>
+
+    <style name="btn_orange" parent="btn_default">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_orange</item>
+    </style>
+
+    <!--红色按钮，用red命名，显示会不正常-->
+    <style name="btn_vermilion" parent="btn_default">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">@drawable/btn_vermilion</item>
+    </style>
+    <!--镂空边线橙色按钮-->
+    <style name="btn_border" parent="btn_default">
+        <item name="android:textColor">#ff7043</item>
+        <item name="android:background">@drawable/btn_border</item>
+    </style>
+
+
+    <style name="Toast">
+        <item name="@android:windowEnterAnimation">@anim/toast_in</item>
+        <item name="@android:windowExitAnimation">@anim/toast_out</item>
+    </style>
+
+    <!--用于车辆列表，评论列表，条件选项-->
+    <style name="FactorTabChild">
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:gravity">center</item>
+        <item name="android:button">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@drawable/textcolor_3type_radio</item>
+        <item name="android:layout_height">46dp</item>
+    </style>
+    <!--用于店铺详情，分类列表-->
+    <!--<style name="ShopDetailsTabChild">-->
+    <!--<item name="android:layout_weight">1</item>-->
+    <!--<item name="android:layout_width">0dp</item>-->
+    <!--<item name="android:layout_height">wrap_content</item>-->
+    <!--<item name="android:button">@null</item>-->
+    <!--<item name="android:background">@drawable/bg_shop_details_radiobutton_seletor</item>-->
+    <!--<item name="android:textColor">@drawable/textcolor_4type_radio</item>-->
+    <!--</style>-->
+    <!--编辑框-->
+    <style name="MaterialEditText">
+        <item name="android:textSize">@dimen/title_text_size_16</item>
+        <item name="android:background">@null</item>
+        <item name="android:textColor">@color/title_and_main_text</item>
+        <item name="android:textColorHint">@color/straight_matter_and_secondary_text</item>
+        <item name="baseColor">@color/divider</item>
+        <item name="android:textCursorDrawable">@drawable/edittext_cursor</item>
+    </style>
+    <!--有上浮提示的编辑框-->
+    <style name="FloatingEditText" parent="MaterialEditText">
+        <item name="floatingLabel">highlight</item>
+    </style>
+    <!--分割线-->
+    <style name="DividerLine">
+        <item name="android:layout_width">@dimen/divider_height_1</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/divider</item>
+    </style>
+    <!--线-->
+    <style name="Line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/divider_height_1</item>
+    </style>
+    <!--下划线-->
+    <style name="UnderLine" parent="Line">
+        <item name="android:background">@color/divider</item>
+    </style>
+    <!--虚线-->
+    <style name="DotLine" parent="Line">
+        <item name="android:background">@drawable/dotline_default</item>
+    </style>
+
+
+    <!--对话框-->
+    <style name="alert_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!--加载时对话框-->
+    <style name="loading_dialog" parent="alert_dialog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--密码框-->
+    <style name="password_edit" parent="FloatingEditText">
+        <item name="android:inputType">textPassword</item>
+        <item name="android:maxLength">20</item>
+        <item name="android:minEms">6</item>
+        <item name="android:digits">@string/password_digits</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <style name="company_name" parent="GrayText12">
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_marginBottom">14dp</item>
+        <item name="android:text">@string/company_for_short</item>
+    </style>
+
+    <!--系统对话框-->
+    <style name="MaterialDialog" parent="android:Theme.DeviceDefault.Light.Dialog.NoActionBar">
+        <item name="android:textColor">@color/text_color_title</item>
+        <item name="titleTextColor">@color/text_color_title</item>
+        <item name="android:textColorPrimary">@color/text_gray</item>
+        <item name="buttonBarNegativeButtonStyle">@style/NegativeButton</item>
+        <item name="buttonBarPositiveButtonStyle">@style/PositiveButton</item>
+        <item name="android:buttonBarButtonStyle">@null</item>
+        <item name="android:alertDialogTheme">?android:attr/alertDialogTheme</item>
+    </style>
+
+    <!--系统对话框-->
+    <style name="MMaterialDialog" parent="MaterialDialog">
+        <item name="android:background">@color/white</item>
+    </style>
+
+    <style name="submitDIalog" parent="MaterialDialog">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:background">@null</item>
+        <item name="android:windowBackground">@color/float_transparent</item>
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <style name="MaterialDNoBack" parent="submitDIalog">
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+    <!--系统对话框按钮-->
+    <style name="NegativeButton">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_gray</item>
+    </style>
+    <!--系统对话框按钮-->
+    <style name="PositiveButton">
+        <item name="android:background">@null</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/text_blue</item>
+    </style>
+</resources>

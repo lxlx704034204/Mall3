@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="车 牌 号:" />
+
+                <com.hxqc.mall.auto.view.PlateNumberTextView
+                    android:id="@+id/license_city"
+                    style="@style/auto_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_cbb_arrow_down"
+                    android:padding="16dp"
+                    android:text="鄂" />
+
+                <com.hxqc.mall.auto.view.PlateNumberTextView
+                    android:id="@+id/license_number"
+                    style="@style/auto_edit_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="6"
+                    android:padding="16dp"
+                    android:text="请填写车牌号" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="车辆识别码:(VIN)" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        style="@style/auto_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="请输入车辆识别代码"
+                        android:padding="16dp" />
+
+                    <TextView
+                        style="@style/OrangeText12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="16dp"
+                        android:text="可输入行驶证VIN,获取更准确的车辆信息" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:ems="6"
+                    android:text="车辆信息:" />
+
+                <TextView
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:hint="选择车型"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="行驶里程:" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        style="@style/auto_edit_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="请填写行驶里程"
+                        android:padding="16dp" />
+
+                    <TextView
+                        style="@style/GrayText16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|end"
+                        android:layout_marginRight="16dp"
+                        android:text="KM" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:background="#FFF2E1"
+                android:orientation="vertical"
+                android:padding="@dimen/margin_16">
+
+                <TextView
+                    style="@style/OrangeText16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="您上次保养的时间2016.02.18   行驶里程6000公里" />
+
+                <TextView
+                    style="@style/OrangeText16"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="质保到2016年2月11日" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@color/divider" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:text="联系人姓名:" />
+
+                <EditText
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请填写车主姓名"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="手机号码:" />
+
+                <EditText
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请填写手机号码"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:text="服务门店:" />
+
+                <EditText
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="请填写手机号码"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:text="服务类型:" />
+
+                <TextView
+                    android:id="@+id/select_service_type"
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:hint="请选择"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:text="预约时间:" />
+
+                <TextView
+                    android:id="@+id/select_reserve_date"
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:hint="请选择"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:text="预约服务顾问:" />
+
+                <TextView
+                    android:id="@+id/select_counselor"
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:hint="请选择"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/auto_text_maintain"
+                    android:text="预约服务技师:" />
+
+                <TextView
+                    android:id="@+id/select_maintenance_worker"
+                    style="@style/auto_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_list_arrow"
+                    android:hint="请选择"
+                    android:padding="16dp" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/reserve_success"
+                style="@style/btn_orange"
+                android:layout_width="match_parent"
+                android:text="去看保养方案" />
+
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

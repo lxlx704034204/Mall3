@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <TextView
+                android:id="@+id/type"
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:ems="5"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:text="投诉类型：" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/choose_type"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请选择投诉类型"
+                android:maxLines="2"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/gray_yjf"
+                app:met_helperText=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/phone"
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:ems="5"
+                android:text="手机号码：" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/input_phone"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="请输入手机号"
+                android:inputType="phone"
+                android:lines="1"
+                android:maxLength="11"
+                android:paddingBottom="8dp"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/gray_yjf"
+                app:met_helperText=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:ems="5"
+                android:text="所在区域：" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/choose_aera"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请选择区域"
+                android:maxLines="2"
+                android:paddingBottom="8dp"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/gray_yjf"
+                app:met_helperText=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:ems="5"
+                android:text="品        牌：" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/choose_brand"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请选择品牌"
+                android:maxLines="2"
+                android:paddingBottom="8dp"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/gray_yjf"
+                app:met_helperText=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:ems="5"
+                android:text="店铺名称：" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/choose_shop"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_list_arrow"
+                android:ellipsize="end"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:hint="请选择店铺"
+                android:maxLines="2"
+                android:paddingBottom="8dp"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/gray_yjf"
+                app:met_helperText=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:ems="5"
+                android:text="投诉员工：" />
+
+            <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+                android:id="@+id/input_person_name"
+                style="@style/auto_edit_text_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:hint="请输入投诉员工姓名"
+                android:lines="1"
+                android:paddingBottom="8dp"
+                android:paddingRight="@dimen/margin_16"
+                android:paddingTop="8dp"
+                android:textColorHint="@color/gray_yjf"
+                app:met_helperText=" " />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <TextView
+                android:id="@+id/advice"
+                style="@style/BlackText16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:ems="6"
+                android:paddingBottom="8dp"
+                android:paddingTop="8dp"
+                android:text="投诉意见：" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/margin_10">
+
+                <EditText
+                    android:id="@+id/input_advice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/phone_number"
+                    android:background="@drawable/bg_white_box"
+                    android:gravity="top"
+                    android:hint="@string/input_your_advice"
+                    android:maxLength="200"
+                    android:minLines="6"
+                    android:padding="@dimen/margin_10"
+                    android:textColor="#333"
+                    android:textColorHint="@color/gray_yjf"
+                    android:textSize="@dimen/text_size_14"/>
+
+                <TextView
+                    android:id="@+id/mark_label"
+                    style="@style/GrayText12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:paddingBottom="@dimen/normal_size_5"
+                    android:paddingRight="@dimen/normal_size_5"
+                    android:text="0/200" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/advice_warning"
+                style="@style/RedText14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_16"
+                android:layout_marginRight="@dimen/margin_16"
+                android:layout_marginTop="@dimen/normal_size_5"
+                android:gravity="right"
+                android:text="请输入投诉意见"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/commit_btn"
+            style="@style/btn_orange"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="@dimen/margin_16"
+            android:layout_marginRight="@dimen/margin_16"
+            android:layout_marginTop="36dp"
+            android:onClick="commit"
+            android:text="@string/btn_commit" />
+
+        <TextView
+            android:id="@+id/watch_out_info"
+            style="@style/GrayText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/commit_btn"
+            android:layout_marginTop="@dimen/dp_40"
+            android:gravity="center"
+            android:onClick="callPhone"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingLeft="@dimen/margin_16"
+            android:paddingRight="@dimen/margin_16"
+            android:paddingTop="@dimen/margin_10"
+            android:text="@string/info_complaint_watch_out" />
+    </LinearLayout>
+</ScrollView>

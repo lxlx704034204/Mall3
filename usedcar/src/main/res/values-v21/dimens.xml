@@ -1,0 +1,4 @@
+<resources>
+    <dimen name="card_margin_8">16dp</dimen>
+    <dimen name="card_margin_16">24dp</dimen>
+</resources>

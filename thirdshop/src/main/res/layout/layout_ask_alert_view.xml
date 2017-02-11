@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="详情咨询"
+            android:textColor="#FA713B"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/close_btn"
+            android:layout_width="18dp"
+            android:layout_height="18dp"
+            android:padding="4dp"
+            android:src="@drawable/alert_view_close"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/divider"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingTop="8dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="25dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="咨询提交后，我们有专人工作人员进行回复，请耐心等待!"
+            android:textColor="#32733D"
+            android:background="@drawable/layout_ask_tip_view_bg"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="14sp"
+                android:textColor="#9B9B9B"
+                android:text="咨询内容："/>
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/submit_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:lines="4"
+            android:padding="4dp"
+            android:gravity="top"
+            android:scrollbars="vertical"
+            android:textColor="@color/black"
+            android:background="@drawable/layout_ask_alert_view_edit_bg"/>
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="right">
+            
+            <Button
+                android:id="@+id/submit"
+                style="@style/btn_vermilion"
+                android:text="提交"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#989898"
+                android:textSize="12sp"
+                android:layout_marginLeft="10dp"
+                android:text="剩余字数："/>
+
+            <TextView
+                android:id="@+id/invalid_num_count"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:textColor="#DC3030"
+                android:layout_marginLeft="10dp"
+                android:text="250"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

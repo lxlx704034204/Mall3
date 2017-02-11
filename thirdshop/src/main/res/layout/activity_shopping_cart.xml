@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/toolbar_background">
+
+        <TextView
+            android:id="@+id/menu"
+            style="@style/WhiteText14"
+            android:layout_height="match_parent"
+            android:layout_gravity="right|center_vertical"
+            android:gravity="center_vertical"
+            android:paddingLeft="@dimen/normal_margin_big_16"
+            android:paddingRight="@dimen/normal_margin_small_8" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <in.srain.cube.views.ptr.PtrFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sub_message_ptr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        cube_ptr:ptr_duration_to_close="300"
+        cube_ptr:ptr_duration_to_close_header="2000"
+        cube_ptr:ptr_keep_header_when_refresh="true"
+        cube_ptr:ptr_pull_to_fresh="false"
+        cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+        cube_ptr:ptr_resistance="1.7">
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="0dp"
+            android:paddingBottom="49dp" />
+    </in.srain.cube.views.ptr.PtrFrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <View style="@style/UnderLine" />
+
+        <TextView
+            android:id="@+id/to_bill"
+            style="@style/WhiteText16"
+            android:layout_width="150dp"
+            android:layout_height="49dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/acc_orange_btn"
+            android:enabled="false"
+            android:gravity="center"
+            android:text="去结算" />
+
+        <CheckBox
+            android:id="@+id/select_all"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/normal_margin_big_16"
+            android:button="@drawable/shopping_cart_checkbox"
+            android:checked="false"
+            android:paddingLeft="@dimen/normal_margin_small_8"
+            android:text="全选" />
+
+        <TextView
+            android:id="@+id/amount_text"
+            style="@style/GrayText12"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="@dimen/normal_margin_small_8"
+            android:layout_toRightOf="@id/select_all"
+            android:gravity="center_vertical"
+            android:text="商品总计：" />
+
+        <TextView
+            android:id="@+id/amount"
+            style="@style/BlackText12"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/normal_margin_small_8"
+            android:layout_marginLeft="50dp"
+            android:layout_toRightOf="@id/select_all"
+            android:gravity="center_vertical"
+            tools:text="¥22280.00" />
+
+        <Button
+            android:id="@+id/delete"
+            style="@style/btn_vermilion"
+            android:layout_width="118dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:text="删除" />
+
+        <Button
+            android:id="@+id/collect"
+            style="@style/btn_orange"
+            android:layout_width="118dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/normal_margin_big_16"
+            android:layout_toLeftOf="@id/delete"
+            android:text="移入关注"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        android:id="@+id/fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/toolbar"
+        android:visibility="gone" />
+</RelativeLayout>

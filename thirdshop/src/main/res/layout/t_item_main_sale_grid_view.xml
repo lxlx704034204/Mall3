@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?><!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"--><!--android:layout_width="wrap_content"--><!--android:layout_height="wrap_content"--><!--android:focusableInTouchMode="true"--><!--android:gravity="center"--><!--android:orientation="vertical"--><!--android:padding="@dimen/promotion_item_padding_6">-->
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_sale_series_name"
+    style="@style/GrayText14"
+    android:layout_width="wrap_content"
+    android:layout_height="@dimen/main_series_item_text_height"
+    android:background="@drawable/t_bg_main_sale_grid_view_item"
+    android:gravity="center"
+    android:minWidth="@dimen/main_series_item_text_width"
+    android:paddingLeft="@dimen/main_series_item_text_padding"
+    android:paddingRight="@dimen/main_series_item_text_padding"
+    android:maxLines="1"
+    android:textColor="@drawable/t_color_main_sale"
+    tools:text="标题" /><!--</LinearLayout>-->

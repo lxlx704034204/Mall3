@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F9F9F9"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout    android:id="@+id/newwenergycardeals_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_newwenergycarsales_bj"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_encyclopedicknowledge_ico"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/BlackText14"
+                android:layout_marginTop="8dp"
+                android:text="新能源车销售"
+
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <RelativeLayout
+                android:id="@+id/newwenergycar4s_button"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_newwenergy4s_bj"
+                >
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_new_energy_4s_ico"/>
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/BlackText14"
+                android:layout_marginTop="10dp"
+                android:text="新能源4S店"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout  android:id="@+id/newwenergycartemai_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_newwenergdeals_bj"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_newwenergydeals_ico"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/BlackText14"
+                android:layout_marginTop="8dp"
+                android:text="新能源特卖"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout  android:id="@+id/modelsandsubsidies_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_modelsandsubsidies_bj"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_modelsandsubsidies_ico"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/BlackText14"
+                android:layout_marginTop="8dp"
+                android:text="车型及补贴资料"
+                />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        >
+
+        <LinearLayout android:id="@+id/encyclopedicknowledge_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_encyclopedicknowledge_bj"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_encyclopedicknowledge_ico"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/BlackText14"
+                android:layout_marginTop="8dp"
+                android:text="百科知识"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout      android:id="@+id/home_more_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_more_bj"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_modelsandsubsidies_ico"/>
+
+
+            </RelativeLayout>
+
+            <TextView
+                style="@style/BlackText14"
+                android:layout_marginTop="8dp"
+                android:text="敬请期待"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+            <RelativeLayout
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/button_news_bj"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/button_news_ico"/>
+
+
+            </RelativeLayout>
+
+
+            <TextView
+                style="@style/BlackText12"
+                android:layout_marginTop="8dp"
+                android:text="新闻"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

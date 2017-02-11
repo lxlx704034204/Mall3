@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/view_auto_detail_banner_layout" />
+
+    <RelativeLayout
+        android:id="@+id/lay1"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/car_title"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="经销商参考价:" />
+
+        <TextView
+            android:id="@+id/car_content_1"
+            style="@style/RedText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110dp"
+            android:layout_marginRight="4dp" />
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/lay2"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_below="@+id/lay1"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="@string/itemOrigPrice" />
+
+        <TextView
+            android:id="@+id/car_content_4"
+            style="@style/BlackText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="110dp" />
+
+        <ImageView
+            android:id="@+id/show_price_popupView"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_toRightOf="@+id/car_content_4"
+            android:clickable="true"
+            android:onClick="toShowPriceDetail"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/ic_table" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="8dp"
+        android:paddingTop="4dp">
+
+        <TextView
+            android:id="@+id/tv2"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="0dp"
+            android:text="车身颜色:" />
+
+        <com.hxqc.widget.GridViewNoSlide
+            android:id="@+id/color_gridView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90dp"
+            android:listSelector="@color/transparent"
+            android:verticalSpacing="15dp" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/lay3"
+        android:layout_width="wrap_content"
+        android:layout_height="27dp"
+        android:layout_below="@+id/car_title"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:text="车身颜色:" />
+
+        <com.hxqc.util.CustomSinnper
+            android:id="@+id/choose_color"
+            style="@style/BlackText14"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="105dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/bg_line_around"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:paddingBottom="2dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="2dp" />
+
+        <ImageView
+            android:id="@+id/choose_color_arrow"
+            android:layout_width="11dp"
+            android:layout_height="11dp"
+            android:layout_alignRight="@+id/choose_color"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin_left_16"
+            android:layout_marginRight="5dp"
+            android:src="@drawable/ic_cbb_arrow_down" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dedede" />
+
+    <RelativeLayout
+        android:id="@+id/auto_tab_group"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/detail_tab_height"
+        android:background="#FAFAFA">
+
+        <ImageView
+            android:id="@+id/auto_tab_icon"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/item_margin_left_16"
+            android:padding="2dp"
+            android:src="@drawable/car_detail_info" />
+
+        <TextView
+            android:id="@+id/auto_tab_label"
+            style="@style/RedText16"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@+id/auto_tab_icon"
+            android:gravity="center_vertical"
+            android:text="基本信息"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dedede" />
+
+    <com.hxqc.widget.ListViewNoSlide
+        android:id="@+id/parameter_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f0f0f0"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent"
+        android:paddingBottom="3dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dedede" />
+
+    <!--图文介绍-->
+    <com.hxqc.mall.thirdshop.views.ThirdAutoDetailIntroduce
+        android:id="@+id/introduce"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="false" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dedede" />
+
+    <com.hxqc.mall.thirdshop.views.AutoDetailTabView xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/item_parameter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="clickToParameter"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/car_detail_params"
+        tab:tabLabel="配置参数"
+        tab:tabTagDrawable="@drawable/ic_list_arrow" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentBottom="true"
+        android:background="#dedede" />
+
+    <LinearLayout
+        android:id="@+id/shop_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dedede" />
+
+        <TextView
+            android:id="@+id/shop_type"
+            style="@style/BlackText16"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:padding="12dp"
+            android:text=""
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:id="@+id/site_lay"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            >
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#dedede" />
+
+
+            <TextView
+                android:layout_width="2.3dp"
+                android:layout_height="13dp"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"
+                android:background="#C73949"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"
+                android:paddingTop="12dp"
+                android:textColor="#C73949" />
+
+            <TextView
+                android:id="@+id/site_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_centerVertical="true"
+                android:gravity="center_vertical"
+                android:paddingLeft="4dp"
+                android:text=""
+                android:textColor="#C73949" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

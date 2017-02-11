@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/surface"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.hxqc.mall.camera.RectCameraView
+        android:id="@+id/rect_camera"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:id="@+id/flash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:padding="6dp"
+            android:src="@drawable/flash" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom"
+        android:layout_width="match_parent"
+        android:layout_height="96dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="照片"
+            android:textColor="#F1BB02"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/cancel"
+                style="@style/WhiteText14"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                android:text="取消" />
+
+            <ImageView
+                android:id="@+id/take_photo"
+                android:layout_width="56dp"
+                android:layout_height="56dp"
+                android:layout_centerInParent="true"
+                android:src="@drawable/camera_circle" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/shadow_top"
+        android:layout_width="match_parent"
+        android:layout_height="109dp"
+        android:layout_below="@id/top"
+        android:background="#80000000" />
+
+    <View
+        android:id="@+id/shadow_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/bottom"
+        android:background="#80000000" />
+
+    <View
+        android:id="@+id/shadow_left"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shadow_bottom"
+        android:layout_below="@id/shadow_top"
+        android:background="#80000000" />
+
+    <View
+        android:id="@+id/shadow_right"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/shadow_bottom"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/shadow_top"
+        android:background="#80000000" />
+
+    <TextView
+        android:id="@+id/description"
+        style="@style/WhiteText12"
+        android:layout_centerHorizontal="true"
+        tools:text="将身份证正面置于此区域，并对准拍照" />
+</RelativeLayout>

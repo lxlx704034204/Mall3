@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:overScrollMode="never">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="选择品牌："/>
+
+                <TextView
+                    android:id="@+id/tv_car_brand"
+                    style="@style/RedText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="奥迪"/>
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/select_car_by_condition_brand_btn"
+                android:onClick="clickToChooseBrand"
+                android:text="选择品牌"
+                android:textColor="#E02B34"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#DFDFDF"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#F2F2F2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#DFDFDF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackText14"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="价格区间："/>
+
+                <TextView
+                    android:id="@+id/tv_price_range"
+                    style="@style/RedText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="5-10w"/>
+            </LinearLayout>
+
+            <com.hxqc.mall.thirdshop.views.DoubleSeekBar
+                android:id="@+id/myseekbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:sectionNum="5"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#DFDFDF"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#F2F2F2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#DFDFDF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                style="@style/BlackText14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="级别"/>
+
+            <com.hxqc.widget.GridViewNoSlide
+                android:id="@+id/gird_view_choose_level"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:horizontalSpacing="13dp"
+                android:numColumns="3"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#DFDFDF"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="12dp"
+                android:background="#F2F2F2"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#DFDFDF"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="16dp">
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/BlackText14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="国别"/>
+
+            <com.hxqc.widget.GridViewNoSlide
+                android:id="@+id/gird_view_choose_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:horizontalSpacing="13dp"
+                android:numColumns="3"
+                android:padding="5dp"
+                android:verticalSpacing="13dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:orientation="horizontal"
+            android:padding="13dp">
+
+            <TextView
+                style="@style/WhiteText14"
+                android:layout_width="65dp"
+                android:layout_height="39dp"
+                android:background="@drawable/select_car_by_condition_reset_btn"
+                android:gravity="center"
+                android:onClick="clickReset"
+                android:text="重置"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="39dp"
+                android:layout_marginLeft="13dp"
+                android:background="@drawable/select_car_by_condition_view_bg"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|center_vertical"
+                    android:src="@drawable/ic_list_arrow"/>
+
+                <TextView
+                    android:id="@+id/tv_car_num"
+                    style="@style/WhiteText14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    tools:text="共 888 款车系符合要求"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

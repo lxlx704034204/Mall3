@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ListView
+        android:visibility="gone"
+        android:id="@+id/shop_lv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/askprice"
+        android:scrollbars="none"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="0dp"
+        android:listSelector="@android:color/transparent">
+
+    </ListView>
+
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/askprice"
+        style="@style/WhiteText18"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:onClick="askPrice"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btn_click_style_orange"
+        android:gravity="center"
+        android:text="询价" />
+
+    <com.hxqc.mall.thirdshop.views.AppearanceToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+
+
+    <com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/refresh_fail_view"
+        android:layout_below="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        fail:emptyDescription="商品数据不存在" />
+
+
+
+
+
+</RelativeLayout>

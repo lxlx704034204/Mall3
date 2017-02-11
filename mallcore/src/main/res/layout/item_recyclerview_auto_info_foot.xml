@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="48dp"
+    android:background="@drawable/btn_auto_add"
+    android:orientation="vertical">
+
+
+
+    <TextView
+        style="@style/OrangeText16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:drawableLeft="@drawable/ic_information_add"
+        android:gravity="center"
+        android:padding="12dp"
+        android:text="添加车辆" />
+
+</FrameLayout>

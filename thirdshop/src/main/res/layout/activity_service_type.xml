@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/service_type_lists"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <Button
+        android:id="@+id/service_type_commit"
+        style="@style/btn_orange"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:focusable="false"
+        android:padding="13dp"
+        android:focusableInTouchMode="false"
+        android:text="确 定"/>
+
+    <com.hxqc.mall.core.api.RequestFailView
+        xmlns:fail="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/service_type_fail_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="12dp"
+        android:visibility="gone"
+        fail:emptyDescription="获取数据失败" />
+
+
+</RelativeLayout>

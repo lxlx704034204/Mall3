@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:orientation="vertical">
+
+    <com.hxqc.mall.thirdshop.views.AutoDetailTabView
+        xmlns:tab="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:tag="sticky"
+        tab:tabIconDrawable="@drawable/car_detail_color"
+        tab:tabLabel="车辆颜色"
+        android:background="#F5F5F5"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@drawable/line"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="20dp"
+        android:paddingBottom="12dp"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="车身："
+            android:textColor="@color/text_gray"/>
+
+        <com.hxqc.widget.GridViewNoSlide
+            android:id="@+id/color_gridView"
+            android:layout_marginLeft="10dp"
+            android:verticalSpacing="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>

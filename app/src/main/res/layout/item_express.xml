@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item_express"
+    android:layout_width="match_parent"
+    android:layout_height="110dp">
+
+    <View
+        android:layout_width="@dimen/express_line_width_2"
+        android:layout_height="@dimen/express_line_height_46"
+        android:layout_marginLeft="@dimen/express_margin_left_24"
+        android:background="@color/express_line" />
+
+    <ImageView
+        android:id="@+id/circle"
+        android:layout_width="@dimen/icon_size_18"
+        android:layout_height="@dimen/icon_size_18"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/normal_margin_big_16" />
+
+    <View
+        android:layout_width="@dimen/express_line_width_2"
+        android:layout_height="@dimen/express_line_height_46"
+        android:layout_below="@id/circle"
+        android:layout_marginLeft="@dimen/express_margin_left_24"
+        android:background="@color/express_line" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/express_margin_left_24"
+        android:layout_toRightOf="@id/circle"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/time"
+            style="@style/GrayText12"
+            android:drawableLeft="@drawable/ic_timeline_clock"
+            android:drawablePadding="@dimen/express_time_padding_5" />
+
+        <TextView
+            android:id="@+id/express_status"
+            style="@style/BlackText16"
+            android:layout_marginTop="@dimen/express_status_margin_top_10"
+            android:layout_marginRight="@dimen/normal_margin_big_16"/>
+
+    </LinearLayout>
+</RelativeLayout>

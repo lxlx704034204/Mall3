@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/illegal_processing_btn"
+        android:textSize="16sp"
+        android:title="服务说明"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/illegal_history_btn"
+        android:textSize="16sp"
+        android:title="历史违章"
+        android:visible="false"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/illegal_processing_cancel"
+        android:textSize="16sp"
+        android:title="取消"
+        android:visible="false"
+        app:showAsAction="always" />
+
+</menu>

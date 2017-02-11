@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/window_color"
+    android:orientation="vertical">
+
+    <View
+        android:id="@+id/divider_line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/normal_margin_big_16"
+        android:background="@color/tag_background" />
+
+    <View style="@style/UnderLine" />
+
+    <include
+        layout="@layout/layout_order_head" />
+
+    <View style="@style/UnderLine" />
+
+    <com.hxqc.mall.views.order.OrderDescriptionForMyOrder
+        android:id="@+id/order_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/normal_padding_big_16"/>
+
+    <View
+        android:id="@+id/line"
+        style="@style/UnderLine" />
+
+    <com.hxqc.mall.views.order.OrderBottom
+        android:id="@+id/order_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/order_radio_group_height_54" />
+
+    <View style="@style/UnderLine" />
+</LinearLayout>

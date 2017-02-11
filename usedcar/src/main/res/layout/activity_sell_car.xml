@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hxqc.mall.usedcar.views.UsedCarDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="?attr/colorPrimary" />
+
+        <ScrollView
+            android:id="@+id/scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbars="none">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarBrand
+                    android:id="@+id/item_brand"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_16" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarColor
+                    android:id="@+id/item_color"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@id/item_brand"
+                    app:itemHint="请选择车身颜色"
+                    app:itemName="车身颜色："
+                    app:itemStar="*"
+                    app:validatorString="请选择车身颜色" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItem
+                    android:id="@+id/item_level"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_color"
+                    app:itemHint="请选择车辆级别"
+                    app:itemName="车辆级别："
+                    app:itemStar="*"
+                    app:validatorString="请选择车辆级别" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItem
+                    android:id="@+id/item_gearbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_level"
+                    app:itemHint="请选择变速箱"
+                    app:itemName="变速箱："
+                    app:itemStar="*"
+                    app:validatorString="请选择变速箱" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/item_displacement"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_gearbox"
+                    app:editHint="请输入排量"
+                    app:editMaxLength="4"
+                    app:editName="排量："
+                    app:editStar="*"
+                    app:editUnit="L"
+                    app:validatorEditString="请输入排量" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItem
+                    android:id="@+id/item_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_displacement"
+                    app:itemHint="请选择车牌所在地"
+                    app:itemName="车牌所在地："
+                    app:itemStar="*"
+                    app:validatorString="请选择车牌所在地" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/item_mile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_location"
+                    app:editHint="请输入"
+                    app:editMaxLength="5"
+                    app:editName="行驶里程："
+                    app:editStar="*"
+                    app:editUnit="万公里"
+                    app:validatorEdit="range" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItemChooseDate
+                    android:id="@+id/item_on_card"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_mile"
+                    app:isNecessary="true"
+                    app:itemHint="请选择"
+                    app:itemName="首次上牌时间"
+                    app:itemStar="*"
+                    app:validatorString="请选择上牌时间" />
+
+                <RelativeLayout
+                    android:id="@+id/plate_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="56dp"
+                    android:layout_below="@id/item_on_card"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginRight="16dp">
+
+                    <TextView
+                        style="@style/BlackText14"
+                        android:layout_marginTop="12dp"
+                        android:text="车牌号码：" />
+
+                    <com.hxqc.mall.auto.view.NewPlateNumberLayout
+                        android:id="@+id/item_plate_num"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="100dp"
+                        android:layout_marginTop="2dp"
+                        app:layout_new_plate_number_textsize="14sp" />
+
+                </RelativeLayout>
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/item_new_car_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/plate_num"
+                    app:editHint="请输入新车价"
+                    app:editMaxLength="6"
+                    app:editName="新车价："
+                    app:editUnit="万元" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/item_price"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_new_car_price"
+                    app:editHint="请输入预售价格"
+                    app:editMaxLength="6"
+                    app:editName="预售价格："
+                    app:editStar="*"
+                    app:editUnit="万元"
+                    app:validatorEditString="请输入预售价格" />
+
+                <View
+                    android:id="@+id/blank_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/item_price"
+                    android:background="@color/tag_background" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/item_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/blank_1"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                    app:editHint="请输入联系人姓名"
+                    app:editInputType="text"
+                    app:editMaxLength="12"
+                    app:editName="联系人："
+                    app:editStar="*"
+                    app:validatorEdit="contactName" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarEditText
+                    android:id="@+id/item_mobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_contact"
+                    app:editHint="请输入手机号"
+                    app:editInputType="phone"
+                    app:editMaxLength="11"
+                    app:editName="手机号："
+                    app:editStar="*"
+                    app:validatorEdit="contactPhone" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItem
+                    android:id="@+id/item_look_location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_mobile"
+                    app:itemHint="请选择"
+                    app:itemName="看车地点："
+                    app:itemStar="*"
+                    app:validatorString="请选择看车地点" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarReadme
+                    android:id="@+id/item_readme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_look_location"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin_16"
+                    android:layout_marginTop="13dp" />
+
+                <View
+                    android:id="@+id/blank_2"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/item_readme"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                    android:background="@color/tag_background" />
+
+                <include
+                    android:id="@+id/layout_sell_car_car_photo"
+                    layout="@layout/layout_sell_car_car_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/blank_2" />
+
+                <include
+                    android:id="@+id/layout_sell_car_material_photo"
+                    layout="@layout/layout_sell_car_material_photo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_sell_car_car_photo" />
+
+                <View
+                    android:id="@+id/blank_3"
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:layout_below="@id/layout_sell_car_material_photo"
+                    android:background="@color/tag_background" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItemChooseDate
+                    android:id="@+id/item_inspection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/blank_3"
+                    android:layout_marginTop="@dimen/activity_horizontal_margin_16"
+                    app:itemHint="请选择"
+                    app:itemName="年检有效期" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItemChooseDate
+                    android:id="@+id/item_strong"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_inspection"
+                    app:itemHint="请选择"
+                    app:itemName="交强险到期" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItemChooseDate
+                    android:id="@+id/item_commercial"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_strong"
+                    app:itemHint="请选择"
+                    app:itemName="商业保险到期" />
+
+                <com.hxqc.mall.usedcar.views.SellCar.SellCarItemChooseDate
+                    android:id="@+id/item_warranty"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_commercial"
+                    app:itemHint="请选择"
+                    app:itemName="质保有效期" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_below="@id/item_warranty">
+
+                    <Button
+                        android:id="@+id/submit"
+                        style="@style/btn_vermilion"
+                        android:layout_width="match_parent"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/activity_vertical_margin_16"
+                        android:layout_marginRight="@dimen/activity_vertical_margin_16"
+                        android:layout_marginTop="@dimen/activity_vertical_margin_16"
+                        android:text="发布车源" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/right"
+        android:layout_width="412dp"
+        android:layout_height="match_parent"
+        android:clickable="true" />
+</com.hxqc.mall.usedcar.views.UsedCarDrawer>

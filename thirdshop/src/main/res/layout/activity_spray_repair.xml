@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_spray_title_text"
+            android:text="@string/spray_text_one" />
+
+        <TextView
+            style="@style/service_spray_title_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="130dp"
+            android:text="@string/spray_text_two" />
+
+        <TextView
+            style="@style/service_spray_title_text"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/margin_16"
+            android:text="@string/spray_text_three" />
+
+    </RelativeLayout>
+
+    <include
+        layout="@layout/view_cut_off_rule_gray"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_1"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginRight="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_12"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_12">
+
+        <TextView
+            style="@style/service_spray_text"
+            android:text="@string/spray_text_four" />
+
+        <TextView
+            style="@style/service_spray_text_row_two"
+            android:text="@string/spray_price_600" />
+
+        <TextView
+            style="@style/service_spray_text_row_three"
+            android:text="@string/spray_hour_3" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_spray_text"
+            android:text="@string/spray_text_fife" />
+
+        <TextView
+            style="@style/service_spray_text_row_two"
+            android:layout_marginLeft="45dp"
+            android:text="@string/spray_price_600" />
+
+        <TextView
+            style="@style/service_spray_text_row_three"
+            android:text="@string/spray_hour_5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_spray_text"
+            android:text="@string/spray_text_six" />
+
+        <TextView
+            style="@style/service_spray_text_row_two"
+            android:text="@string/spray_price_800" />
+
+        <TextView
+            style="@style/service_spray_text_row_three"
+            android:text="@string/spray_hour_5" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_spray_text"
+            android:text="@string/spray_text_seven" />
+
+        <TextView
+            style="@style/service_spray_text_row_two"
+            android:text="@string/spray_price_600" />
+
+        <TextView
+            style="@style/service_spray_text_row_three"
+            android:text="@string/spray_hour_6" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_16"
+        android:layout_marginTop="@dimen/margin_16"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/service_spray_text"
+            android:text="@string/spray_text_eight" />
+
+        <TextView
+            style="@style/service_spray_text_row_two"
+            android:text="@string/spray_price_400" />
+
+        <TextView
+            style="@style/service_spray_text_row_three"
+            android:text="@string/spray_hour_2" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_16"
+        android:background="@drawable/shape_spray_stroke"
+        android:gravity="center"
+        android:paddingBottom="@dimen/padding_top_bottom_15"
+        android:paddingTop="@dimen/padding_top_bottom_15"
+        android:text="@string/spray_text_nine"
+        android:textColor="@color/service_spray_text"
+        android:textSize="@dimen/text_size_18" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/spray_repair_text_nine_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="16dp"></android.support.v7.widget.RecyclerView>
+</LinearLayout>

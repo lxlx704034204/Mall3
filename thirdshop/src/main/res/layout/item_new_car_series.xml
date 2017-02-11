@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin_16">
+
+        <ImageView
+            android:id="@+id/auto_image"
+            android:layout_width="@dimen/app_item_auto_image_width_96"
+            android:layout_height="@dimen/app_item_auto_image_height_55" />
+
+        <TextView
+            android:id="@+id/auto_name"
+            style="@style/BlackText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/item_margin_left_16"
+            android:layout_toRightOf="@+id/auto_image"
+            android:lines="2"
+            android:maxLines="2"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/auto_name"
+            android:layout_below="@+id/auto_name"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/BlackText13"
+                    android:text="@string/price_range"
+                    android:textColor="@color/title_and_main_text" />
+
+                <TextView
+                    android:id="@+id/auto_price_range"
+                    style="@style/RedText13"
+                    android:layout_width="wrap_content"
+                    android:textColor="@color/main_and_price" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/GrayText13"
+                    android:text="@string/auto_msrp" />
+
+                <TextView
+                    android:id="@+id/auto_msrp"
+                    style="@style/RedText13"
+                    android:layout_width="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View style="@style/UnderLine" />
+</LinearLayout>

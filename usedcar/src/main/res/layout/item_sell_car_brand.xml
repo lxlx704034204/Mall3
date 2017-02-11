@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="16dp"
+    android:layout_marginRight="16dp">
+
+    <TextView
+        android:id="@+id/red_star"
+        style="@style/RedText14"
+        android:layout_marginTop="12dp"
+        android:text="*" />
+
+    <TextView
+        style="@style/BlackText14"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@+id/red_star"
+        android:text="品牌车型：" />
+
+    <com.hxqc.mall.core.views.vedit.EditTextValidatorView
+        android:id="@+id/brand"
+        style="@style/BlackText12"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="12dp"
+        android:background="@null"
+        android:drawableRight="@mipmap/ic_add"
+        android:editable="false"
+        android:ellipsize="end"
+        android:focusable="false"
+        android:hint="请选择品牌车型，没有点击添加"
+        android:inputType="none"
+        android:textCursorDrawable="@drawable/edittext_cursor"
+        app:met_helperText="" />
+
+    <ImageView
+        android:id="@+id/add_brand"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="14dp" />
+</RelativeLayout>

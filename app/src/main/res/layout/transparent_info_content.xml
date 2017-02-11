@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#66000000"
+    android:minHeight="110dp"
+    android:orientation="vertical"
+    android:padding="@dimen/margin_10">
+
+    <TextView
+        android:id="@+id/info_title"
+        style="@style/WhiteText16"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="居家兼运动 新阿特兹等4款中级车推荐" />
+
+    <TextView
+        android:id="@+id/info_detail"
+        style="@style/WhiteText13"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:textColor="#77ffffff"
+        tools:text="兼运动居家兼运运动 居家兼运动 新等4款中特动 新阿特兹等4款中级车推荐居家兼运动 新阿特兹等4款中级车推荐居家兼运动居家兼运动 新阿特兹等4款中级车推荐居家兼运动 新阿特兹等4款中级车推荐 新阿特兹等4款中级车推荐" />
+</LinearLayout>

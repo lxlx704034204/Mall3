@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#fff"
+    android:orientation="vertical"
+    android:padding="@dimen/normal_padding_big_16">
+
+    <LinearLayout
+        android:id="@+id/other_package_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/normal_padding_big_16"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/other_maintenance_package"
+            android:textColor="@color/text_color_orange"
+            android:textSize="@dimen/text_size_14" />
+
+        <TextView
+            android:id="@+id/title_more"
+            style="@style/GrayText14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="4"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/t_ic_arrow"
+            android:gravity="right"
+            android:text="全部" />
+    </LinearLayout>
+    <!--<include-->
+    <!---->
+    <!--layout="@layout/view_maintenance_program_content" />-->
+
+    <com.hxqc.mall.thirdshop.maintenance.views.MaintenanceProgramItem
+        android:id="@+id/other_package_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

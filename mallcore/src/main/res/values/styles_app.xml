@@ -1,0 +1,43 @@
+<resources>
+    <color name="toolbar_background">#ffE02C37</color>
+
+    <style name="AppThemeBase" parent="Theme.AppCompat">
+        <item name="colorPrimary">@color/toolbar_background</item>
+        <item name="actionBarTheme">@style/ThemeOverlay.AppCompat.Dark.ActionBar</item>
+        <item name="toolbarStyle">@style/ToolbarStyle</item>
+        <item name="homeAsUpIndicator">@drawable/ic_back</item>
+        <item name="android:listDivider">@drawable/line</item>
+        <item name="actionMenuTextColor">@color/white</item>
+        <item name="android:windowBackground">@color/white</item>
+    </style>
+
+
+    <style name="AppThemeBase.ToolBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+
+    <style name="ToolbarStyle" parent="Widget.AppCompat.Toolbar">
+        <item name="android:background">@color/toolbar_background</item>
+        <item name="titleTextAppearance">@style/APPToolBarTitle</item>
+    </style>
+
+    <style name="APPToolBarTitle" parent="TextAppearance.AppCompat.Title">
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="MyDialogActivityStyle" parent="Theme.AppCompat">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+</resources>

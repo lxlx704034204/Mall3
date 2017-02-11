@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ItemView">
+        <attr name="itemIcon" format="reference" />
+        <attr name="itemNameStr" format="string" />
+        <attr name="itemNameSize" format="dimension" />
+        <attr name="itemNameColor" format="color" />
+        <attr name="itemValueStr" format="string" />
+        <attr name="itemValueSize" format="dimension" />
+        <attr name="itemValueColor" format="color" />
+        <attr name="itemArrow" format="reference" />
+    </declare-styleable>
+    <declare-styleable name="OrderDetailItem">
+        <attr name="leftText" format="string" />
+        <attr name="rightTextColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="ShopInOrder">
+        <attr name="toProductDetail" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="ShopInOrder4S">
+        <attr name="toProductDetail4s" format="boolean" />
+    </declare-styleable>
+</resources>

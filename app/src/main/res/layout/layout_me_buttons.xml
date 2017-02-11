@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fafafa">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F1F1F1" />
+
+    <TableRow android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--我的订单-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_my_order"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/title_activity_my_order"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_order" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#F1F1F1" />
+        <!--车辆信息-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_car_info"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/car_info"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_my_auto" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#F1F1F1" />
+
+        <!--会员权益-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_menber_right"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/menber_rule"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_vip" />
+
+
+    </TableRow>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F1F1F1" />
+    <TableRow
+        android:layout_weight="1"
+        android:visibility="gone">
+        <!--会员规则-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_menber_rule"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            android:visibility="gone"
+            app:bottom_text="@string/menber_rule"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_rule" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#F1F1F1" />
+        <!--修车预约-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_repair_appointment"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/repair_appointment"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_repair" />
+        <!--常规保养-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_normal_maintenance"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/normal_maintenance"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_maintain" />
+        <!--紧急救援-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_emergency_rescue"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/emergency_rescue"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_rescue" />
+    </TableRow>
+
+    <TableRow android:layout_weight="1">
+
+        <!--我的客服-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_my_service"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/my_service"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_service" />
+        <View
+            android:layout_width="1dp"
+            android:background="#F1F1F1" />
+
+        <!--我的钱包-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_my_wallet"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/title_activity_my_wallet"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_my_wallet" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#F1F1F1" />
+        <!--二手车-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_second_hand_auto"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/my_used_auto"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_usedcar" />
+
+    </TableRow>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#F1F1F1" />
+
+    <TableRow android:layout_weight="1">
+
+        <!--我的关注-->
+        <!--<com.hxqc.mall.core.views.BottomTxtImageButton-->
+        <!--android:id="@+id/btn_my_attention"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawabsle/bg_me_button"-->
+        <!--android:visibility="gone"-->
+        <!--app:bottom_text="@string/my_attention"-->
+        <!--app:bottom_text_color="@color/text_color_title"-->
+        <!--app:bottom_text_size="14sp"-->
+        <!--app:image_src="@drawable/ic_follow" />-->
+        <!--客户投诉-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_complaint"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/title_activity_complaint"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_complaints" />
+
+        <View
+            android:layout_width="1dp"
+            android:background="#F1F1F1" />
+        <!--我的评价-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_my_comment"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            app:bottom_text="@string/my_comment"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_evaluation" />
+        <View
+            android:layout_width="1dp"
+            android:background="#F1F1F1" />
+        <!--购物车-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_shopping_cart"
+            android:layout_height="match_parent"
+
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            android:visibility="visible"
+            app:bottom_text="@string/shopping_cart"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_menber_shoppingcar" />
+        <!--品牌活动-->
+        <com.hxqc.mall.core.views.BottomTxtImageButton
+            android:id="@+id/btn_brand_activity"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/bg_me_button"
+            android:visibility="gone"
+            app:bottom_text="@string/brand_activity"
+            app:bottom_text_color="@color/text_color_title"
+            app:bottom_text_size="14sp"
+            app:image_src="@drawable/ic_activity" />
+    </TableRow>
+</TableLayout>

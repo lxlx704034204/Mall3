@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="TitleViewPagerIndicator">
+        <attr name="titlePadding" format="dimension" />
+        <!-- Left/right padding of not active view titles. -->
+        <attr name="clipPadding" format="dimension" />
+        <attr name="textColor" format="color|reference" />
+        <attr name="textSizeNormal" format="dimension" />
+        <attr name="textSizeSelected" format="dimension" />
+        <attr name="footerLineHeight" format="dimension" />
+        <attr name="footerColor" format="color" />
+        <attr name="footerTriangleHeight" format="dimension" />
+    </declare-styleable>
+
+
+    <!--汽车详情的tab view-->
+    <declare-styleable name="AutoDetailTab">
+        <attr name="tabIconDrawable" format="reference" />
+        <attr name="tabLabel" format="string" />
+        <attr name="tabTagDrawable" format="reference" />
+    </declare-styleable>
+    <!--首页小标题-->
+    <declare-styleable name="HomePageLittleTitle">
+        <attr name="titleText" format="string|reference" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PullScrollView">
+        <attr name="header" format="reference" />
+        <attr name="headerHeight" format="dimension" />
+        <attr name="headerVisibleHeight" format="dimension" />
+    </declare-styleable>
+
+    <!--主页菜单点击跳转-->
+    <declare-styleable name="HomePageItemClickToActivityAction">
+        <attr name="clickToActivityAction" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TopBar">
+        <attr name="textSize" format="dimension" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="selectedBackgroundColor" format="color" />
+        <attr name="checkedIndex" format="integer" />
+        <attr name="count" format="integer" />
+        <attr name="radius" format="dimension" />
+        <attr name="lineWidth" format="dimension" />
+    </declare-styleable>
+
+    <!--首页控件layout-->
+    <declare-styleable name="HomePageModuleLayout">
+        <attr name="head_margin" format="dimension" />
+        <attr name="chile_space_vertical" format="dimension" />
+        <attr name="chile_space_horizontal" format="dimension" />
+        <attr name="group_height" format="dimension" />
+        <attr name="head_height" format="dimension" />
+        <attr name="head_width" format="dimension" />
+    </declare-styleable>
+
+
+    <!--带图标条目-->
+    <declare-styleable name="CellTab">
+        <attr name="cellIconDrawable" format="reference" />
+        <attr name="cellLabel" format="string" />
+        <attr name="cellTagDrawable" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="MyMessageItem">
+        <attr name="newsItemTitle" format="string" />
+        <attr name="newsItemContent" format="string" />
+        <attr name="newsItemMark" format="string" />
+        <attr name="iconSrc" format="reference" />
+        <attr name="iconState" format="boolean" />
+    </declare-styleable>
+    <declare-styleable name="BaseMapView">
+        <attr name="keyText" format="string" />
+        <attr name="valueText" format="string" />
+        <attr name="valueGravity" format="enum">
+            <enum name="LEFT" value="0" />
+            <enum name="RIGHT" value="1" />
+        </attr>
+        <attr name="itemType" format="enum">
+            <enum name="INPUT" value="0" />
+            <enum name="CLICKABLE" value="1" />
+            <enum name="SHOW" value="2" />
+            <enum name="VALUE_ICON" value="3" />
+        </attr>
+        <attr name="inputHint" format="string" />
+        <attr name="valueIcon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EvHomeModuleView">
+        <attr name="moduleTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ListItemView">
+        <attr name="cut_off_rule_visiable" format="boolean" />
+        <attr name="cut_off_rule_height" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="EvaluationBar">
+        <attr name="text_color" format="color" />
+        <attr name="bg_color" format="color" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="title_activity_me_settings">设置</string>
+
+    <string name="title_activity_me_delivery_address">收货地址</string>
+    <string name="title_activity_me_advice">意见反馈</string>
+    <string name="title_activity_me_helpCenter">帮助中心</string>
+    <string name="title_activity_me_wiki">百科知识</string>
+    <string name="title_activity_QA">常见问题</string>
+    <string name="title_activity_me_about_us">关于我们</string>
+    <string name="title_activity_me_edit_address">编辑地址</string>
+    <string name="title_activity_me_order_detail">订单详情</string>
+    <string name="title_activity_auto">整车</string>
+    <string name="title_activity_filter">找车</string>
+    <string name="title_activity_search">搜索</string>
+    <string name="title_activity_common_detail">商品详情</string>
+    <string name="title_activity_promotion_detail">活动车辆详情</string>
+    <string name="title_activity_parameter">产品参数</string>
+    <string name="title_activity_search_history">搜索历史</string>
+    <string name="title_activity_atlas">图集</string>
+    <string name="title_activity_event_detail">活动</string>
+    <string name="title_activity_autolist">车辆列表</string>
+    <string name="title_activity_promotion_queue_wait">排队中</string>
+    <string name="title_activity_me_user_order">我的订单</string>
+    <string name="title_activity_me_personal_info">个人信息</string>
+    <string name="title_activity_me_express">订单追踪</string>
+    <string name="title_activity_me_wish_list">我的关注</string>
+    <string name="title_activity_me_user_comment">我的评论</string>
+    <string name="title_activity_special_offer">电商自营</string>
+
+    <string name="title_activity_brand">电商自营</string>
+    <string name="title_activity_main">主页</string>
+
+    <string name="title_activity_me_add_address">新增地址</string>
+    <string name="title_activity_me_advantage">恒信汽车官网</string>
+
+    <string name="title_activity_application_refund">申请退款</string>
+    <string name="title_activity_amap_auto_sale">路线规划</string>
+    <string name="title_activity_news_image_info">图片详情</string>
+
+
+    <string name="title_activity_ev_temai">新能源车特卖</string>
+    <string name="title_activity_order_details">订单详情</string>
+    <string name="title_activity_repair_order_details">订单详情</string>
+    <string name="title_activity_my_order">我的订单</string>
+</resources>

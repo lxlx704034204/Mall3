@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_line_around"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="16dp"
+        >
+
+    <TextView
+        android:id="@+id/shop_title"
+        style="@style/BlackText14"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:background="#eaeaea"
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="36dp"
+        android:paddingLeft="12dp"
+        android:layout_marginBottom="15dp"
+        android:text="武汉星凯迪拉克"
+      />
+
+    <ImageView
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="12dp"
+        android:layout_below="@+id/shop_title"
+        android:src="@drawable/ic_form_input_phone_selected"
+        />
+
+    <TextView
+        android:id="@+id/phone"
+        style="@style/BlackText14"
+        android:layout_below="@+id/shop_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="027-456465"
+  />
+
+    <ImageView
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="12dp"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:layout_marginLeft="12dp"
+        android:src="@drawable/ic_home_address"
+        />
+
+    <TextView
+        android:id="@+id/address"
+        style="@style/BlackText14"
+        android:layout_below="@+id/phone"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:text="武汉市汉阳区偏食和福利卡送福利卡收费卡是否可那是"
+        />
+
+
+    <TextView
+        android:id="@+id/promotion"
+        style="@style/RedText14"
+        android:layout_below="@+id/address"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="22dp"
+        android:layout_width="wrap_content"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="14dp"
+        android:text="武汉凯迪拉克优惠8万元"
+        android:paddingBottom="18dp"
+        />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/top_icon"
+        android:layout_width="@dimen/home_page_top_icon_size_48"
+        android:layout_height="@dimen/home_page_top_icon_size_48"
+        android:layout_centerHorizontal="true"
+       />
+
+    <TextView
+        android:id="@+id/top_text"
+        style="@style/GrayText14"
+        android:layout_below="@id/top_icon"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="4dp"
+        android:maxLines="1" />
+</RelativeLayout>

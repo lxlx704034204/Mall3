@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<net.simonvt.menudrawer.OverlayDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/shopdetails_drawer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:mdContentBackground="@color/white"
+    app:mdDrawOverlay="true"
+    app:mdDropShadowColor="#55000000"
+    app:mdDropShadowEnabled="true"
+    app:mdDropShadowSize="100dp"
+    app:mdMenuSize="304dp"
+    app:mdPosition="right">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mdContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingBottom="50dp">
+
+                <com.hxqc.mall.thirdshop.views.ShopDetailsHeadView
+                    android:id="@+id/shop_detail_head_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <FrameLayout
+                    android:id="@+id/fragment_container"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.hxqc.mall.thirdshop.views.CallBar
+            android:id="@+id/call_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" />
+
+        <com.hxqc.mall.core.api.RequestFailView xmlns:fail="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/shopdetails_fail_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            fail:emptyDescription="获取数据失败" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@id/mdMenu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/shopdetails_mdMenu_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+</net.simonvt.menudrawer.OverlayDrawer>

@@ -10,7 +10,6 @@ public class Main2Activity extends AppCompatActivity {
 		super.onCreate(savedInstanceState);
 //		setContentView(R.layout.activity_main2);
 		Object o = getIntent().getParcelableExtra("data");
-
 		Factory.getProduct(o).doSth();
 
 	}
